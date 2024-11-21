@@ -10,7 +10,7 @@ use App\Http\Controllers\Pages\InsightsController;
 use App\Http\Controllers\Pages\ProjectsController;
 
 Route::get('/', function () {
-    return view('home');
+    return view('admin.home.index');
 });
 
 Route::get('/dashboard', function () {
