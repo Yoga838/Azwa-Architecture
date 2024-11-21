@@ -1,8 +1,8 @@
 <nav class="w-full fixed top-0 z-50">
     <div class="flex items-center justify-between bg-white py-6 px-[40px]">
         <div class="cursor-pointer">
-            <div class="w-auto h-auto bg-[#515151] px-[28px] py-[8px] rounded-lg">
-                <Image src="{{ asset('assets/img/LogoAzwa.png') }}" alt="Brand" class="w-[128px] h-auto" />
+            <div class="w-auto h-auto bg-[#515151] px-[20px] py-[8px] rounded-lg">
+                <Image src="{{ asset('assets/img/LogoAzwa.png') }}" alt="Brand" class="w-[80px] h-auto" />
             </div>
         </div>
         <div class="">
