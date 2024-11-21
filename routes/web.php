@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\Pages\AboutController;
@@ -8,13 +9,17 @@ use App\Http\Controllers\Pages\ContactController;
 use App\Http\Controllers\Pages\ServiceController;
 use App\Http\Controllers\Pages\InsightsController;
 use App\Http\Controllers\Pages\ProjectsController;
+use App\Http\Controllers\Auth\AuthenticatedSessionController;
 
 Route::get('/', function () {
-    return view('admin.home.index');
+    return view('auth.login');
 });
 
+Route::post('/logout', [AuthenticatedSessionController::class, 'destroy'])->name('logout');
+
+
 Route::get('/dashboard', function () {
-    return view('dashboard');
+    return view('admin.home.index');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {

@@ -22,13 +22,23 @@
                     <h2 class="text-black text-end text-[14px] font-semibold">Admin Azwa</h2>
                     <h5 class="text-black text-end text-[12px]">Arul</h5>
                 </div>
-                <div class="">
-                    <button class="bg-gray-800 p-1 rounded-full text-gray-400 hover:text-white">
+                <div class="relative group">
+                    <!-- Profil Button -->
+                    <button type="button" class="relative flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" id="user-menu-button">
                         <span class="sr-only">Open user menu</span>
-                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A12.023 12.023 0 0112 15c3.042 0 5.798 1.043 7.879 2.804m-7.879-6.682a4 4 0 110-8 4 4 0 010 8zm0 0c-2.21 0-4.267.895-5.879 2.343m11.758 0A8.978 8.978 0 0012 15.75"></path>
-                        </svg>
+                        <img class="h-8 w-8 rounded-full" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="User avatar">
                     </button>
+                
+                    <!-- Dropdown Menu -->
+                    <div class="absolute right-0 z-10 mt-2 hidden w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black/5 focus:outline-none group-hover:block">
+                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Your Profile</a>
+                        <form method="POST" action="{{ route('logout') }}">
+                            @csrf
+                            <button type="submit" class="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                                Sign out
+                            </button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
