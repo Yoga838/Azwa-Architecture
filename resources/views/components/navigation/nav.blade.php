@@ -1,4 +1,4 @@
-<nav class="w-full fixed top-0 z-50">
+<nav class="fixed top-0 z-50 w-full">
     <div class="flex items-center justify-between bg-white py-6 px-[40px]">
         <div class="cursor-pointer">
             <div class="w-auto h-auto bg-[#515151] px-[20px] py-[8px] rounded-lg">
@@ -8,22 +8,28 @@
         <div class="">
             <ul class="flex space-x-8">
                 <li class="">
-                    <a class="text-lg text-black font-normal transition duration-300 ease-in-out hover:font-bold hover:underline hover:underline-offset-[8px] hover:text-gray-700" href="#">About</a>
+                    <a class="text-lg text-black font-normal transition duration-300 ease-in-out hover:font-bold hover:underline hover:underline-offset-[8px] 
+                {{ request()->routeIs('about.index') ? 'font-bold underline underline-offset-[8px]' : 'hover:text-gray-700' }}" href="{{ route('about.index') }}">About</a>
                 </li>
                 <li class="">
-                    <a class="text-lg text-black font-normal transition duration-300 ease-in-out hover:font-bold hover:underline hover:underline-offset-[8px] hover:text-gray-700" href="#">Projects</a>
+                    <a class="text-lg text-black font-normal transition duration-300 ease-in-out hover:font-bold hover:underline hover:underline-offset-[8px] 
+                {{ request()->routeIs('project.index') ? 'font-bold underline underline-offset-[8px]' : 'hover:text-gray-700' }}" href="{{ route('project.index') }}">Projects</a>
                 </li>
                 <li class="">
-                    <a class="text-lg text-black font-normal transition duration-300 ease-in-out hover:font-bold hover:underline hover:underline-offset-[8px] hover:text-gray-700" href="#">Services</a>
+                    <a class="text-lg text-black font-normal transition duration-300 ease-in-out hover:font-bold hover:underline hover:underline-offset-[8px] 
+                {{ request()->routeIs('service.index') ? 'font-bold underline underline-offset-[8px]' : 'hover:text-gray-700' }}" href="{{ route('service.index') }}">Services</a>
                 </li>
                 <li class="">
-                    <a class="text-lg text-black font-normal transition duration-300 ease-in-out hover:font-bold hover:underline hover:underline-offset-[8px] hover:text-gray-700" href="#">Insights</a>
+                    <a class="text-lg text-black font-normal transition duration-300 ease-in-out hover:font-bold hover:underline hover:underline-offset-[8px] 
+                {{ request()->routeIs('insight.index') ? 'font-bold underline underline-offset-[8px]' : 'hover:text-gray-700' }}" href="{{ route('insight.index') }}">Insights</a>
                 </li>
                 <li class="">
-                    <a class="text-lg text-black font-normal transition duration-300 ease-in-out hover:font-bold hover:underline hover:underline-offset-[8px] hover:text-gray-700" href="#">Career</a>
+                    <a class="text-lg text-black font-normal transition duration-300 ease-in-out hover:font-bold hover:underline hover:underline-offset-[8px] 
+                {{ request()->routeIs('career.index') ? 'font-bold underline underline-offset-[8px]' : 'hover:text-gray-700' }}" href="{{ route('career.index') }}">Career</a>
                 </li>
                 <li class="">
-                    <a class="text-lg text-black font-normal transition duration-300 ease-in-out hover:font-bold hover:underline hover:underline-offset-[8px] hover:text-gray-700" href="#">Contact</a>
+                    <a class="text-lg text-black font-normal transition duration-300 ease-in-out hover:font-bold hover:underline hover:underline-offset-[8px] 
+                {{ request()->routeIs('contact.index') ? 'font-bold underline underline-offset-[8px]' : 'hover:text-gray-700' }}" href="{{ route('contact.index') }}">Contact</a>
                 </li>
             </ul>
         </div>
