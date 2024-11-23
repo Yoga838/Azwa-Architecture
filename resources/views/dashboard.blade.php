@@ -13,11 +13,12 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
     <body 
-        x-data="{ page: 'ecommerce', 'loaded': true, 'darkMode': true, 'stickyMenu': false, 'sidebarToggle': false, 'scrollTop': false }" 
+        x-data="{ page: 'ecommerce', 'loaded': true, 'darkMode': true, 'stickyMenu': false, 'sidebarToggle': false, 'scrollTop': false }"
         x-init="
-            darkMode = JSON.parse(localStorage.getItem('darkMode')); 
-            $watch('darkMode', value => localStorage.setItem('darkMode', JSON.stringify(value)))" 
-        :class="font-sans antialiased {'dark text-bodydark bg-boxdark-2': darkMode === true}">
+            darkMode = JSON.parse(localStorage.getItem('darkMode'));
+            $watch('darkMode', value => localStorage.setItem('darkMode', JSON.stringify(value)))"
+        :class="{'dark text-bodydark bg-boxdark-2': darkMode === true}"
+    >
 
         @include('components.dashboard.preload')
         <div class="flex h-screen overflow-hidden">
@@ -30,7 +31,7 @@
                 @include('components.dashboard.header')
                 
                 <!-- Page Content -->
-                <main class="max-w-screen-2xl p-4 md:p-6 2xl:p-10 flex-1 bg-[#F1F5F9]">
+                <main class="max-w-screen-2xl p-4 md:p-6 2xl:p-10 flex-1">
                     @yield("content")
                 </main>
             </div>
