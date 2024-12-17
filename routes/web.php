@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\pages\HomeController;
 use App\Http\Controllers\Pages\AboutController;
 use App\Http\Controllers\Pages\CareerController;
 use App\Http\Controllers\Pages\ContactController;
@@ -12,7 +13,7 @@ use App\Http\Controllers\Pages\ProjectsController;
 use App\Http\Controllers\Auth\AuthenticatedSessionController;
 
 Route::get('/', function () {
-    return view('auth.login');
+    return view('pages.home');
 });
 
 Route::post('/logout', [AuthenticatedSessionController::class, 'destroy'])->name('logout');
@@ -28,6 +29,7 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
+Route::get('/home',[HomeController::class, 'index'])->name('home.index');
 Route::get('/about',[AboutController::class, 'index'])->name('about.index');
 Route::get('/project',[ProjectsController::class, 'index'])->name('project.index');
 Route::get('/service',[ServiceController::class, 'index'])->name('service.index');

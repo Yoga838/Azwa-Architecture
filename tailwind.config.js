@@ -74,6 +74,20 @@ export default {
                 success: '#219653',
                 danger: '#D34053',
                 warning: '#FFA70B',
+                landing: {
+                    body: '#e1dfd4',
+                    brown: {
+                        1: '#9a8976',
+                        2: '#945e3b',
+                        3: '#5d4e40',
+                    },
+                    black: {
+                        1: '#251d16',
+                        2: '#19140f',
+                        3: '#000000',
+                    },
+                    gold: '#e3ae43',
+                }
             },
             fontSize: {
                 'title-xxl': ['44px', '55px'],
