@@ -12,12 +12,13 @@
 
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
-    <body class="font-sans antialiased bg-landing-body">
+    <body class="font-sans antialiased bg-landing-body overflow-x-hidden">
         <div>
             @include("components.navigation.nav")
             <main class="w-screen h-screen">
                 @yield("content")
             </main>
+            @include("components.footer.footer")
         </div>
     </body>
 </html>
