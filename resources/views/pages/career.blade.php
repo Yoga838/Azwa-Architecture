@@ -1,20 +1,23 @@
 @extends("landing")
 
 @section("content")
-<main class="container mx-auto">
-    <div class="flex flex-col lg:flex-row bg-white shadow-lg rounded-lg overflow-hidden">
+<div class="container mx-auto">
+    <div class="flex flex-col lg:flex-row bg-#e1dfd4 shadow-lg overflow-hidden">
       <!-- Image Section -->
-      <div class="w-full lg:w-1/2">
-        <img src="{{ asset('assets/img/Karir1.png') }}" alt="Interior Design" class="w-full h-full object-cover">
+      <div class="bg-contain lg:w-5/12">
+        <img src="{{ asset('assets/img/Karir1.png') }}" alt="Interior Design" class="">
       </div>
       <!-- Content Section -->
-      <div class="w-full lg:w-1/2 p-8">
-        <h1 class="text-3xl font-bold text-gray-800 mb-4">Karir</h1>
-        <p class="text-gray-600 mb-4">
+      <div class="w-full lg:w-1/2 p-8 my-auto">
+        <div class="flex items-center space-x-40 mb-10 ">
+            <h1 class="text-6xl font-bold text-theme2 mb-4">Karir</h1>
+            <div class="h-1 w-100 bg-theme2 rounded-lg"></div>
+        </div>
+        <p class="text-2xl text-theme3 pt-7 mb-4">
           Jelajahi peluang karir yang menarik di <span class="font-bold">Azwa Design Studio!</span>
           Fulltime / Internship posisi Architect, Interior Designer, Drafter dapat bergabung tim kami.
         </p>
-        <p class="text-gray-600 mb-6">
+        <p class="text-theme3 mb-6">
           Kirimkan CV dan Portofolio Anda dalam format PDF, tidak lebih dari 5MB ke:
         </p>
         <div class="bg-gray-100 p-4 rounded-lg">
@@ -25,5 +28,5 @@
         </div>
       </div>
     </div>
-  </main>
+  </div>
 @endsection

@@ -15,7 +15,7 @@
     <body class="font-sans antialiased bg-landing-body overflow-x-hidden">
         <div>
             @include("components.navigation.nav")
-            <main class="w-screen h-screen">
+            <main class="w-screen h-auto">
                 @yield("content")
             </main>
             @include("components.footer.footer")
