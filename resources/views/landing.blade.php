@@ -13,9 +13,9 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
     <body class="font-sans antialiased bg-landing-body overflow-x-hidden">
-        <div>
+        <div class="flex flex-col min-h-screen">
             @include("components.navigation.nav")
-            <main class="w-screen h-screen">
+            <main class="flex-grow w-screen h-auto">
                 @yield("content")
             </main>
             @include("components.footer.footer")

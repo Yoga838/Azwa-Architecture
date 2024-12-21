@@ -1,17 +1,18 @@
 <footer class="w-screen bg-landing-black-1">
-    <div class="p-15">
+    <div class="py-15 px-25">
         <div class="">
             <img src="{{ asset('assets/img/LogoAzwa.png') }}" alt="Brand" class="w-[150px] h-auto" />
         </div>
-        <div class="grid grid-cols-12">
-            <div class="col-span-3 text-white flex items-center">
+        <div class="flex flex-col md:flex-row justify-between">
+            <div class="text-white flex items-center">
                 <div>
                     <div>
                         <h3 class="w-[250px]">Jl. Kyai Mojo No.110, Kec. Kaliwates,  Kab. Jember, Jawa Timur 68133</h3>
                     </div>
                 </div>
             </div>
-            <div class="col-span-3 text-white flex justify-center text-center">
+            <div class="w-[2px] h-auto bg-white"></div>
+            <div class="text-white flex justify-center text-center">
                 <div>
                     <div class="text-[20px] text-landing-gold mb-5">Info</div>
                     <div>
@@ -24,7 +25,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-span-3 text-white flex justify-center text-center">
+            <div class="w-[2px] h-auto bg-white"></div>
+            <div class="text-white flex justify-center text-center">
                 <div>
                     <div class="text-[20px] text-landing-gold mb-5">Ikuti Kami</div>
                     <div class="flex space-x-4">
@@ -43,7 +45,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-span-3 text-white flex justify-center text-center">
+            <div class="w-[2px] h-auto bg-white"></div>
+            <div class="text-white flex justify-center text-center">
                 <div>
                     <div class="text-[20px] text-landing-gold mb-5">Hubungi Kami</div>
                     <button class="w-[200px] flex items-center py-[5px] px-[10px] rounded-full bg-landing-body text-landing-black-3">
