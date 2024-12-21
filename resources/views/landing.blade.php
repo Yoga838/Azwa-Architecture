@@ -15,7 +15,7 @@
     <body class="font-sans antialiased bg-landing-body overflow-x-hidden">
         <div class="flex flex-col min-h-screen">
             @include("components.navigation.nav")
-            <main class="flex-grow w-screen h-auto">
+            <main class="w-screen h-screen">
                 @yield("content")
             </main>
             @include("components.footer.footer")
