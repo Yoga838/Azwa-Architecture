@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Pages;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\File;
 
 class ProjectsController extends Controller
 {
@@ -12,7 +13,8 @@ class ProjectsController extends Controller
      */
     public function index()
     {
-        return view('pages.project');
+        $images = File::files(public_path('assets/img/porto'));
+        return view('pages.project', compact('images'));
     }
 
     /**
