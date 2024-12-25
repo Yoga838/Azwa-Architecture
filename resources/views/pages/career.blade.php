@@ -4,7 +4,7 @@
 <div class="container mx-auto">
     <div class="flex flex-col lg:flex-row bg-#e1dfd4 overflow-hidden">
       <!-- Image Section -->
-      <div class="w-auto h-screen lg:w-5/12">
+      <div class="w-screen h-screen lg:w-5/12">
         <img src="{{ asset('assets/img/Karir1.png') }}" alt="Interior Design" class="">
       </div>
       <!-- Content Section -->
