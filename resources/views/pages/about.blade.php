@@ -10,13 +10,15 @@
             <div class="flex justify-center">
                 <img src="{{asset('assets/img/LogoAzwa.png')}}" alt="" class="w-[10%]">
             </div>
-            <p class="mt-12 text-center lg:mx-44 md:mx-20 mx-10 text-white lg:text-3xl md:text-xl text-lg"><strong>Azwa Design Studio</strong> merupakan penyedia layanan desain arsitektur yang berkomitmen untuk menciptakan bangunan yang menginspirasi dan memenuhi kebutuhan Anda dengan menawarkan solusi desain yang inovatif, fungsional, dan estetis. 
-            </p>
-            <p class="mt-8 text-center lg:mx-44 md:mx-20 mx-10 text-white lg:text-3xl md:text-xl text-lg">Kami percaya bahwa setiap proyek adalah cerminan dari identitas dan gaya hidup Anda, dan kami berusaha menghadirkan desain arsitektur yang berkualitas tinggi dan memuaskan Anda. </p>
+            <div class="lg:mx-44 md:mx-20 mx-10">
+                <p class="mt-12 text-center text-white lg:text-3xl md:text-xl text-lg"><strong>Azwa Design Studio</strong> merupakan penyedia layanan desain arsitektur yang berkomitmen untuk menciptakan bangunan yang menginspirasi dan memenuhi kebutuhan Anda dengan menawarkan solusi desain yang inovatif, fungsional, dan estetis. 
+                </p>
+                <p class="mt-8 text-center text-white lg:text-3xl md:text-xl text-lg">Kami percaya bahwa setiap proyek adalah cerminan dari identitas dan gaya hidup Anda, dan kami berusaha menghadirkan desain arsitektur yang berkualitas tinggi dan memuaskan Anda. </p>
+            </div>
         </div>
     </div>
     <div class="py-28">
-        <div class="flex flex-wrap">
+        <div class="flex flex-wrap" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
             <div class="w-full md:w-1/3 text-center">
                 <span class="num text-8xl text-theme2 font-bold" data-val="5">0</span><span class="text-6xl text-theme2 font-bold">+</span>
                 <h1 class="text-theme2 text-2xl font-bold mt-8">TAHUN</br>BEROPERASI</h1>
@@ -32,7 +34,7 @@
         </div>
     </div>
     {{-- Gmaps Marker --}}
-    <div class="px-0">
+    <div class="px-0" data-aos="zoom-in">
         <gmp-map
             center="-2.548926,118.0148634"
             zoom="5"
