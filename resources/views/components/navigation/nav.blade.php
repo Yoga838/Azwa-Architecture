@@ -16,7 +16,7 @@
                 </li>
                 <li class="">
                     <a class="text-lg text-white font-normal transition duration-300 ease-in-out hover:underline hover:underline-offset-[8px] 
-                {{ request()->routeIs('about.index') ? 'text-landing-gold font-medium underline underline-offset-[8px]' : 'hover:text-landing-gold' }}" href="{{ route('about.index') }}">About Us</a>
+                {{ request()->routeIs('about.index') ? 'text-landing-gold font-medium underline underline-offset-[8px]' : 'hover:text-landing-gold' }}" href="{{ route('about.index') }}">Tentang Kami</a>
                 </li>
                 <li class="">
                     <a class="text-lg text-white font-normal transition duration-300 ease-in-out hover:underline hover:underline-offset-[8px] 
@@ -24,7 +24,7 @@
                 </li>
                 <li class="">
                     <a class="text-lg text-white font-normal transition duration-300 ease-in-out hover:underline hover:underline-offset-[8px] 
-                {{ request()->routeIs('service.index') ? 'text-landing-gold font-medium underline underline-offset-[8px]' : 'hover:text-landing-gold' }}" href="{{ route('service.index') }}">Services</a>
+                {{ request()->routeIs('service.index') ? 'text-landing-gold font-medium underline underline-offset-[8px]' : 'hover:text-landing-gold' }}" href="{{ route('service.index') }}">Layanan</a>
                 </li>
                 <li class="">
                     <a class="text-lg text-white font-normal transition duration-300 ease-in-out hover:underline hover:underline-offset-[8px] 
@@ -32,11 +32,11 @@
                 </li>
                 <li class="">
                     <a class="text-lg text-white font-normal transition duration-300 ease-in-out hover:underline hover:underline-offset-[8px] 
-                {{ request()->routeIs('career.index') ? 'text-landing-gold font-medium underline underline-offset-[8px]' : 'hover:text-landing-gold' }}" href="{{ route('career.index') }}">Career</a>
+                {{ request()->routeIs('career.index') ? 'text-landing-gold font-medium underline underline-offset-[8px]' : 'hover:text-landing-gold' }}" href="{{ route('career.index') }}">Karir</a>
                 </li>
                 <li class="">
                     <a class="text-lg text-white font-normal transition duration-300 ease-in-out hover:underline hover:underline-offset-[8px] 
-                {{ request()->routeIs('contact.index') ? 'text-landing-gold font-medium underline underline-offset-[8px]' : 'hover:text-landing-gold' }}" href="{{ route('contact.index') }}">Contact Us</a>
+                {{ request()->routeIs('contact.index') ? 'text-landing-gold font-medium underline underline-offset-[8px]' : 'hover:text-landing-gold' }}" href="{{ route('contact.index') }}">Kontak</a>
                 </li>
             </ul>
         </div>
@@ -74,7 +74,7 @@
                         </li>
                         <li class="">
                             <a class="text-3xl text-white font-normal transition duration-300 ease-in-out hover:underline hover:underline-offset-[8px] 
-                        {{ request()->routeIs('about.index') ? 'text-landing-gold font-medium underline underline-offset-[8px]' : 'hover:text-landing-gold' }}" href="{{ route('about.index') }}">About Us</a>
+                        {{ request()->routeIs('about.index') ? 'text-landing-gold font-medium underline underline-offset-[8px]' : 'hover:text-landing-gold' }}" href="{{ route('about.index') }}">Tentang Kami</a>
                         </li>
                         <li class="">
                             <a class="text-3xl text-white font-normal transition duration-300 ease-in-out hover:underline hover:underline-offset-[8px] 
@@ -82,7 +82,7 @@
                         </li>
                         <li class="">
                             <a class="text-3xl text-white font-normal transition duration-300 ease-in-out hover:underline hover:underline-offset-[8px] 
-                        {{ request()->routeIs('service.index') ? 'text-landing-gold font-medium underline underline-offset-[8px]' : 'hover:text-landing-gold' }}" href="{{ route('service.index') }}">Services</a>
+                        {{ request()->routeIs('service.index') ? 'text-landing-gold font-medium underline underline-offset-[8px]' : 'hover:text-landing-gold' }}" href="{{ route('service.index') }}">Layanan</a>
                         </li>
                         <li class="">
                             <a class="text-3xl text-white font-normal transition duration-300 ease-in-out hover:underline hover:underline-offset-[8px] 
@@ -90,11 +90,11 @@
                         </li>
                         <li class="">
                             <a class="text-3xl text-white font-normal transition duration-300 ease-in-out hover:underline hover:underline-offset-[8px] 
-                        {{ request()->routeIs('career.index') ? 'text-landing-gold font-medium underline underline-offset-[8px]' : 'hover:text-landing-gold' }}" href="{{ route('career.index') }}">Career</a>
+                        {{ request()->routeIs('career.index') ? 'text-landing-gold font-medium underline underline-offset-[8px]' : 'hover:text-landing-gold' }}" href="{{ route('career.index') }}">Karir</a>
                         </li>
                         <li class="">
                             <a class="text-3xl text-white font-normal transition duration-300 ease-in-out hover:underline hover:underline-offset-[8px] 
-                        {{ request()->routeIs('contact.index') ? 'text-landing-gold font-medium underline underline-offset-[8px]' : 'hover:text-landing-gold' }}" href="{{ route('contact.index') }}">Contact Us</a>
+                        {{ request()->routeIs('contact.index') ? 'text-landing-gold font-medium underline underline-offset-[8px]' : 'hover:text-landing-gold' }}" href="{{ route('contact.index') }}">Kontak</a>
                         </li>
                     </ul>
                 </div>
