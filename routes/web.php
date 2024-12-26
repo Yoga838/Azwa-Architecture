@@ -12,6 +12,7 @@ use App\Http\Controllers\Pages\ProjectsController;
 use App\Http\Controllers\Pages\ServicePerizinanController;
 use App\Http\Controllers\Pages\ServiceKontraktorController;
 use App\Http\Controllers\Auth\AuthenticatedSessionController;
+use App\Http\Controllers\Dashboard\PortofolioController;
 
 Route::post('/logout', [AuthenticatedSessionController::class, 'destroy'])->name('logout');
 
@@ -36,4 +37,8 @@ Route::prefix('layanan')->name('service.')->group(function () {
 Route::get('/karir',[CareerController::class, 'index'])->name('career.index');
 Route::get('/kontak',[ContactController::class, 'index'])->name('contact.index');
 
+//test backend
+Route::get('/test', function () {
+    return view('test');
+});
 require __DIR__.'/auth.php';
