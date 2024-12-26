@@ -13,12 +13,7 @@ use App\Http\Controllers\Pages\ServicePerizinanController;
 use App\Http\Controllers\Pages\ServiceKontraktorController;
 use App\Http\Controllers\Auth\AuthenticatedSessionController;
 
-Route::get('/', function () {
-    return view('pages.home');
-});
-
 Route::post('/logout', [AuthenticatedSessionController::class, 'destroy'])->name('logout');
-
 
 Route::get('/dashboard', function () {
     return view('admin.home.index');
@@ -30,7 +25,7 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-Route::get('/home',[HomeController::class, 'index'])->name('home.index');
+Route::get('/',[HomeController::class, 'index'])->name('home.index');
 Route::get('/tentang-kami',[AboutController::class, 'index'])->name('about.index');
 Route::get('/portofolio',[ProjectsController::class, 'index'])->name('project.index');
 Route::prefix('layanan')->name('service.')->group(function () {
