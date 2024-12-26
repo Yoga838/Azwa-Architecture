@@ -8,8 +8,9 @@ use App\Http\Controllers\Pages\AboutController;
 use App\Http\Controllers\Pages\CareerController;
 use App\Http\Controllers\Pages\ContactController;
 use App\Http\Controllers\Pages\ServiceController;
-use App\Http\Controllers\Pages\InsightsController;
 use App\Http\Controllers\Pages\ProjectsController;
+use App\Http\Controllers\Pages\ServicePerizinanController;
+use App\Http\Controllers\Pages\ServiceKontraktorController;
 use App\Http\Controllers\Auth\AuthenticatedSessionController;
 
 Route::get('/', function () {
@@ -30,11 +31,14 @@ Route::middleware('auth')->group(function () {
 });
 
 Route::get('/home',[HomeController::class, 'index'])->name('home.index');
-Route::get('/about',[AboutController::class, 'index'])->name('about.index');
-Route::get('/project',[ProjectsController::class, 'index'])->name('project.index');
-Route::get('/service',[ServiceController::class, 'index'])->name('service.index');
-Route::get('/insight',[InsightsController::class, 'index'])->name('insight.index');
-Route::get('/career',[CareerController::class, 'index'])->name('career.index');
-Route::get('/contact',[ContactController::class, 'index'])->name('contact.index');
+Route::get('/tentang-kami',[AboutController::class, 'index'])->name('about.index');
+Route::get('/portofolio',[ProjectsController::class, 'index'])->name('project.index');
+Route::prefix('layanan')->name('service.')->group(function () {
+    Route::get('/desain', [ServiceController::class, 'index'])->name('desain');
+    Route::get('/kontraktor', [ServiceKontraktorController::class, 'index'])->name('kontraktor');
+    Route::get('/perizinan', [ServicePerizinanController::class, 'index'])->name('perizinan');
+});
+Route::get('/karir',[CareerController::class, 'index'])->name('career.index');
+Route::get('/kontak',[ContactController::class, 'index'])->name('contact.index');
 
 require __DIR__.'/auth.php';

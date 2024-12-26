@@ -22,13 +22,13 @@
                     <a class="text-lg text-white font-normal transition duration-300 ease-in-out hover:underline hover:underline-offset-[8px] 
                 {{ request()->routeIs('project.index') ? 'text-landing-gold font-medium underline underline-offset-[8px]' : 'hover:text-landing-gold' }}" href="{{ route('project.index') }}">Portofolio</a>
                 </li>
-                <li class="">
-                    <a class="text-lg text-white font-normal transition duration-300 ease-in-out hover:underline hover:underline-offset-[8px] 
-                {{ request()->routeIs('service.index') ? 'text-landing-gold font-medium underline underline-offset-[8px]' : 'hover:text-landing-gold' }}" href="{{ route('service.index') }}">Layanan</a>
-                </li>
-                <li class="">
-                    <a class="text-lg text-white font-normal transition duration-300 ease-in-out hover:underline hover:underline-offset-[8px] 
-                {{ request()->routeIs('insight.index') ? 'text-landing-gold font-medium underline underline-offset-[8px]' : 'hover:text-landing-gold' }}" href="{{ route('insight.index') }}">Insights</a>
+                <li class="group relative ">
+                    <a class="text-lg text-white font-normal {{request()->routeIs('service.*') ? 'text-landing-gold font-medium underline underline-offset-[8px]' : 'hover:text-landing-gold' }} cursor-pointer" href="#">Layanan</a>
+                    <ul class="absolute mt-2 w-24 bg-landing-brown-3 text-white shadow-lg rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
+                        <li class="py-3 cursor-pointer text-center {{request()->routeIs('service.desain') ? 'text-landing-gold font-medium' : 'hover:text-landing-gold'}}"><a href="{{route('service.desain')}}">Desain</a></li>
+                        <li class="py-3 cursor-pointer text-center {{request()->routeIs('service.kontraktor') ? 'text-landing-gold font-medium' : 'hover:text-landing-gold'}}"><a href="{{route('service.kontraktor')}}">Kontraktor</a></li>
+                        <li class="py-3 cursor-pointer text-center {{request()->routeIs('service.perizinan') ? 'text-landing-gold font-medium' : 'hover:text-landing-gold'}}"><a href="{{route('service.perizinan')}}">Perizinan</a></li>
+                    </ul>
                 </li>
                 <li class="">
                     <a class="text-lg text-white font-normal transition duration-300 ease-in-out hover:underline hover:underline-offset-[8px] 
@@ -82,11 +82,7 @@
                         </li>
                         <li class="">
                             <a class="text-3xl text-white font-normal transition duration-300 ease-in-out hover:underline hover:underline-offset-[8px] 
-                        {{ request()->routeIs('service.index') ? 'text-landing-gold font-medium underline underline-offset-[8px]' : 'hover:text-landing-gold' }}" href="{{ route('service.index') }}">Layanan</a>
-                        </li>
-                        <li class="">
-                            <a class="text-3xl text-white font-normal transition duration-300 ease-in-out hover:underline hover:underline-offset-[8px] 
-                        {{ request()->routeIs('insight.index') ? 'text-landing-gold font-medium underline underline-offset-[8px]' : 'hover:text-landing-gold' }}" href="{{ route('insight.index') }}">Insights</a>
+                        {{ request()->routeIs('service.desain') ? 'text-landing-gold font-medium underline underline-offset-[8px]' : 'hover:text-landing-gold' }}" href="{{ route('service.desain') }}">Layanan</a>
                         </li>
                         <li class="">
                             <a class="text-3xl text-white font-normal transition duration-300 ease-in-out hover:underline hover:underline-offset-[8px] 

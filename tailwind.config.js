@@ -91,6 +91,10 @@ export default {
                         3: "#000000",
                     },
                     gold: "#e3ae43",
+                    brownLight: {
+                        1: "#c29844",
+                        2: "#e3ae43",
+                    },
                 },
             },
             fontSize: {
