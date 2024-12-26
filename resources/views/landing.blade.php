@@ -9,6 +9,8 @@
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
+        {{-- Swipper Carousel --}}
+        <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet"/>
 
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
@@ -21,4 +23,6 @@
             @include("components.footer.footer")
         </div>
     </body>
+    {{-- Swipper Carousel --}}
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </html>
