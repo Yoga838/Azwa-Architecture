@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Dashboard\PaketController;
 use App\Http\Controllers\Dashboard\PortofolioController;
 use App\Http\Controllers\Dashboard\PromoController;
 use Illuminate\Http\Request;
@@ -20,3 +21,9 @@ Route::get('/promo/{id}', [PromoController::class, 'show'])->name('promo.show');
 Route::post('/promo', [PromoController::class, 'store'])->name('promo.store');
 Route::put('/promo/{id}', [PromoController::class, 'update'])->name('promo.update');
 Route::delete('/promo/{id}', [PromoController::class, 'destroy'])->name('promo.destroy');
+// paket
+Route::get('/paket', [PaketController::class, 'index'])->name('paket.index');
+Route::get('/paket/{id}', [PaketController::class, 'show'])->name('paket.show');
+Route::post('/paket', [PaketController::class, 'store'])->name('paket.store');
+Route::put('/paket/{id}', [PaketController::class, 'update'])->name('paket.update');
+Route::delete('/paket/{id}', [PaketController::class, 'destroy'])->name('paket.destroy');
