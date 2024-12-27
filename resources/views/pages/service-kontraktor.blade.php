@@ -126,57 +126,59 @@
             <h1 class="font-bold text-5xl text-theme1 drop-shadow-2 ml-10">Konstruksi Arsitektural</h1>
         </div>
     </div>
-    {{-- Card Konstruksi Interior --}}
-    <div class="flex justify-center items-center lg:px-50 md:px-30 px-5">
-        <div class="border w-[700px] h-full bg-theme3 rounded-3xl">
-            <div class="text-center">
-                <h1 class="mt-5 font-bold lg:text-3xl text-lg text-landing-gold">MULAI 3,5 JUTA / M2</h1>
-                <p class="font-normal lg:text-sm md:text-md text-xs text-landing-gold md:tracking-wider tracking-tight">*non-metropolitan (bukan kota besar)</p>
-            </div>
-            <div class="lg:mx-20 md:mx-20 mx-10 mt-10">
-                <h3 class="text-white">FASILITAS :</h3>
-                <ul class="">
-                    <li class="list-disc text-white ml-8">
-                        <p class="text-white text-md">FREE DESIGN DAN RANCANGAN ANGGARAN BIAYA (RAB)</p>
-                    </li>
-                    <li class="list-disc text-white ml-8">
-                        <p class="text-white text-md">PEKERJAAN PONDASI</p>
-                    </li>
-                    <li class="list-disc text-white ml-8">
-                        <p class="text-white text-md">PEKERJAAN STRUKTUR BAJA / BETON (SLOOF, KOLOM, BALOK, ATAP)</p>
-                    </li>
-                    <li class="list-disc text-white ml-8">
-                        <p class="text-white text-md">PEKERJAAN ARSITEKTURAL (DINDING DAN ORNAMEN FASAD, LANTAI)</p>
-                    </li>
-                    <li class="list-disc text-white ml-8">
-                        <p class="text-white text-md">PEKERJAAN MEP</p>
-                    </li>
-                    <li class="list-disc text-white ml-8">
-                        <p class="text-white text-md">PEKERJAAN FINISHING (CAT, BATU ALAM, DLL)</p>
-                    </li>
-                </ul>
-                <div class="mt-5 mb-5">
-                    <h3 class="text-white">LAYANAN LAIN :</h3>
+    {{-- Card Konstruksi Arsitektural --}}
+    <div class="flex justify-center items-center">
+        <div class="relative">
+            <div class="border-0 w-[350px] lg:w-[700px] md:w-[500px] sm:w-[350px] h-[550px] bg-theme3 rounded-[2rem] pt-5">
+                <div class="text-center">
+                    <h1 class="mt-5 font-bold lg:text-3xl text-lg text-landing-gold">MULAI 3,5 JUTA / M2</h1>
+                    <p class="font-normal lg:text-sm md:text-md text-xs text-landing-gold md:tracking-wider tracking-tight">*non-metropolitan (bukan kota besar)</p>
+                </div>
+                <div class="lg:mx-20 md:mx-20 mx-10 mt-3">
+                    <h3 class="text-white">FASILITAS :</h3>
                     <ul class="">
                         <li class="list-disc text-white ml-8">
-                            <p class="text-white text-md">PEMBUATAN KANOPI</p>
+                            <p class="text-white text-xs lg:text-base">FREE DESIGN DAN RANCANGAN ANGGARAN BIAYA (RAB)</p>
                         </li>
                         <li class="list-disc text-white ml-8">
-                            <p class="text-white text-md">PEMBUATAN LANSKAP (TAMAN, KOLAM IKAN)</p>
+                            <p class="text-white text-xs lg:text-base">PEKERJAAN PONDASI</p>
                         </li>
                         <li class="list-disc text-white ml-8">
-                            <p class="text-white text-md">PEMBUATAN PAGAR BESI</p>
+                            <p class="text-white text-xs lg:text-base">PEKERJAAN STRUKTUR BAJA / BETON (SLOOF, KOLOM, BALOK, ATAP)</p>
                         </li>
                         <li class="list-disc text-white ml-8">
-                            <p class="text-white text-md">PEKERJAAN PAVING</p>
+                            <p class="text-white text-xs lg:text-base">PEKERJAAN ARSITEKTURAL (DINDING DAN ORNAMEN FASAD, LANTAI)</p>
                         </li>
                         <li class="list-disc text-white ml-8">
-                            <p class="text-white text-md">PEMBUATAN KOLAM RENANG</p>
+                            <p class="text-white text-xs lg:text-base">PEKERJAAN MEP</p>
+                        </li>
+                        <li class="list-disc text-white ml-8">
+                            <p class="text-white text-xs lg:text-base">PEKERJAAN FINISHING (CAT, BATU ALAM, DLL)</p>
                         </li>
                     </ul>
+                    <div class="mt-3">
+                        <h3 class="text-white">LAYANAN LAIN :</h3>
+                        <ul class="">
+                            <li class="list-disc text-white ml-8">
+                                <p class="text-white text-xs lg:text-base">PEMBUATAN KANOPI</p>
+                            </li>
+                            <li class="list-disc text-white ml-8">
+                                <p class="text-white text-xs lg:text-base">PEMBUATAN LANSKAP (TAMAN, KOLAM IKAN)</p>
+                            </li>
+                            <li class="list-disc text-white ml-8">
+                                <p class="text-white text-xs lg:text-base">PEMBUATAN PAGAR BESI</p>
+                            </li>
+                            <li class="list-disc text-white ml-8">
+                                <p class="text-white text-xs lg:text-base">PEKERJAAN PAVING</p>
+                            </li>
+                            <li class="list-disc text-white ml-8">
+                                <p class="text-white text-xs lg:text-base">PEMBUATAN KOLAM RENANG</p>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="border px-5 py-2 w-full rounded-full bg-theme2 outline-none">
+            <div class="absolute bottom-0 border-0 px-5 py-5 w-full rounded-full bg-theme2">
                 <h1 class="text-white font-bold text-center">PILIH PAKET</h1>
             </div>
         </div>
@@ -191,61 +193,64 @@
             <h1 class="font-bold text-5xl text-theme1 drop-shadow-2 ml-10">Konstruksi Interior</h1>
         </div>
     </div>
+
     {{-- Card Konstruksi Interior --}}
-    <div class="flex justify-center items-center lg:px-50 md:px-30 px-5">
-        <div class="border w-[700px] h-full bg-theme3 rounded-3xl">
-            <div class="text-center">
-                <h1 class="mt-5 font-bold lg:text-3xl text-lg text-landing-gold">MULAI 2 JUTA / M2</h1>
-                <p class="font-normal lg:text-sm md:text-md text-xs text-landing-gold md:tracking-wider tracking-tight">*non-metropolitan (bukan kota besar)</p>
-            </div>
-            <div class="lg:mx-20 md:mx-20 mx-10 mt-10">
-                <h3 class="text-white">FASILITAS :</h3>
-                <ul class="">
-                    <li class="list-disc text-white ml-8">
-                        <p class="text-white text-md">FREE DESIGN DAN RANCANGAN ANGGARAN BIAYA (RAB) SUPERVISI</p>
-                    </li>
-                    <li class="list-disc text-white ml-8">
-                        <p class="text-white text-md">PEKERJAAN FURNITUR 1 RUANGAN</p>
-                    </li>
-                    <li class="list-disc text-white ml-8">
-                        <p class="text-white text-md">FREE PENGIRIMAN *S&K BERLAKU</p>
-                    </li>
-                </ul>
-                <div class="mt-5 mb-5">
-                    <h3 class="text-white">LAYANAN LAIN :</h3>
+    <div class="flex justify-center items-center">
+        <div class="relative">
+            <div class="border-0 w-[350px] lg:w-[700px] md:w-[500px] sm:w-[350px] h-[550px] bg-theme3 rounded-[2rem] pt-5">
+                <div class="text-center">
+                    <h1 class="mt-5 font-bold lg:text-3xl text-lg text-landing-gold">MULAI 2 JUTA / M2</h1>
+                    <p class="font-normal lg:text-sm md:text-md text-xs text-landing-gold md:tracking-wider tracking-tight">*non-metropolitan (bukan kota besar)</p>
+                </div>
+                <div class="lg:mx-20 md:mx-20 mx-10 mt-3">
+                    <h3 class="text-white">FASILITAS :</h3>
                     <ul class="">
                         <li class="list-disc text-white ml-8">
-                            <p class="text-white text-md">KITCHEN SET & MINI BAR</p>
+                            <p class="text-white text-xs lg:text-base">FREE DESIGN DAN RANCANGAN ANGGARAN BIAYA (RAB) SUPERVISI</p>
                         </li>
                         <li class="list-disc text-white ml-8">
-                            <p class="text-white text-md">WALK IN CLOSET</p>
+                            <p class="text-white text-xs lg:text-base">PEKERJAAN FURNITUR 1 RUANGAN</p>
                         </li>
                         <li class="list-disc text-white ml-8">
-                            <p class="text-white text-md">LEMARI (LEMARI BAJU, ETALASE / DISPLAY)</p>
-                        </li>
-                        <li class="list-disc text-white ml-8">
-                            <p class="text-white text-md">BUFFET & CABINET</p>
-                        </li>
-                        <li class="list-disc text-white ml-8">
-                            <p class="text-white text-md">SOFA</p>
-                        </li>
-                        <li class="list-disc text-white ml-8">
-                            <p class="text-white text-md">DIVAN KASUR / TEMPAT TIDUR (SPRING BOX)</p>
-                        </li>
-                        <li class="list-disc text-white ml-8">
-                            <p class="text-white text-md">MEJA CUSTOM (MEJA KANTOR, MEJA MEETING, MEJA KOMPUTER, MEJA RESEPSIONIS, MEJA MAKAN)</p>
+                            <p class="text-white text-xs lg:text-base">FREE PENGIRIMAN *S&K BERLAKU</p>
                         </li>
                     </ul>
+                    <div class="mt-3 mb-5">
+                        <h3 class="text-white">LAYANAN LAIN :</h3>
+                        <ul class="">
+                            <li class="list-disc text-white ml-8">
+                                <p class="text-white text-xs lg:text-base">KITCHEN SET & MINI BAR</p>
+                            </li>
+                            <li class="list-disc text-white ml-8">
+                                <p class="text-white text-xs lg:text-base">WALK IN CLOSET</p>
+                            </li>
+                            <li class="list-disc text-white ml-8">
+                                <p class="text-white text-xs lg:text-base">LEMARI (LEMARI BAJU, ETALASE / DISPLAY)</p>
+                            </li>
+                            <li class="list-disc text-white ml-8">
+                                <p class="text-white text-xs lg:text-base">BUFFET & CABINET</p>
+                            </li>
+                            <li class="list-disc text-white ml-8">
+                                <p class="text-white text-xs lg:text-base">SOFA</p>
+                            </li>
+                            <li class="list-disc text-white ml-8">
+                                <p class="text-white text-xs lg:text-base">DIVAN KASUR / TEMPAT TIDUR (SPRING BOX)</p>
+                            </li>
+                            <li class="list-disc text-white ml-8">
+                                <p class="text-white text-xs lg:text-base">MEJA CUSTOM (MEJA KANTOR, MEJA MEETING, MEJA KOMPUTER, MEJA RESEPSIONIS, MEJA MAKAN)</p>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="border px-5 py-2 w-full rounded-full bg-theme2 outline-none">
+            <div class="absolute bottom-0 border-0 px-5 py-5 w-full rounded-full bg-theme2">
                 <h1 class="text-white font-bold text-center">PILIH PAKET</h1>
             </div>
         </div>
     </div>
 
      {{-- Carousel Slider --}}
-    <div class="w-full relative lg:my-60 md:my-20 sm:my-10 my-5">
+    <div class="w-full relative lg:my-40 md:my-20 sm:my-10 my-5">
     <div class="swiper centered-slide-carousel swiper-container relative ">
     <div class="flex justify-center mb-10 lg:visible md:invisible sm:invisible invisible">
         <div class="flex items-center gap-3 mr-10">
@@ -255,39 +260,33 @@
     </div>
     <div class="swiper-wrapper">
         <div class="swiper-slide">
-            <div class="bg-indigo-50 rounded-2xl h-64 flex justify-center items-center overflow-hidden">
-                {{-- <span class="text-3xl font-semibold text-indigo-600">Slide 1 </span> --}}
-                <img src="{{asset('assets/img/service/kontraktor/slide-framehp3.jpg.jpg')}}" alt="Slide 1" class="w-full h-full object-cover rounded-2xl">
+            <div class="rounded-2xl h-64 flex justify-center items-center overflow-hidden">
+                <img src="{{asset('assets/img/service/kontraktor/slide-framehp3.jpg.jpg')}}" alt="Slide 1" class="w-1/2 lg:w-full md:w-3/4 sm:w-1/2 h-full object-cover rounded-2xl">
             </div>
         </div>
         <div class="swiper-slide">
-            <div class="bg-indigo-50 rounded-2xl h-64 flex justify-center items-center overflow-hidden">
-                {{-- <span class="text-3xl font-semibold text-indigo-600">Slide 2 </span> --}}
-                <img src="{{asset('assets/img/service/kontraktor/slide-framehp4.jpg.jpg')}}" alt="Slide 1" class="w-full h-full object-cover rounded-2xl">
+            <div class="rounded-2xl h-64 flex justify-center items-center overflow-hidden">
+                <img src="{{asset('assets/img/service/kontraktor/slide-framehp4.jpg.jpg')}}" alt="Slide 1" class="w-1/2 lg:w-full md:w-3/4 sm:w-1/2 h-full object-cover rounded-2xl">
             </div>
         </div>
         <div class="swiper-slide">
-            <div class="bg-indigo-50 rounded-2xl h-64 flex justify-center items-center overflow-hidden">
-                {{-- <span class="text-3xl font-semibold text-indigo-600">Slide 3 </span> --}}
-                <img src="{{asset('assets/img/service/kontraktor/slide-framehp5.jpg.JPG')}}" alt="Slide 1" class="w-full h-full object-cover rounded-2xl">
+            <div class="rounded-2xl h-64 flex justify-center items-center overflow-hidden">
+                <img src="{{asset('assets/img/service/kontraktor/slide-framehp5.jpg.JPG')}}" alt="Slide 1" class="w-1/2 lg:w-full md:w-3/4 sm:w-1/2 h-full object-cover rounded-2xl">
             </div>
         </div>
         <div class="swiper-slide">
-            <div class="bg-indigo-50 rounded-2xl h-64 flex justify-center items-center overflow-hidden">
-                {{-- <span class="text-3xl font-semibold text-indigo-600">Slide 4 </span> --}}
-                <img src="{{asset('assets/img/Enscape.png')}}" alt="Slide 1" class="w-full h-full object-cover rounded-2xl">
+            <div class="rounded-2xl h-64 flex justify-center items-center overflow-hidden">
+                <img src="{{asset('assets/img/Enscape.png')}}" alt="Slide 1" class="w-1/2 lg:w-full md:w-1/2 sm:w-1/2 h-full object-cover rounded-2xl">
             </div>
         </div>
         <div class="swiper-slide">
-            <div class="bg-indigo-50 rounded-2xl h-64 flex justify-center items-center overflow-hidden">
-                {{-- <span class="text-3xl font-semibold text-indigo-600">Slide 5 </span> --}}
-                <img src="{{asset('assets/img/service/kontraktor/slide-framehp1.jpg')}}" alt="Slide 1" class="w-full h-full object-cover rounded-2xl">
+            <div class="rounded-2xl h-64 flex justify-center items-center overflow-hidden">
+                <img src="{{asset('assets/img/service/kontraktor/slide-framehp1.jpg')}}" alt="Slide 1" class="w-1/2 lg:w-full md:w-3/4 sm:w-1/2 h-full object-cover rounded-2xl">
             </div>
         </div>
         <div class="swiper-slide">
-            <div class="bg-indigo-50 rounded-2xl h-64 flex justify-center items-center overflow-hidden">
-                {{-- <span class="text-3xl font-semibold text-indigo-600">Slide 6 </span> --}}
-                <img src="{{asset('assets/img/service/kontraktor/slide-framehp2.jpg.JPG')}}" alt="Slide 1" class="w-full h-full object-cover rounded-2xl">
+            <div class="rounded-2xl h-64 flex justify-center items-center overflow-hidden">
+                <img src="{{asset('assets/img/service/kontraktor/slide-framehp2.jpg.JPG')}}" alt="Slide 1" class="w-1/2 lg:w-full md:w-3/4 sm:w-1/2 h-full object-cover rounded-2xl">
             </div>
         </div>
     </div>
