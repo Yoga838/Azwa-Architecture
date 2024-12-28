@@ -27,7 +27,7 @@ Route::middleware('auth')->group(function () {
 });
 
 Route::get('/', function () {
-    return view('pages.home');
+    return view('pages.home')->name("home.index");
 });
 Route::get('/tentang-kami',[AboutController::class, 'index'])->name('about.index');
 Route::get('/portofolio',[ProjectsController::class, 'index'])->name('project.index');
