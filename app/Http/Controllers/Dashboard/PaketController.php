@@ -27,10 +27,19 @@ class PaketController extends Controller
             'category' => 'required|string|max:255',
             'tier' => 'required|string|max:255',
             'price' => 'required|numeric|min:0',
-            'description' => 'required|string',
+            'description' => 'required|array',
+            'description.*' => 'required|string',
         ]);
 
-        $paket = Paket::create($validate);
+        // $paket = Paket::create($validate);
+
+        $paket = new Paket();
+        $paket->category = $request->category;
+        $paket->tier = $request->tier;
+        $paket->price = $request->price;
+        $paket->description = json_encode($request->description);
+        $paket->save();
+
         return response()->json(['message' => 'Paket Created Successfully', 'data' => $paket], 201);
     }
     // update paket by id

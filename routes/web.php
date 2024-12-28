@@ -26,7 +26,9 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-Route::get('/',[HomeController::class, 'index'])->name('home.index');
+Route::get('/', function () {
+    return view('pages.home');
+})->name("home.index");
 Route::get('/tentang-kami',[AboutController::class, 'index'])->name('about.index');
 Route::get('/portofolio',[ProjectsController::class, 'index'])->name('project.index');
 Route::prefix('layanan')->name('service.')->group(function () {
