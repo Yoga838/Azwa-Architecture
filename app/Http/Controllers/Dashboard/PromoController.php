@@ -26,11 +26,20 @@ class PromoController extends Controller
             'title' => 'required|string|max:255',
             'price' => 'required|numeric|min:0',
             'actual_price' => 'required|numeric|min:0',
-            'description' => 'required|string',
+            'description' => 'required|array',
+            'description.*' => 'required|string',
             'ondisplay' => 'required|boolean',
         ]);
 
-        $promo = Promo::create($validate);
+        // $promo = Promo::create($validate);
+
+        $promo = new Promo();
+        $promo->title = $request->title;
+        $promo->price = $request->price;
+        $promo->actual_price = $request->actual_price;
+        $promo->description = json_encode($request->description);
+        $promo->ondisplay = $request->ondisplay;
+        $promo->save();
         return response()->json(['message' => 'Promo Created Successfully', 'data' => $promo], 201);
     }
     // update promo by id
