@@ -65,4 +65,30 @@
             </div>
         </div>
     </div>
+
+    <div class="flex items-center justify-center w-full">
+        <!-- Kolom Kiri (Gambar) -->
+        <div class="flex-shrink-0 max-w-md">
+            <img src="{{ asset('assets/img/BgHome.png') }}" alt="Deskripsi Gambar" class="object-cover w-full h-auto">
+        </div>
+        
+        <!-- Kolom Kanan (Teks) -->
+        <div class="max-w-md p-6 text-black">
+            <p class="mb-4 text-3xl text-center">Cari Jasa
+                <strong>Desain Arsitektur dan Interior</strong>
+                Bermutu?</p>
+            <h1 class="mb-4 text-2xl text-center">
+                <strong>Azwa Design Studio</strong> 
+                <p class="mb-4 text-xl text-center">siap mewujudkan keinginan Anda!</p>
+            </h1>
+            <p class="text-lg text-center">
+                <strong>Kami memperhitungkan kekuatan struktur 
+                serta anggaran</strong> dengan optimal, sehingga menghasilkan bangunan yang <strong>estetik</strong> namun tetap 
+                <strong>aman, kokoh, dan sesuai kondisi keuangan Anda.</strong>
+            </p>
+        </div>
+    </div>
+    
+    
+    
 @endsection
