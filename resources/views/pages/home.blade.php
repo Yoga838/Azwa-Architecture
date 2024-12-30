@@ -100,7 +100,7 @@
                 <div class="relative w-full my-5 lg:my-40 md:my-20 sm:my-10">
                 <div class="relative swiper centered-slide-carousel swiper-container ">
                 <div class="flex justify-center invisible mb-10 lg:visible md:invisible sm:invisible">
-                    <div class="flex items-center gap-3 mr-10 me-3">
+                    <div class="flex items-center gap-3 me-3">
                         <div class="px-5 py-5 border rounded-full bg-black-2"></div>
                         <h1 class="font-semibold text-landing-brown-3">azwacontractor</h1>
                     </div>
