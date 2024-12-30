@@ -1,7 +1,7 @@
 @extends("landing")
 
 @section("content")
-    <section class="mt-20 mx-20">
+    <section class="mx-20 mt-20">
         <div class="pt-30">
             <div class="flex flex-row items-center space-x-8">
                 <div class="">
@@ -11,13 +11,13 @@
             </div>
         </div>
         <div class="py-30">
-            <div class="columns-1 sm:columns-2 lg:columns-2 gap-4">
+            <div class="gap-4 columns-1 sm:columns-2 lg:columns-2">
                 @forelse ($images as $image)
                     <div class="relative w-full h-full mb-4 group" data-aos="fade-up" data-aos-delay="{{ $loop->index * 200 }}">
-                        <img src="{{ asset('assets/img/porto/' . $image->getFilename()) }}" alt="{{ $image->getFilename() }}" class="w-full h-full object-cover" />
+                        <img src="{{ asset('assets/img/porto/' . $image->getFilename()) }}" alt="{{ $image->getFilename() }}" class="object-cover w-full h-full" />
 
-                        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            <span class="text-white text-xl font-bold transform translate-y-5 group-hover:translate-y-0 transition-transform duration-300">
+                        <div class="absolute inset-0 flex items-center justify-center transition-opacity duration-300 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100">
+                            <span class="text-xl font-bold text-white transition-transform duration-300 transform translate-y-5 group-hover:translate-y-0">
                                 Azwa
                             </span>
                         </div>
@@ -36,12 +36,12 @@
     </section>
     <section class="relative w-full h-[600px]">
         <div class="w-full h-full">
-            <img src="{{ asset('assets/img/Enscape.png') }}" class="w-full h-full object-cover" />
+            <img src="{{ asset('assets/img/Enscape.png') }}" class="object-cover w-full h-full" />
         </div>
-        <div class="absolute inset-0 bg-landing-black-2 bg-opacity-50"></div>
+        <div class="absolute inset-0 bg-opacity-50 bg-landing-black-2"></div>
         <div class="absolute inset-0 flex items-center justify-center">
             <div>
-                <div class="flex justify-center items-center space-x-8">
+                <div class="flex items-center justify-center space-x-8">
                     <h1 class="text-white text-[48px]">Bersama</h1>
                     <img src="{{ asset('assets/img/LogoAzwa.png') }}" alt="Brand" class="w-[200px] h-auto" />
                 </div>

@@ -41,6 +41,6 @@ Route::get('/kontak',[ContactController::class, 'index'])->name('contact.index')
 
 //test backend
 Route::get('/test', function () {
-    return view('test');
+    return view('pages.test');
 });
 require __DIR__.'/auth.php';
