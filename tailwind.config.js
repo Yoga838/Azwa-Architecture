@@ -95,6 +95,7 @@ export default {
                         1: "#c29844",
                         2: "#e3ae43",
                     },
+                    table: "#A8A49B",
                 },
             },
             fontSize: {
