@@ -1,24 +1,6 @@
-// let valueDisplays = document.querySelectorAll(".num");
-// let interval = 5000;
-
-// // console.log(valueDisplays);
-
-// valueDisplays.forEach((valueDisplays) => {
-//     let startValue = 0;
-//     let endValue = parseInt(valueDisplays.getAttribute("data-val"));
-//     let duration = Math.floor(interval / endValue);
-//     let counter = setInterval(function () {
-//         startValue += 1;
-//         valueDisplays.textContent = startValue;
-//         if (startValue == endValue) {
-//             clearInterval(counter);
-//         }
-//     }, duration);
-// });
-
 let valueDisplays = document.querySelectorAll(".num");
 let interval = 5000;
-let hasAnimated = false; // Flag untuk mencegah animasi berjalan lebih dari sekali
+let hasAnimated = false;
 
 function isInViewport(element) {
     const rect = element.getBoundingClientRect();
@@ -33,11 +15,11 @@ function isInViewport(element) {
 }
 
 function animateCounters() {
-    if (hasAnimated) return; // Cegah animasi berjalan lagi
-    const section = document.querySelector("[data-aos]"); // Pastikan elemen dengan AOS
+    if (hasAnimated) return;
+    const section = document.querySelector("[data-aos]");
 
     if (isInViewport(section)) {
-        hasAnimated = true; // Tandai bahwa animasi sudah berjalan
+        hasAnimated = true;
 
         valueDisplays.forEach((valueDisplay) => {
             let startValue = 0;
@@ -54,5 +36,4 @@ function animateCounters() {
     }
 }
 
-// Jalankan fungsi animateCounters ketika scroll
 window.addEventListener("scroll", animateCounters);

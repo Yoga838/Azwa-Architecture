@@ -57,9 +57,9 @@
     </section>
     <section class="relative w-full h-[600px]">
         <div class="w-full h-full">
-            <img src="{{ asset('assets/img/Enscape.png') }}" class="w-full h-full object-cover" />
+            <img src="{{ asset('assets/img/Enscape.png') }}" class="object-cover w-full h-full" />
         </div>
-        <div class="absolute inset-0 bg-landing-black-2 bg-opacity-50"></div>
+        <div class="absolute inset-0 bg-opacity-50 bg-landing-black-2"></div>
         <div class="absolute inset-0 flex items-center justify-center">
             <div>
                 <div class="flex justify-center items-center space-x-8" data-aos="fade-up" data-aos-duration="1000">
