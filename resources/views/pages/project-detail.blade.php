@@ -1,41 +1,47 @@
 @extends("landing")
 
 @section('content')
-    <div class="mt-20 mx-20">
+    <div class="mt-20 md:mx-20 mx-10">
         <div class="py-30">
             <div class="w-full h-full mb-20">
+
+                {{-- Line Horizontal --}}
                 <div class="h-1 w-full bg-theme2"></div>
-                <div class="flex flex-row">
-                    <div class="w-1/3 p-5">
+                <div class="flex md:flex-row flex-col">
+                    <div class="md:w-1/3 w-full md:p-5 p-3 flex md:flex-col flex-row md:justify-start justify-between">
                         <div class="mb-3">
-                            <p class="text-xl font-bold">Tahun :</p>
-                            <p>202x</p>
+                            <p class="md:text-xl text-lg font-bold">Tahun :</p>
+                            <p class="text-base">202x</p>
                         </div>
                         <div>
-                            <p class="text-xl font-bold">Kategori :</p>
-                            <p>(Tidak dikategorikan)</p>
+                            <p class="md:text-xl text-lg font-bold">Kategori :</p>
+                            <p class="text-base">(Tidak dikategorikan)</p>
                         </div>
                     </div>
-                    <div class="h-auto w-1 bg-theme2"></div>
-                    <div class="w-2/3 p-5">
+
+                    {{-- Line Vertical --}}
+                    <div class="h-auto w-1 bg-theme2 sm:hidden md:block"></div>
+                    <div class="h-1 w-auto bg-theme2 sm:block md:hidden"></div>
+
+                    <div class="md:w-2/3 w-full md:p-5 p-3">
                         <h1 class="text-xl font-bold mb-5">INDUSTRIAL</h1>
                         <div>
                             <div class="mb-4">
                                 <img src="{{ asset('assets/img/Enscape.png') }}" class="w-full h-full" />
                             </div>
-                            <div class="columns-4 mb-8">
+                            <div class="columns-4 md:mb-8 mb-3">
                                 <img src="{{ asset('assets/img/Enscape.png') }}" class="w-full h-full" />
                                 <img src="{{ asset('assets/img/Enscape.png') }}" class="w-full h-full" />
                                 <img src="{{ asset('assets/img/Enscape.png') }}" class="w-full h-full" />
                                 <img src="{{ asset('assets/img/Enscape.png') }}" class="w-full h-full" />
                             </div>
-                            <div class="flex flex-row space-x-10">
-                                <div>
+                            <div class="flex md:flex-row flex-col md:space-x-10 space-x-0">
+                                <div class="flex md:flex-col flex-row md:justify-normal justify-between md:mb-0 mb-3">
                                     <div>
                                         <p class="text-lg font-bold">Area</p>
                                         <p>XXX sqm</p>
                                     </div>
-                                    <div class="my-3">
+                                    <div class="md:my-3 my-0">
                                         <p class="text-lg font-bold">Tipe</p>
                                         <p>(Tipe)</p>
                                     </div>
@@ -44,7 +50,7 @@
                                         <p>(Kontraktor)</p>
                                     </div>
                                 </div>
-                                <div>
+                                <div class="text-justify">
                                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt illum quasi officia autem temporibus recusandae vel beatae omnis, perferendis odio pariatur doloremque. Ipsa earum illum perspiciatis atque ab sed maiores possimus repudiandae aliquam placeat beatae asperiores sapiente officia, pariatur aliquid aut omnis debitis. Minima, aut, voluptas veritatis similique minus dolorum eveniet impedit hic assumenda consequatur porro voluptatibus fugiat explicabo voluptatem veniam nostrum distinctio! Laudantium blanditiis voluptates accusantium unde eligendi quidem non numquam. Ab porro nisi totam quae odio? Corporis nam laudantium quae obcaecati nemo! Aliquam unde accusantium reprehenderit ducimus suscipit consequuntur voluptate, at saepe ullam porro deleniti, commodi placeat maiores.</p>
                                 </div>
                             </div>
@@ -56,13 +62,13 @@
                 <div>
                     <h1 class="text-2xl font-bold mb-5">Portofolio Relevan</h1>
                 </div>
-                <div class="flex space-x-5">
+                <div class="flex md:flex-row flex-col md:space-x-5 space-x-0">
                     @foreach ( $images as $image )
                         <div class="relative w-full h-full mb-4 group">
-                            <div class="rounded-2xl h-65 flex justify-center items-center overflow-hidden">
-                                <img src="{{ asset('assets/img/porto/' . basename($image)) }}" class="w-1/2 lg:w-full md:w-3/4 sm:w-1/2 h-full object-cover rounded-2xl" />
+                            <div class="rounded-2xl md:h-65 h-45">
+                                <img src="{{ asset('assets/img/porto/' . basename($image)) }}" class="w-full h-full object-cover rounded-2xl" />
                             </div>
-                            <div class="p-4 absolute inset-0 bg-white bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <div class="rounded-2xl p-4 absolute inset-0 bg-white bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                 <span class="text-theme3">
                                     <div class="w-full h-full transform translate-y-5 group-hover:translate-y-0 transition-transform duration-300">
                                         <p class="lg:text-2xl text-xl">Arsitektur</p>
@@ -103,7 +109,7 @@
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
-            <div class="flex justify-center mt-2 lg:visible md:invisible sm:invisible invisible">
+            <div class="flex justify-center mt-2">
                 <div class="border bg-landing-brown-1 px-8 py-2 rounded-full">
                     <div class="flex items-center gap-2">
                         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 50 50">
