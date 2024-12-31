@@ -9,10 +9,11 @@ use App\Http\Controllers\Pages\CareerController;
 use App\Http\Controllers\Pages\ContactController;
 use App\Http\Controllers\Pages\ServiceController;
 use App\Http\Controllers\Pages\ProjectsController;
+use App\Http\Controllers\Pages\ProjectDetailController;
+use App\Http\Controllers\Dashboard\PortofolioController;
 use App\Http\Controllers\Pages\ServicePerizinanController;
 use App\Http\Controllers\Pages\ServiceKontraktorController;
 use App\Http\Controllers\Auth\AuthenticatedSessionController;
-use App\Http\Controllers\Dashboard\PortofolioController;
 
 Route::post('/logout', [AuthenticatedSessionController::class, 'destroy'])->name('logout');
 
@@ -31,6 +32,7 @@ Route::get('/', function () {
 })->name("home.index");
 Route::get('/tentang-kami',[AboutController::class, 'index'])->name('about.index');
 Route::get('/portofolio',[ProjectsController::class, 'index'])->name('project.index');
+Route::get('/portofolio/Detail',[ProjectDetailController::class, 'index'])->name('project-detail.index');
 Route::prefix('layanan')->name('service.')->group(function () {
     Route::get('/desain', [ServiceController::class, 'index'])->name('desain');
     Route::get('/kontraktor', [ServiceKontraktorController::class, 'index'])->name('kontraktor');

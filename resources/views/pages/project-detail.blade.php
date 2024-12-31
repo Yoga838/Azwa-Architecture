@@ -1,0 +1,162 @@
+@extends("landing")
+
+@section('content')
+    <div class="mt-20 mx-20">
+        <div class="py-30">
+            <div class="w-full h-full mb-20">
+                <div class="h-1 w-full bg-theme2"></div>
+                <div class="flex flex-row">
+                    <div class="w-1/3 p-5">
+                        <div class="mb-3">
+                            <p class="text-xl font-bold">Tahun :</p>
+                            <p>202x</p>
+                        </div>
+                        <div>
+                            <p class="text-xl font-bold">Kategori :</p>
+                            <p>(Tidak dikategorikan)</p>
+                        </div>
+                    </div>
+                    <div class="h-auto w-1 bg-theme2"></div>
+                    <div class="w-2/3 p-5">
+                        <h1 class="text-xl font-bold mb-5">INDUSTRIAL</h1>
+                        <div>
+                            <div class="mb-4">
+                                <img src="{{ asset('assets/img/Enscape.png') }}" class="w-full h-full" />
+                            </div>
+                            <div class="columns-4 mb-8">
+                                <img src="{{ asset('assets/img/Enscape.png') }}" class="w-full h-full" />
+                                <img src="{{ asset('assets/img/Enscape.png') }}" class="w-full h-full" />
+                                <img src="{{ asset('assets/img/Enscape.png') }}" class="w-full h-full" />
+                                <img src="{{ asset('assets/img/Enscape.png') }}" class="w-full h-full" />
+                            </div>
+                            <div class="flex flex-row space-x-10">
+                                <div>
+                                    <div>
+                                        <p class="text-lg font-bold">Area</p>
+                                        <p>XXX sqm</p>
+                                    </div>
+                                    <div class="my-3">
+                                        <p class="text-lg font-bold">Tipe</p>
+                                        <p>(Tipe)</p>
+                                    </div>
+                                    <div>
+                                        <p class="text-lg font-bold">Kontraktor</p>
+                                        <p>(Kontraktor)</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt illum quasi officia autem temporibus recusandae vel beatae omnis, perferendis odio pariatur doloremque. Ipsa earum illum perspiciatis atque ab sed maiores possimus repudiandae aliquam placeat beatae asperiores sapiente officia, pariatur aliquid aut omnis debitis. Minima, aut, voluptas veritatis similique minus dolorum eveniet impedit hic assumenda consequatur porro voluptatibus fugiat explicabo voluptatem veniam nostrum distinctio! Laudantium blanditiis voluptates accusantium unde eligendi quidem non numquam. Ab porro nisi totam quae odio? Corporis nam laudantium quae obcaecati nemo! Aliquam unde accusantium reprehenderit ducimus suscipit consequuntur voluptate, at saepe ullam porro deleniti, commodi placeat maiores.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h1 class="text-2xl font-bold mb-5">Portofolio Relevan</h1>
+                </div>
+                <div class="flex space-x-5">
+                    @foreach ( $images as $image )
+                        <div class="relative w-full h-full mb-4 group">
+                            <div class="rounded-2xl h-65 flex justify-center items-center overflow-hidden">
+                                <img src="{{ asset('assets/img/porto/' . basename($image)) }}" class="w-1/2 lg:w-full md:w-3/4 sm:w-1/2 h-full object-cover rounded-2xl" />
+                            </div>
+                            <div class="p-4 absolute inset-0 bg-white bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <span class="text-theme3">
+                                    <div class="w-full h-full transform translate-y-5 group-hover:translate-y-0 transition-transform duration-300">
+                                        <p class="lg:text-2xl text-xl">Arsitektur</p>
+                                        <div class="absolute inset-0 flex justify-center items-center w-full h-full">
+                                            <span>
+                                                <p class="mb-2 lg:text-3xl md:text-2xl text-xl font-bold">Mrs. W House</p>
+                                                <div class="">
+                                                    <span class="flex items-center space-x-2 mb-2">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="currentColor" d="M12 11.5A2.5 2.5 0 0 1 9.5 9A2.5 2.5 0 0 1 12 6.5A2.5 2.5 0 0 1 14.5 9a2.5 2.5 0 0 1-2.5 2.5M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7"/></svg>
+                                                        <p class="lg:text-2xl text-xl">Azwa</p>
+                                                    </span>
+                                                    <span class="flex items-center space-x-2">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 100 100"><path fill="currentColor" d="M76.647 30.353a2 2 0 0 1-2-2v-3h-3a2 2 0 0 1 0-4h5a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2m-13.659-5h-8.659a2 2 0 0 1 0-4h8.659a2 2 0 0 1 0 4m-17.318 0h-8.659a2 2 0 0 1 0-4h8.659a2 2 0 0 1 0 4m-22.317 5a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h5a2 2 0 0 1 0 4h-3v3a2 2 0 0 1-2 2m0 34.635a2 2 0 0 1-2-2v-8.659a2 2 0 0 1 4 0v8.659a2 2 0 0 1-2 2m0-17.318a2 2 0 0 1-2-2v-8.659a2 2 0 0 1 4 0v8.659a2 2 0 0 1-2 2m5 30.977h-5a2 2 0 0 1-2-2v-5a2 2 0 0 1 4 0v3h3a2 2 0 0 1 0 4m34.635 0h-8.659a2 2 0 0 1 0-4h8.659a2 2 0 0 1 0 4m-17.318 0h-8.659a2 2 0 0 1 0-4h8.659a2 2 0 0 1 0 4m30.977 0h-5a2 2 0 0 1 0-4h3v-3a2 2 0 0 1 4 0v5a2 2 0 0 1-2 2m0-13.659a2 2 0 0 1-2-2v-8.659a2 2 0 0 1 4 0v8.659a2 2 0 0 1-2 2m0-17.318a2 2 0 0 1-2-2v-8.659a2 2 0 0 1 4 0v8.659a2 2 0 0 1-2 2"/><path fill="currentColor" d="M90.216 92.216H9.784a2 2 0 0 1-2-2V9.784a2 2 0 0 1 2-2h80.432a2 2 0 0 1 2 2v80.432a2 2 0 0 1-2 2m-78.432-4h76.432V11.784H11.784z"/></svg>
+                                                        <p class="lg:text-2xl text-xl">Azwa</p>
+                                                    </span>
+                                                </div>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </span>
+                            </div>
+                        </div>
+                    @endforeach
+                </div>
+            </div>
+            <div class="w-full mt-15 mb-10">
+                <div class="h-1 w-full bg-theme2"></div>
+            </div>
+            <div class="swiper">
+                <div class="swiper-wrapper mb-15">
+                    @foreach ( $allImages as $image )
+                        <div class="swiper-slide">
+                            <div class="rounded-2xl w-50 h-50 flex justify-center items-center overflow-hidden">
+                                <img src="{{ asset('assets/img/porto/' . basename($image)) }}" alt="Slide" class="w-full h-full object-cover rounded-2xl">
+                            </div>
+                        </div>
+                    @endforeach
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class="flex justify-center mt-2 lg:visible md:invisible sm:invisible invisible">
+                <div class="border bg-landing-brown-1 px-8 py-2 rounded-full">
+                    <div class="flex items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 50 50">
+                            <path d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z"></path>
+                        </svg>
+                        <h1>Follow us!</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const swiper = new Swiper('.swiper', {
+                // Aktifkan autoplay
+                centeredSlides: true,
+                spaceBetween: 60, // Jarak antar gambar
+                autoplay: {
+                    delay: 3000, // Slide otomatis setiap 3 detik
+                    disableOnInteraction: false,
+                },
+                // Aktifkan pagination
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true, // Pagination dapat diklik
+                },
+                loop: true, // Slider akan loop terus menerus
+                breakpoints: {
+                    1920: {
+                        slidesPerView: 6,
+                        spaceBetween: 40,
+                    },
+                    1028: {
+                        slidesPerView: 6,
+                        spaceBetween: 40,
+                    },
+                    990: {
+                        slidesPerView: 4,
+                        spaceBetween: 40,
+                    },
+                    768: {
+                        slidesPerView: 4,
+                        spaceBetween: 40,
+                    },
+                    640: {
+                        slidePerView: 2,
+                        spaceBetween: 40
+                    }
+                },
+            });
+        });
+    </script>
+
+@endsection

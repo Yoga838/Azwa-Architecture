@@ -1,27 +1,48 @@
 @extends("landing")
 
 @section("content")
-    <section class="mt-20 mx-20">
+    <section class="mt-20 lg:mx-20 md:mx-20 mx-10">
         <div class="pt-30">
-            <div class="flex flex-row items-center space-x-8">
-                <div class="">
-                    <h1 class="font-bold text-[48px] text-landing-brown-3">Portofolio Kami</h1>
+            <div class="flex flex-wrap">
+                <div class="w-full md:w-1/3">
+                    <h1 class="lg:text-5xl md:text-4xl text-3xl font-bold text-theme2">Portofolio Kami</h1>
                 </div>
-                <div class="flex-grow h-[2px] bg-landing-brown-3"></div>
+                <div class="w-full md:w-8/12 flex justify-center items-center">
+                    <div class="h-1 w-full bg-theme2 rounded-lg"></div>
+                </div>
             </div>
         </div>
-        <div class="py-30">
-            <div class="columns-1 sm:columns-2 lg:columns-2 gap-4">
+        <div class="lg:py-30 md:py-20 py-15">
+            <div class="lg:columns-2 md:columns-2 columns-1 gap-4">
                 @forelse ($images as $image)
-                    <div class="relative w-full h-full mb-4 group" data-aos="fade-up" data-aos-delay="{{ $loop->index * 200 }}">
-                        <img src="{{ asset('assets/img/porto/' . $image->getFilename()) }}" alt="{{ $image->getFilename() }}" class="w-full h-full object-cover" />
-
-                        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            <span class="text-white text-xl font-bold transform translate-y-5 group-hover:translate-y-0 transition-transform duration-300">
-                                Azwa
-                            </span>
+                    <a href="{{ route('project-detail.index') }}" data-aos="fade-up" data-aos-delay="{{ $loop->index * 200 }}">
+                        <div class="relative w-full h-full mb-4 group">
+                            <img src="{{ asset('assets/img/porto/' . $image->getFilename()) }}" alt="{{ $image->getFilename() }}" class="w-full h-full object-cover" />
+    
+                            <div class="p-4 absolute inset-0 bg-white bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <span class="text-theme3">
+                                    <div class="w-full h-full transform translate-y-5 group-hover:translate-y-0 transition-transform duration-300">
+                                        <p class="lg:text-2xl text-xl">Arsitektur</p>
+                                        <div class="absolute inset-0 flex justify-center items-center w-full h-full">
+                                            <span>
+                                                <p class="mb-2 lg:text-3xl md:text-2xl text-xl font-bold">Mrs. W House</p>
+                                                <div class="">
+                                                    <span class="flex items-center space-x-2 mb-2">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="currentColor" d="M12 11.5A2.5 2.5 0 0 1 9.5 9A2.5 2.5 0 0 1 12 6.5A2.5 2.5 0 0 1 14.5 9a2.5 2.5 0 0 1-2.5 2.5M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7"/></svg>
+                                                        <p class="lg:text-2xl text-xl">Azwa</p>
+                                                    </span>
+                                                    <span class="flex items-center space-x-2">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 100 100"><path fill="currentColor" d="M76.647 30.353a2 2 0 0 1-2-2v-3h-3a2 2 0 0 1 0-4h5a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2m-13.659-5h-8.659a2 2 0 0 1 0-4h8.659a2 2 0 0 1 0 4m-17.318 0h-8.659a2 2 0 0 1 0-4h8.659a2 2 0 0 1 0 4m-22.317 5a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h5a2 2 0 0 1 0 4h-3v3a2 2 0 0 1-2 2m0 34.635a2 2 0 0 1-2-2v-8.659a2 2 0 0 1 4 0v8.659a2 2 0 0 1-2 2m0-17.318a2 2 0 0 1-2-2v-8.659a2 2 0 0 1 4 0v8.659a2 2 0 0 1-2 2m5 30.977h-5a2 2 0 0 1-2-2v-5a2 2 0 0 1 4 0v3h3a2 2 0 0 1 0 4m34.635 0h-8.659a2 2 0 0 1 0-4h8.659a2 2 0 0 1 0 4m-17.318 0h-8.659a2 2 0 0 1 0-4h8.659a2 2 0 0 1 0 4m30.977 0h-5a2 2 0 0 1 0-4h3v-3a2 2 0 0 1 4 0v5a2 2 0 0 1-2 2m0-13.659a2 2 0 0 1-2-2v-8.659a2 2 0 0 1 4 0v8.659a2 2 0 0 1-2 2m0-17.318a2 2 0 0 1-2-2v-8.659a2 2 0 0 1 4 0v8.659a2 2 0 0 1-2 2"/><path fill="currentColor" d="M90.216 92.216H9.784a2 2 0 0 1-2-2V9.784a2 2 0 0 1 2-2h80.432a2 2 0 0 1 2 2v80.432a2 2 0 0 1-2 2m-78.432-4h76.432V11.784H11.784z"/></svg>
+                                                        <p class="lg:text-2xl text-xl">Azwa</p>
+                                                    </span>
+                                                </div>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </span>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 @empty
                     <p>No images found in the directory.</p>
                 @endforelse
@@ -41,12 +62,14 @@
         <div class="absolute inset-0 bg-landing-black-2 bg-opacity-50"></div>
         <div class="absolute inset-0 flex items-center justify-center">
             <div>
-                <div class="flex justify-center items-center space-x-8">
-                    <h1 class="text-white text-[48px]">Bersama</h1>
-                    <img src="{{ asset('assets/img/LogoAzwa.png') }}" alt="Brand" class="w-[200px] h-auto" />
+                <div class="flex justify-center items-center space-x-8" data-aos="fade-up" data-aos-duration="1000">
+                    <h1 class="text-white lg:text-5xl md:text-4xl text-3xl">Bersama</h1>
+                    <img src="{{ asset('assets/img/LogoAzwa.png') }}" alt="Brand" class="w-[30%] md:w-[20%] h-auto" />
                 </div>
-                <div class="mt-[86px] w-[800px] text-center">
-                    <h1 class="text-white text-[48px] font-bold">Wujudkan Rumah Impian Anda Sekarang Juga !</h1>
+                <div class="lg:mt-20 mt-16 w-full flex justify-center text-center" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="lg:w-[60%] w-[75%]">
+                        <h1 class="text-white lg:text-5xl md:text-4xl text-3xl font-bold">Wujudkan Rumah Impian Anda Sekarang Juga !</h1>
+                    </div>
                 </div>
             </div>
         </div>
