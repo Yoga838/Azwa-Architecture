@@ -5,7 +5,7 @@
         <div class="pt-30">
             <div class="flex flex-wrap">
                 <div class="w-full md:w-1/3">
-                    <h1 class="lg:text-5xl md:text-4xl text-3xl font-bold text-theme2">Portofolio Kami</h1>
+                    <h1 class="lg:text-5xl md:text-4xl text-3xl font-bold md:text-start text-center text-theme2">Portofolio Kami</h1>
                 </div>
                 <div class="w-full md:w-8/12 flex justify-center items-center">
                     <div class="h-1 w-full bg-theme2 rounded-lg"></div>
