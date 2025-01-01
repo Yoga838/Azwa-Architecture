@@ -10,12 +10,12 @@
                 <div class="flex md:flex-row flex-col">
                     <div class="md:w-1/3 w-full md:p-5 p-3 flex md:flex-col flex-row md:justify-start justify-between">
                         <div class="mb-3">
-                            <p class="md:text-xl text-lg font-bold">Tahun :</p>
-                            <p class="text-base">202x</p>
+                            <p class="md:text-xl text-lg font-bold text-theme2">Tahun :</p>
+                            <p class="text-base text-theme2 ">202x</p>
                         </div>
                         <div>
-                            <p class="md:text-xl text-lg font-bold">Kategori :</p>
-                            <p class="text-base">(Tidak dikategorikan)</p>
+                            <p class="md:text-xl text-lg font-bold text-theme2">Kategori :</p>
+                            <p class="text-base text-theme2">(Tidak dikategorikan)</p>
                         </div>
                     </div>
 
@@ -24,7 +24,7 @@
                     <div class="h-1 w-auto bg-theme2 sm:block md:hidden"></div>
 
                     <div class="md:w-2/3 w-full md:p-5 p-3">
-                        <h1 class="text-xl font-bold mb-5">INDUSTRIAL</h1>
+                        <h1 class="text-xl font-bold mb-5 text-theme2">INDUSTRIAL</h1>
                         <div>
                             <div class="mb-4">
                                 <img src="{{ asset('assets/img/Enscape.png') }}" class="w-full h-full" />
@@ -38,20 +38,20 @@
                             <div class="flex md:flex-row flex-col md:space-x-10 space-x-0">
                                 <div class="flex md:flex-col flex-row md:justify-normal justify-between md:mb-0 mb-3">
                                     <div>
-                                        <p class="text-lg font-bold">Area</p>
-                                        <p>XXX sqm</p>
+                                        <p class="text-lg font-bold text-theme2">Area</p>
+                                        <p class="text-theme2">XXX sqm</p>
                                     </div>
                                     <div class="md:my-3 my-0">
-                                        <p class="text-lg font-bold">Tipe</p>
-                                        <p>(Tipe)</p>
+                                        <p class="text-lg font-bold text-theme2">Tipe</p>
+                                        <p class="text-theme2">(Tipe)</p>
                                     </div>
                                     <div>
-                                        <p class="text-lg font-bold">Kontraktor</p>
-                                        <p>(Kontraktor)</p>
+                                        <p class="text-lg font-bold text-theme2">Kontraktor</p>
+                                        <p class="text-theme2">(Kontraktor)</p>
                                     </div>
                                 </div>
                                 <div class="text-justify">
-                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt illum quasi officia autem temporibus recusandae vel beatae omnis, perferendis odio pariatur doloremque. Ipsa earum illum perspiciatis atque ab sed maiores possimus repudiandae aliquam placeat beatae asperiores sapiente officia, pariatur aliquid aut omnis debitis. Minima, aut, voluptas veritatis similique minus dolorum eveniet impedit hic assumenda consequatur porro voluptatibus fugiat explicabo voluptatem veniam nostrum distinctio! Laudantium blanditiis voluptates accusantium unde eligendi quidem non numquam. Ab porro nisi totam quae odio? Corporis nam laudantium quae obcaecati nemo! Aliquam unde accusantium reprehenderit ducimus suscipit consequuntur voluptate, at saepe ullam porro deleniti, commodi placeat maiores.</p>
+                                    <p class="text-theme2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt illum quasi officia autem temporibus recusandae vel beatae omnis, perferendis odio pariatur doloremque. Ipsa earum illum perspiciatis atque ab sed maiores possimus repudiandae aliquam placeat beatae asperiores sapiente officia, pariatur aliquid aut omnis debitis. Minima, aut, voluptas veritatis similique minus dolorum eveniet impedit hic assumenda consequatur porro voluptatibus fugiat explicabo voluptatem veniam nostrum distinctio! Laudantium blanditiis voluptates accusantium unde eligendi quidem non numquam. Ab porro nisi totam quae odio? Corporis nam laudantium quae obcaecati nemo! Aliquam unde accusantium reprehenderit ducimus suscipit consequuntur voluptate, at saepe ullam porro deleniti, commodi placeat maiores.</p>
                                 </div>
                             </div>
                         </div>
@@ -60,7 +60,7 @@
             </div>
             <div>
                 <div>
-                    <h1 class="text-2xl font-bold mb-5">Portofolio Relevan</h1>
+                    <h1 class="text-2xl font-bold mb-5 text-theme2">Portofolio Relevan</h1>
                 </div>
                 <div class="flex md:flex-row flex-col md:space-x-5 space-x-0">
                     @foreach ( $images as $image )
@@ -101,7 +101,7 @@
                 <div class="swiper-wrapper mb-15">
                     @foreach ( $allImages as $image )
                         <div class="swiper-slide">
-                            <div class="rounded-2xl w-50 h-50 flex justify-center items-center overflow-hidden">
+                            <div class="rounded-2xl md:w-50 w-full h-50 flex justify-center items-center overflow-hidden">
                                 <img src="{{ asset('assets/img/porto/' . basename($image)) }}" alt="Slide" class="w-full h-full object-cover rounded-2xl">
                             </div>
                         </div>
@@ -126,39 +126,40 @@
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const swiper = new Swiper('.swiper', {
-                // Aktifkan autoplay
                 centeredSlides: true,
-                spaceBetween: 60, // Jarak antar gambar
+                spaceBetween: 60,
                 autoplay: {
-                    delay: 3000, // Slide otomatis setiap 3 detik
+                    delay: 3000,
                     disableOnInteraction: false,
                 },
-                // Aktifkan pagination
+
                 pagination: {
                     el: '.swiper-pagination',
-                    clickable: true, // Pagination dapat diklik
+                    clickable: true,
                 },
-                loop: true, // Slider akan loop terus menerus
+
+                loop: true,
+
                 breakpoints: {
-                    1920: {
+                    // Large screens (desktop)
+                    1200: {
                         slidesPerView: 6,
                         spaceBetween: 40,
                     },
-                    1028: {
-                        slidesPerView: 6,
-                        spaceBetween: 40,
-                    },
-                    990: {
+                    // Medium screens (large tablets and small desktops)
+                    1024: {
                         slidesPerView: 4,
-                        spaceBetween: 40,
+                        spaceBetween: 30,
                     },
+                    // Small screens (tablets)
                     768: {
-                        slidesPerView: 4,
-                        spaceBetween: 40,
+                        slidesPerView: 3,
+                        spaceBetween: 20,
                     },
-                    640: {
-                        slidePerView: 2,
-                        spaceBetween: 40
+                    // Extra small screens (mobile phones)
+                    576: {
+                        slidesPerView: 1,
+                        spaceBetween: 10,
                     }
                 },
             });
