@@ -357,13 +357,10 @@
     </div>
 
     {{-- Flow Step --}}
-    <div class="w-full h-screen mt-10 relative overflow-x-auto overflow-y-hidden">
-        <div class="absolute z-[-1]">
-            <img src="{{asset('assets/img/service/desain/bg-alurrencana.png')}}" alt="" class="w-screen object-cover h-screen">
-            <div class="absolute inset-0 bg-landing-black-3 opacity-65"></div>
-        </div>
+    <div class="w-screen h-screen mt-10 overflow-x-auto overflow-y-hidden bg-cover bg-center relative" style="background-image:url('{{asset('assets/img/service/desain/bg-alurrencana.png')}}')">
+        <div class="absolute w-full h-full bg-black-2 opacity-65" style="min-width: 1024px;"></div>
         {{-- Flowchart Alur --}}
-        <div class="px-10 lg:px-36 pt-10 min-w-[1024px]">
+        <div class="px-10 lg:px-36 pt-10 min-w-[1024px] relative z-10">
             <div class="flex items-center">
                 <h1 class="text-white text-2xl lg:text-5xl font-bold me-5">Alur Kerja Perencanaan</h1>
                 <div class="flex-1">
@@ -379,10 +376,12 @@
                     </div>
                     <p class="text-white mt-4">Konsultasi Gratis<br>& Pemilihan Paket</p>
                     {{-- nomor --}}
-                    <div class="flex justify-center items-center mt-3">
+                    <div class="flex justify-center items-center mt-3 relative">
                         <div class="w-8 h-8 bg-white rounded-full flex justify-center items-center">
                             <span class="text-black font-bold text-sm">1</span>
                         </div>
+                        {{-- garis horizontal --}}
+                        <div class="absolute w-full z-[-1] h-1 bg-white top-1/2 left-1/2 transform translate-y-[-50%]"></div>
                     </div>
                 </div>
                 <div class="text-center">
@@ -392,10 +391,12 @@
                     </div>
                     <p class="text-white mt-4">Pembayaran<br>Uang Muka</p>
                     {{-- nomor --}}
-                    <div class="flex justify-center items-center mt-3">
+                    <div class="flex justify-center items-center mt-3 relative">
                         <div class="w-8 h-8 bg-yellow-500 rounded-full flex justify-center items-center">
                             <span class="text-black font-bold text-sm">2</span>
                         </div>
+                        {{-- garis horizontal --}}
+                        <div class="absolute w-full z-[-1] h-1 bg-white top-1/2 left-1/2 transform translate-y-[-50%]"></div>
                     </div>
                 </div>
                 <div class="text-center">
@@ -405,10 +406,12 @@
                     </div>
                     <p class="text-white mt-4">Diskusi dan<br>pengerjaan denah</p>
                     {{-- nomor --}}
-                    <div class="flex justify-center items-center mt-3">
+                    <div class="flex justify-center items-center mt-3 relative">
                         <div class="w-8 h-8 bg-white rounded-full flex justify-center items-center">
                             <span class="text-black font-bold text-sm">3</span>
                         </div>
+                        {{-- garis horizontal --}}
+                        <div class="absolute w-full z-[-1] h-1 bg-white top-1/2 left-1/2 transform translate-y-[-50%]"></div>
                     </div>
                 </div>
                 <div class="text-center">
@@ -418,10 +421,12 @@
                     </div>
                     <p class="text-white mt-4">Pembayaran<br>Tahap Kedua</p>
                     {{-- nomor --}}
-                    <div class="flex justify-center items-center mt-3">
+                    <div class="flex justify-center items-center mt-3 relative">
                         <div class="w-8 h-8 bg-yellow-500 rounded-full flex justify-center items-center">
                             <span class="text-black font-bold text-sm">4</span>
                         </div>
+                        {{-- garis horizontal --}}
+                        <div class="absolute w-full z-[-1] h-1 bg-white top-1/2 left-1/2 transform translate-y-[-50%]"></div>
                     </div>
                 </div>
                 <div class="text-center">
@@ -431,7 +436,7 @@
                     </div>
                     <p class="text-white mt-4">Pengerjaan<br>desain 3D</p>
                     {{-- nomor --}}
-                    <div class="flex justify-center items-center mt-3">
+                    <div class="flex justify-center items-center mt-3 relative">
                         <div class="w-8 h-8 bg-white rounded-full flex justify-center items-center">
                             <span class="text-black font-bold text-sm">5</span>
                         </div>
@@ -443,10 +448,12 @@
                 <div class="text-center"></div>
                 <div class="text-center">
                     {{-- nomor --}}
-                    <div class="flex justify-center items-center mb-3">
+                    <div class="flex justify-center items-center mb-3 relative">
                         <div class="w-8 h-8 bg-yellow-500 rounded-full flex justify-center items-center">
                             <span class="text-black font-bold text-sm">8</span>
                         </div>
+                        {{-- garis horizontal --}}
+                        <div class="absolute w-full z-[-1] h-1 bg-white top-1/2 left-1/2 transform translate-y-[-50%]"></div>
                     </div>
                     <div class="w-20 h-20 bg-yellow-500 rounded-full mx-auto flex items-center justify-center">
                         {{-- icon --}}
@@ -456,10 +463,12 @@
                 </div>
                 <div class="text-center">
                     {{-- nomor --}}
-                    <div class="flex justify-center items-center mb-3">
+                    <div class="flex justify-center items-center mb-3 relative">
                         <div class="w-8 h-8 bg-white rounded-full flex justify-center items-center">
                             <span class="text-black font-bold text-sm">7</span>
                         </div>
+                        {{-- garis horizontal --}}
+                        <div class="absolute w-full z-[-1] h-1 bg-white top-1/2 left-1/2 transform translate-y-[-50%]"></div>
                     </div>
                     <div class="w-20 h-20 bg-white rounded-full mx-auto flex items-center justify-center">
                         {{-- icon --}}
@@ -469,10 +478,12 @@
                 </div>
                 <div class="text-center">
                     {{-- nomor --}}
-                    <div class="flex justify-center items-center mb-3">
+                    <div class="flex justify-center items-center mb-3 relative">
                         <div class="w-8 h-8 bg-yellow-500 rounded-full flex justify-center items-center">
                             <span class="text-black font-bold text-sm">6</span>
                         </div>
+                        {{-- garis horizontal --}}
+                        <div class="absolute w-full z-[-1] h-1 bg-white top-1/2 left-1/2 transform translate-y-[-50%]"></div>
                     </div>
                     <div class="w-20 h-20 bg-yellow-500 rounded-full mx-auto flex items-center justify-center">
                         {{-- icon --}}
@@ -480,7 +491,14 @@
                     </div>
                     <p class="text-white mt-4">Pembayaran<br>Tahap Ketiga</p>
                 </div>
-                <div class="text-center"></div>
+                <div class="text-center">
+                    {{-- nomor --}}
+                    <div class="flex justify-center items-center mb-3 relative">
+                        <div class=""></div>
+                        {{-- garis horizontal --}}
+                        <div class="absolute w-[92px] z-[-1] h-1 bg-white top-[-30px] left-1/2 transform translate-x-[-50%] rotate-90"></div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
