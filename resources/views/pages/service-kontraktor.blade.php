@@ -20,7 +20,7 @@
     <div class="w-full h-full flex justify-center relative">
         <div class="absolute z-[-1] w-full h-[450px] overflow-hidden">
             <div class="absolute inset-0 bg-white opacity-5"></div>
-            <img src="{{asset('assets/img/service/kontraktor/bg1-servicekontraktor.JPG')}}" alt="" class="w-screen object-cover h-full">
+            <img src="{{asset('assets/img/service/kontraktor/bg1-servicekontraktor.jpg')}}" alt="" class="w-screen object-cover h-full">
         </div>
         <div class="py-32">
             {{-- <h1 class="font-bold text-[100px] text-landing-black-2">Services Kontraktor</h1> --}}
@@ -120,7 +120,7 @@
     <div class="mt-50 w-full h-full flex items-center relative">
         <div class="absolute z-[-1] w-full h-[450px] overflow-hidden">
             <div class="absolute inset-0 bg-black opacity-50"></div>
-            <img src="{{asset('assets/img/service/kontraktor/bg2-servicekontraktor.JPG')}}" alt="" class="w-screen object-cover h-full">
+            <img src="{{asset('assets/img/service/kontraktor/bg2-servicekontraktor.jpg')}}" alt="" class="w-screen object-cover h-full">
         </div>
         <div class="py-10 mt-30">
             <h1 class="font-bold text-5xl text-theme1 drop-shadow-2 ml-10">Konstruksi Arsitektural</h1>
@@ -187,7 +187,7 @@
     <div class="mt-50 w-full h-full flex items-center relative">
         <div class="absolute z-[-1] w-full h-[450px] overflow-hidden">
             <div class="absolute inset-0 bg-black opacity-50"></div>
-            <img src="{{asset('assets/img/service/kontraktor/bg3-servicekontraktor.JPG')}}" alt="" class="w-screen object-cover h-full">
+            <img src="{{asset('assets/img/service/kontraktor/bg3-servicekontraktor.jpg')}}" alt="" class="w-screen object-cover h-full">
         </div>
         <div class="py-10 mt-30">
             <h1 class="font-bold text-5xl text-theme1 drop-shadow-2 ml-10">Konstruksi Interior</h1>
@@ -261,17 +261,17 @@
     <div class="swiper-wrapper">
         <div class="swiper-slide">
             <div class="rounded-2xl h-64 flex justify-center items-center overflow-hidden">
-                <img src="{{asset('assets/img/service/kontraktor/slide-framehp3.jpg.jpg')}}" alt="Slide 1" class="w-1/2 lg:w-full md:w-3/4 sm:w-1/2 h-full object-cover rounded-2xl">
+                <img src="{{asset('assets/img/service/kontraktor/slide-framehp3.jpg')}}" alt="Slide 1" class="w-1/2 lg:w-full md:w-3/4 sm:w-1/2 h-full object-cover rounded-2xl">
             </div>
         </div>
         <div class="swiper-slide">
             <div class="rounded-2xl h-64 flex justify-center items-center overflow-hidden">
-                <img src="{{asset('assets/img/service/kontraktor/slide-framehp4.jpg.jpg')}}" alt="Slide 1" class="w-1/2 lg:w-full md:w-3/4 sm:w-1/2 h-full object-cover rounded-2xl">
+                <img src="{{asset('assets/img/service/kontraktor/slide-framehp4.jpg')}}" alt="Slide 1" class="w-1/2 lg:w-full md:w-3/4 sm:w-1/2 h-full object-cover rounded-2xl">
             </div>
         </div>
         <div class="swiper-slide">
             <div class="rounded-2xl h-64 flex justify-center items-center overflow-hidden">
-                <img src="{{asset('assets/img/service/kontraktor/slide-framehp5.jpg.JPG')}}" alt="Slide 1" class="w-1/2 lg:w-full md:w-3/4 sm:w-1/2 h-full object-cover rounded-2xl">
+                <img src="{{asset('assets/img/service/kontraktor/slide-framehp5.jpg')}}" alt="Slide 1" class="w-1/2 lg:w-full md:w-3/4 sm:w-1/2 h-full object-cover rounded-2xl">
             </div>
         </div>
         <div class="swiper-slide">
@@ -286,7 +286,7 @@
         </div>
         <div class="swiper-slide">
             <div class="rounded-2xl h-64 flex justify-center items-center overflow-hidden">
-                <img src="{{asset('assets/img/service/kontraktor/slide-framehp2.jpg.JPG')}}" alt="Slide 1" class="w-1/2 lg:w-full md:w-3/4 sm:w-1/2 h-full object-cover rounded-2xl">
+                <img src="{{asset('assets/img/service/kontraktor/slide-framehp2.jpg')}}" alt="Slide 1" class="w-1/2 lg:w-full md:w-3/4 sm:w-1/2 h-full object-cover rounded-2xl">
             </div>
         </div>
     </div>
