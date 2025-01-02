@@ -26,6 +26,9 @@ export default {
             ...defaultTheme.screens,
         },
         extend: {
+            textDecorationThickness: {
+                thick: '7px',
+              },
             colors: {
                 current: "currentColor",
                 transparent: "transparent",
