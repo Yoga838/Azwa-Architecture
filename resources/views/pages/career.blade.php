@@ -1,5 +1,7 @@
 @extends("landing")
 
+@section('subtitle', 'Karir')
+
 @section("content")
 <div class="container">
     <div class="flex flex-col sm:flex-row bg-#e1dfd4">

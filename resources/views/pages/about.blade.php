@@ -1,5 +1,7 @@
 @extends("landing")
 
+@section('subtitle', 'Tentang Kami')
+
 @section("content")
     <div class="w-full h-screen flex justify-center items-center relative">
         <div class="absolute z-[-1] overflow-hidden">

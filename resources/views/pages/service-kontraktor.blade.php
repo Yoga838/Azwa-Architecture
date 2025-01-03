@@ -1,5 +1,7 @@
 @extends("landing")
 
+@section('subtitle', 'Layanan Kontraktor')
+
 @section("content")
     <style>
         .swiper-wrapper {

@@ -1,5 +1,7 @@
 @extends("landing")
 
+@section('subtitle', 'Kontak')
+
 @section("content")
     <div class="w-screen h-screen flex bg-cover bg-center" style="background-image:url('{{ asset('assets/img/Kontak1.png') }}')">
         <div class=" flex flex-col justify-center items-center w-screen h-screen bg-black bg-opacity-30">

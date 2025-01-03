@@ -1,5 +1,7 @@
 @extends("landing")
 
+@section('subtitle', 'Layanan Perizinan')
+
 @section("content")
 <div class="w-full h-full flex justify-center relative">
     <div class="absolute z-[-1] w-full h-[450px] overflow-hidden">

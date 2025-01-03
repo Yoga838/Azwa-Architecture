@@ -1,5 +1,7 @@
 @extends("landing")
 
+@section('subtitle', 'Portofolio')
+
 @section("content")
     <section class="mt-20 lg:mx-20 md:mx-20 mx-10">
         <div class="pt-30">

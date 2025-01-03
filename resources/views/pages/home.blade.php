@@ -1,5 +1,7 @@
 @extends("landing")
 
+@section('subtitle', 'Home')
+
 @section("content")
 
     <div class="flex flex-col items-center justify-center flex-shrink-0 w-full h-screen">
