@@ -2,7 +2,7 @@
     x-data="{'sidebarToggle': false}"
     class="fixed top-0 z-50 w-screen"
 >
-    <div class="flex items-center justify-between bg-landing-brown-3 py-3 px-[50px] my-5 mx-10 rounded-3xl">
+    <div class="flex items-center justify-between bg-landing-brown-3 py-3 md:px-12 px-8  my-5 md:mx-10 mx-3 rounded-3xl">
         <div class="cursor-pointer">
             <div class="">
                 <Image src="{{ asset('assets/img/LogoAzwa.png') }}" alt="Brand" class="w-[100px] h-auto" />

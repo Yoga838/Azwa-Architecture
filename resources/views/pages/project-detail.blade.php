@@ -1,6 +1,15 @@
 @extends("landing")
 
 @section('content')
+    <style>
+        .swiper-pagination-bullet {
+            background: #5d4e40;
+        }
+        .swiper-pagination-bullet-active {
+            background: #5d4e40 !important;
+        }
+    </style>
+
     <div class="mt-20 md:mx-20 mx-10">
         <div class="py-30">
             <div class="w-full h-full mb-20">
