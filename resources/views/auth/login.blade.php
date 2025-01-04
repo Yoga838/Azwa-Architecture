@@ -44,4 +44,13 @@
             </x-primary-button>
         </div>
     </form>
+    @if (session('error'))
+        <script>
+            Swal.fire({
+                icon: 'error',
+                title: 'Login Failed',
+                text: "{{ session('error') }}",
+            });
+        </script>
+    @endif
 </x-guest-layout>
