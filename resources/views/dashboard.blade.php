@@ -17,7 +17,7 @@
         x-init="
             darkMode = JSON.parse(localStorage.getItem('darkMode'));
             $watch('darkMode', value => localStorage.setItem('darkMode', JSON.stringify(value)))"
-        :class="{'dark text-bodydark bg-boxdark-2': darkMode === true}"
+        :class="{'dark text-bodydark bg-landing-brown-3': darkMode === true}"
     >
 
         @include('components.dashboard.preload')
