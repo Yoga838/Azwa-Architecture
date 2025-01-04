@@ -9,6 +9,10 @@ use Illuminate\Support\Facades\Storage;
 
 class PortofolioController extends Controller
 {
+    public function directViewPortofolio () {
+        return view('admin.portofolio.index-portofolio');
+    }
+    
     public function Store(Request $request){
         // validate input
         // dd($request->all());
