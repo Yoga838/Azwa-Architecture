@@ -62,24 +62,24 @@
         </div>
     </div>
 
-    <div class="flex flex-col items-center justify-center w-full px-10 ps-20 my-15 lg:flex-row">
+    <div class="flex flex-col items-center justify-center w-full px-10 my-15 lg:flex-row">
         <!-- Gambar -->
-        <div class="flex-shrink-0 w-full lg:w-3/6">
+        <div class="flex-shrink-0 w-full lg:w-2/6">
             <img src="{{ asset('assets/img/home/bg-jasa.png') }}" alt="Deskripsi Gambar" class="object-cover w-full h-auto">
         </div>
     
         <!-- Teks -->
         <div class="w-full p-6 text-black lg:w-3/6">
-            <p class="mb-4 text-6xl text-center lg:text-5xl"> <!-- Ukuran font diperbesar -->
+            <p class="mb-4 text-6xl text-center lg:text-5xl">
                 Cari Jasa <strong>Desain Arsitektur dan Interior</strong> Bermutu?
             </p>
-            <h1 class="mb-4 text-4xl text-center lg:text-3xl"> <!-- Ukuran font diperbesar -->
+            <h1 class="mb-4 text-4xl text-center lg:text-3xl">
                 <strong>Azwa Design Studio</strong>
             </h1>
-            <p class="mb-4 text-2xl text-center"> <!-- Ukuran font diperbesar -->
+            <p class="mb-4 text-2xl text-center">
                 Siap mewujudkan keinginan Anda!
             </p>
-            <p class="text-xl text-center lg:text-2xl"> <!-- Ukuran font diperbesar -->
+            <p class="text-xl text-center lg:text-2xl">
                 <strong>Kami memperhitungkan kekuatan struktur serta anggaran</strong> dengan optimal, sehingga menghasilkan bangunan yang <strong>estetik</strong> namun tetap <strong>aman, kokoh, dan sesuai kondisi keuangan Anda.</strong>
             </p>
             <div class="mt-6 text-center">
