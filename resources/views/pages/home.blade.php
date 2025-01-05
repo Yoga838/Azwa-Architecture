@@ -62,28 +62,33 @@
         </div>
     </div>
 
-    <div class="flex flex-col items-center justify-center w-full lg:flex-row">
+    <div class="flex flex-col items-center justify-center w-full px-10 ps-20 my-15 lg:flex-row">
         <!-- Gambar -->
-        <div class="flex-shrink-0 w-full lg:max-w-md">
-            <img src="{{ asset('assets/img/BgHome.png') }}" alt="Deskripsi Gambar" class="object-cover w-full h-auto">
+        <div class="flex-shrink-0 w-full lg:w-3/6">
+            <img src="{{ asset('assets/img/home/bg-jasa.png') }}" alt="Deskripsi Gambar" class="object-cover w-full h-auto">
         </div>
-        
+    
         <!-- Teks -->
-        <div class="w-full p-6 text-black lg:max-w-md">
-            <p class="mb-4 text-2xl text-center lg:text-3xl">
+        <div class="w-full p-6 text-black lg:w-3/6">
+            <p class="mb-4 text-6xl text-center lg:text-5xl"> <!-- Ukuran font diperbesar -->
                 Cari Jasa <strong>Desain Arsitektur dan Interior</strong> Bermutu?
             </p>
-            <h1 class="mb-4 text-xl text-center lg:text-2xl">
+            <h1 class="mb-4 text-4xl text-center lg:text-3xl"> <!-- Ukuran font diperbesar -->
                 <strong>Azwa Design Studio</strong>
             </h1>
-            <p class="mb-4 text-lg text-center">
+            <p class="mb-4 text-2xl text-center"> <!-- Ukuran font diperbesar -->
                 Siap mewujudkan keinginan Anda!
             </p>
-            <p class="text-base text-center lg:text-lg">
+            <p class="text-xl text-center lg:text-2xl"> <!-- Ukuran font diperbesar -->
                 <strong>Kami memperhitungkan kekuatan struktur serta anggaran</strong> dengan optimal, sehingga menghasilkan bangunan yang <strong>estetik</strong> namun tetap <strong>aman, kokoh, dan sesuai kondisi keuangan Anda.</strong>
             </p>
-        </div>
-    </div>    
+            <div class="mt-6 text-center">
+                <a href="#link-ke-halaman-lain" class="inline-block px-20 py-2 mx-2 mt-10 text-xl text-white rounded-3xl bg-theme2">
+                    Lebih Lanjut
+                </a>
+            </div>
+        </div>             
+    </div>
 
     <div class="flex items-center justify-center w-full h-auto px-2 lg:h-screen sm:px-4 md:px-6">
         <div class="relative flex items-center justify-center w-full my-2 mx-15 sm:my-4 md:my-6">
@@ -100,7 +105,7 @@
                 </h1>
 
                 <div class="relative w-full my-5 lg:my-40 md:my-20 sm:my-10">
-                <div class="relative swiper centered-slide-carousel swiper-container ">
+                <div class="relative swiper centered-slide-carousel-1 swiper-container ">
                 <div class="flex justify-center invisible mb-10 lg:visible md:invisible sm:invisible">
                     <div class="flex items-center gap-3 me-3">
                         <div class="px-5 py-5 border rounded-full bg-black-2"></div>
@@ -212,114 +217,140 @@
     </div>
 </div>
 
-<div class="flex flex-col items-center justify-center flex-shrink-0 w-full h-screen">
-    <div class="relative flex w-full h-full bg-center bg-cover" style="background-image: url('{{ asset('assets/img/BgHome.png') }}')">
-        <div class="absolute inset-0 bg-black opacity-20"></div> 
-        <div class="flex items-start justify-start w-full h-full px-5 py-10">
-            <div class="text-left transform translate-x-10 -translate-y-0">
-                <p class="text-4xl font-extrabold text-theme3 lg:text-5xl md:text-2xl">
-                    Pendapat Mereka
-                </p>
-            </div>  
-        </div>
-        <!-- Grid untuk dua kolom dua baris -->
-        <div class="absolute grid w-full grid-cols-2 gap-6 px-10 my-30">
-            <!-- Kolom 1, Baris 1 -->
-            <div class="flex p-5 rounded-lg shadow-lg bg-theme3">
-                <!-- Bagian kiri (Gambar) -->
-                <div class="w-1/2 pr-4">
-                    <img src="{{ asset('assets/img/porto/assets-1.jpg') }}" alt="Avatar 1" class="object-cover w-full h-48 rounded-lg">
-                </div>
-                <!-- Bagian kanan (Avatar dan Teks) -->
-                <div class="w-1/2">
-                    <div class="flex items-center">
-                        <img src="{{ asset('assets/img/avatar1.jpg') }}" alt="Avatar" class="w-12 h-12 border-2 rounded-full border-theme3">
-                        <p class="ml-4 text-lg font-semibold text-theme1">Nama Pengguna</p>
-                    </div>
-                    <p class="mt-2 text-sm text-theme1">Deskripsi singkat tentang testimoni pertama atau feedback dari pengguna ini.</p>
-                </div>
-            </div>
-            <!-- Kolom 2, Baris 1 -->
-            <div class="flex p-5 rounded-lg shadow-lg bg-theme3">
-                <!-- Bagian kiri (Gambar) -->
-                <div class="w-1/2 pr-4">
-                    <img src="{{ asset('assets/img/porto/assets-2.jpg') }}" alt="Avatar 2" class="object-cover w-full h-48 rounded-lg">
-                </div>
-                <!-- Bagian kanan (Avatar dan Teks) -->
-                <div class="w-1/2">
-                    <div class="flex items-center">
-                        <img src="{{ asset('assets/img/avatar2.jpg') }}" alt="Avatar" class="w-12 h-12 border-2 rounded-full border-theme3">
-                        <p class="ml-4 text-lg font-semibold text-theme1">Nama Pengguna</p>
-                    </div>
-                    <p class="mt-2 text-sm text-theme1">Deskripsi singkat tentang testimoni kedua atau feedback dari pengguna ini.</p>
-                </div>
-            </div>
-            <!-- Kolom 1, Baris 2 -->
-            <div class="flex p-5 rounded-lg shadow-lg bg-theme3">
-                <!-- Bagian kiri (Gambar) -->
-                <div class="w-1/2 pr-4">
-                    <img src="{{ asset('assets/img/porto/assets-3.png') }}" alt="Avatar 3" class="object-cover w-full h-48 rounded-lg">
-                </div>
-                <!-- Bagian kanan (Avatar dan Teks) -->
-                <div class="w-1/2">
-                    <div class="flex items-center">
-                        <img src="{{ asset('assets/img/avatar3.jpg') }}" alt="Avatar" class="w-12 h-12 border-2 rounded-full border-theme3">
-                        <p class="ml-4 text-lg font-semibold text-theme1">Nama Pengguna</p>
-                    </div>
-                    <p class="mt-2 text-sm text-theme1">Deskripsi singkat tentang testimoni ketiga atau feedback dari pengguna ini.</p>
-                </div>
-            </div>
-            <!-- Kolom 2, Baris 2 -->
-            <div class="flex p-5 rounded-lg shadow-lg bg-theme3">
-                <!-- Bagian kiri (Gambar) -->
-                <div class="w-1/2 pr-4">
-                    <img src="{{ asset('assets/img/porto/assets-4.jpg') }}" alt="Avatar 4" class="object-cover w-full h-48 rounded-lg">
-                </div>
-                <!-- Bagian kanan (Avatar dan Teks) -->
-                <div class="w-1/2">
-                    <div class="flex items-center">
-                        <img src="{{ asset('assets/img/avatar4.jpg') }}" alt="Avatar" class="w-12 h-12 border-2 rounded-full border-theme3">
-                        <p class="ml-4 text-lg font-semibold text-theme1">Nama Pengguna</p>
-                    </div>
-                    <p class="mt-2 text-sm text-theme1">Deskripsi singkat tentang testimoni keempat atau feedback dari pengguna ini.</p>
-                </div>
-            </div>
-        </div>
-        <!-- Bagian Hello yang berada di bawah testimonial -->
-        <div class="absolute bottom-0 w-full text-center mt-30"> <!-- Menambah margin atas untuk slider -->
-            <div class="max-w-xl mx-auto border-2 border-gray-300 mt-90 rounded-2xl">
-                <!-- Slider Container -->
-                <div class="relative overflow-hidden">
-                    <!-- Slider Track -->
-                    <div class="flex transition-transform duration-500 ease-in-out transform" id="slider-track">
-                        <!-- Slide 1 -->
-                        <div class="flex-shrink-0 w-full p-4">
-                            <p class="text-xl font-semibold">Slide 1 Content</p>
-                        </div>
-                        <!-- Slide 2 -->
-                        <div class="flex-shrink-0 w-full p-4">
-                            <p class="text-xl font-semibold">Slide 2 Content</p>
-                        </div>
-                        <!-- Slide 3 -->
-                        <div class="flex-shrink-0 w-full p-4">
-                            <p class="text-xl font-semibold">Slide 3 Content</p>
-                        </div>
-                    </div>
-                    <!-- Navigation buttons -->
-                    <button id="prev-slide" class="absolute left-0 px-4 py-2 text-white transform -translate-y-1/2 bg-gray-600 rounded-full top-1/2">Prev</button>
-                    <button id="next-slide" class="absolute right-0 px-4 py-2 text-white transform -translate-y-1/2 bg-gray-600 rounded-full top-1/2">Next</button>
-                </div>
-            </div>
-        </div>                           
+<div class="relative flex flex-col w-full h-[1200px] overflow-hidden">
+    <!-- Latar Belakang dengan Overlay -->
+    <div class="absolute inset-0 bg-center bg-cover" style="background-image: url('{{ asset('assets/img/BgHome.png') }}')">
+        <div class="absolute inset-0 bg-black opacity-20"></div>
     </div>
-</div>
-   
 
-    
+    <!-- Judul di Pojok Kiri Atas -->
+    <div class="absolute z-10 top-5 left-5">
+        <p class="text-4xl font-extrabold ms-25 text-theme3 lg:text-5xl md:text-3xl">Pendapat Mereka</p>
+    </div>
+
+    <!-- Grid Testimoni -->
+    <div class="relative z-10 grid w-full grid-cols-1 gap-6 px-10 py-20 mx-auto mt-10 lg:grid-cols-2 max-w-7xl">
+        <!-- Testimoni 1 -->
+        <div class="flex p-5 rounded-lg shadow-lg bg-theme3">
+            <div class="w-1/2 pr-4">
+                <img src="{{ asset('assets/img/porto/assets-1.jpg') }}" alt="Avatar 1" class="object-cover w-full h-48 rounded-lg">
+            </div>
+            <div class="w-1/2">
+                <div class="flex items-center">
+                    <img src="{{ asset('assets/img/avatar1.jpg') }}" alt="Avatar" class="w-12 h-12 border-2 rounded-full border-theme3">
+                    <p class="ml-4 text-lg font-semibold text-theme1">Nama Pengguna</p>
+                </div>
+                <p class="mt-2 text-sm text-theme1">Deskripsi singkat tentang testimoni pertama atau feedback dari pengguna ini.</p>
+            </div>
+        </div>
+
+        <!-- Testimoni 2 -->
+        <div class="flex p-5 rounded-lg shadow-lg bg-theme3">
+            <div class="w-1/2 pr-4">
+                <img src="{{ asset('assets/img/porto/assets-2.jpg') }}" alt="Avatar 2" class="object-cover w-full h-48 rounded-lg">
+            </div>
+            <div class="w-1/2">
+                <div class="flex items-center">
+                    <img src="{{ asset('assets/img/avatar2.jpg') }}" alt="Avatar" class="w-12 h-12 border-2 rounded-full border-theme3">
+                    <p class="ml-4 text-lg font-semibold text-theme1">Nama Pengguna</p>
+                </div>
+                <p class="mt-2 text-sm text-theme1">Deskripsi singkat tentang testimoni kedua atau feedback dari pengguna ini.</p>
+            </div>
+        </div>
+
+        <!-- Testimoni 3 -->
+        <div class="flex p-5 rounded-lg shadow-lg bg-theme3">
+            <div class="w-1/2 pr-4">
+                <img src="{{ asset('assets/img/porto/assets-3.png') }}" alt="Avatar 3" class="object-cover w-full h-48 rounded-lg">
+            </div>
+            <div class="w-1/2">
+                <div class="flex items-center">
+                    <img src="{{ asset('assets/img/avatar3.jpg') }}" alt="Avatar" class="w-12 h-12 border-2 rounded-full border-theme3">
+                    <p class="ml-4 text-lg font-semibold text-theme1">Nama Pengguna</p>
+                </div>
+                <p class="mt-2 text-sm text-theme1">Deskripsi singkat tentang testimoni ketiga atau feedback dari pengguna ini.</p>
+            </div>
+        </div>
+
+        <!-- Testimoni 4 -->
+        <div class="flex p-5 rounded-lg shadow-lg bg-theme3">
+            <div class="w-1/2 pr-4">
+                <img src="{{ asset('assets/img/porto/assets-4.jpg') }}" alt="Avatar 4" class="object-cover w-full h-48 rounded-lg">
+            </div>
+            <div class="w-1/2">
+                <div class="flex items-center">
+                    <img src="{{ asset('assets/img/avatar4.jpg') }}" alt="Avatar" class="w-12 h-12 border-2 rounded-full border-theme3">
+                    <p class="ml-4 text-lg font-semibold text-theme1">Nama Pengguna</p>
+                </div>
+                <p class="mt-2 text-sm text-theme1">Deskripsi singkat tentang testimoni keempat atau feedback dari pengguna ini.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slider Swiper -->
+    <div class="relative z-10 w-full max-w-6xl mx-auto">
+        <div class="swiper centered-slide-carousel-2 swiper-container">
+            <div class="swiper-wrapper">
+                <div class="flex items-center justify-center swiper-slide">
+                    <img src="{{ asset('assets/img/home/testimoni.jpeg') }}" alt="Slide 1" class="object-cover w-[220px] h-[460px] rounded-2xl">
+                </div>
+                <div class="flex items-center justify-center swiper-slide">
+                    <img src="{{ asset('assets/img/home/testimoni.jpeg') }}" alt="Slide 2" class="object-cover w-[220px] h-[460px] rounded-2xl">
+                </div>
+                <div class="flex items-center justify-center swiper-slide">
+                    <img src="{{ asset('assets/img/home/testimoni.jpeg') }}" alt="Slide 3" class="object-cover w-[220px] h-[460px] rounded-2xl">
+                </div>
+                <div class="flex items-center justify-center swiper-slide">
+                    <img src="{{ asset('assets/img/home/testimoni.jpeg') }}" alt="Slide 4" class="object-cover w-[220px] h-[460px] rounded-2xl">
+                </div>
+            </div>
+        </div>        
+        
+        {{-- gambar bg --}}
+        <div class="z-9 absolute top-[50%] left-[50.5%] transform -translate-x-1/2 -translate-y-1/2 lg:visible md:invisible sm:invisible invisible">
+            <img src="{{asset('assets/img/home/hpTes.png')}}" alt="Frame" class="w-[100%]">
+        </div>        
+    </div>    
+</div>
+ 
         <script src="{{asset('resources/script.js')}}"></script>    
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <script>
-            var swiper = new Swiper(".centered-slide-carousel", {
+            var swiper2 = new Swiper(".centered-slide-carousel-2", {
+                centeredSlides: true,
+                paginationClickable: true,
+                loop: true,
+                spaceBetween: 20,
+                slideToClickedSlide: true,
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false,
+                },
+                breakpoints: {
+                    1920: {
+                        slidesPerView: 1,
+                        spaceBetween: 1,
+                    },
+                    1028: {
+                        slidesPerView: 1,
+                        spaceBetween: 1,
+                    },
+                    990: {
+                        slidesPerView: 1,
+                        spaceBetween: 1,
+                    },
+                    768: {
+                        slidesPerView: 1,
+                        spaceBetween: 1,
+                    },
+                    640: {
+                        slidesPerView: 1,
+                        spaceBetween: 1,
+                    }
+                },
+            });
+
+            var swiper1 = new Swiper(".centered-slide-carousel-1", {
                 centeredSlides: true,
                 paginationClickable: true,
                 loop: true,
@@ -331,26 +362,26 @@
                 },
                 breakpoints: {
                     1920: {
-                        slidesPerView: 5,
+                        slidesPerView: 5,  // Hanya 1 slide per view
                         spaceBetween: 40,
                     },
                     1028: {
-                        slidesPerView: 5,
+                        slidesPerView: 5,  // Hanya 1 slide per view
                         spaceBetween: 40,
                     },
                     990: {
-                        slidesPerView: 3,
+                        slidesPerView: 5,  // Hanya 1 slide per view
                         spaceBetween: 40,
                     },
                     768: {
-                        slidesPerView: 3,
+                        slidesPerView: 5,  // Hanya 1 slide per view
                         spaceBetween: 40,
                     },
                     640: {
-                        slidesPerView: 2,
-                        spaceBetween: 40
+                        slidesPerView: 5,  // Hanya 1 slide per view
+                        spaceBetween: 40,
                     }
                 },
             });
-        </script>
+        </script>        
 @endsection
