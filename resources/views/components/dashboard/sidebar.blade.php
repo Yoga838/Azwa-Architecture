@@ -75,7 +75,7 @@
                                 <li>
                                     <a
                                         class="group relative flex items-center gap-3 rounded-md px-4 font-medium text-gray-200 duration-300 ease-in-out hover:text-white"
-                                        href="#"
+                                        href="{{route('show.portofolio')}}"
                                     >
                                         Daftar/List Portofolio
                                     </a>
@@ -83,7 +83,7 @@
                                 <li>
                                     <a
                                         class="group relative flex items-center gap-3 rounded-md px-4 font-medium text-gray-200 duration-300 ease-in-out hover:text-white"
-                                        href="#"
+                                        href="{{route('show-store.portofolio')}}"
                                     >
                                         Buat Portofolio
                                     </a>
@@ -127,7 +127,7 @@
                                 <li>
                                     <a
                                         class="group relative flex items-center gap-3 rounded-md px-4 font-medium text-gray-200 duration-300 ease-in-out hover:text-white"
-                                        href="#"
+                                        href="{{route('show.promo')}}"
                                     >
                                         Daftar/List Promo
                                     </a>
@@ -135,7 +135,7 @@
                                 <li>
                                     <a
                                         class="group relative flex items-center gap-3 rounded-md px-4 font-medium text-gray-200 duration-300 ease-in-out hover:text-white"
-                                        href="#"
+                                        href="{{route('show-store.promo')}}"
                                     >
                                         Buat Promo
                                     </a>

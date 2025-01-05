@@ -8,11 +8,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 
 class PortofolioController extends Controller
-{
-    public function directViewPortofolio () {
-        return view('admin.portofolio.index-portofolio');
-    }
-    
+{    
     public function Store(Request $request){
         // validate input
         // dd($request->all());
@@ -103,6 +99,14 @@ class PortofolioController extends Controller
         $portofolio = Portofolio::with('fotos')->findOrFail($id);
 
         return response()->json(['data' => $portofolio], 200);
+    }
+
+    public function IndexView () {
+        return view('admin.portofolio.indexPortofolio');
+    }
+
+    public function StoreView() {
+        return view('admin.portofolio.storePortofolio');
     }
 
 }

@@ -9,6 +9,7 @@ use App\Http\Controllers\Pages\CareerController;
 use App\Http\Controllers\Pages\ContactController;
 use App\Http\Controllers\Pages\ServiceController;
 use App\Http\Controllers\Pages\ProjectsController;
+use App\Http\Controllers\Dashboard\PromoController;
 use App\Http\Controllers\Pages\ProjectDetailController;
 use App\Http\Controllers\Dashboard\PortofolioController;
 use App\Http\Controllers\Pages\ServicePerizinanController;
@@ -17,11 +18,17 @@ use App\Http\Controllers\Auth\AuthenticatedSessionController;
 
 Route::post('/logout', [AuthenticatedSessionController::class, 'destroy'])->name('logout');
 
-Route::get('/dashboard', function () {
-    return view('admin.home.index');
-})->middleware(['auth', 'verified'])->name('dashboard');
+Route::middleware(['auth', 'verified'])->group(function () {
+    Route::get('/dashboard', function () {
+        return view('admin.home.index');
+    })->name('dashboard');
+    
+    Route::get('/daftarportofolio', [PortofolioController::class, 'IndexView'])->name('show.portofolio');
+    Route::get('/storeportofolio', [PortofolioController::class, 'StoreView'])->name('show-store.portofolio');
+    Route::get('/daftarpromo', [PromoController::class, 'IndexView'])->name('show.promo');
+    Route::get('/storepromo', [PromoController::class, 'StoreView'])->name('show-store.promo');
+});
 
-Route::get('/daftarportofolio', [PortofolioController::class, 'directViewPortofolio'])->middleware(['auth', 'verified'])->name('show.portofolio');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

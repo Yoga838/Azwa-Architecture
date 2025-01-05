@@ -7,6 +7,12 @@ use Illuminate\Http\Request;
 
 class PromoController extends Controller
 {
+    public function IndexView() {
+        return view('admin.promo.indexPromo');
+    }
+    public function StoreView() {
+        return view('admin.promo.storePromo');
+    }
     // get all promo
     public function index(){
         $promo = Promo::all();
