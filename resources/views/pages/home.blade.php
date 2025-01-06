@@ -166,9 +166,9 @@
     </div>
 
 
-<div class="flex justify-center w-full h-auto mt-10 lg:h-screen sm:px-8 md:px-10">
+<div class="flex justify-center w-full h-[450px] mt-10 lg:h-[700] sm:px-8 md:px-10">
     <div class="relative flex flex-col justify-start w-full max-w-7xl sm:my-2 md:my-3">
-        <h1 class="mb-4 text-5xl font-extrabold text-theme3">Layanan Kami</h1>
+        <h1 class="mb-8 text-5xl font-extrabold text-theme3">Layanan Kami</h1>
         <div class="flex justify-center gap-8">
             <div class="relative w-3/4 overflow-hidden lg:w-1/2 rounded-2xl">
                 <img src="{{asset('assets/img/porto/assets-7.jpg')}}" alt="Arsitektur" class="w-full h-auto">
@@ -186,23 +186,24 @@
     </div>
 </div>    
 
-<div class="flex justify-center w-full h-auto mt-[-220px] mb-10 lg:h-auto sm:px-8 md:px-10">
-    <div class="relative flex flex-col justify-start w-full p-6 border-4 border-black max-w-7xl rounded-[30px]">
+<div class="flex justify-center w-full px-4 py-10 mt-10 mb-10 lg:px-8 md:px-6 sm:px-4">
+    <div class="relative flex flex-col justify-start w-full max-w-6xl p-6 bg-white border-4 border-black shadow-lg rounded-2xl">
         
-        <!-- Bagian judul -->
-        <div class="flex flex-col items-start justify-start mb-2">
+        <!-- Bagian Judul -->
+        <div class="flex flex-col items-start justify-start mb-4 text-center lg:text-left">
             <h1 class="text-4xl font-extrabold text-[#a46a27]">PROMO ARSITEKTUR</h1>
         </div>
 
-        <!-- Harga promo -->
-        <div class="mt-2">
-            <span class="text-3xl font-bold line-through text-theme3 decoration-[#a46a27] decoration-thick">Rp. 100.000/m2</span>
-            <h2 class="mt-1 text-6xl font-extrabold text-[#a46a27]">Rp. 35.000/m2</h2>
+        <!-- Harga Promo -->
+        <div class="text-center lg:text-left">
+            <span class="text-2xl font-bold line-through text-gray-500 decoration-[#a46a27] decoration-thick">Rp. 100.000/m2</span>
+            <h2 class="mt-1 text-5xl font-extrabold text-[#a46a27]">Rp. 35.000/m2</h2>
         </div>
 
-        <!-- Daftar fasilitas dan tombol di kanan -->
-        <div class="flex items-center justify-between mt-4">
-            <ul class="text-lg list-disc list-inside">
+        <!-- Daftar Fasilitas dan Tombol -->
+        <div class="flex flex-col items-start justify-between mt-6 lg:flex-row">
+            <!-- List Fasilitas -->
+            <ul class="mb-4 text-lg list-disc list-inside lg:mb-0 lg:w-2/3">
                 <li>Denah 2D</li>
                 <li>Tampak Eksterior Render 3D (4+ Tampak)</li>
                 <li>Gambar Kerja Arsitektur</li>
@@ -210,12 +211,17 @@
                 <li>Gambar Kerja MEP</li>
                 <li class="text-lg font-bold">BONUS: Rancangan Anggaran Biaya (RAB) + Upah Kerja dan Material</li>
             </ul>
-            <button class="px-6 py-3 ml-4 text-xl font-bold transition duration-300 border-2 rounded-full text-theme3 bg-[#a48057] bg-brown-600 hover:bg-brown-700 hover:border-brown-700">
-                Dapatkan Promo!
-            </button>            
+
+            <!-- Tombol Promo -->
+            <div class="flex justify-center lg:justify-end lg:w-1/3">
+                <button class="px-6 py-3 text-lg font-bold text-white transition duration-300 border-2 rounded-full bg-[#a46a27] hover:bg-[#8c571f] hover:border-[#8c571f]">
+                    Dapatkan Promo!
+                </button>
+            </div>
         </div>
     </div>
 </div>
+
 
 <div class="relative flex flex-col w-full h-[1200px] overflow-hidden">
     <!-- Latar Belakang dengan Overlay -->
