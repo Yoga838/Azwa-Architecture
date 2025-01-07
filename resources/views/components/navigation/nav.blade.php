@@ -2,28 +2,34 @@
     x-data="{'sidebarToggle': false}"
     class="fixed top-0 z-50 w-screen"
 >
-    <div class="flex items-center justify-between bg-landing-brown-3 py-3 md:px-12 px-8  my-5 md:mx-10 mx-3 rounded-3xl">
+    <div class="flex items-center justify-between bg-landing-brown-3 
+        desktop:py-6 laptop:py-3 md:py-3 py-3 
+        desktop:px-16 laptop:px-12 md:px-12 px-8  
+        desktop:mx-15 laptop:mx-10 md:mx-10 mx-3 
+        my-5 
+        desktop:rounded-[36px] rounded-3xl"
+    >
         <div class="cursor-pointer">
             <div class="">
-                <Image src="{{ asset('assets/img/LogoAzwa.png') }}" alt="Brand" class="w-[100px] h-auto" />
+                <Image src="{{ asset('assets/img/LogoAzwa.png') }}" alt="Brand" class="desktop:w-[125px] laptop:w-[100px] w-[100px] h-auto" />
             </div>
         </div>
         <div class="hidden lg:block">
             <ul class="text-white flex space-x-12">
                 <li class="">
-                    <a class="text-lg font-normal transition duration-300 ease-in-out 
+                    <a class="desktop:text-2xl laptop:text-lg font-normal transition duration-300 ease-in-out 
                 {{ request()->routeIs('home.index') ? 'text-landing-gold font-medium' : 'hover:text-landing-gold' }}" href="{{ route('home.index') }}">Home</a>
                 </li>
                 <li class="">
-                    <a class="text-lg font-normal transition duration-300 ease-in-out 
+                    <a class="desktop:text-2xl laptop:text-lg font-normal transition duration-300 ease-in-out 
                 {{ request()->routeIs('about.index') ? 'text-landing-gold font-medium' : 'hover:text-landing-gold' }}" href="{{ route('about.index') }}">Tentang Kami</a>
                 </li>
                 <li class="">
-                    <a class="text-lg font-normal transition duration-300 ease-in-out 
+                    <a class="desktop:text-2xl laptop:text-lg font-normal transition duration-300 ease-in-out 
                 {{ request()->routeIs('project.index') ? 'text-landing-gold font-medium' : 'hover:text-landing-gold' }}" href="{{ route('project.index') }}">Portofolio</a>
                 </li>
                 <li class="group relative ">
-                    <a class="text-lg font-normal {{request()->routeIs('service.*') ? 'text-landing-gold font-medium' : 'hover:text-landing-gold' }} cursor-pointer" href="#">Layanan</a>
+                    <a class="desktop:text-2xl laptop:text-lg font-normal {{request()->routeIs('service.*') ? 'text-landing-gold font-medium' : 'hover:text-landing-gold' }} cursor-pointer" href="#">Layanan</a>
                     <ul class="absolute mt-2 w-24 bg-landing-brown-3 shadow-lg rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
                         <li class="py-3 cursor-pointer text-center {{request()->routeIs('service.desain') ? 'text-landing-gold font-medium' : 'hover:text-landing-gold'}}"><a href="{{route('service.desain')}}">Desain</a></li>
                         <li class="py-3 cursor-pointer text-center {{request()->routeIs('service.kontraktor') ? 'text-landing-gold font-medium' : 'hover:text-landing-gold'}}"><a href="{{route('service.kontraktor')}}">Kontraktor</a></li>
@@ -31,11 +37,11 @@
                     </ul>
                 </li>
                 <li class="">
-                    <a class="text-lg font-normal transition duration-300 ease-in-out 
+                    <a class="desktop:text-2xl laptop:text-lg font-normal transition duration-300 ease-in-out 
                 {{ request()->routeIs('career.index') ? 'text-landing-gold font-medium' : 'hover:text-landing-gold' }}" href="{{ route('career.index') }}">Karir</a>
                 </li>
                 <li class="">
-                    <a class="text-lg font-normal transition duration-300 ease-in-out 
+                    <a class="desktop:text-2xl laptop:text-lg font-normal transition duration-300 ease-in-out 
                 {{ request()->routeIs('contact.index') ? 'text-landing-gold font-medium' : 'hover:text-landing-gold' }}" href="{{ route('contact.index') }}">Kontak</a>
                 </li>
             </ul>

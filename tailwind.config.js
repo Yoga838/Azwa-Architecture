@@ -20,6 +20,8 @@ export default {
             },
         },
         screens: {
+            'laptop': '1366px',
+            'desktop': '1920px',
             "2xsm": "375px",
             xsm: "425px",
             "3xl": "2000px",

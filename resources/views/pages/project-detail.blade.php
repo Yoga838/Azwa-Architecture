@@ -10,7 +10,7 @@
         }
     </style>
 
-    <div class="mt-20 md:mx-20 mx-10">
+    <div class="desktop:mt-30 laptop:mt-20 md:mt-20 mt-10 desktop:mx-30 laptop:mx-20 md:mx-20 mx-10">
         <div class="py-30">
             <div class="w-full h-full mb-20">
 
@@ -19,12 +19,12 @@
                 <div class="flex md:flex-row flex-col">
                     <div class="md:w-1/3 w-full md:p-5 p-3 flex md:flex-col flex-row md:justify-start justify-between">
                         <div class="mb-3">
-                            <p class="md:text-xl text-lg font-bold text-theme2">Tahun :</p>
-                            <p class="text-base text-theme2 ">202x</p>
+                            <p class="desktop:text-2xl laptop:text-xl md:text-xl text-lg font-bold text-theme2">Tahun :</p>
+                            <p class="desktop:text-lg laptop:text-base md:text-base text-base text-theme2 ">202x</p>
                         </div>
                         <div>
-                            <p class="md:text-xl text-lg font-bold text-theme2">Kategori :</p>
-                            <p class="text-base text-theme2">(Tidak dikategorikan)</p>
+                            <p class="desktop:text-2xl laptop:text-xl md:text-xl text-lg font-bold text-theme2">Kategori :</p>
+                            <p class="desktop:text-lg laptop:text-base md:text-base text-base text-theme2">(Tidak dikategorikan)</p>
                         </div>
                     </div>
 
@@ -33,7 +33,7 @@
                     <div class="h-1 w-auto bg-theme2 sm:block md:hidden"></div>
 
                     <div class="md:w-2/3 w-full md:p-5 p-3">
-                        <h1 class="text-xl font-bold mb-5 text-theme2">INDUSTRIAL</h1>
+                        <h1 class="desktop:text-2xl laptop:text-xl md:text-xl text-xl font-bold mb-5 text-theme2">INDUSTRIAL</h1>
                         <div>
                             <div class="mb-4">
                                 <img src="{{ asset('assets/img/Enscape.png') }}" class="w-full h-full" />
@@ -47,20 +47,20 @@
                             <div class="flex md:flex-row flex-col md:space-x-10 space-x-0">
                                 <div class="flex md:flex-col flex-row md:justify-normal justify-between md:mb-0 mb-3">
                                     <div>
-                                        <p class="text-lg font-bold text-theme2">Area</p>
-                                        <p class="text-theme2">XXX sqm</p>
+                                        <p class="desktop:text-xl laptop:text-lg md:text-lg text-lg font-bold text-theme2">Area</p>
+                                        <p class="desktop:text-lg laptop:text-base md:text-base text-base text-theme2">XXX sqm</p>
                                     </div>
                                     <div class="md:my-3 my-0">
-                                        <p class="text-lg font-bold text-theme2">Tipe</p>
-                                        <p class="text-theme2">(Tipe)</p>
+                                        <p class="desktop:text-xl laptop:text-lg md:text-lg text-lg font-bold text-theme2">Tipe</p>
+                                        <p class="desktop:text-lg laptop:text-base md:text-base text-base text-theme2">(Tipe)</p>
                                     </div>
                                     <div>
-                                        <p class="text-lg font-bold text-theme2">Kontraktor</p>
-                                        <p class="text-theme2">(Kontraktor)</p>
+                                        <p class="desktop:text-xl laptop:text-lg md:text-lg text-lg font-bold text-theme2">Kontraktor</p>
+                                        <p class="desktop:text-lg laptop:text-base md:text-base text-base text-theme2">(Kontraktor)</p>
                                     </div>
                                 </div>
                                 <div class="text-justify">
-                                    <p class="text-theme2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt illum quasi officia autem temporibus recusandae vel beatae omnis, perferendis odio pariatur doloremque. Ipsa earum illum perspiciatis atque ab sed maiores possimus repudiandae aliquam placeat beatae asperiores sapiente officia, pariatur aliquid aut omnis debitis. Minima, aut, voluptas veritatis similique minus dolorum eveniet impedit hic assumenda consequatur porro voluptatibus fugiat explicabo voluptatem veniam nostrum distinctio! Laudantium blanditiis voluptates accusantium unde eligendi quidem non numquam. Ab porro nisi totam quae odio? Corporis nam laudantium quae obcaecati nemo! Aliquam unde accusantium reprehenderit ducimus suscipit consequuntur voluptate, at saepe ullam porro deleniti, commodi placeat maiores.</p>
+                                    <p class="desktop:text-lg laptop:text-base md:text-base text-base text-theme2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt illum quasi officia autem temporibus recusandae vel beatae omnis, perferendis odio pariatur doloremque. Ipsa earum illum perspiciatis atque ab sed maiores possimus repudiandae aliquam placeat beatae asperiores sapiente officia, pariatur aliquid aut omnis debitis. Minima, aut, voluptas veritatis similique minus dolorum eveniet impedit hic assumenda consequatur porro voluptatibus fugiat explicabo voluptatem veniam nostrum distinctio! Laudantium blanditiis voluptates accusantium unde eligendi quidem non numquam. Ab porro nisi totam quae odio? Corporis nam laudantium quae obcaecati nemo! Aliquam unde accusantium reprehenderit ducimus suscipit consequuntur voluptate, at saepe ullam porro deleniti, commodi placeat maiores.</p>
                                 </div>
                             </div>
                         </div>
@@ -69,7 +69,7 @@
             </div>
             <div>
                 <div>
-                    <h1 class="text-2xl font-bold mb-5 text-theme2">Portofolio Relevan</h1>
+                    <h1 class="desktop:text-4xl laptop:text-2xl md:text-2xl text-2xl font-bold mb-5 text-theme2">Portofolio Relevan</h1>
                 </div>
                 <div class="flex md:flex-row flex-col md:space-x-5 space-x-0">
                     @foreach ( $images as $image )
@@ -150,27 +150,37 @@
                 loop: true,
 
                 breakpoints: {
-                    // Large screens (desktop)
-                    1200: {
-                        slidesPerView: 6,
+                    // Extra large screens (1920px and above)
+                    1920: {
+                        slidesPerView: 7,
                         spaceBetween: 40,
                     },
-                    // Medium screens (large tablets and small desktops)
+                    // Large screens (desktop, 1440px and above)
+                    1440: {
+                        slidesPerView: 6,
+                        spaceBetween: 35,
+                    },
+                    // Medium screens (desktop, 1366px and above)
+                    1366: {
+                        slidesPerView: 5,
+                        spaceBetween: 30,
+                    },
+                    // Small screens (large tablets and small desktops, 1024px and above)
                     1024: {
                         slidesPerView: 4,
                         spaceBetween: 30,
                     },
-                    // Small screens (tablets)
+                    // Small tablets (768px and above)
                     768: {
                         slidesPerView: 3,
                         spaceBetween: 20,
                     },
-                    // Extra small screens (mobile phones)
+                    // Extra small screens (mobile phones, 576px and above)
                     576: {
                         slidesPerView: 1,
                         spaceBetween: 10,
                     }
-                },
+                }
             });
         });
     </script>
