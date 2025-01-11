@@ -232,7 +232,7 @@
 </div>
 
 
-<div class="relative flex flex-col w-full h-[1200px] overflow-hidden">
+<div class="relative flex flex-col w-full h-[1460px] overflow-hidden">
     <!-- Latar Belakang dengan Overlay -->
     <div class="absolute inset-0 bg-center bg-cover" style="background-image: url('{{ asset('assets/img/BgHome.png') }}')">
         <div class="absolute inset-0 bg-black opacity-20"></div>
@@ -303,29 +303,50 @@
     </div>
 
     <!-- Slider Swiper -->
-    <div class="relative z-10 w-full max-w-6xl mx-auto">
+    <div class="relative z-10 w-full mx-auto min-w-6xl">
         <div class="swiper centered-slide-carousel-2 swiper-container">
             <div class="swiper-wrapper">
                 <div class="flex items-center justify-center swiper-slide">
-                    <img src="{{ asset('assets/img/home/testimoni.jpeg') }}" alt="Slide 1" class="object-cover w-[220px] h-[460px] rounded-2xl">
+                    <img src="{{ asset('assets/img/home/testimoni/1.jpeg') }}" alt="Slide 1" class="object-cover w-auto h-[700px] rounded-2xl">
                 </div>
                 <div class="flex items-center justify-center swiper-slide">
-                    <img src="{{ asset('assets/img/home/testimoni.jpeg') }}" alt="Slide 2" class="object-cover w-[220px] h-[460px] rounded-2xl">
+                    <img src="{{ asset('assets/img/home/testimoni/2.jpeg') }}" alt="Slide 2" class="object-cover w-auto h-[700px] rounded-2xl">
                 </div>
                 <div class="flex items-center justify-center swiper-slide">
-                    <img src="{{ asset('assets/img/home/testimoni.jpeg') }}" alt="Slide 3" class="object-cover w-[220px] h-[460px] rounded-2xl">
+                    <img src="{{ asset('assets/img/home/testimoni/3.jpeg') }}" alt="Slide 3" class="object-cover w-auto h-[700px] rounded-2xl">
                 </div>
                 <div class="flex items-center justify-center swiper-slide">
-                    <img src="{{ asset('assets/img/home/testimoni.jpeg') }}" alt="Slide 4" class="object-cover w-[220px] h-[460px] rounded-2xl">
+                    <img src="{{ asset('assets/img/home/testimoni/4.jpeg') }}" alt="Slide 4" class="object-cover w-auto h-[700px] rounded-2xl">
+                </div>
+                <div class="flex items-center justify-center swiper-slide">
+                    <img src="{{ asset('assets/img/home/testimoni/5.jpeg') }}" alt="Slide 5" class="object-cover w-auto h-[700px] rounded-2xl">
+                </div>
+                <div class="flex items-center justify-center swiper-slide">
+                    <img src="{{ asset('assets/img/home/testimoni/6.jpg') }}" alt="Slide 6" class="object-cover w-auto h-[700px] rounded-2xl">
+                </div>
+                <div class="flex items-center justify-center swiper-slide">
+                    <img src="{{ asset('assets/img/home/testimoni/7.jpg') }}" alt="Slide 7" class="object-cover w-auto h-[700px] rounded-2xl">
+                </div>
+                <div class="flex items-center justify-center swiper-slide">
+                    <img src="{{ asset('assets/img/home/testimoni/8.jpg') }}" alt="Slide 8" class="object-cover w-auto h-[700px] rounded-2xl">
+                </div>
+                <div class="flex items-center justify-center swiper-slide">
+                    <img src="{{ asset('assets/img/home/testimoni/9.jpg') }}" alt="Slide 9" class="object-cover w-auto h-[700px] rounded-2xl">
+                </div>
+                <div class="flex items-center justify-center swiper-slide">
+                    <img src="{{ asset('assets/img/home/testimoni/10.jpg') }}" alt="Slide 10" class="object-cover w-auto h-[700px] rounded-2xl">
+                </div>
+                <div class="flex items-center justify-center swiper-slide">
+                    <img src="{{ asset('assets/img/home/testimoni/11.jpg') }}" alt="Slide 11" class="object-cover w-auto h-[700px] rounded-2xl">
                 </div>
             </div>
         </div>        
-        
-        {{-- gambar bg --}}
-        <div class="z-9 absolute top-[50%] left-[50.5%] transform -translate-x-1/2 -translate-y-1/2 lg:visible md:invisible sm:invisible invisible">
-            <img src="{{asset('assets/img/home/hpTes.png')}}" alt="Frame" class="w-[100%]">
-        </div>        
-    </div>    
+    
+        {{-- Gambar BG --}} 
+        <div class="z-9 absolute left-[28.56%] lg:visible md:invisible sm:invisible invisible transform -translate-y-[90%]">
+            <img src="{{ asset('assets/img/home/hpTes.png') }}" alt="Frame" class="w-[841px] h-[865px]">
+        </div>                       
+    </div>        
 </div>
  
         <script src="{{asset('resources/script.js')}}"></script>    
