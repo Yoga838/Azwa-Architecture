@@ -20,7 +20,7 @@
         }
     </style>
     <div class="w-full h-full flex justify-center relative">
-        <div class="absolute z-[-1] w-full desktop:h-[550px] laptop:h-[450px] md:h-[450px] h-[450px] overflow-hidden">
+        <div class="absolute z-[-1] w-full desktop:h-[600px] laptop:h-[450px] md:h-[450px] h-[450px] overflow-hidden">
             <div class="absolute inset-0 bg-white opacity-5"></div>
             <img src="{{asset('assets/img/service/kontraktor/bg1-servicekontraktor.jpg')}}" alt="" class="w-screen object-cover h-full">
         </div>
@@ -120,7 +120,7 @@
     </div>
 
     <div class="desktop:mt-70 laptop:mt-50 md:mt-50 mt-50 w-full h-full flex items-center relative">
-        <div class="absolute z-[-1] w-full desktop:h-[550px] laptop:h-[450px] md:h-[450px] h-[450px] overflow-hidden">
+        <div class="absolute z-[-1] w-full desktop:h-[600px] laptop:h-[450px] md:h-[450px] h-[450px] overflow-hidden">
             <div class="absolute inset-0 bg-black opacity-50"></div>
             <img src="{{asset('assets/img/service/kontraktor/bg2-servicekontraktor.jpg')}}" alt="" class="w-screen object-cover h-full">
         </div>
@@ -131,63 +131,63 @@
     {{-- Card Konstruksi Arsitektural --}}
     <div class="flex justify-center items-center">
         <div class="relative">
-            <div class="border-0 desktop:w-[800px] laptop:w-[700px] md:w-[500px] sm:w-[350px] w-[350px] desktop:h-[600px] laptop:h-[550px] md:h-[550px] h-[550px] bg-theme3 rounded-[2rem] pt-5">
+            <div class="border-0 desktop:w-[1000px] laptop:w-[700px] md:w-[500px] sm:w-[350px] w-[350px] desktop:h-[700px] laptop:h-[550px] md:h-[550px] h-[550px] bg-theme3 rounded-[2rem] pt-5">
                 <div class="text-center">
-                    <h1 class="mt-5 font-bold desktop:text-4xl laptop:text-3xl md:text-3xl text-lg text-landing-gold">MULAI 3,5 JUTA / M2</h1>
-                    <p class="font-normal desktop:text-md laptop:text-sm md:text-md text-xs text-landing-gold md:tracking-wider tracking-tight">*non-metropolitan (bukan kota besar)</p>
+                    <h1 class="mt-5 font-bold desktop:text-5xl laptop:text-3xl md:text-3xl text-lg text-landing-gold">MULAI 3,5 JUTA / M2</h1>
+                    <p class="font-normal desktop:text-lg laptop:text-sm md:text-md text-xs text-landing-gold md:tracking-wider tracking-tight">*non-metropolitan (bukan kota besar)</p>
                 </div>
-                <div class="desktop:mx-25 laptop:mx-20 md:mx-20 mx-10 desktop:mt-6 laptop:mt-3 md:mt-3 mt-3">
-                    <h3 class="text-white text-xs desktop:text-lg laptop:text-base md:text-xs">FASILITAS :</h3>
+                <div class="desktop:mx-20 laptop:mx-20 md:mx-20 mx-10 desktop:mt-6 laptop:mt-3 md:mt-3 mt-3">
+                    <h3 class="text-white text-xs desktop:text-2xl laptop:text-base md:text-xs">FASILITAS :</h3>
                     <ul class="">
                         <li class="list-disc text-white ml-8">
-                            <p class="text-white text-xs desktop:text-lg laptop:text-base md:text-xs">FREE DESIGN DAN RANCANGAN ANGGARAN BIAYA (RAB)</p>
+                            <p class="text-white text-xs desktop:text-2xl laptop:text-base md:text-xs">FREE DESIGN DAN RANCANGAN ANGGARAN BIAYA (RAB)</p>
                         </li>
                         <li class="list-disc text-white ml-8">
-                            <p class="text-white text-xs desktop:text-lg laptop:text-base md:text-xs">PEKERJAAN PONDASI</p>
+                            <p class="text-white text-xs desktop:text-2xl laptop:text-base md:text-xs">PEKERJAAN PONDASI</p>
                         </li>
                         <li class="list-disc text-white ml-8">
-                            <p class="text-white text-xs desktop:text-lg laptop:text-base md:text-xs">PEKERJAAN STRUKTUR BAJA / BETON (SLOOF, KOLOM, BALOK, ATAP)</p>
+                            <p class="text-white text-xs desktop:text-2xl laptop:text-base md:text-xs">PEKERJAAN STRUKTUR BAJA / BETON (SLOOF, KOLOM, BALOK, ATAP)</p>
                         </li>
                         <li class="list-disc text-white ml-8">
-                            <p class="text-white text-xs desktop:text-lg laptop:text-base md:text-xs">PEKERJAAN ARSITEKTURAL (DINDING DAN ORNAMEN FASAD, LANTAI)</p>
+                            <p class="text-white text-xs desktop:text-2xl laptop:text-base md:text-xs">PEKERJAAN ARSITEKTURAL (DINDING DAN ORNAMEN FASAD, LANTAI)</p>
                         </li>
                         <li class="list-disc text-white ml-8">
-                            <p class="text-white text-xs desktop:text-lg laptop:text-base md:text-xs">PEKERJAAN MEP</p>
+                            <p class="text-white text-xs desktop:text-2xl laptop:text-base md:text-xs">PEKERJAAN MEP</p>
                         </li>
                         <li class="list-disc text-white ml-8">
-                            <p class="text-white text-xs desktop:text-lg laptop:text-base md:text-xs">PEKERJAAN FINISHING (CAT, BATU ALAM, DLL)</p>
+                            <p class="text-white text-xs desktop:text-2xl laptop:text-base md:text-xs">PEKERJAAN FINISHING (CAT, BATU ALAM, DLL)</p>
                         </li>
                     </ul>
                     <div class="mt-3">
-                        <h3 class="text-white text-xs desktop:text-lg laptop:text-base md:text-xs">LAYANAN LAIN :</h3>
+                        <h3 class="text-white text-xs desktop:text-2xl laptop:text-base md:text-xs">LAYANAN LAIN :</h3>
                         <ul class="">
                             <li class="list-disc text-white ml-8">
-                                <p class="text-white text-xs desktop:text-lg laptop:text-base md:text-xs">PEMBUATAN KANOPI</p>
+                                <p class="text-white text-xs desktop:text-2xl laptop:text-base md:text-xs">PEMBUATAN KANOPI</p>
                             </li>
                             <li class="list-disc text-white ml-8">
-                                <p class="text-white text-xs desktop:text-lg laptop:text-base md:text-xs">PEMBUATAN LANSKAP (TAMAN, KOLAM IKAN)</p>
+                                <p class="text-white text-xs desktop:text-2xl laptop:text-base md:text-xs">PEMBUATAN LANSKAP (TAMAN, KOLAM IKAN)</p>
                             </li>
                             <li class="list-disc text-white ml-8">
-                                <p class="text-white text-xs desktop:text-lg laptop:text-base md:text-xs">PEMBUATAN PAGAR BESI</p>
+                                <p class="text-white text-xs desktop:text-2xl laptop:text-base md:text-xs">PEMBUATAN PAGAR BESI</p>
                             </li>
                             <li class="list-disc text-white ml-8">
-                                <p class="text-white text-xs desktop:text-lg laptop:text-base md:text-xs">PEKERJAAN PAVING</p>
+                                <p class="text-white text-xs desktop:text-2xl laptop:text-base md:text-xs">PEKERJAAN PAVING</p>
                             </li>
                             <li class="list-disc text-white ml-8">
-                                <p class="text-white text-xs desktop:text-lg laptop:text-base md:text-xs">PEMBUATAN KOLAM RENANG</p>
+                                <p class="text-white text-xs desktop:text-2xl laptop:text-base md:text-xs">PEMBUATAN KOLAM RENANG</p>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="absolute bottom-0 border-0 px-5 py-5 w-full rounded-full bg-theme2">
-                <h1 class="text-white font-bold text-center text-xs desktop:text-lg laptop:text-base md:text-xs">PILIH PAKET</h1>
+                <h1 class="text-white font-bold text-center text-xs desktop:text-2xl laptop:text-base md:text-xs">PILIH PAKET</h1>
             </div>
         </div>
     </div>
 
     <div class="desktop:mt-70 laptop:mt-50 md:mt-50 mt-50 w-full h-full flex items-center relative">
-        <div class="absolute z-[-1] w-full desktop:h-[550px] laptop:h-[450px] md:h-[450px] h-[450px] overflow-hidden">
+        <div class="absolute z-[-1] w-full desktop:h-[600px] laptop:h-[450px] md:h-[450px] h-[450px] overflow-hidden">
             <div class="absolute inset-0 bg-black opacity-50"></div>
             <img src="{{asset('assets/img/service/kontraktor/bg3-servicekontraktor.jpg')}}" alt="" class="w-screen object-cover h-full">
         </div>
@@ -199,54 +199,54 @@
     {{-- Card Konstruksi Interior --}}
     <div class="flex justify-center items-center">
         <div class="relative">
-            <div class="border-0 desktop:w-[800px] laptop:w-[700px] md:w-[500px] sm:w-[350px] w-[350px] desktop:h-[600px] laptop:h-[550px] md:h-[550px] h-[550px] bg-theme3 rounded-[2rem] pt-5">
+            <div class="border-0 desktop:w-[1000px] laptop:w-[700px] md:w-[500px] sm:w-[350px] w-[350px] desktop:h-[700px] laptop:h-[550px] md:h-[550px] h-[550px] bg-theme3 rounded-[2rem] pt-5">
                 <div class="text-center">
-                    <h1 class="mt-5 font-bold desktop:text-4xl laptop:text-3xl md:text-3xl text-lg text-landing-gold">MULAI 2 JUTA / M2</h1>
-                    <p class="font-normal desktop:text-md laptop:text-sm md:text-md text-xs text-landing-gold md:tracking-wider tracking-tight">*non-metropolitan (bukan kota besar)</p>
+                    <h1 class="mt-5 font-bold desktop:text-5xl laptop:text-3xl md:text-3xl text-lg text-landing-gold">MULAI 2 JUTA / M2</h1>
+                    <p class="font-normal desktop:text-lg laptop:text-sm md:text-md text-xs text-landing-gold md:tracking-wider tracking-tight">*non-metropolitan (bukan kota besar)</p>
                 </div>
-                <div class="desktop:mx-25 laptop:mx-20 md:mx-20 mx-10 desktop:mt-6 laptop:mt-3 md:mt-3 mt-3">
-                    <h3 class="text-white text-xs desktop:text-lg laptop:text-base md:text-xs">FASILITAS :</h3>
+                <div class="desktop:mx-20 laptop:mx-20 md:mx-20 mx-10 desktop:mt-6 laptop:mt-3 md:mt-3 mt-3">
+                    <h3 class="text-white text-xs desktop:text-2xl laptop:text-base md:text-xs">FASILITAS :</h3>
                     <ul class="">
                         <li class="list-disc text-white ml-8">
-                            <p class="text-white text-xs desktop:text-lg laptop:text-base md:text-xs">FREE DESIGN DAN RANCANGAN ANGGARAN BIAYA (RAB) SUPERVISI</p>
+                            <p class="text-white text-xs desktop:text-2xl laptop:text-base md:text-xs">FREE DESIGN DAN RANCANGAN ANGGARAN BIAYA (RAB) SUPERVISI</p>
                         </li>
                         <li class="list-disc text-white ml-8">
-                            <p class="text-white text-xs desktop:text-lg laptop:text-base md:text-xs">PEKERJAAN FURNITUR 1 RUANGAN</p>
+                            <p class="text-white text-xs desktop:text-2xl laptop:text-base md:text-xs">PEKERJAAN FURNITUR 1 RUANGAN</p>
                         </li>
                         <li class="list-disc text-white ml-8">
-                            <p class="text-white text-xs desktop:text-lg laptop:text-base md:text-xs">FREE PENGIRIMAN *S&K BERLAKU</p>
+                            <p class="text-white text-xs desktop:text-2xl laptop:text-base md:text-xs">FREE PENGIRIMAN *S&K BERLAKU</p>
                         </li>
                     </ul>
                     <div class="mt-3 mb-5">
-                        <h3 class="text-white text-xs desktop:text-lg laptop:text-base md:text-xs">LAYANAN LAIN :</h3>
+                        <h3 class="text-white text-xs desktop:text-2xl laptop:text-base md:text-xs">LAYANAN LAIN :</h3>
                         <ul class="">
                             <li class="list-disc text-white ml-8">
-                                <p class="text-white text-xs desktop:text-lg laptop:text-base md:text-xs">KITCHEN SET & MINI BAR</p>
+                                <p class="text-white text-xs desktop:text-2xl laptop:text-base md:text-xs">KITCHEN SET & MINI BAR</p>
                             </li>
                             <li class="list-disc text-white ml-8">
-                                <p class="text-white text-xs desktop:text-lg laptop:text-base md:text-xs">WALK IN CLOSET</p>
+                                <p class="text-white text-xs desktop:text-2xl laptop:text-base md:text-xs">WALK IN CLOSET</p>
                             </li>
                             <li class="list-disc text-white ml-8">
-                                <p class="text-white text-xs desktop:text-lg laptop:text-base md:text-xs">LEMARI (LEMARI BAJU, ETALASE / DISPLAY)</p>
+                                <p class="text-white text-xs desktop:text-2xl laptop:text-base md:text-xs">LEMARI (LEMARI BAJU, ETALASE / DISPLAY)</p>
                             </li>
                             <li class="list-disc text-white ml-8">
-                                <p class="text-white text-xs desktop:text-lg laptop:text-base md:text-xs">BUFFET & CABINET</p>
+                                <p class="text-white text-xs desktop:text-2xl laptop:text-base md:text-xs">BUFFET & CABINET</p>
                             </li>
                             <li class="list-disc text-white ml-8">
-                                <p class="text-white text-xs desktop:text-lg laptop:text-base md:text-xs">SOFA</p>
+                                <p class="text-white text-xs desktop:text-2xl laptop:text-base md:text-xs">SOFA</p>
                             </li>
                             <li class="list-disc text-white ml-8">
-                                <p class="text-white text-xs desktop:text-lg laptop:text-base md:text-xs">DIVAN KASUR / TEMPAT TIDUR (SPRING BOX)</p>
+                                <p class="text-white text-xs desktop:text-2xl laptop:text-base md:text-xs">DIVAN KASUR / TEMPAT TIDUR (SPRING BOX)</p>
                             </li>
                             <li class="list-disc text-white ml-8">
-                                <p class="text-white text-xs desktop:text-lg laptop:text-base md:text-xs">MEJA CUSTOM (MEJA KANTOR, MEJA MEETING, MEJA KOMPUTER, MEJA RESEPSIONIS, MEJA MAKAN)</p>
+                                <p class="text-white text-xs desktop:text-2xl laptop:text-base md:text-xs">MEJA CUSTOM (MEJA KANTOR, MEJA MEETING, MEJA KOMPUTER, MEJA RESEPSIONIS, MEJA MAKAN)</p>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="absolute bottom-0 border-0 px-5 py-5 w-full rounded-full bg-theme2">
-                <h1 class="text-white font-bold text-center text-xs desktop:text-lg laptop:text-base md:text-xs">PILIH PAKET</h1>
+                <h1 class="text-white font-bold text-center text-xs desktop:text-2xl laptop:text-base md:text-xs">PILIH PAKET</h1>
             </div>
         </div>
     </div>
