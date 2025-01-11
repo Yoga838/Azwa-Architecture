@@ -38,14 +38,4 @@
         </div>
         @include('sweetalert::alert')
     </body>
-    <script>
-        function handleFiles(event) {
-            const inputFiles = Array.from(event.target.files);
-            this.files.push(...inputFiles);
-        }
-    
-        function removeFile(index) {
-            this.files.splice(index, 1);
-        }
-    </script>
 </html>
