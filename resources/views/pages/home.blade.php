@@ -4,17 +4,26 @@
 
 @section("content")
 
-    <div class="flex flex-col items-center justify-center flex-shrink-0 w-full h-screen">
-        <div class="flex w-full h-full bg-center bg-cover" style="background-image: url('{{ asset('assets/img/BgHome.png') }}')">        
-            <div class="flex items-center justify-center w-full">
-                <div class="mx-5 text-center transform -translate-y-50 lg:mx-44 md:mx-20">
-                    <p class="text-lg text-justify text-black lg:text-3xl md:text-xl">
-                        Menciptakan Karya dengan Kenyamanan Tanpa Kata
-                    </p>
-                </div>  
-            </div>                       
+<div class="relative flex flex-col items-center justify-center w-full h-screen">
+    <!-- Static Text Section -->
+    <div class="absolute z-10 text-center top-35">
+        <p class="text-lg font-extrabold text-justify text-black lg:text-5xl md:text-xl">
+            Menciptakan Karya dengan Kenyamanan Tanpa Kata
+        </p>
+    </div>
+
+    <!-- Swiper Slider Section -->
+    <div class="absolute w-full h-full swiper centered-slide-carousel-3">
+        <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="bg-center bg-cover swiper-slide" style="background-image: url('{{ asset('assets/img/BgHome.png') }}');"></div>
+            <!-- Slide 2 -->
+            <div class="bg-center bg-cover swiper-slide" style="background-image: url('{{ asset('assets/img/service/desain/bg-cardpromo.png') }}');"></div>
+            <!-- Slide 3 -->
+            <div class="bg-center bg-cover swiper-slide" style="background-image: url('{{ asset('assets/img/porto/assets-7.jpg') }}');"></div>
         </div>
     </div>
+</div>
 
     <div class="w-full bg-[#7a6a58]">
         <div class="flex flex-wrap items-center justify-around w-full">
@@ -323,6 +332,40 @@
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <script>
             var swiper2 = new Swiper(".centered-slide-carousel-2", {
+                centeredSlides: true,
+                paginationClickable: true,
+                loop: true,
+                spaceBetween: 20,
+                slideToClickedSlide: true,
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false,
+                },
+                breakpoints: {
+                    1920: {
+                        slidesPerView: 1,
+                        spaceBetween: 1,
+                    },
+                    1028: {
+                        slidesPerView: 1,
+                        spaceBetween: 1,
+                    },
+                    990: {
+                        slidesPerView: 1,
+                        spaceBetween: 1,
+                    },
+                    768: {
+                        slidesPerView: 1,
+                        spaceBetween: 1,
+                    },
+                    640: {
+                        slidesPerView: 1,
+                        spaceBetween: 1,
+                    }
+                },
+            });
+
+            var swiper3 = new Swiper(".centered-slide-carousel-3", {
                 centeredSlides: true,
                 paginationClickable: true,
                 loop: true,
