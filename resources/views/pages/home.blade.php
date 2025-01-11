@@ -343,8 +343,8 @@
         </div>        
     
         {{-- Gambar BG --}} 
-        <div class="z-9 absolute left-[28.56%] lg:visible md:invisible sm:invisible invisible transform -translate-y-[90%]">
-            <img src="{{ asset('assets/img/home/hpTes.png') }}" alt="Frame" class="w-[841px] h-[865px]">
+        <div class="z-9 absolute left-[556.5px] lg:visible md:invisible sm:invisible invisible transform -translate-y-[90%]">
+            <img src="{{ asset('assets/img/home/hpTes.png') }}" alt="Frame" class="w-[825px] h-[865px]">
         </div>                       
     </div>        
 </div>
