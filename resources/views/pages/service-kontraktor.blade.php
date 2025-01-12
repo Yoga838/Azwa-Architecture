@@ -21,7 +21,7 @@
     </style>
     <div class="relative flex justify-center w-full h-full">
         <div class="absolute z-[-1] w-full desktop:h-[600px] laptop:h-[450px] md:h-[450px] h-[450px] overflow-hidden">
-            <div class="absolute inset-0 bg-white opacity-5"></div>
+            <div class="absolute inset-0 bg-theme2 opacity-40"></div>
             <img src="{{asset('assets/img/service/kontraktor/bg1-servicekontraktor.jpg')}}" alt="" class="object-cover w-screen h-full">
         </div>
         <div class="py-32">
@@ -33,7 +33,7 @@
             </div>
         </div>
     </div>
-    <h1 class="mt-10 font-bold text-center text-landing-gold desktop:text-5xl laptop:text-4xl md:text-2xl text-md drop-shadow-2 desktop:mt-20 laptop:mt-10 lg:mt-10 md:mt-10">KENAPA HARUS AZWA CONTRACTOR ?</h1>
+    <h1 class="mt-10 font-extrabold text-center text-landing-gold desktop:text-5xl laptop:text-4xl md:text-2xl text-md desktop:mt-20 laptop:mt-10 lg:mt-10 md:mt-10">KENAPA HARUS AZWA CONTRACTOR ?</h1>
     {{-- CardTag Free Design --}}
     <div class="flex items-center justify-center px-5 mt-5 desktop:mt-10 laptop:mt-5 md:mt-5 desktop:px-80 laptop:px-50 md:px-30">
         <div class="w-full px-5 py-4 border desktop:px-8 laptop:px-5 md:px-5 desktop:py-6 laptop:py-4 md:py-4 bg-landing-brownLight-1 rounded-3xl">
@@ -121,7 +121,7 @@
 
     <div class="relative flex items-center w-full h-full desktop:mt-70 laptop:mt-50 md:mt-50 mt-50">
         <div class="absolute z-[-1] w-full desktop:h-[600px] laptop:h-[450px] md:h-[450px] h-[450px] overflow-hidden">
-            <div class="absolute inset-0 bg-black opacity-50"></div>
+            <div class="absolute inset-0 bg-theme3 opacity-60"></div>
             <img src="{{asset('assets/img/service/kontraktor/bg2-servicekontraktor.jpg')}}" alt="" class="object-cover w-screen h-full">
         </div>
         <div class="py-10 mt-30">
@@ -188,7 +188,7 @@
 
     <div class="relative flex items-center w-full h-full desktop:mt-70 laptop:mt-50 md:mt-50 mt-50">
         <div class="absolute z-[-1] w-full desktop:h-[600px] laptop:h-[450px] md:h-[450px] h-[450px] overflow-hidden">
-            <div class="absolute inset-0 bg-black opacity-50"></div>
+            <div class="absolute inset-0 bg-theme3 opacity-60"></div>
             <img src="{{asset('assets/img/service/kontraktor/bg3-servicekontraktor.jpg')}}" alt="" class="object-cover w-screen h-full">
         </div>
         <div class="py-10 mt-30">

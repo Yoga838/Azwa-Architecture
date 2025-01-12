@@ -19,7 +19,7 @@
     {{-- Arsitektur --}}
     <div class="relative flex items-center w-full h-full pt-15">
         <div class="absolute z-[-1] w-full h-[400px] desktop:h-[600px] overflow-hidden">
-            <div class="absolute inset-0 bg-black opacity-50"></div>
+            <div class="absolute inset-0 bg-theme3 opacity-60"></div>
             <img src="{{asset('assets/img/service/desain/bg1-servicedesain.jpg')}}" alt="" class="object-cover w-screen h-full">
         </div>
         <div class="py-10 desktop:py-30 mt-30">
@@ -118,7 +118,7 @@
     {{-- Desain Interior --}}
     <div class="relative flex items-center w-full h-full mt-50">
         <div class="absolute z-[-1] w-full h-[400px] desktop:h-[600px] overflow-hidden">
-            <div class="absolute inset-0 bg-black opacity-50"></div>
+            <div class="absolute inset-0 bg-theme3 opacity-60"></div>
             <img src="{{asset('assets/img/service/desain/bg2-servicedesain.png')}}" alt="" class="object-cover w-screen h-full" style="object-position: 50% 85%;">
         </div>
         <div class="py-10 desktop:py-30 mt-30">
@@ -201,7 +201,7 @@
     {{-- Arsitektur Interior --}}
     <div class="relative flex items-center w-full h-full mt-50">
         <div class="absolute z-[-1] w-full h-[400px] desktop:h-[600px] overflow-hidden">
-            <div class="absolute inset-0 bg-black opacity-50"></div>
+            <div class="absolute inset-0 bg-theme3 opacity-60"></div>
             <img src="{{asset('assets/img/service/desain/bg3left-servicedesain.png')}}" alt="" class="object-cover w-screen h-full" style="object-position: 50% 85%;">
         </div>
         <div class="py-10 desktop:py-30 mt-30">
