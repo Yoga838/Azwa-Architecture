@@ -124,27 +124,27 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="flex items-center justify-center h-64 overflow-hidden rounded-2xl desktop:h-75 laptop:h-84 md:h-64">
-                            <img src="{{asset('assets/img/service/kontraktor/slide-framehp3.jpg')}}" alt="Slide 1" class="object-cover w-1/2 h-full laptop:w-4/5 desktop:w-2/3 lg:w-2/3 md:w-2/3 sm:w-1/2 rounded-2xl">
+                            <img src="{{asset('assets/img/home/portofolio1.png')}}" alt="Slide 1" class="object-cover w-1/2 h-full laptop:w-4/5 desktop:w-2/3 lg:w-2/3 md:w-2/3 sm:w-1/2 rounded-2xl">
                         </div>                        
                     </div>
                     <div class="swiper-slide">
                         <div class="flex items-center justify-center h-64 overflow-hidden rounded-2xl desktop:h-75 laptop:h-84 md:h-64">
-                            <img src="{{asset('assets/img/service/kontraktor/slide-framehp4.jpg')}}" alt="Slide 2" class="object-cover w-1/2 h-full laptop:w-4/5 desktop:w-2/3 lg:w-2/3 md:w-2/3 sm:w-1/2 rounded-2xl">
+                            <img src="{{asset('assets/img/BgHome.png')}}" alt="Slide 2" class="object-cover w-1/2 h-full laptop:w-4/5 desktop:w-2/3 lg:w-2/3 md:w-2/3 sm:w-1/2 rounded-2xl">
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="flex items-center justify-center h-64 overflow-hidden rounded-2xl desktop:h-75 laptop:h-84 md:h-64">
-                            <img src="{{asset('assets/img/service/kontraktor/slide-framehp5.jpg')}}" alt="Slide 3" class="object-cover w-1/2 h-full laptop:w-4/5 desktop:w-2/3 lg:w-2/3 md:w-2/3 sm:w-1/2 rounded-2xl">
+                            <img src="{{asset('assets/img/home/portofolio2.png')}}" alt="Slide 3" class="object-cover w-1/2 h-full laptop:w-4/5 desktop:w-2/3 lg:w-2/3 md:w-2/3 sm:w-1/2 rounded-2xl">
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="flex items-center justify-center h-64 overflow-hidden rounded-2xl desktop:h-75 laptop:h-84 md:h-64">
-                            <img src="{{asset('assets/img/Enscape.png')}}" alt="Slide 4" class="object-cover w-1/2 h-full laptop:w-4/5 desktop:w-2/3 lg:w-2/3 md:w-2/3 sm:w-1/2 rounded-2xl">
+                            <img src="{{asset('assets/img/home/portofolio3.png')}}" alt="Slide 4" class="object-cover w-1/2 h-full laptop:w-4/5 desktop:w-2/3 lg:w-2/3 md:w-2/3 sm:w-1/2 rounded-2xl">
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="flex items-center justify-center h-64 overflow-hidden rounded-2xl desktop:h-75 laptop:h-84 md:h-64">
-                            <img src="{{asset('assets/img/service/kontraktor/slide-framehp1.jpg')}}" alt="Slide 5" class="object-cover w-1/2 h-full laptop:w-4/5 desktop:w-2/3 lg:w-2/3 md:w-2/3 sm:w-1/2 rounded-2xl">
+                            <img src="{{asset('assets/img/home/portofolio4.png')}}" alt="Slide 5" class="object-cover w-1/2 h-full laptop:w-4/5 desktop:w-2/3 lg:w-2/3 md:w-2/3 sm:w-1/2 rounded-2xl">
                         </div>
                     </div>
                     <div class="swiper-slide">
