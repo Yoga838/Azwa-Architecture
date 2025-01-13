@@ -272,7 +272,7 @@
     </div>
 
     <!-- Slider Swiper -->
-    <div class="relative z-10 w-full mx-auto min-w-6xl">
+    <div class="relative z-10 flex items-center justify-center w-full mx-auto min-w-6xl">
         <div class="swiper centered-slide-carousel-2 swiper-container">
             <div class="swiper-wrapper">
                 <!-- Multiple Slides -->
@@ -290,9 +290,9 @@
         </div>        
 
         <!-- Gambar BG -->
-        <div class="z-9 absolute top-[640px] 2xl:left-[580px] xl:left-[452px] lg:left-[324px] 2xl:visible xl:visible lg:visible md:invisible sm:invisible invisible transform -translate-y-[90%]">
+        <div class="absolute transform -translate-x-1/2 -translate-y-1/2 z-9 top-1/2 left-1/2">
             <img src="{{ asset('assets/img/home/hpTes.png') }}" alt="Frame" class="w-auto h-[725px]">
-        </div>                        
+        </div>
     </div>        
 </div>
  
