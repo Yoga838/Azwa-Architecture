@@ -5,13 +5,6 @@
 @section("content")
 
 <div class="relative flex flex-col items-center justify-center w-full h-screen">
-    <!-- Static Text Section -->
-    <div class="absolute z-10 text-center top-35">
-        <p class="text-lg font-extrabold text-justify text-black lg:text-5xl md:text-xl">
-            Menciptakan Karya dengan Kenyamanan Tanpa Kata
-        </p>
-    </div>
-
     <!-- Swiper Slider Section -->
     <div class="absolute w-full h-full swiper centered-slide-carousel-3">
         <div class="swiper-wrapper">
@@ -99,7 +92,7 @@
         </div>             
     </div>
 
-    <div class="flex items-center justify-center w-full h-auto px-2 lg:h-screen sm:px-4 md:px-6">
+    <div class="flex items-center justify-center w-full h-auto px-2 my-15 lg:h-screen sm:px-4 md:px-6">
         <div class="relative flex items-center justify-center w-full my-2 mx-15 sm:my-4 md:my-6">
             <div 
                 class="w-full max-w-[calc(100%-7.5rem)] h-[350px] sm:h-[500px] md:h-[600px] lg:h-[700px] bg-center bg-cover rounded-xl sm:rounded-2xl md:rounded-3xl relative overflow-hidden"
@@ -113,52 +106,47 @@
                     Portofolio Kami
                 </h1>
 
-                <div class="relative w-full my-5 lg:my-40 md:my-20 sm:my-10">
+                <div class="relative w-full desktop:my-25 laptop:my-10 lg:mt-15 md:my-10 sm:my-5">
                 <div class="relative swiper centered-slide-carousel-1 swiper-container ">
-                <div class="flex justify-center invisible mb-10 lg:visible md:invisible sm:invisible">
-                    <div class="flex items-center gap-3 me-3">
-                        <div class="px-5 py-5 border rounded-full bg-black-2"></div>
-                        <h1 class="font-semibold text-landing-brown-3">azwacontractor</h1>
+                <div class="flex justify-center invisible mb-10 desktop:visible laptop:visible md:invisible sm:invisible">
+                    <div class="flex items-center gap-3 desktop:mt-1 laptop:mt-30 me-3">
+                        <div class="p-5 border rounded-full bg-black-2 desktop:p-7 laptop:p-5 md:p-5"></div>
+                        <h1 class="text-xs font-semibold text-landing-brown-3 desktop:text-xl laptop:text-base md:text-xs">azwadesignstudio</h1>
                     </div>
                 </div>
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <div class="flex items-center justify-center h-64 overflow-hidden rounded-2xl">
-                            <img src="{{asset('assets/img/service/kontraktor/slide-framehp3.jpg')}}" alt="Slide 1" class="object-cover w-1/2 h-full sm:w-3/4 lg:w-full rounded-2xl">
+                        <div class="flex items-center justify-center h-64 overflow-hidden rounded-2xl desktop:h-75 laptop:h-84 md:h-64">
+                            <img src="{{asset('assets/img/home/portofolio1.png')}}" alt="Slide 1" class="object-cover w-1/2 h-full laptop:w-4/5 desktop:w-2/3 lg:w-2/3 md:w-2/3 sm:w-1/2 rounded-2xl">
+                        </div>                        
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="flex items-center justify-center h-64 overflow-hidden rounded-2xl desktop:h-75 laptop:h-84 md:h-64">
+                            <img src="{{asset('assets/img/BgHome.png')}}" alt="Slide 2" class="object-cover w-1/2 h-full laptop:w-4/5 desktop:w-2/3 lg:w-2/3 md:w-2/3 sm:w-1/2 rounded-2xl">
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="flex items-center justify-center h-64 overflow-hidden rounded-2xl">
-                            <img src="{{asset('assets/img/service/kontraktor/slide-framehp4.jpg')}}" alt="Slide 2" class="object-cover w-1/2 h-full sm:w-3/4 lg:w-full rounded-2xl">
+                        <div class="flex items-center justify-center h-64 overflow-hidden rounded-2xl desktop:h-75 laptop:h-84 md:h-64">
+                            <img src="{{asset('assets/img/home/portofolio2.png')}}" alt="Slide 3" class="object-cover w-1/2 h-full laptop:w-4/5 desktop:w-2/3 lg:w-2/3 md:w-2/3 sm:w-1/2 rounded-2xl">
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="flex items-center justify-center h-64 overflow-hidden rounded-2xl">
-                            <img src="{{asset('assets/img/service/kontraktor/slide-framehp5.jpg')}}" alt="Slide 3" class="object-cover w-1/2 h-full sm:w-3/4 lg:w-full rounded-2xl">
+                        <div class="flex items-center justify-center h-64 overflow-hidden rounded-2xl desktop:h-75 laptop:h-84 md:h-64">
+                            <img src="{{asset('assets/img/home/portofolio3.png')}}" alt="Slide 4" class="object-cover w-1/2 h-full laptop:w-4/5 desktop:w-2/3 lg:w-2/3 md:w-2/3 sm:w-1/2 rounded-2xl">
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="flex items-center justify-center h-64 overflow-hidden rounded-2xl">
-                            <img src="{{asset('assets/img/Enscape.png')}}" alt="Slide 4" class="object-cover w-1/2 h-full sm:w-3/4 lg:w-full rounded-2xl">
+                        <div class="flex items-center justify-center h-64 overflow-hidden rounded-2xl desktop:h-75 laptop:h-84 md:h-64">
+                            <img src="{{asset('assets/img/home/portofolio4.png')}}" alt="Slide 5" class="object-cover w-1/2 h-full laptop:w-4/5 desktop:w-2/3 lg:w-2/3 md:w-2/3 sm:w-1/2 rounded-2xl">
                         </div>
                     </div>
-                    <div class="swiper-slide">
-                        <div class="flex items-center justify-center h-64 overflow-hidden rounded-2xl">
-                            <img src="{{asset('assets/img/service/kontraktor/slide-framehp1.jpg')}}" alt="Slide 5" class="object-cover w-1/2 h-full sm:w-3/4 lg:w-full rounded-2xl">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="flex items-center justify-center h-64 overflow-hidden rounded-2xl">
-                            <img src="{{asset('assets/img/service/kontraktor/slide-framehp2.jpg')}}" alt="Slide 6" class="object-cover w-1/2 h-full sm:w-3/4 lg:w-full rounded-2xl">
-                        </div>
-                    </div>
-                </div>
+                </div>                
                 
                 <div class="swiper-pagination"></div>
                 </div>
-                <div class="relative z-20 flex justify-center invisible mt-2 lg:visible md:invisible sm:invisible">
-                    <div class="px-8 py-2 border rounded-full bg-landing-brown-1">
-                        <div class="flex items-center gap-2">
+                <div class="relative z-50 flex justify-center mt-5 desktop:visible laptop:visible md:invisible sm:invisible">
+                    <div class="border rounded-full bg-landing-brown-1 desktop:px-9 laptop:px-8 desktop:py-3 laptop:py-2">
+                        <div class="flex items-center gap-2 text-xs desktop:text-xl laptop:text-base md:text-xs">
                             <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 50 50">
                                 <path d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z"></path>
                             </svg>
@@ -166,17 +154,17 @@
                         </div>
                     </div>
                 </div>                    
-                    <div class="absolute top-[50%] left-[50.5%] transform -translate-x-1/2 -translate-y-1/2 lg:visible md:invisible sm:invisible invisible">
-                        <img src="{{asset('assets/img/home/hp.png')}}" alt="Frame" class="w-[100%] h-auto">
-                    </div>
+                <div class="absolute top-[60%] left-[50.5%] desktop:top-[50%] transform -translate-x-1/2 -translate-y-1/2 lg:visible md:invisible sm:invisible z-0">
+                    <img src="{{asset('assets/img/home/hp.png')}}" alt="Frame" class="w-[100%] h-auto">
+                </div>
                 </div>
             </div>
         </div>
     </div>
 
 
-<div class="flex justify-center w-full h-[450px] mt-10 lg:h-[700] sm:px-8 md:px-10">
-    <div class="relative flex flex-col justify-start w-full max-w-7xl sm:my-2 md:my-3">
+<div class="flex justify-center w-full mt-10 lg:h-[700] sm:px-8 md:px-10">
+    <div class="relative flex flex-col justify-start w-full desktop:max-w-screen-desktop laptop:max-w-screen-laptop sm:my-2 md:my-3">
         <h1 class="mb-8 text-5xl font-extrabold text-theme3">Layanan Kami</h1>
         <div class="flex justify-center gap-8">
             <div class="relative w-3/4 overflow-hidden lg:w-1/2 rounded-2xl">
@@ -195,62 +183,34 @@
     </div>
 </div>    
 
-<div class="flex justify-center w-full px-4 py-10 mt-10 mb-10 lg:px-8 md:px-6 sm:px-4">
-    <div class="relative flex flex-col justify-start w-full max-w-6xl p-6 bg-white border-4 border-black shadow-lg rounded-2xl">
-        
-        <!-- Bagian Judul -->
-        <div class="flex flex-col items-start justify-start mb-4 text-center lg:text-left">
-            <h1 class="text-4xl font-extrabold text-[#a46a27]">PROMO ARSITEKTUR</h1>
+<div class="relative w-full px-5 lg:px-36 laptop:px-40 desktop:px-52">
+    <div class="relative swiper progress-slide-carousel swiper-container1">
+        <div class="swiper-promo swiper-wrapper">
+            {{-- Dinamis card promo --}}
         </div>
-
-        <!-- Harga Promo -->
-        <div class="text-center lg:text-left">
-            <span class="text-2xl font-bold line-through text-gray-500 decoration-[#a46a27] decoration-thick">Rp. 100.000/m2</span>
-            <h2 class="mt-1 text-5xl font-extrabold text-[#a46a27]">Rp. 35.000/m2</h2>
-        </div>
-
-        <!-- Daftar Fasilitas dan Tombol -->
-        <div class="flex flex-col items-start justify-between mt-6 lg:flex-row">
-            <!-- List Fasilitas -->
-            <ul class="mb-4 text-lg list-disc list-inside lg:mb-0 lg:w-2/3">
-                <li>Denah 2D</li>
-                <li>Tampak Eksterior Render 3D (4+ Tampak)</li>
-                <li>Gambar Kerja Arsitektur</li>
-                <li>Gambar Kerja Struktur</li>
-                <li>Gambar Kerja MEP</li>
-                <li class="text-lg font-bold">BONUS: Rancangan Anggaran Biaya (RAB) + Upah Kerja dan Material</li>
-            </ul>
-
-            <!-- Tombol Promo -->
-            <div class="flex justify-center lg:justify-end lg:w-1/3">
-                <button class="px-6 py-3 text-lg font-bold text-white transition duration-300 border-2 rounded-full bg-[#a46a27] hover:bg-[#8c571f] hover:border-[#8c571f]">
-                    Dapatkan Promo!
-                </button>
-            </div>
-        </div>
+        <div class="swiper-pagination1 !bottom-2 !top-auto !w-80 right-0 mx-auto bg-gray-100"></div>
     </div>
 </div>
 
-
-<div class="relative flex flex-col w-full h-[1460px] overflow-hidden">
+<div class="relative flex flex-col w-full h-auto overflow-hidden desktop:pb-15 laptop:pb-15 md:pb-20 sm:pb-10">
     <!-- Latar Belakang dengan Overlay -->
     <div class="absolute inset-0 bg-center bg-cover" style="background-image: url('{{ asset('assets/img/BgHome.png') }}')">
         <div class="absolute inset-0 bg-black opacity-20"></div>
     </div>
 
     <!-- Judul di Pojok Kiri Atas -->
-    <div class="absolute z-10 top-5 left-5">
-        <p class="text-4xl font-extrabold ms-25 text-theme3 lg:text-5xl md:text-3xl">Pendapat Mereka</p>
+    <div class="absolute z-10 px-5 top-5 left-5">
+        <p class="text-4xl font-extrabold text-theme3 lg:text-5xl md:text-3xl sm:text-2xl">Pendapat Mereka</p>
     </div>
 
     <!-- Grid Testimoni -->
     <div class="relative z-10 grid w-full grid-cols-1 gap-6 px-10 py-20 mx-auto mt-10 lg:grid-cols-2 max-w-7xl">
         <!-- Testimoni 1 -->
         <div class="flex p-5 rounded-lg shadow-lg bg-theme3">
-            <div class="w-1/2 pr-4">
+            <div class="w-full pr-4 sm:w-1/2">
                 <img src="{{ asset('assets/img/porto/assets-1.jpg') }}" alt="Avatar 1" class="object-cover w-full h-48 rounded-lg">
             </div>
-            <div class="w-1/2">
+            <div class="w-full mt-4 sm:w-1/2 sm:mt-0">
                 <div class="flex items-center">
                     <img src="{{ asset('assets/img/avatar1.jpg') }}" alt="Avatar" class="w-12 h-12 border-2 rounded-full border-theme3">
                     <p class="ml-4 text-lg font-semibold text-theme1">Nama Pengguna</p>
@@ -261,10 +221,10 @@
 
         <!-- Testimoni 2 -->
         <div class="flex p-5 rounded-lg shadow-lg bg-theme3">
-            <div class="w-1/2 pr-4">
+            <div class="w-full pr-4 sm:w-1/2">
                 <img src="{{ asset('assets/img/porto/assets-2.jpg') }}" alt="Avatar 2" class="object-cover w-full h-48 rounded-lg">
             </div>
-            <div class="w-1/2">
+            <div class="w-full mt-4 sm:w-1/2 sm:mt-0">
                 <div class="flex items-center">
                     <img src="{{ asset('assets/img/avatar2.jpg') }}" alt="Avatar" class="w-12 h-12 border-2 rounded-full border-theme3">
                     <p class="ml-4 text-lg font-semibold text-theme1">Nama Pengguna</p>
@@ -275,10 +235,10 @@
 
         <!-- Testimoni 3 -->
         <div class="flex p-5 rounded-lg shadow-lg bg-theme3">
-            <div class="w-1/2 pr-4">
+            <div class="w-full pr-4 sm:w-1/2">
                 <img src="{{ asset('assets/img/porto/assets-3.png') }}" alt="Avatar 3" class="object-cover w-full h-48 rounded-lg">
             </div>
-            <div class="w-1/2">
+            <div class="w-full mt-4 sm:w-1/2 sm:mt-0">
                 <div class="flex items-center">
                     <img src="{{ asset('assets/img/avatar3.jpg') }}" alt="Avatar" class="w-12 h-12 border-2 rounded-full border-theme3">
                     <p class="ml-4 text-lg font-semibold text-theme1">Nama Pengguna</p>
@@ -289,10 +249,10 @@
 
         <!-- Testimoni 4 -->
         <div class="flex p-5 rounded-lg shadow-lg bg-theme3">
-            <div class="w-1/2 pr-4">
+            <div class="w-full pr-4 sm:w-1/2">
                 <img src="{{ asset('assets/img/porto/assets-4.jpg') }}" alt="Avatar 4" class="object-cover w-full h-48 rounded-lg">
             </div>
-            <div class="w-1/2">
+            <div class="w-full mt-4 sm:w-1/2 sm:mt-0">
                 <div class="flex items-center">
                     <img src="{{ asset('assets/img/avatar4.jpg') }}" alt="Avatar" class="w-12 h-12 border-2 rounded-full border-theme3">
                     <p class="ml-4 text-lg font-semibold text-theme1">Nama Pengguna</p>
@@ -306,46 +266,24 @@
     <div class="relative z-10 w-full mx-auto min-w-6xl">
         <div class="swiper centered-slide-carousel-2 swiper-container">
             <div class="swiper-wrapper">
+                <!-- Multiple Slides -->
                 <div class="flex items-center justify-center swiper-slide">
-                    <img src="{{ asset('assets/img/home/testimoni/1.jpeg') }}" alt="Slide 1" class="object-cover w-auto h-[700px] rounded-2xl">
+                    <img src="{{ asset('assets/img/home/testimoni/1.jpeg') }}" alt="Slide 1" class="object-cover w-auto h-[500px] sm:h-[600px] lg:h-[700px] rounded-2xl">
                 </div>
                 <div class="flex items-center justify-center swiper-slide">
-                    <img src="{{ asset('assets/img/home/testimoni/2.jpeg') }}" alt="Slide 2" class="object-cover w-auto h-[700px] rounded-2xl">
+                    <img src="{{ asset('assets/img/home/testimoni/2.jpeg') }}" alt="Slide 2" class="object-cover w-auto h-[500px] sm:h-[600px] lg:h-[700px] rounded-2xl">
                 </div>
                 <div class="flex items-center justify-center swiper-slide">
-                    <img src="{{ asset('assets/img/home/testimoni/3.jpeg') }}" alt="Slide 3" class="object-cover w-auto h-[700px] rounded-2xl">
+                    <img src="{{ asset('assets/img/home/testimoni/3.jpeg') }}" alt="Slide 3" class="object-cover w-auto h-[500px] sm:h-[600px] lg:h-[700px] rounded-2xl">
                 </div>
-                <div class="flex items-center justify-center swiper-slide">
-                    <img src="{{ asset('assets/img/home/testimoni/4.jpeg') }}" alt="Slide 4" class="object-cover w-auto h-[700px] rounded-2xl">
-                </div>
-                <div class="flex items-center justify-center swiper-slide">
-                    <img src="{{ asset('assets/img/home/testimoni/5.jpeg') }}" alt="Slide 5" class="object-cover w-auto h-[700px] rounded-2xl">
-                </div>
-                <div class="flex items-center justify-center swiper-slide">
-                    <img src="{{ asset('assets/img/home/testimoni/6.jpg') }}" alt="Slide 6" class="object-cover w-auto h-[700px] rounded-2xl">
-                </div>
-                <div class="flex items-center justify-center swiper-slide">
-                    <img src="{{ asset('assets/img/home/testimoni/7.jpg') }}" alt="Slide 7" class="object-cover w-auto h-[700px] rounded-2xl">
-                </div>
-                <div class="flex items-center justify-center swiper-slide">
-                    <img src="{{ asset('assets/img/home/testimoni/8.jpg') }}" alt="Slide 8" class="object-cover w-auto h-[700px] rounded-2xl">
-                </div>
-                <div class="flex items-center justify-center swiper-slide">
-                    <img src="{{ asset('assets/img/home/testimoni/9.jpg') }}" alt="Slide 9" class="object-cover w-auto h-[700px] rounded-2xl">
-                </div>
-                <div class="flex items-center justify-center swiper-slide">
-                    <img src="{{ asset('assets/img/home/testimoni/10.jpg') }}" alt="Slide 10" class="object-cover w-auto h-[700px] rounded-2xl">
-                </div>
-                <div class="flex items-center justify-center swiper-slide">
-                    <img src="{{ asset('assets/img/home/testimoni/11.jpg') }}" alt="Slide 11" class="object-cover w-auto h-[700px] rounded-2xl">
-                </div>
+                <!-- More slides here -->
             </div>
         </div>        
-    
-        {{-- Gambar BG --}} 
-        <div class="z-9 absolute left-[28.56%] lg:visible md:invisible sm:invisible invisible transform -translate-y-[90%]">
-            <img src="{{ asset('assets/img/home/hpTes.png') }}" alt="Frame" class="w-[841px] h-[865px]">
-        </div>                       
+
+        <!-- Gambar BG -->
+        <div class="z-9 absolute left-[556.5px] desktop:left-[556.5px] laptop:left-[360.5px] lg:visible md:invisible sm:invisible invisible transform -translate-y-[90%]">
+            <img src="{{ asset('assets/img/home/hpTes.png') }}" alt="Frame" class="w-[825px] h-[865px]">
+        </div>                        
     </div>        
 </div>
  
@@ -453,5 +391,75 @@
                     }
                 },
             });
-        </script>        
+
+            var swiper4 = new Swiper(".progress-slide-carousel", {
+            loop: true,
+            fraction: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".progress-slide-carousel .swiper-pagination1",
+                type: "progressbar",
+            },
+            });
+    </script>
+    <script>
+       document.addEventListener('DOMContentLoaded', () => {
+            const apiUrl = '/api/promo';
+            const swiperWrapper = document.querySelector('.swiper-promo');
+            axios.get(apiUrl)
+                .then(response => {
+                    const promos = response.data;
+                    swiperWrapper.innerHTML = '';
+                    const promoCards = promos.map(promo => {
+                        const descriptionList = JSON.parse(promo.description);
+                        return `
+                        <div class="my-15 swiper-slide">
+                            <div class="border-6 border-black rounded-[44px] h-[500px] desktop:h-[600px] overflow-hidden relative">
+                                <img src="{{asset('assets/img/service/desain/bg-cardpromo.png')}}" alt="" class="absolute w-full h-full object-cover z-[-2]">
+                                <div class="absolute inset-0 bg-white opacity-65 backdrop-brightness-50 z-[-1]"></div>
+                                <div class="flex z-[9]">
+                                    <div class="p-8 desktop:p-12">
+                                        <h1 class="text-lg font-extrabold tracking-wide uppercase lg:text-3xl laptop:text-4xl desktop:text-5xl text-landing-brown-2">${promo.title}</h1>
+                                        <div class="my-2 text-lg font-extrabold tracking-wider laptop:text-3xl desktop:text-4xl">
+                                            <span class="line-through decoration-2 laptop:decoration-4 decoration-landing-brown-2">Rp. ${parseFloat(promo.actual_price).toLocaleString('id-ID')}</span>
+                                        </div>
+                                        <h1 class="text-3xl font-bold lg:text-4xl laptop:text-5xl desktop:text-6xl text-landing-brown-2">Rp. ${parseFloat(promo.price).toLocaleString('id-ID')}</h1>
+                                        <ul class="my-2 mt-4">
+                                            ${descriptionList.map(item => `<li class="text-base font-bold tracking-wider lg:text-lg desktop:text-xl text-landing-black-1">${item}</li>`).join('')}
+                                        </ul>
+                                        <div class="flex mt-10">
+                                            <button class="px-4 py-1 text-xl font-extrabold tracking-wider transition duration-300 border-4 rounded-full text-landing-black-1 border-opacity-40 bg-landing-brown-2 bg-opacity-40 border-black-2">
+                                                Dapatkan Promo!
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        `;
+                    }).join('');
+
+                    swiperWrapper.innerHTML = promoCards;
+                    new Swiper('.swiper-container1', {
+                        loop: true,
+                        autoplay: {
+                            delay: 5000,
+                            disableOnInteraction: false,
+                        },
+                        pagination: {
+                            el: '.swiper-pagination1',
+                            clickable: true,
+                        },
+                    });
+                })
+                .catch(error => {
+                    console.error('Error fetching promos:', error);
+                    swiperWrapper.innerHTML = '<p class="text-red-500">Failed to load promos.</p>';
+                });
+        });
+
+    </script>
 @endsection

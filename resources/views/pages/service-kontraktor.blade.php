@@ -118,7 +118,6 @@
             </div>
         </div>
     </div>
-
     <div class="2xl:mt-70 xl:mt-50 lg:mt-50 md:mt-50 mt-50 w-full h-full flex items-center relative">
         <div class="absolute z-[-1] w-full 2xl:h-[500px] xl:h-[450px] lg:h-[400px] md:h-[400px] h-[400px] overflow-hidden">
             <div class="absolute inset-0 bg-black opacity-50"></div>
@@ -129,7 +128,7 @@
         </div>
     </div>
     {{-- Card Konstruksi Arsitektural --}}
-    <div class="flex justify-center items-center">
+    <div class="flex items-center justify-center">
         <div class="relative">
             <div class="border-0 2xl:w-[850px] xl:w-[600px] lg:w-[600px] md:w-[500px] sm:w-[350px] w-[350px] 2xl:h-[600px] xl:h-[550px] lg:h-[550px] md:h-[550px] h-[550px] bg-theme3 rounded-[2rem] pt-5">
                 <div class="text-center">
@@ -197,7 +196,7 @@
     </div>
 
     {{-- Card Konstruksi Interior --}}
-    <div class="flex justify-center items-center">
+    <div class="flex items-center justify-center">
         <div class="relative">
             <div class="border-0 2xl:w-[850px] xl:w-[600px] lg:w-[600px] md:w-[500px] sm:w-[350px] w-[350px] 2xl:h-[600px] xl:h-[550px] lg:h-[550px] md:h-[550px] h-[550px] bg-theme3 rounded-[2rem] pt-5">
                 <div class="text-center">
