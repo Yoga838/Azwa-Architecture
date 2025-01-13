@@ -40,8 +40,8 @@ Route::get('/', function () {
     return view('pages.home');
 })->name("home.index");
 Route::get('/tentang-kami',[AboutController::class, 'index'])->name('about.index');
-Route::get('/portofolio',[ProjectsController::class, 'index'])->name('project.index');
-Route::get('/portofolio/Detail',[ProjectDetailController::class, 'index'])->name('project-detail.index');
+Route::get('/portofolio',[PortofolioController::class, 'get'])->name('project.index');
+Route::get('/portofolio/Detail/{id}',[PortofolioController::class, 'getById'])->name('project-detail.index');
 Route::prefix('layanan')->name('service.')->group(function () {
     Route::get('/desain', [ServiceController::class, 'index'])->name('desain');
     Route::get('/kontraktor', [ServiceKontraktorController::class, 'index'])->name('kontraktor');

@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Dashboard;
 use App\Models\Portofolio;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Storage;
 
 class PortofolioController extends Controller
@@ -52,7 +53,10 @@ class PortofolioController extends Controller
 
     public function get(Request $request){
         $portofolio = Portofolio::with('fotos')->get();
-        return response()->json(['data'=>$portofolio],200);
+        // return response()->json(['data'=>$portofolio],200);
+
+        $images = File::files(public_path('assets/img/porto'));
+        return view('pages.project', compact('images', 'portofolio'));
     }
 
     public function edit(Request $request, $id){
@@ -94,15 +98,21 @@ class PortofolioController extends Controller
         $portofolio->delete();
         return response()->json(['success' => 'Data Portofolio Berhasil Dihapus!'],201);
     }
+
     public function getById($id){
         // Ambil portofolio berdasarkan ID dan termasuk relasi fotos
         $portofolio = Portofolio::with('fotos')->findOrFail($id);
 
-        return response()->json(['data' => $portofolio], 200);
+        // return response()->json(['data' => $portofolio], 200);
+        $allImages = File::files(public_path('assets/img/porto'));
+        $images = array_slice($allImages, 0, 4);
+        return view('pages.project-detail', compact('allImages' ,'images', 'portofolio'));
+
     }
 
-    public function IndexView () {
-        return view('admin.portofolio.indexPortofolio');
+    public function IndexView (Request $request) {
+        $portofolio = Portofolio::with('fotos')->get();
+        return view('admin.portofolio.indexPortofolio', compact('portofolio'));
     }
 
     public function StoreView() {
