@@ -5,13 +5,6 @@
 @section("content")
 
 <div class="relative flex flex-col items-center justify-center w-full h-screen">
-    <!-- Static Text Section -->
-    <div class="absolute z-10 text-center top-35">
-        <p class="text-lg font-extrabold text-justify text-black lg:text-5xl md:text-xl">
-            Menciptakan Karya dengan Kenyamanan Tanpa Kata
-        </p>
-    </div>
-
     <!-- Swiper Slider Section -->
     <div class="absolute w-full h-full swiper centered-slide-carousel-3">
         <div class="swiper-wrapper">
@@ -99,7 +92,7 @@
         </div>             
     </div>
 
-    <div class="flex items-center justify-center w-full h-auto px-2 lg:h-screen sm:px-4 md:px-6">
+    <div class="flex items-center justify-center w-full h-auto px-2 my-15 lg:h-screen sm:px-4 md:px-6">
         <div class="relative flex items-center justify-center w-full my-2 mx-15 sm:my-4 md:my-6">
             <div 
                 class="w-full max-w-[calc(100%-7.5rem)] h-[350px] sm:h-[500px] md:h-[600px] lg:h-[700px] bg-center bg-cover rounded-xl sm:rounded-2xl md:rounded-3xl relative overflow-hidden"
@@ -113,12 +106,12 @@
                     Portofolio Kami
                 </h1>
 
-                <div class="relative w-full desktop:my-45 laptop:my-20 lg:my-40 md:my-10 sm:my-5">
+                <div class="relative w-full desktop:my-25 laptop:my-10 lg:mt-15 md:my-10 sm:my-5">
                 <div class="relative swiper centered-slide-carousel-1 swiper-container ">
                 <div class="flex justify-center invisible mb-10 desktop:visible laptop:visible md:invisible sm:invisible">
                     <div class="flex items-center gap-3 desktop:mt-1 laptop:mt-30 me-3">
                         <div class="p-5 border rounded-full bg-black-2 desktop:p-7 laptop:p-5 md:p-5"></div>
-                        <h1 class="text-xs font-semibold text-landing-brown-3 desktop:text-xl laptop:text-base md:text-xs">azwacontractor</h1>
+                        <h1 class="text-xs font-semibold text-landing-brown-3 desktop:text-xl laptop:text-base md:text-xs">azwadesignstudio</h1>
                     </div>
                 </div>
                 <div class="swiper-wrapper">
@@ -147,16 +140,11 @@
                             <img src="{{asset('assets/img/home/portofolio4.png')}}" alt="Slide 5" class="object-cover w-1/2 h-full laptop:w-4/5 desktop:w-2/3 lg:w-2/3 md:w-2/3 sm:w-1/2 rounded-2xl">
                         </div>
                     </div>
-                    <div class="swiper-slide">
-                        <div class="flex items-center justify-center h-64 overflow-hidden rounded-2xl desktop:h-75 laptop:h-84 md:h-64">
-                            <img src="{{asset('assets/img/service/kontraktor/slide-framehp2.jpg')}}" alt="Slide 6" class="object-cover w-1/2 h-full laptop:w-4/5 desktop:w-2/3 lg:w-2/3 md:w-2/3 sm:w-1/2 rounded-2xl">
-                        </div>
-                    </div>
                 </div>                
                 
                 <div class="swiper-pagination"></div>
                 </div>
-                <div class="flex justify-center invisible mt-2 desktop:visible laptop:visible md:invisible sm:invisible">
+                <div class="relative z-50 flex justify-center mt-5 desktop:visible laptop:visible md:invisible sm:invisible">
                     <div class="border rounded-full bg-landing-brown-1 desktop:px-9 laptop:px-8 desktop:py-3 laptop:py-2">
                         <div class="flex items-center gap-2 text-xs desktop:text-xl laptop:text-base md:text-xs">
                             <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 50 50">
@@ -166,9 +154,9 @@
                         </div>
                     </div>
                 </div>                    
-                    <div class="absolute desktop:top-[43%] left-[50.5%] laptop:top-[60%] transform -translate-x-1/2 -translate-y-1/2 lg:visible md:invisible sm:invisible invisible">
-                        <img src="{{asset('assets/img/home/hp.png')}}" alt="Frame" class="w-[100%] h-auto">
-                    </div>
+                <div class="absolute top-[60%] left-[50.5%] desktop:top-[50%] transform -translate-x-1/2 -translate-y-1/2 lg:visible md:invisible sm:invisible z-0">
+                    <img src="{{asset('assets/img/home/hp.png')}}" alt="Frame" class="w-[100%] h-auto">
+                </div>
                 </div>
             </div>
         </div>
