@@ -3,22 +3,22 @@
 @section('subtitle', 'Portofolio')
 
 @section("content")
-    <section class="desktop:mt-30 laptop:mt-20 md:mt-20 mt-10 desktop:mx-30 laptop:mx-20 md:mx-20 mx-10">
+    <section class="2xl:mt-30 xl:mt-20 lg:mt-20 md:mt-20 mt-10 2xl:mx-30 xl:mx-20 lg:mx-20 md:mx-20 mx-10">
         <div class="pt-30">
             <div class="flex flex-wrap">
-                <div class="w-full desktop:w-2/6 laptop:w-1/3 md:w-1/3">
-                    <h1 class="desktop:text-6xl laptop:text-5xl md:text-4xl text-3xl font-bold md:text-start text-center text-theme2">Portofolio Kami</h1>
+                <div class="w-full 2xl:w-1/3 xl:w-1/3 lg:w-1/3 md:w-1/3">
+                    <h1 class="2xl:text-5xl xl:text-5xl lg:text-4xl md:text-4xl text-3xl font-bold md:text-start text-center text-theme2">Portofolio Kami</h1>
                 </div>
-                <div class="w-full desktop:w-2/3 laptop:w-8/12 md:w-8/12 flex justify-center items-center">
-                    <div class="desktop:h-1.5 laptop:h-1 h-1 w-full bg-theme2 rounded-lg"></div>
+                <div class="w-full 2xl:w-8/12 xl:w-8/12 lg:w-8/12 md:w-8/12 flex justify-center items-center">
+                    <div class="2xl:h-1.5 xl:h-1 lg:h-1 md:h-1 h-1 w-full bg-theme2 rounded-lg"></div>
                 </div>
             </div>
         </div>
         <div class="lg:py-30 md:py-20 py-15">
-            <div class="lg:columns-2 md:columns-2 columns-1 gap-4">
+            <div class="columns-1 sm:columns-2 lg:columns-2 gap-4">
                 @forelse ($images as $image)
                     <a href="{{ route('project-detail.index') }}" data-aos="fade-up" data-aos-delay="{{ $loop->index * 200 }}">
-                        <div class="relative w-full h-full mb-4 group rounded-3xl overflow-hidden">
+                        <div class="relative w-full h-auto mb-4 group rounded-3xl overflow-hidden">
                             <img src="{{ asset('assets/img/porto/' . $image->getFilename()) }}" alt="{{ $image->getFilename() }}" class="w-full h-full object-cover" />
     
                             <div class="p-4 absolute inset-0 bg-white bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -51,13 +51,13 @@
             </div>
         </div>
         <div class="flex justify-center pb-30">
-            <button class="desktop:w-[230px] w-[200px] desktop:text-lg laptop:text-base flex items-center desktop:py-3 py-[5px] desktop:px-4 px-[10px] rounded-full bg-landing-brown-2 text-white">
+            <button class="2xl:w-[215px] w-[200px] 2xl:text-md text-base flex justify-center items-center 2xl:py-2 py-[5px] 2xl:px-2 px-[10px] rounded-full bg-landing-brown-1 text-white hover:bg-landing-brown-3 transition duration-300 ease-in-out transform hover:scale-105">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3"/></svg>
                 <p class="font-medium ms-[5px]">Lihat Selengkapnya</p>
             </button>
         </div>
     </section>
-    <section class="relative w-full desktop:h-[800px] laptop:h-[600px] h-[600px]">
+    <section class="relative w-full 2xl:h-[700px] xl:h-[600px] h-[600px]">
         <div class="w-full h-full">
             <img src="{{ asset('assets/img/Enscape.png') }}" class="object-cover w-full h-full" />
         </div>
@@ -65,12 +65,12 @@
         <div class="absolute inset-0 flex items-center justify-center">
             <div>
                 <div class="flex justify-center items-center space-x-8" data-aos="fade-up" data-aos-duration="1000">
-                    <h1 class="text-white desktop:text-6xl laptop:text-5xl md:text-4xl text-3xl">Bersama</h1>
+                    <h1 class="text-white 2xl:text-5xl xl:text-5xl lg:text-5xl md:text-4xl text-3xl">Bersama</h1>
                     <img src="{{ asset('assets/img/LogoAzwa.png') }}" alt="Brand" class="w-[30%] md:w-[20%] h-auto" />
                 </div>
                 <div class="lg:mt-20 mt-16 w-full flex justify-center text-center" data-aos="fade-up" data-aos-duration="1000">
                     <div class="lg:w-[60%] w-[75%]">
-                        <h1 class="text-white desktop:text-6xl laptop:text-5xl md:text-4xl text-3xl font-bold">Wujudkan Rumah Impian Anda Sekarang Juga !</h1>
+                        <h1 class="text-white 2xl:text-5xl xl:text-5xl lg:text-5xl md:text-4xl text-3xl font-bold">Wujudkan Rumah Impian Anda Sekarang Juga !</h1>
                     </div>
                 </div>
             </div>
