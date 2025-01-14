@@ -5,8 +5,8 @@
 @section("content")
 <div class="w-full h-full flex justify-center relative">
     <div class="absolute z-[-1] w-full 2xl:h-[500px] xl:h-[450px] lg:h-[400px] md:h-[400px] h-[400px] overflow-hidden">
-        <div class="absolute inset-0 bg-white opacity-5"></div>
-        <img src="{{asset('assets/img/service/perizinan/perizinan5.jpeg')}}" alt="" class="w-screen brightness-75 object-cover h-full">
+        <div class="absolute inset-0 bg-theme3 opacity-60"></div>
+        <img src="{{asset('assets/img/service/perizinan/perizinan5.jpeg')}}" alt="" class="w-screen object-cover h-full">
     </div>
     <div class="py-32">
         <div class="mx-10">
@@ -92,8 +92,8 @@
 {{-- BG Gambar --}}
 <div class="2xl:mt-60 xl:mt-50 lg:mt-50 md:mt-50 mt-50 w-full h-full flex items-center relative">
     <div class="absolute z-[-1] w-full 2xl:h-[500px] xl:h-[450px] lg:h-[400px] md:h-[400px] h-[400px] overflow-hidden">
-        <div class="absolute inset-0"></div>
-        <img src="{{asset('assets/img/service/perizinan/perizinan4.jpeg')}}" alt="" class="w-screen brightness-75 object-cover h-full">
+        <div class="absolute inset-0 bg-theme3 opacity-60"></div>
+        <img src="{{asset('assets/img/service/perizinan/perizinan4.jpeg')}}" alt="" class="w-screen object-cover h-full">
     </div>
     <div class="py-20 mt-30">
         <h1 class="font-bold text-2xl 2xl:text-6xl xl:text-5xl lg:text-5xl md:text-4xl text-theme1 drop-shadow-2 md:ml-21">PBG (Persetujuan Bangunan Gedung) / <br>SLF ( Sertifikasi Layak Fungsi)</h1>
@@ -126,8 +126,8 @@
 {{-- BG Gambar --}}
 <div class="2xl:mt-60 xl:mt-50 lg:mt-50 md:mt-50 mt-50 w-full h-full flex items-center relative">
     <div class="absolute z-[-1] w-full  2xl:h-[500px] xl:h-[450px] lg:h-[400px] md:h-[400px] h-[400px] overflow-hidden">
-        <div class="absolute inset-0"></div>
-        <img src="{{asset('assets/img/service/perizinan/perizinan3.jpeg')}}" alt="" class="w-screen brightness-75 object-cover h-full">
+        <div class="absolute inset-0 bg-theme3 opacity-60"></div>
+        <img src="{{asset('assets/img/service/perizinan/perizinan3.jpeg')}}" alt="" class="w-screen object-cover h-full">
     </div>
     <div class="py-20 mt-30">
         <h1 class="font-bold text-2xl 2xl:text-6xl xl:text-5xl lg:text-5xl md:text-4xl text-theme1 drop-shadow-2 md:ml-21">PAKET LENGKAP PBG & SLF</h1>

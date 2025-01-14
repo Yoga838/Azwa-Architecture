@@ -17,7 +17,7 @@
         <div class="lg:py-30 md:py-20 py-15">
             <div class="columns-1 sm:columns-2 lg:columns-2 gap-4">
                 @forelse ($images as $image)
-                    <a href="{{ route('project-detail.index') }}" data-aos="fade-up" data-aos-delay="{{ $loop->index * 200 }}">
+                    <a href="{{ route('project-detail.index', ['id' => $loop->index]) }}" data-aos="fade-up" data-aos-delay="{{ $loop->index * 200 }}">
                         <div class="relative w-full h-auto mb-4 group rounded-3xl overflow-hidden">
                             <img src="{{ asset('assets/img/porto/' . $image->getFilename()) }}" alt="{{ $image->getFilename() }}" class="w-full h-full object-cover" />
     

@@ -21,7 +21,7 @@
     </style>
     <div class="w-full h-full flex justify-center relative">
         <div class="absolute z-[-1] w-full 2xl:h-[500px] xl:h-[450px] lg:h-[400px] md:h-[400px] h-[400px] overflow-hidden">
-            <div class="absolute inset-0 bg-white opacity-5"></div>
+            <div class="absolute inset-0 bg-theme3 opacity-60"></div>
             <img src="{{asset('assets/img/service/kontraktor/bg1-servicekontraktor.jpg')}}" alt="" class="w-screen object-cover h-full">
         </div>
         <div class="py-32">
@@ -120,7 +120,7 @@
     </div>
     <div class="2xl:mt-70 xl:mt-50 lg:mt-50 md:mt-50 mt-50 w-full h-full flex items-center relative">
         <div class="absolute z-[-1] w-full 2xl:h-[500px] xl:h-[450px] lg:h-[400px] md:h-[400px] h-[400px] overflow-hidden">
-            <div class="absolute inset-0 bg-black opacity-50"></div>
+            <div class="absolute inset-0 bg-theme3 opacity-60"></div>
             <img src="{{asset('assets/img/service/kontraktor/bg2-servicekontraktor.jpg')}}" alt="" class="w-screen object-cover h-full">
         </div>
         <div class="py-10 mt-30">
@@ -187,7 +187,7 @@
 
     <div class="2xl:mt-70 xl:mt-50 lg:mt-50 md:mt-50 mt-50 w-full h-full flex items-center relative">
         <div class="absolute z-[-1] w-full 2xl:h-[500px] xl:h-[450px] lg:h-[400px] md:h-[400px] h-[400px] overflow-hidden">
-            <div class="absolute inset-0 bg-black opacity-50"></div>
+            <div class="absolute inset-0 bg-theme3 opacity-60"></div>
             <img src="{{asset('assets/img/service/kontraktor/bg3-servicekontraktor.jpg')}}" alt="" class="w-screen object-cover h-full">
         </div>
         <div class="py-10 mt-30">
