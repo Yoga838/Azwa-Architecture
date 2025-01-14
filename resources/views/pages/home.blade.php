@@ -24,46 +24,78 @@
     </div>
 </div>
 
-<div class="w-full bg-[#7a6a58] py-10">
-    <div class="grid items-center justify-around grid-cols-1 gap-8 px-5 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+<div class="relative w-full py-10">
+    <div class="absolute inset-0 bg-[#7a6a58] opacity-60"></div>
+    <div class="relative z-10 grid items-center justify-around grid-cols-1 gap-8 px-5 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         <!-- ONE-STOP SERVICE -->
         <div class="flex flex-col items-center justify-center">
-            <div class="flex items-center justify-center w-24 h-24 my-4 bg-black rounded-full">
+            <div class="flex items-center justify-center w-24 h-24 my-4 rounded-full opacity-75 bg-theme3">
                 <img src="{{ asset('assets/img/home/icon1.png') }}" alt="Home Icon" width="50" height="50">
             </div>
-            <h1 class="mb-4 text-center text-white text-[20px] lg:text-[24px]">
-                <strong>ONE-STOP SERVICE</strong>
+            <h1 class="mb-4 text-center font-extrabold text-[#251d16] text-[20px] lg:text-[35px]">
+                <p>
+                    <strong>ONE-STOP</strong>
+                </p>
+                <p><strong>SERVICE</strong></p>
             </h1>
-            <p class="text-center text-white text-[16px] lg:text-[18px] max-w-[300px]">
-                Layanan lengkap dari desain, pembangunan, perizinan dalam satu tempat.
+            <p class="text-center font-bold text-[#251d16] text-[16px] lg:text-[25px] max-w-[400px]">
+                Layanan <span class="text-white">lengkap</span> dari desain,
+            </p>            
+            <p class="text-center font-bold text-[#251d16] text-[16px] lg:text-[25px] max-w-[400px]">
+                pembangunan, perizinan
+            </p>
+            <p class="text-center font-bold text-[#251d16] text-[16px] lg:text-[25px] max-w-[400px]">
+                dalam <span class="text-white">satu tempat</span>.
             </p>
         </div>
     
         <!-- GRATIS KONSULTASI -->
         <div class="flex flex-col items-center justify-center">
-            <div class="flex items-center justify-center w-24 h-24 my-4 bg-black rounded-full">
+            <div class="flex items-center justify-center w-24 h-24 my-4 rounded-full opacity-75 bg-theme3">
                 <img src="{{ asset('assets/img/home/icon2.png') }}" alt="Home Icon" width="50" height="50">
             </div>
-            <h1 class="mb-4 text-center text-white text-[20px] lg:text-[24px]">
-                <strong>GRATIS KONSULTASI</strong>
+            <h1 class="mb-4 text-center font-extrabold text-[#251d16] text-[20px] lg:text-[35px]">
+                <p>
+                    <strong>GRATIS</strong>
+                </p>
+                <p>
+                    <strong>KONSULTASI</strong>
+                </p>
             </h1>
-            <p class="text-center text-white text-[16px] lg:text-[18px] max-w-[300px]">
-                Dapatkan sesi konsultasi gratis untuk solusi desain yang sesuai dengan kebutuhan Anda.
+            <p class="text-center font-bold text-[#251d16] text-[16px] lg:text-[25px] max-w-[400px]">
+                Dapatkan sesi konsultasi <span class="text-white">gratis</span>
+            </p>
+            <p class="text-center font-bold text-[#251d16] text-[16px] lg:text-[25px] max-w-[400px]">
+                untuk solusi desain yang sesuai
+            </p>
+            <p class="text-center font-bold text-[#251d16] text-[16px] lg:text-[25px] max-w-[400px]">
+                dengan kebutuhan Anda.
             </p>
         </div>
     
         <!-- HASIL BERKUALITAS -->
         <div class="flex flex-col items-center justify-center md:col-span-2 lg:col-span-1">
-            <div class="flex items-center justify-center w-24 h-24 my-4 bg-black rounded-full">
+            <div class="flex items-center justify-center w-24 h-24 my-4 rounded-full opacity-75 bg-theme3">
                 <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 576 512">
                     <path fill="white" d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0M571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93"/>
                 </svg>
             </div>
-            <h1 class="mb-4 text-center text-white text-[20px] lg:text-[24px]">
-                <strong>HASIL BERKUALITAS</strong>
+            <h1 class="mb-4 text-center font-extrabold text-[#251d16] text-[20px] lg:text-[35px]">
+                <p>
+                    <strong>HASIL</strong>
+                </p>
+                <p>
+                    <strong>BERKUALITAS</strong>
+                </p>
             </h1>
-            <p class="text-center text-white text-[16px] lg:text-[18px] max-w-[300px]">
-                Desain inovatif, struktur kokoh terjamin, dan rencana anggaran yang akurat.
+            <p class="text-center font-bold text-[#251d16] text-[16px] lg:text-[25px] max-w-[400px]">
+                Desain <span class="text-white">inovatif</span>, struktur <span class="text-white">kokoh</span>
+            </p>
+            <p class="text-center font-bold text-[#251d16] text-[16px] lg:text-[25px] max-w-[400px]">
+                terjamin, dan rencana
+            </p>
+            <p class="text-center font-bold text-[#251d16] text-[16px] lg:text-[25px] max-w-[400px]">
+                anggaran yang <span class="text-white">akurat</span>.
             </p>
         </div>
     </div>    
@@ -76,23 +108,38 @@
         </div>
     
         <!-- Teks -->
-        <div class="relative w-full p-6 text-black lg:w-3/6">
+        <div class="relative w-full p-6 text-black xl::w-3/6 lg:w-4/6">
             <!-- Background image -->
-            <div class="absolute inset-0 bg-center bg-no-repeat bg-cover opacity-20" style="background-image: url('{{ asset('assets/img/HeadLogo_Azwa.png') }}');"></div>
+            <div class="absolute inset-0 bg-top bg-no-repeat bg-cover opacity-20" style="background-image: url('{{ asset('assets/img/HeadLogo_Azwa.png') }}'); background-position: top center; background-size: contain;"></div>
         
             <!-- Konten teks -->
-            <div class="relative">
-                <p class="mb-4 text-6xl text-center lg:text-5xl">
-                    Cari Jasa <strong>Desain Arsitektur dan Interior</strong> Bermutu?
+            <div class="relative p-6">
+                <p class="mb-4 text-6xl text-center lg:text-4xl">
+                    Cari Jasa
                 </p>
-                <h1 class="mb-4 text-4xl text-center lg:text-3xl">
+                <p class="mb-4 text-6xl font-extrabold text-center xl:text-4xl lg:text-3xl">
+                    <strong>Desain Arsitektur dan Interior</strong>
+                </p>
+                <p class="mb-4 text-6xl text-center xl:text-4xl lg:text-4xl">
+                    Bermutu?
+                </p>
+                <h1 class="mt-10 mb-4 text-4xl text-center xl:text-4xl lg:text-3xl">
                     <strong>Azwa Design Studio</strong>
                 </h1>
                 <p class="mb-4 text-2xl text-center">
                     Siap mewujudkan keinginan Anda!
                 </p>
-                <p class="text-xl text-center lg:text-2xl">
-                    <strong>Kami memperhitungkan kekuatan struktur serta anggaran</strong> dengan optimal, sehingga menghasilkan bangunan yang <strong>estetik</strong> namun tetap <strong>aman, kokoh, dan sesuai kondisi keuangan Anda.</strong>
+                <p class="mt-10 text-xl text-center 2xl:text-2xl lg:text-xl">
+                    <strong>Kami memperhitungkan kekuatan struktur</strong>
+                </p>
+                <p class="text-xl text-center 2xl:text-2xl lg:text-xl">
+                    <strong>serta anggaran</strong> dengan optimal, sehingga menghasilkan
+                </p>
+                <p class="text-xl text-center 2xl:text-2xl lg:text-xl">
+                    bangunan yang <strong>estetik</strong> namun tetap
+                </p>
+                <p class="text-xl text-center 2xl:text-2xl lg:text-xl">
+                    <strong>aman, kokoh, dan sesuai kondisi keuangan Anda.</strong>
                 </p>
                 <div class="mt-6 text-center">
                     <a href="#link-ke-halaman-lain" class="inline-block px-20 py-2 mx-2 mt-10 text-xl text-white rounded-3xl bg-theme2">
@@ -100,7 +147,8 @@
                     </a>
                 </div>
             </div>
-        </div>                   
+        </div>
+                         
     </div>
 
     <div class="flex items-center justify-center w-full h-auto px-2 my-15 lg:h-screen sm:px-4 md:px-6">
@@ -155,7 +203,7 @@
                 
                 <div class="swiper-pagination"></div>
                 </div>
-                <div class="relative z-50 flex justify-center visible mt-5 2xl:visible xl:visible lg:invisible md:invisible sm:invisible">
+                <div class="relative flex justify-center visible mt-5 z-9 2xl:visible xl:visible lg:invisible md:invisible sm:invisible">
                     <div class="border rounded-full bg-landing-brown-1 2xl:px-9 xl:px-8 2xl:py-3">
                         <div class="flex items-center gap-2 text-xs 2xl:text-xl xl:text-base md:text-xs">
                             <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 50 50">
