@@ -108,7 +108,7 @@
         </div>
     
         <!-- Teks -->
-        <div class="relative w-full p-6 text-black xl::w-3/6 lg:w-4/6">
+        <div class="relative w-full p-6 text-black xl:w-3/6 lg:w-4/6">
             <!-- Background image -->
             <div class="absolute inset-0 bg-top bg-no-repeat bg-cover opacity-20" style="background-image: url('{{ asset('assets/img/HeadLogo_Azwa.png') }}'); background-position: top center; background-size: contain;"></div>
         
