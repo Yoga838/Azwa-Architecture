@@ -29,9 +29,7 @@
         <!-- ONE-STOP SERVICE -->
         <div class="flex flex-col items-center justify-center">
             <div class="flex items-center justify-center w-24 h-24 my-4 bg-black rounded-full">
-                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 576 512">
-                    <path fill="white" d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0M571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93"/>
-                </svg>
+                <img src="{{ asset('assets/img/home/icon1.png') }}" alt="Home Icon" width="50" height="50">
             </div>
             <h1 class="mb-4 text-center text-white text-[20px] lg:text-[24px]">
                 <strong>ONE-STOP SERVICE</strong>
@@ -44,9 +42,7 @@
         <!-- GRATIS KONSULTASI -->
         <div class="flex flex-col items-center justify-center">
             <div class="flex items-center justify-center w-24 h-24 my-4 bg-black rounded-full">
-                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 576 512">
-                    <path fill="white" d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0M571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93"/>
-                </svg>
+                <img src="{{ asset('assets/img/home/icon2.png') }}" alt="Home Icon" width="50" height="50">
             </div>
             <h1 class="mb-4 text-center text-white text-[20px] lg:text-[24px]">
                 <strong>GRATIS KONSULTASI</strong>
@@ -73,32 +69,38 @@
     </div>    
 </div>
 
-    <div class="flex flex-col items-center justify-center w-full px-10 my-15 lg:flex-row">
+    <div class="flex flex-col items-center justify-center w-full px-10 xl:mt-30 lg:mt-20 sm:mt-20 lg:flex-row">
         <!-- Gambar -->
         <div class="flex-shrink-0 w-full lg:w-2/6">
             <img src="{{ asset('assets/img/home/bg-jasa.png') }}" alt="Deskripsi Gambar" class="object-cover w-full h-auto">
         </div>
     
         <!-- Teks -->
-        <div class="w-full p-6 text-black lg:w-3/6">
-            <p class="mb-4 text-6xl text-center lg:text-5xl">
-                Cari Jasa <strong>Desain Arsitektur dan Interior</strong> Bermutu?
-            </p>
-            <h1 class="mb-4 text-4xl text-center lg:text-3xl">
-                <strong>Azwa Design Studio</strong>
-            </h1>
-            <p class="mb-4 text-2xl text-center">
-                Siap mewujudkan keinginan Anda!
-            </p>
-            <p class="text-xl text-center lg:text-2xl">
-                <strong>Kami memperhitungkan kekuatan struktur serta anggaran</strong> dengan optimal, sehingga menghasilkan bangunan yang <strong>estetik</strong> namun tetap <strong>aman, kokoh, dan sesuai kondisi keuangan Anda.</strong>
-            </p>
-            <div class="mt-6 text-center">
-                <a href="#link-ke-halaman-lain" class="inline-block px-20 py-2 mx-2 mt-10 text-xl text-white rounded-3xl bg-theme2">
-                    Lebih Lanjut
-                </a>
+        <div class="relative w-full p-6 text-black lg:w-3/6">
+            <!-- Background image -->
+            <div class="absolute inset-0 bg-center bg-no-repeat bg-cover opacity-20" style="background-image: url('{{ asset('assets/img/HeadLogo_Azwa.png') }}');"></div>
+        
+            <!-- Konten teks -->
+            <div class="relative">
+                <p class="mb-4 text-6xl text-center lg:text-5xl">
+                    Cari Jasa <strong>Desain Arsitektur dan Interior</strong> Bermutu?
+                </p>
+                <h1 class="mb-4 text-4xl text-center lg:text-3xl">
+                    <strong>Azwa Design Studio</strong>
+                </h1>
+                <p class="mb-4 text-2xl text-center">
+                    Siap mewujudkan keinginan Anda!
+                </p>
+                <p class="text-xl text-center lg:text-2xl">
+                    <strong>Kami memperhitungkan kekuatan struktur serta anggaran</strong> dengan optimal, sehingga menghasilkan bangunan yang <strong>estetik</strong> namun tetap <strong>aman, kokoh, dan sesuai kondisi keuangan Anda.</strong>
+                </p>
+                <div class="mt-6 text-center">
+                    <a href="#link-ke-halaman-lain" class="inline-block px-20 py-2 mx-2 mt-10 text-xl text-white rounded-3xl bg-theme2">
+                        Lebih Lanjut
+                    </a>
+                </div>
             </div>
-        </div>             
+        </div>                   
     </div>
 
     <div class="flex items-center justify-center w-full h-auto px-2 my-15 lg:h-screen sm:px-4 md:px-6">
@@ -185,7 +187,7 @@
             <div class="relative w-3/4 overflow-hidden lg:w-1/2 rounded-2xl">
                 <img src="{{asset('assets/img/home/layanan.jpg')}}" alt="Arsitektur" class="w-full h-[400px]">
                 <div class="absolute inset-0 flex px-5 py-3 transition-opacity duration-300 bg-black-2 bg-opacity-70">
-                    <h3 class="text-3xl font-bold text-white">Arsitektur</h3>
+                    <h3 class="text-3xl font-bold text-white">Interior</h3>
                 </div>
             </div>
         </div>
@@ -217,28 +219,30 @@
         <!-- Testimoni 1 -->
         <div class="flex p-5 rounded-lg shadow-lg bg-theme3">
             <div class="w-full pr-4 sm:w-1/2">
-                <img src="{{ asset('assets/img/porto/assets-1.jpg') }}" alt="Avatar 1" class="object-cover w-full h-48 rounded-lg">
+                <img src="{{ asset('assets/img/porto/assets-1.png') }}" alt="Avatar 1" class="object-cover w-full h-48 rounded-lg">
             </div>
             <div class="w-full mt-4 sm:w-1/2 sm:mt-0">
                 <div class="flex items-center">
-                    <img src="{{ asset('assets/img/avatar1.jpg') }}" alt="Avatar" class="w-12 h-12 border-2 rounded-full border-theme3">
-                    <p class="ml-4 text-lg font-semibold text-theme1">Nama Pengguna</p>
+                    <img src="{{ asset('assets/img/home/avatar.jpg') }}" alt="Avatar" class="w-12 h-12 border-2 rounded-full border-theme3">
+                    <p class="ml-4 text-lg font-semibold text-theme1">Mr.A</p>
                 </div>
-                <p class="mt-2 text-sm text-theme1">Deskripsi singkat tentang testimoni pertama atau feedback dari pengguna ini.</p>
+                <p class="mt-2 text-sm text-theme1">Overall sangat puas untuk pengerjaan eksterior maupun interiornya. Promo yang diberikan juga menarik!
+                    Terimakasih tim Azwa Architect.</p>
             </div>
         </div>
 
         <!-- Testimoni 2 -->
         <div class="flex p-5 rounded-lg shadow-lg bg-theme3">
             <div class="w-full pr-4 sm:w-1/2">
-                <img src="{{ asset('assets/img/porto/assets-2.jpg') }}" alt="Avatar 2" class="object-cover w-full h-48 rounded-lg">
+                <img src="{{ asset('assets/img/porto/assets-2.png') }}" alt="Avatar 2" class="object-cover w-full h-48 rounded-lg">
             </div>
             <div class="w-full mt-4 sm:w-1/2 sm:mt-0">
                 <div class="flex items-center">
-                    <img src="{{ asset('assets/img/avatar2.jpg') }}" alt="Avatar" class="w-12 h-12 border-2 rounded-full border-theme3">
-                    <p class="ml-4 text-lg font-semibold text-theme1">Nama Pengguna</p>
+                    <img src="{{ asset('assets/img/home/avatar.jpg') }}" alt="Avatar" class="w-12 h-12 border-2 rounded-full border-theme3">
+                    <p class="ml-4 text-lg font-semibold text-theme1">Ms. D</p>
                 </div>
-                <p class="mt-2 text-sm text-theme1">Deskripsi singkat tentang testimoni kedua atau feedback dari pengguna ini.</p>
+                <p class="mt-2 text-sm text-theme1">
+                    Terimakasih banyak atas bantuan dan kerjasamanya. Kami sangat puas dengan hasil dan karyanya.</p>
             </div>
         </div>
 
@@ -249,24 +253,26 @@
             </div>
             <div class="w-full mt-4 sm:w-1/2 sm:mt-0">
                 <div class="flex items-center">
-                    <img src="{{ asset('assets/img/avatar3.jpg') }}" alt="Avatar" class="w-12 h-12 border-2 rounded-full border-theme3">
-                    <p class="ml-4 text-lg font-semibold text-theme1">Nama Pengguna</p>
+                    <img src="{{ asset('assets/img/home/avatar.jpg') }}" alt="Avatar" class="w-12 h-12 border-2 rounded-full border-theme3">
+                    <p class="ml-4 text-lg font-semibold text-theme1">Mr.f</p>
                 </div>
-                <p class="mt-2 text-sm text-theme1">Deskripsi singkat tentang testimoni ketiga atau feedback dari pengguna ini.</p>
+                <p class="mt-2 text-sm text-theme1">
+                    Terimakasih atas kerjasamanya. Azwa Architect memang terbaik dalam komunikasi, pelayanan, dan juga hasilnya.</p>
             </div>
         </div>
 
         <!-- Testimoni 4 -->
         <div class="flex p-5 rounded-lg shadow-lg bg-theme3">
             <div class="w-full pr-4 sm:w-1/2">
-                <img src="{{ asset('assets/img/porto/assets-4.jpg') }}" alt="Avatar 4" class="object-cover w-full h-48 rounded-lg">
+                <img src="{{ asset('assets/img/porto/assets-4.png') }}" alt="Avatar 4" class="object-cover w-full h-48 rounded-lg">
             </div>
             <div class="w-full mt-4 sm:w-1/2 sm:mt-0">
                 <div class="flex items-center">
-                    <img src="{{ asset('assets/img/avatar4.jpg') }}" alt="Avatar" class="w-12 h-12 border-2 rounded-full border-theme3">
-                    <p class="ml-4 text-lg font-semibold text-theme1">Nama Pengguna</p>
+                    <img src="{{ asset('assets/img/home/avatar.jpg') }}" alt="Avatar" class="w-12 h-12 border-2 rounded-full border-theme3">
+                    <p class="ml-4 text-lg font-semibold text-theme1">Mr. AL</p>
                 </div>
-                <p class="mt-2 text-sm text-theme1">Deskripsi singkat tentang testimoni keempat atau feedback dari pengguna ini.</p>
+                <p class="mt-2 text-sm text-theme1">
+                    Rate bintang 5 untuk hasilnya! Terimakasih tim Azwa Architect atas bantuannya dalam merancang rumah kami.</p>
             </div>
         </div>
     </div>

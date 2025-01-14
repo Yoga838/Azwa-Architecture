@@ -13,6 +13,11 @@ class PromoController extends Controller
     public function StoreView() {
         return view('admin.promo.storePromo');
     }
+    public function UpdateView($id) {
+        $promo = Promo::find($id);
+        $promodesc = $promo->description = json_decode($promo->description, true);
+        return view('admin.promo.editPromo', compact('promo', 'promodesc'));
+    }
     // get all promo
     public function index(){
         $promo = Promo::all();
