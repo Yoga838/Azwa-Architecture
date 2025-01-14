@@ -173,19 +173,19 @@
 
 
 <div class="flex justify-center w-full mt-10 lg:h-[700] sm:px-10 md:px-10">
-    <div class="relative flex flex-col justify-start w-full desktop:max-w-screen-desktop laptop:max-w-screen-laptop sm:my-2 md:my-3">
+    <div class="relative flex flex-col justify-start w-full sm:my-2 md:my-3">
         <h1 class="mb-8 text-5xl font-extrabold text-theme3">Layanan Kami</h1>
         <div class="flex justify-center gap-8">
             <div class="relative w-3/4 overflow-hidden lg:w-1/2 rounded-2xl">
-                <img src="{{asset('assets/img/porto/assets-7.jpg')}}" alt="Arsitektur" class="w-full h-auto">
+                <img src="{{asset('assets/img/porto/assets-7.jpg')}}" alt="Arsitektur" class="w-full h-[400px]">
                 <div class="absolute inset-0 flex px-5 py-3 transition-opacity duration-300 bg-black-2 bg-opacity-70">
                     <h3 class="text-3xl font-bold text-white">Arsitektur</h3>
                 </div>
             </div>
             <div class="relative w-3/4 overflow-hidden lg:w-1/2 rounded-2xl">
-                <img src="{{asset('assets/img/porto/assets-6.jpg')}}" alt="Interior" class="object-cover w-full h-80">
+                <img src="{{asset('assets/img/home/layanan.jpg')}}" alt="Arsitektur" class="w-full h-[400px]">
                 <div class="absolute inset-0 flex px-5 py-3 transition-opacity duration-300 bg-black-2 bg-opacity-70">
-                    <h3 class="text-3xl font-bold text-white">Interior</h3>
+                    <h3 class="text-3xl font-bold text-white">Arsitektur</h3>
                 </div>
             </div>
         </div>
@@ -290,7 +290,7 @@
         </div>        
 
         <!-- Gambar BG -->
-        <div class="absolute transform -translate-x-1/2 -translate-y-1/2 z-9 top-1/2 left-1/2">
+        <div class="absolute invisible transform -translate-x-1/2 -translate-y-1/2 z-9 top-1/2 left-1/2 md:invisible lg:visible">
             <img src="{{ asset('assets/img/home/hpTes.png') }}" alt="Frame" class="w-auto h-[725px]">
         </div>
     </div>        
