@@ -26,7 +26,7 @@
         </div>
         <div class="py-32">
             {{-- <h1 class="font-bold text-[100px] text-landing-black-2">Services Kontraktor</h1> --}}
-            <div class="mx-10">
+            <div data-aos="fade-up" data-aos-duration="1000" class="mx-10">
                 <p class="2xl:mt-30 xl:mt-20 lg:mt-20 md:mt-20 mt-20 text-center 2xl:text-6xl xl:text-5xl lg:text-4xl md:text-4xl text-2xl font-bold text-theme1 drop-shadow-2">
                     Membangun bersama Azwa Contractor,</br>Konstruksi Berkualitas, Solusi Tanpa Batas !
                 </p>
@@ -35,7 +35,7 @@
     </div>
     <h1 class="text-landing-gold 2xl:text-4xl xl:text-4xl lg:text-3xl md:text-2xl text-md font-bold drop-shadow-2 text-center 2xl:mt-20 xl:mt-10 lg:mt-10 md:mt-10 mt-10">KENAPA HARUS AZWA CONTRACTOR ?</h1>
     {{-- CardTag Free Design --}}
-    <div class="2xl:mt-10 xl:mt-5 lg:mt-5 md:mt-5 mt-5 flex justify-center items-center 2xl:px-50 xl:px-30 lg:px-30 md:px-30 px-10">
+    <div data-aos="fade-up" data-aos-duration="1000" class="2xl:mt-10 xl:mt-5 lg:mt-5 md:mt-5 mt-5 flex justify-center items-center 2xl:px-50 xl:px-30 lg:px-30 md:px-30 px-10">
         <div class="w-full border 2xl:px-8 xl:px-5 lg:px-5 md:px-5 px-5 2xl:py-6 xl:py-4 lg:py-4 md:py-4 py-4 bg-landing-brownLight-1/50 rounded-3xl">
             <div class="flex items-center">
                 <div class="border-0 bg-theme3 2xl:p-6 xl:p-5 lg:p-5 md:p-5 p-5 rounded-full lg:mx-5 mx-2">
@@ -49,7 +49,7 @@
         </div>
     </div>
     {{-- CardTag Transparan --}}
-    <div class="2xl:mt-5 xl:mt-5 lg:mt-5 md:mt-5 mt-5 flex justify-center items-center 2xl:px-50 xl:px-30 lg:px-30 md:px-30 px-10">
+    <div data-aos="fade-up" data-aos-duration="1000" class="2xl:mt-5 xl:mt-5 lg:mt-5 md:mt-5 mt-5 flex justify-center items-center 2xl:px-50 xl:px-30 lg:px-30 md:px-30 px-10">
         <div class="w-full border 2xl:px-8 xl:px-5 lg:px-5 md:px-5 px-5 2xl:py-6 xl:py-4 lg:py-4 md:py-4 py-4 bg-landing-brownLight-2/60 rounded-3xl">
             <div class="flex items-center">
                 <div class="border-0 bg-theme3 2xl:p-6 xl:p-5 lg:p-5 md:p-5 p-5 rounded-full lg:mx-5 mx-2">
@@ -63,7 +63,7 @@
         </div>
     </div>
     {{-- CardTag Rekanan Terpercaya --}}
-    <div class="2xl:mt-5 xl:mt-5 lg:mt-5 md:mt-5 mt-5 flex justify-center items-center 2xl:px-50 xl:px-30 lg:px-30 md:px-30 px-10">
+    <div data-aos="fade-up" data-aos-duration="1000" class="2xl:mt-5 xl:mt-5 lg:mt-5 md:mt-5 mt-5 flex justify-center items-center 2xl:px-50 xl:px-30 lg:px-30 md:px-30 px-10">
         <div class="w-full border 2xl:px-8 xl:px-5 lg:px-5 md:px-5 px-5 2xl:py-6 xl:py-4 lg:py-4 md:py-4 py-4 bg-landing-brownLight-1/50 rounded-3xl">
             <div class="flex items-center">
                 <div class="border-0 bg-theme3 2xl:p-6 xl:p-5 lg:p-5 md:p-5 p-5 rounded-full lg:mx-5 mx-2">
@@ -77,7 +77,7 @@
         </div>
     </div>
     {{-- CardTag Proses Mudah dan Aman --}}
-    <div class="2xl:mt-5 xl:mt-5 lg:mt-5 md:mt-5 mt-5 flex justify-center items-center 2xl:px-50 xl:px-30 lg:px-30 md:px-30 px-10">
+    <div data-aos="fade-up" data-aos-duration="1000" class="2xl:mt-5 xl:mt-5 lg:mt-5 md:mt-5 mt-5 flex justify-center items-center 2xl:px-50 xl:px-30 lg:px-30 md:px-30 px-10">
         <div class="w-full border 2xl:px-8 xl:px-5 lg:px-5 md:px-5 px-5 2xl:py-6 xl:py-4 lg:py-4 md:py-4 py-4 bg-landing-brownLight-2/60 rounded-3xl">
             <div class="flex items-center">
                 <div class="border-0 bg-theme3 2xl:p-6 xl:p-5 lg:p-5 md:p-5 p-5 rounded-full lg:mx-5 mx-2">
@@ -91,7 +91,7 @@
         </div>
     </div>
     {{-- CardTag dOKUMENTASI PROYEK --}}
-    <div class="2xl:mt-5 xl:mt-5 lg:mt-5 md:mt-5 mt-5 flex justify-center items-center 2xl:px-50 xl:px-30 lg:px-30 md:px-30 px-10">
+    <div data-aos="fade-up" data-aos-duration="1000" class="2xl:mt-5 xl:mt-5 lg:mt-5 md:mt-5 mt-5 flex justify-center items-center 2xl:px-50 xl:px-30 lg:px-30 md:px-30 px-10">
         <div class="w-full border 2xl:px-8 xl:px-5 lg:px-5 md:px-5 px-5 2xl:py-6 xl:py-4 lg:py-4 md:py-4 py-4 bg-landing-brownLight-1/50 rounded-3xl">
             <div class="flex items-center">
                 <div class="border-0 bg-theme3 2xl:p-6 xl:p-5 lg:p-5 md:p-5 p-5 rounded-full lg:mx-5 mx-2">
@@ -105,7 +105,7 @@
         </div>
     </div>
     {{-- CardTag BERGARANSI --}}
-    <div class="2xl:mt-5 xl:mt-5 lg:mt-5 md:mt-5 mt-5 flex justify-center items-center 2xl:px-50 xl:px-30 lg:px-30 md:px-30 px-10">
+    <div data-aos="fade-up" data-aos-duration="1000" class="2xl:mt-5 xl:mt-5 lg:mt-5 md:mt-5 mt-5 flex justify-center items-center 2xl:px-50 xl:px-30 lg:px-30 md:px-30 px-10">
         <div class="w-full border 2xl:px-8 xl:px-5 lg:px-5 md:px-5 px-5 2xl:py-6 xl:py-4 lg:py-4 md:py-4 py-4 bg-landing-brownLight-2/60 rounded-3xl">
             <div class="flex items-center">
                 <div class="border-0 bg-theme3 2xl:p-6 xl:p-5 lg:p-5 md:p-5 p-5 rounded-full lg:mx-5 mx-2">
@@ -123,12 +123,12 @@
             <div class="absolute inset-0 bg-theme3 opacity-60"></div>
             <img src="{{asset('assets/img/service/kontraktor/bg2-servicekontraktor.jpg')}}" alt="" class="w-screen object-cover h-full">
         </div>
-        <div class="py-10 mt-30">
+        <div data-aos="fade-right" data-aos-duration="1000" class="py-10 mt-30">
             <h1 class="font-bold 2xl:text-6xl xl:text-5xl lg:text-5xl md:text-5xl text-5xl text-theme1 drop-shadow-2 ml-10">Konstruksi Arsitektural</h1>
         </div>
     </div>
     {{-- Card Konstruksi Arsitektural --}}
-    <div data-aos="fade-up" data-aos-duration="1000" class="flex items-center justify-center">
+    <div data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000" class="flex items-center justify-center">
         <div class="relative">
             <div class="border-0 2xl:w-[850px] xl:w-[600px] lg:w-[600px] md:w-[500px] sm:w-[350px] w-[350px] 2xl:h-[600px] xl:h-[550px] lg:h-[550px] md:h-[550px] h-[550px] bg-theme3 rounded-[2rem] pt-5">
                 <div class="text-center">
@@ -190,13 +190,13 @@
             <div class="absolute inset-0 bg-theme3 opacity-60"></div>
             <img src="{{asset('assets/img/service/kontraktor/bg3-servicekontraktor.jpg')}}" alt="" class="w-screen object-cover h-full">
         </div>
-        <div class="py-10 mt-30">
+        <div data-aos="fade-right" data-aos-duration="1000" class="py-10 mt-30">
             <h1 class="font-bold 2xl:text-6xl xl:text-5xl lg:text-5xl md:text-5xl text-5xl text-theme1 drop-shadow-2 ml-10">Konstruksi Interior</h1>
         </div>
     </div>
 
     {{-- Card Konstruksi Interior --}}
-    <div data-aos="fade-up" data-aos-duration="1000" class="flex items-center justify-center">
+    <div data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000" class="flex items-center justify-center">
         <div class="relative">
             <div class="border-0 2xl:w-[850px] xl:w-[600px] lg:w-[600px] md:w-[500px] sm:w-[350px] w-[350px] 2xl:h-[600px] xl:h-[550px] lg:h-[550px] md:h-[550px] h-[550px] bg-theme3 rounded-[2rem] pt-5">
                 <div class="text-center">
