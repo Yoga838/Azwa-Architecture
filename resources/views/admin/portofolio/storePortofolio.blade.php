@@ -24,48 +24,57 @@
                         Input Fields
                     </h3>
                 </div>
-                <div class="flex flex-col gap-5.5 p-6.5">
-                    <div class="title">
+                <form class="flex flex-col gap-5.5 p-6.5" id="portofolioForm" enctype="multipart/form-data">
+                    <input type="hidden" id="portofolioId" name="id">
+                    <div class="nama">
                         <label class="mb-3 block text-sm font-medium text-black dark:text-white">
-                            Name
+                            Nama
                         </label>
-                        <input type="text" placeholder="Title Input" class="w-full rounded-lg border-[1.5px] border-stroke bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary"/>
+                        <input type="text" placeholder="Masukkan nama" id="nama" name="name" class="w-full rounded-lg border-[1.5px] border-stroke bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary"/>
                     </div>
-                    <div class="price">
+                    <div class="tipe">
                         <label class="mb-3 block text-sm font-medium text-black dark:text-white">
-                            Type
+                            Tipe
                         </label>
-                        <input type="text" placeholder="Price Input" class="w-full rounded-lg border-[1.5px] border-stroke bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary"/>
+                        <select class="w-full rounded-lg border-[1.5px] border-stroke bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary">
+                            <option value="" disabled selected>Pilih dan sesuaikan tipe...</option>
+                            <option value="type1">Arsitektur</option>
+                            <option value="type2">Interior</option>
+                        </select>
                     </div>
-                    <div class="price">
+                    <div class="kategori">
                         <label class="mb-3 block text-sm font-medium text-black dark:text-white">
-                            Category
+                            Kategori
                         </label>
-                        <input type="text" placeholder="Price Input" class="w-full rounded-lg border-[1.5px] border-stroke bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary"/>
+                        <select class="w-full rounded-lg border-[1.5px] border-stroke bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary">
+                            <option value="" disabled selected>Pilih kategori</option>
+                            <option value="type1">Arsitektur</option>
+                            <option value="type2">Interior</option>
+                        </select>
                     </div>
-                    <div class="price">
+                    <div class="luas">
                         <label class="mb-3 block text-sm font-medium text-black dark:text-white">
                             Luas
                         </label>
-                        <input type="text" placeholder="Price Input" class="w-full rounded-lg border-[1.5px] border-stroke bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary"/>
+                        <input type="number" placeholder="Masukkan luas" id="luas" name="luas" class="w-full rounded-lg border-[1.5px] border-stroke bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary"/>
                     </div>
-                    <div class="price">
+                    <div class="kontraktor">
                         <label class="mb-3 block text-sm font-medium text-black dark:text-white">
                             Kontraktor
                         </label>
-                        <input type="text" placeholder="Price Input" class="w-full rounded-lg border-[1.5px] border-stroke bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary"/>
+                        <input type="text" placeholder="Masukkan kontraktor" id="kontraktor" name="kontraktor" class="w-full rounded-lg border-[1.5px] border-stroke bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary"/>
                     </div>
-                    <div class="description">
+                    <div class="deskripsi">
                         <label class="mb-3 block text-sm font-medium text-black dark:text-white">
-                            Description
+                            Deskripsi
                         </label>
-                        <textarea rows="6" placeholder="Default textarea" class="w-full rounded-lg border-[1.5px] border-stroke bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary"></textarea>
+                        <textarea rows="6" placeholder="Masukkan deskripsi portofolio" id="deskripsi" name="deskripsi" class="w-full rounded-lg border-[1.5px] border-stroke bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary"></textarea>
                     </div>
                     {{-- File Upload --}}
                     <div class="bg-white shadow-lg rounded-lg p-6 w-full">
                         <div class="mb-4">
                             <label
-                                class="block text-gray-700 text-sm font-bold mb-2"
+                                class="block text-black dark:text-white text-sm font-medium mb-2"
                                 for="file-upload"
                             >
                                 Upload Files
@@ -95,7 +104,7 @@
                             <!-- File previews will appear here -->
                         </div>
                     </div>
-                </div>
+                </form>
           </div>
         </div>
     </div>
@@ -104,8 +113,6 @@
         const fileInput = document.getElementById("file-upload");
         const dropArea = document.getElementById("drop-area");
         const previewContainer = document.getElementById("file-preview");
-
-        // Handle drag-and-drop
         dropArea.addEventListener("dragover", (e) => {
             e.preventDefault();
             dropArea.classList.add("border-blue-500");
@@ -122,18 +129,15 @@
             handleFiles(files);
         });
 
-        // Handle file input change
         fileInput.addEventListener("change", () => {
             const files = Array.from(fileInput.files);
             handleFiles(files);
         });
 
-        // Open file dialog on button click
         dropArea.querySelector("button").addEventListener("click", () => {
             fileInput.click();
         });
 
-        // Function to handle files
         function handleFiles(files) {
             files.forEach((file) => {
                 if (file.type.startsWith("image/")) {

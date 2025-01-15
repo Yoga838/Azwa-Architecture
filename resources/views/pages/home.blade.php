@@ -14,82 +14,141 @@
             <div class="bg-center bg-cover swiper-slide" style="background-image: url('{{ asset('assets/img/service/desain/bg-cardpromo.png') }}');"></div>
             <!-- Slide 3 -->
             <div class="bg-center bg-cover swiper-slide" style="background-image: url('{{ asset('assets/img/porto/assets-7.jpg') }}');"></div>
+            <!-- Slide 4 -->
+            <div class="bg-center bg-cover swiper-slide" style="background-image: url('{{ asset('assets/img/home/portofolio1.png') }}');"></div>
+            <!-- Slide 5 -->
+            <div class="bg-center bg-cover swiper-slide" style="background-image: url('{{ asset('assets/img/home/portofolio2.png') }}');"></div>
+            <!-- Slide 6 -->
+            <div class="bg-center bg-cover swiper-slide" style="background-image: url('{{ asset('assets/img/home/portofolio3.png') }}');"></div>
         </div>
     </div>
 </div>
 
-    <div class="w-full bg-[#7a6a58]">
-        <div class="flex flex-wrap items-center justify-around w-full">
-            <div class="flex flex-col items-center justify-center w-full my-5 sm:w-1/3">
-                <div class="flex items-center justify-center w-24 h-24 my-4 bg-black rounded-full">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 576 512">
-                        <path fill="white" d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0M571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93"/>
-                    </svg>
-                </div>
-                <h1 class="mb-8 text-justify text-white text-[24px]">
-                    <strong>ONE-STOP SERVICE</strong>
-                </h1>
-                <p class="text-center text-white text-[18px] w-[300px]">
-                    Layanan lengkap dari desain, pembangunan, perizinan dalam satu tempat.
-                </p>
+<div class="relative w-full py-10">
+    <div class="absolute inset-0 bg-[#7a6a58] opacity-60"></div>
+    <div class="relative z-10 grid items-center justify-around grid-cols-1 gap-8 px-5 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <!-- ONE-STOP SERVICE -->
+        <div class="flex flex-col items-center justify-center">
+            <div class="flex items-center justify-center w-24 h-24 my-4 rounded-full opacity-75 bg-theme3">
+                <img src="{{ asset('assets/img/home/icon1.png') }}" alt="Home Icon" width="50" height="50">
             </div>
-            
-            <div class="flex flex-col items-center justify-center w-full my-5 sm:w-1/3">
-                <div class="flex items-center justify-center w-24 h-24 my-4 bg-black rounded-full">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 576 512">
-                        <path fill="white" d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0M571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93"/>
-                    </svg>
-                </div>
-                <h1 class="mb-8 text-justify text-white text-[24px]">
-                    <strong>GRATIS KONSULTASI</strong>
-                </h1>
-                <p class="text-center text-white text-[18px] w-[300px]">
-                    Dapatkan sesi konsultasi gratis untuk solusi desain yang sesuai dengan kebutuhan Anda.
+            <h1 class="mb-4 text-center font-extrabold text-[#251d16] text-[20px] lg:text-[35px]">
+                <p>
+                    <strong>ONE-STOP</strong>
                 </p>
-            </div>
-            
-            <div class="flex flex-col items-center justify-center w-full my-5 sm:w-1/3">
-                <div class="flex items-center justify-center w-24 h-24 my-4 bg-black rounded-full">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 576 512">
-                        <path fill="white" d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0M571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93"/>
-                    </svg>
-                </div>
-                <h1 class="mb-8 text-justify text-white text-[24px]">
-                    <strong>HASIL BERKUALITAS</strong>
-                </h1>
-                <p class="text-center text-white text-[18px] w-[300px]">
-                    Desain inovatif, struktur kokoh terjamin, dan rencana anggaran yang akurat.
-                </p>
-            </div>
+                <p><strong>SERVICE</strong></p>
+            </h1>
+            <p class="text-center font-bold text-[#251d16] text-[16px] lg:text-[25px] max-w-[400px]">
+                Layanan <span class="text-white">lengkap</span> dari desain,
+            </p>            
+            <p class="text-center font-bold text-[#251d16] text-[16px] lg:text-[25px] max-w-[400px]">
+                pembangunan, perizinan
+            </p>
+            <p class="text-center font-bold text-[#251d16] text-[16px] lg:text-[25px] max-w-[400px]">
+                dalam <span class="text-white">satu tempat</span>.
+            </p>
         </div>
-    </div>
+    
+        <!-- GRATIS KONSULTASI -->
+        <div class="flex flex-col items-center justify-center">
+            <div class="flex items-center justify-center w-24 h-24 my-4 rounded-full opacity-75 bg-theme3">
+                <img src="{{ asset('assets/img/home/icon2.png') }}" alt="Home Icon" width="50" height="50">
+            </div>
+            <h1 class="mb-4 text-center font-extrabold text-[#251d16] text-[20px] lg:text-[35px]">
+                <p>
+                    <strong>GRATIS</strong>
+                </p>
+                <p>
+                    <strong>KONSULTASI</strong>
+                </p>
+            </h1>
+            <p class="text-center font-bold text-[#251d16] text-[16px] lg:text-[25px] max-w-[400px]">
+                Dapatkan sesi konsultasi <span class="text-white">gratis</span>
+            </p>
+            <p class="text-center font-bold text-[#251d16] text-[16px] lg:text-[25px] max-w-[400px]">
+                untuk solusi desain yang sesuai
+            </p>
+            <p class="text-center font-bold text-[#251d16] text-[16px] lg:text-[25px] max-w-[400px]">
+                dengan kebutuhan Anda.
+            </p>
+        </div>
+    
+        <!-- HASIL BERKUALITAS -->
+        <div class="flex flex-col items-center justify-center md:col-span-2 lg:col-span-1">
+            <div class="flex items-center justify-center w-24 h-24 my-4 rounded-full opacity-75 bg-theme3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 576 512">
+                    <path fill="white" d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0M571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93"/>
+                </svg>
+            </div>
+            <h1 class="mb-4 text-center font-extrabold text-[#251d16] text-[20px] lg:text-[35px]">
+                <p>
+                    <strong>HASIL</strong>
+                </p>
+                <p>
+                    <strong>BERKUALITAS</strong>
+                </p>
+            </h1>
+            <p class="text-center font-bold text-[#251d16] text-[16px] lg:text-[25px] max-w-[400px]">
+                Desain <span class="text-white">inovatif</span>, struktur <span class="text-white">kokoh</span>
+            </p>
+            <p class="text-center font-bold text-[#251d16] text-[16px] lg:text-[25px] max-w-[400px]">
+                terjamin, dan rencana
+            </p>
+            <p class="text-center font-bold text-[#251d16] text-[16px] lg:text-[25px] max-w-[400px]">
+                anggaran yang <span class="text-white">akurat</span>.
+            </p>
+        </div>
+    </div>    
+</div>
 
-    <div class="flex flex-col items-center justify-center w-full px-10 my-15 lg:flex-row">
+    <div class="flex flex-col items-center justify-center w-full px-10 xl:mt-30 lg:mt-20 sm:mt-20 lg:flex-row">
         <!-- Gambar -->
         <div class="flex-shrink-0 w-full lg:w-2/6">
             <img src="{{ asset('assets/img/home/bg-jasa.png') }}" alt="Deskripsi Gambar" class="object-cover w-full h-auto">
         </div>
     
         <!-- Teks -->
-        <div class="w-full p-6 text-black lg:w-3/6">
-            <p class="mb-4 text-6xl text-center lg:text-5xl">
-                Cari Jasa <strong>Desain Arsitektur dan Interior</strong> Bermutu?
-            </p>
-            <h1 class="mb-4 text-4xl text-center lg:text-3xl">
-                <strong>Azwa Design Studio</strong>
-            </h1>
-            <p class="mb-4 text-2xl text-center">
-                Siap mewujudkan keinginan Anda!
-            </p>
-            <p class="text-xl text-center lg:text-2xl">
-                <strong>Kami memperhitungkan kekuatan struktur serta anggaran</strong> dengan optimal, sehingga menghasilkan bangunan yang <strong>estetik</strong> namun tetap <strong>aman, kokoh, dan sesuai kondisi keuangan Anda.</strong>
-            </p>
-            <div class="mt-6 text-center">
-                <a href="#link-ke-halaman-lain" class="inline-block px-20 py-2 mx-2 mt-10 text-xl text-white rounded-3xl bg-theme2">
-                    Lebih Lanjut
-                </a>
+        <div class="relative w-full p-6 text-black xl:w-3/6 lg:w-4/6">
+            <!-- Background image -->
+            <div class="absolute inset-0 bg-top bg-no-repeat bg-cover opacity-20" style="background-image: url('{{ asset('assets/img/HeadLogo_Azwa.png') }}'); background-position: top center; background-size: contain;"></div>
+        
+            <!-- Konten teks -->
+            <div class="relative p-6">
+                <p class="mb-4 text-6xl text-center lg:text-4xl">
+                    Cari Jasa
+                </p>
+                <p class="mb-4 text-6xl font-extrabold text-center xl:text-4xl lg:text-3xl">
+                    <strong>Desain Arsitektur dan Interior</strong>
+                </p>
+                <p class="mb-4 text-6xl text-center xl:text-4xl lg:text-4xl">
+                    Bermutu?
+                </p>
+                <h1 class="mt-10 mb-4 text-4xl text-center xl:text-4xl lg:text-3xl">
+                    <strong>Azwa Design Studio</strong>
+                </h1>
+                <p class="mb-4 text-2xl text-center">
+                    Siap mewujudkan keinginan Anda!
+                </p>
+                <p class="mt-10 text-xl text-center 2xl:text-2xl lg:text-xl">
+                    <strong>Kami memperhitungkan kekuatan struktur</strong>
+                </p>
+                <p class="text-xl text-center 2xl:text-2xl lg:text-xl">
+                    <strong>serta anggaran</strong> dengan optimal, sehingga menghasilkan
+                </p>
+                <p class="text-xl text-center 2xl:text-2xl lg:text-xl">
+                    bangunan yang <strong>estetik</strong> namun tetap
+                </p>
+                <p class="text-xl text-center 2xl:text-2xl lg:text-xl">
+                    <strong>aman, kokoh, dan sesuai kondisi keuangan Anda.</strong>
+                </p>
+                <div class="mt-6 text-center">
+                    <a href="#link-ke-halaman-lain" class="inline-block px-20 py-2 mx-2 mt-10 text-xl text-white rounded-3xl bg-theme2">
+                        Lebih Lanjut
+                    </a>
+                </div>
             </div>
-        </div>             
+        </div>
+                         
     </div>
 
     <div class="flex items-center justify-center w-full h-auto px-2 my-15 lg:h-screen sm:px-4 md:px-6">
@@ -106,47 +165,47 @@
                     Portofolio Kami
                 </h1>
 
-                <div class="relative w-full desktop:my-25 laptop:my-10 lg:mt-15 md:my-10 sm:my-5">
-                <div class="relative swiper centered-slide-carousel-1 swiper-container ">
-                <div class="flex justify-center invisible mb-10 desktop:visible laptop:visible md:invisible sm:invisible">
-                    <div class="flex items-center gap-3 desktop:mt-1 laptop:mt-30 me-3">
-                        <div class="p-5 border rounded-full bg-black-2 desktop:p-7 laptop:p-5 md:p-5"></div>
-                        <h1 class="text-xs font-semibold text-landing-brown-3 desktop:text-xl laptop:text-base md:text-xs">azwadesignstudio</h1>
+                <div class="relative w-full 2xl:mt-40 xl:mt-20 lg:mt-30 md:mt-20 sm:mt-15">
+                <div class="relative swiper centered-slide-carousel-1 swiper-container">
+                <div class="flex justify-center invisible mb-2 2xl:visible xl:visible md:invisible sm:invisible">
+                    <div class="flex items-center gap-3 2xl:mt-1 xl:mt-20 me-3">
+                        <div class="p-5 border rounded-full bg-black-2 2xl:p-5 xl:p-3 md:p-5"></div>
+                        <h1 class="text-xs font-semibold text-landing-brown-3 2xl:text-xl xl:text-base md:text-xs">azwadesignstudio</h1>
                     </div>
                 </div>
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <div class="flex items-center justify-center h-64 overflow-hidden rounded-2xl desktop:h-75 laptop:h-84 md:h-64">
-                            <img src="{{asset('assets/img/home/portofolio1.png')}}" alt="Slide 1" class="object-cover w-1/2 h-full laptop:w-4/5 desktop:w-2/3 lg:w-2/3 md:w-2/3 sm:w-1/2 rounded-2xl">
+                        <div class="flex items-center justify-center h-64 overflow-hidden rounded-2xl 2xl:h-75 xl:h-64 lg:h-94 md:h-94">
+                            <img src="{{asset('assets/img/home/portofolio1.png')}}" alt="Slide 1" class="object-cover w-1/2 h-full xl:w-4/5 2xl:w-2/3 lg:w-2/3 md:w-2/3 sm:w-1/2 rounded-2xl">
                         </div>                        
                     </div>
                     <div class="swiper-slide">
-                        <div class="flex items-center justify-center h-64 overflow-hidden rounded-2xl desktop:h-75 laptop:h-84 md:h-64">
-                            <img src="{{asset('assets/img/BgHome.png')}}" alt="Slide 2" class="object-cover w-1/2 h-full laptop:w-4/5 desktop:w-2/3 lg:w-2/3 md:w-2/3 sm:w-1/2 rounded-2xl">
+                        <div class="flex items-center justify-center h-64 overflow-hidden rounded-2xl 2xl:h-75 xl:h-64 lg:h-94 md:h-94">
+                            <img src="{{asset('assets/img/BgHome.png')}}" alt="Slide 2" class="object-cover w-1/2 h-full xl:w-4/5 2xl:w-2/3 lg:w-2/3 md:w-2/3 sm:w-1/2 rounded-2xl">
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="flex items-center justify-center h-64 overflow-hidden rounded-2xl desktop:h-75 laptop:h-84 md:h-64">
-                            <img src="{{asset('assets/img/home/portofolio2.png')}}" alt="Slide 3" class="object-cover w-1/2 h-full laptop:w-4/5 desktop:w-2/3 lg:w-2/3 md:w-2/3 sm:w-1/2 rounded-2xl">
+                        <div class="flex items-center justify-center h-64 overflow-hidden rounded-2xl 2xl:h-75 xl:h-64 lg:h-94 md:h-94">
+                            <img src="{{asset('assets/img/home/portofolio2.png')}}" alt="Slide 3" class="object-cover w-1/2 h-full xl:w-4/5 2xl:w-2/3 lg:w-2/3 md:w-2/3 sm:w-1/2 rounded-2xl">
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="flex items-center justify-center h-64 overflow-hidden rounded-2xl desktop:h-75 laptop:h-84 md:h-64">
-                            <img src="{{asset('assets/img/home/portofolio3.png')}}" alt="Slide 4" class="object-cover w-1/2 h-full laptop:w-4/5 desktop:w-2/3 lg:w-2/3 md:w-2/3 sm:w-1/2 rounded-2xl">
+                        <div class="flex items-center justify-center h-64 overflow-hidden rounded-2xl 2xl:h-75 xl:h-64 lg:h-94 md:h-94">
+                            <img src="{{asset('assets/img/home/portofolio3.png')}}" alt="Slide 4" class="object-cover w-1/2 h-full xl:w-4/5 2xl:w-2/3 lg:w-2/3 md:w-2/3 sm:w-1/2 rounded-2xl">
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="flex items-center justify-center h-64 overflow-hidden rounded-2xl desktop:h-75 laptop:h-84 md:h-64">
-                            <img src="{{asset('assets/img/home/portofolio4.png')}}" alt="Slide 5" class="object-cover w-1/2 h-full laptop:w-4/5 desktop:w-2/3 lg:w-2/3 md:w-2/3 sm:w-1/2 rounded-2xl">
+                        <div class="flex items-center justify-center h-64 overflow-hidden rounded-2xl 2xl:h-75 xl:h-64 lg:h-94 md:h-94">
+                            <img src="{{asset('assets/img/home/portofolio4.png')}}" alt="Slide 5" class="object-cover w-1/2 h-full xl:w-4/5 2xl:w-2/3 lg:w-2/3 md:w-2/3 sm:w-1/2 rounded-2xl">
                         </div>
                     </div>
                 </div>                
                 
                 <div class="swiper-pagination"></div>
                 </div>
-                <div class="relative z-50 flex justify-center mt-5 desktop:visible laptop:visible md:invisible sm:invisible">
-                    <div class="border rounded-full bg-landing-brown-1 desktop:px-9 laptop:px-8 desktop:py-3 laptop:py-2">
-                        <div class="flex items-center gap-2 text-xs desktop:text-xl laptop:text-base md:text-xs">
+                <div class="relative flex justify-center visible mt-5 z-9 2xl:visible xl:visible lg:invisible md:invisible sm:invisible">
+                    <div class="border rounded-full bg-landing-brown-1 2xl:px-9 xl:px-8 2xl:py-3">
+                        <div class="flex items-center gap-2 text-xs 2xl:text-xl xl:text-base md:text-xs">
                             <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 50 50">
                                 <path d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z"></path>
                             </svg>
@@ -154,7 +213,7 @@
                         </div>
                     </div>
                 </div>                    
-                <div class="absolute top-[60%] left-[50.5%] desktop:top-[50%] transform -translate-x-1/2 -translate-y-1/2 lg:visible md:invisible sm:invisible z-0">
+                <div class="absolute top-[60%] left-[50.5%] transform -translate-x-1/2 -translate-y-1/2 2xl:top-[50%] xl:top-[60%] 2xl:visible xl:visible lg:invisible md:invisible sm:invisible z-0">
                     <img src="{{asset('assets/img/home/hp.png')}}" alt="Frame" class="w-[100%] h-auto">
                 </div>
                 </div>
@@ -163,18 +222,18 @@
     </div>
 
 
-<div class="flex justify-center w-full mt-10 lg:h-[700] sm:px-8 md:px-10">
-    <div class="relative flex flex-col justify-start w-full desktop:max-w-screen-desktop laptop:max-w-screen-laptop sm:my-2 md:my-3">
+<div class="flex justify-center w-full mt-10 lg:h-[700] sm:px-10 md:px-10">
+    <div class="relative flex flex-col justify-start w-full sm:my-2 md:my-3">
         <h1 class="mb-8 text-5xl font-extrabold text-theme3">Layanan Kami</h1>
         <div class="flex justify-center gap-8">
             <div class="relative w-3/4 overflow-hidden lg:w-1/2 rounded-2xl">
-                <img src="{{asset('assets/img/porto/assets-7.jpg')}}" alt="Arsitektur" class="w-full h-auto">
+                <img src="{{asset('assets/img/porto/assets-7.jpg')}}" alt="Arsitektur" class="w-full h-[400px]">
                 <div class="absolute inset-0 flex px-5 py-3 transition-opacity duration-300 bg-black-2 bg-opacity-70">
                     <h3 class="text-3xl font-bold text-white">Arsitektur</h3>
                 </div>
             </div>
             <div class="relative w-3/4 overflow-hidden lg:w-1/2 rounded-2xl">
-                <img src="{{asset('assets/img/porto/assets-6.jpg')}}" alt="Interior" class="object-cover w-full h-80">
+                <img src="{{asset('assets/img/home/layanan.jpg')}}" alt="Arsitektur" class="w-full h-[400px]">
                 <div class="absolute inset-0 flex px-5 py-3 transition-opacity duration-300 bg-black-2 bg-opacity-70">
                     <h3 class="text-3xl font-bold text-white">Interior</h3>
                 </div>
@@ -208,28 +267,30 @@
         <!-- Testimoni 1 -->
         <div class="flex p-5 rounded-lg shadow-lg bg-theme3">
             <div class="w-full pr-4 sm:w-1/2">
-                <img src="{{ asset('assets/img/porto/assets-1.jpg') }}" alt="Avatar 1" class="object-cover w-full h-48 rounded-lg">
+                <img src="{{ asset('assets/img/porto/assets-1.png') }}" alt="Avatar 1" class="object-cover w-full h-48 rounded-lg">
             </div>
             <div class="w-full mt-4 sm:w-1/2 sm:mt-0">
                 <div class="flex items-center">
-                    <img src="{{ asset('assets/img/avatar1.jpg') }}" alt="Avatar" class="w-12 h-12 border-2 rounded-full border-theme3">
-                    <p class="ml-4 text-lg font-semibold text-theme1">Nama Pengguna</p>
+                    <img src="{{ asset('assets/img/home/avatar.jpg') }}" alt="Avatar" class="w-12 h-12 border-2 rounded-full border-theme3">
+                    <p class="ml-4 text-lg font-semibold text-theme1">Mr.A</p>
                 </div>
-                <p class="mt-2 text-sm text-theme1">Deskripsi singkat tentang testimoni pertama atau feedback dari pengguna ini.</p>
+                <p class="mt-2 text-sm text-theme1">Overall sangat puas untuk pengerjaan eksterior maupun interiornya. Promo yang diberikan juga menarik!
+                    Terimakasih tim Azwa Architect.</p>
             </div>
         </div>
 
         <!-- Testimoni 2 -->
         <div class="flex p-5 rounded-lg shadow-lg bg-theme3">
             <div class="w-full pr-4 sm:w-1/2">
-                <img src="{{ asset('assets/img/porto/assets-2.jpg') }}" alt="Avatar 2" class="object-cover w-full h-48 rounded-lg">
+                <img src="{{ asset('assets/img/porto/assets-2.png') }}" alt="Avatar 2" class="object-cover w-full h-48 rounded-lg">
             </div>
             <div class="w-full mt-4 sm:w-1/2 sm:mt-0">
                 <div class="flex items-center">
-                    <img src="{{ asset('assets/img/avatar2.jpg') }}" alt="Avatar" class="w-12 h-12 border-2 rounded-full border-theme3">
-                    <p class="ml-4 text-lg font-semibold text-theme1">Nama Pengguna</p>
+                    <img src="{{ asset('assets/img/home/avatar.jpg') }}" alt="Avatar" class="w-12 h-12 border-2 rounded-full border-theme3">
+                    <p class="ml-4 text-lg font-semibold text-theme1">Ms. D</p>
                 </div>
-                <p class="mt-2 text-sm text-theme1">Deskripsi singkat tentang testimoni kedua atau feedback dari pengguna ini.</p>
+                <p class="mt-2 text-sm text-theme1">
+                    Terimakasih banyak atas bantuan dan kerjasamanya. Kami sangat puas dengan hasil dan karyanya.</p>
             </div>
         </div>
 
@@ -240,30 +301,32 @@
             </div>
             <div class="w-full mt-4 sm:w-1/2 sm:mt-0">
                 <div class="flex items-center">
-                    <img src="{{ asset('assets/img/avatar3.jpg') }}" alt="Avatar" class="w-12 h-12 border-2 rounded-full border-theme3">
-                    <p class="ml-4 text-lg font-semibold text-theme1">Nama Pengguna</p>
+                    <img src="{{ asset('assets/img/home/avatar.jpg') }}" alt="Avatar" class="w-12 h-12 border-2 rounded-full border-theme3">
+                    <p class="ml-4 text-lg font-semibold text-theme1">Mr.f</p>
                 </div>
-                <p class="mt-2 text-sm text-theme1">Deskripsi singkat tentang testimoni ketiga atau feedback dari pengguna ini.</p>
+                <p class="mt-2 text-sm text-theme1">
+                    Terimakasih atas kerjasamanya. Azwa Architect memang terbaik dalam komunikasi, pelayanan, dan juga hasilnya.</p>
             </div>
         </div>
 
         <!-- Testimoni 4 -->
         <div class="flex p-5 rounded-lg shadow-lg bg-theme3">
             <div class="w-full pr-4 sm:w-1/2">
-                <img src="{{ asset('assets/img/porto/assets-4.jpg') }}" alt="Avatar 4" class="object-cover w-full h-48 rounded-lg">
+                <img src="{{ asset('assets/img/porto/assets-4.png') }}" alt="Avatar 4" class="object-cover w-full h-48 rounded-lg">
             </div>
             <div class="w-full mt-4 sm:w-1/2 sm:mt-0">
                 <div class="flex items-center">
-                    <img src="{{ asset('assets/img/avatar4.jpg') }}" alt="Avatar" class="w-12 h-12 border-2 rounded-full border-theme3">
-                    <p class="ml-4 text-lg font-semibold text-theme1">Nama Pengguna</p>
+                    <img src="{{ asset('assets/img/home/avatar.jpg') }}" alt="Avatar" class="w-12 h-12 border-2 rounded-full border-theme3">
+                    <p class="ml-4 text-lg font-semibold text-theme1">Mr. AL</p>
                 </div>
-                <p class="mt-2 text-sm text-theme1">Deskripsi singkat tentang testimoni keempat atau feedback dari pengguna ini.</p>
+                <p class="mt-2 text-sm text-theme1">
+                    Rate bintang 5 untuk hasilnya! Terimakasih tim Azwa Architect atas bantuannya dalam merancang rumah kami.</p>
             </div>
         </div>
     </div>
 
     <!-- Slider Swiper -->
-    <div class="relative z-10 w-full mx-auto min-w-6xl">
+    <div class="relative z-10 flex items-center justify-center w-full mx-auto min-w-6xl">
         <div class="swiper centered-slide-carousel-2 swiper-container">
             <div class="swiper-wrapper">
                 <!-- Multiple Slides -->
@@ -281,9 +344,9 @@
         </div>        
 
         <!-- Gambar BG -->
-        <div class="z-9 absolute left-[556.5px] desktop:left-[556.5px] laptop:left-[360.5px] lg:visible md:invisible sm:invisible invisible transform -translate-y-[90%]">
-            <img src="{{ asset('assets/img/home/hpTes.png') }}" alt="Frame" class="w-[825px] h-[865px]">
-        </div>                        
+        <div class="absolute invisible transform -translate-x-1/2 -translate-y-1/2 z-9 top-1/2 left-1/2 md:invisible lg:visible">
+            <img src="{{ asset('assets/img/home/hpTes.png') }}" alt="Frame" class="w-auto h-[725px]">
+        </div>
     </div>        
 </div>
  
@@ -297,7 +360,7 @@
                 spaceBetween: 20,
                 slideToClickedSlide: true,
                 autoplay: {
-                    delay: 3000,
+                    delay: 3500,
                     disableOnInteraction: false,
                 },
                 breakpoints: {
@@ -370,23 +433,23 @@
                 },
                 breakpoints: {
                     1920: {
-                        slidesPerView: 5,  // Hanya 1 slide per view
+                        slidesPerView: 5,
                         spaceBetween: 40,
                     },
                     1028: {
-                        slidesPerView: 5,  // Hanya 1 slide per view
+                        slidesPerView: 5,
                         spaceBetween: 40,
                     },
                     990: {
-                        slidesPerView: 5,  // Hanya 1 slide per view
+                        slidesPerView: 1,
                         spaceBetween: 40,
                     },
                     768: {
-                        slidesPerView: 5,  // Hanya 1 slide per view
+                        slidesPerView: 1,
                         spaceBetween: 40,
                     },
                     640: {
-                        slidesPerView: 5,  // Hanya 1 slide per view
+                        slidesPerView: 1,
                         spaceBetween: 40,
                     }
                 },

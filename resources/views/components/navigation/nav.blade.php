@@ -1,35 +1,36 @@
 <nav 
     x-data="{'sidebarToggle': false}"
-    class="fixed top-0 z-50 w-screen"
+    class="fixed top-0 z-999 w-screen"
 >
-    <div class="flex items-center justify-between bg-landing-brown-3 
-        desktop:py-6 laptop:py-3 md:py-3 py-3 
-        desktop:px-16 laptop:px-12 md:px-12 px-8  
-        desktop:mx-15 laptop:mx-10 md:mx-10 mx-3 
+    <div id="navigation" class="flex items-center justify-between bg-landing-brown-3/80 
+        py-3 sm:py-3 md:py-3 lg:py-3 xl:py-3 2xl:py-5
+        px-8 sm:px-8 md:px-12 lg:px-12 xl:px-12 2xl:px-13 
+        mx-3 sm:mx-3 md:mx-10 lg:mx-10 xl:mx-12 2xl:mx-14 
         my-5 
-        desktop:rounded-[36px] rounded-3xl"
+        rounded-3xl sm:rounded-3xl md:rounded-3xl lg:rounded-3xl xl:rounded-3xl 2xl:rounded-[30px]
+        transition-all duration-300"
     >
         <div class="cursor-pointer">
             <div class="">
-                <Image src="{{ asset('assets/img/LogoAzwa.png') }}" alt="Brand" class="desktop:w-[125px] laptop:w-[100px] w-[100px] h-auto" />
+                <Image src="{{ asset('assets/img/LogoAzwa.png') }}" alt="Brand" class="2xl:w-[110px] xl:w-[100px] lg:w-[100px] md:w-[100px] sm:w-[100px] w-[100px] h-auto" />
             </div>
         </div>
         <div class="hidden lg:block">
             <ul class="text-white flex space-x-12">
                 <li class="">
-                    <a class="desktop:text-2xl laptop:text-lg font-normal transition duration-300 ease-in-out 
+                    <a class="2xl:text-xl xl:text-lg lg:text-lg md:text-lg sm:text-lg text-lg font-normal transition duration-300 ease-in-out 
                 {{ request()->routeIs('home.index') ? 'text-landing-gold font-medium' : 'hover:text-landing-gold' }}" href="{{ route('home.index') }}">Home</a>
                 </li>
                 <li class="">
-                    <a class="desktop:text-2xl laptop:text-lg font-normal transition duration-300 ease-in-out 
+                    <a class="2xl:text-xl xl:text-lg lg:text-lg md:text-lg sm:text-lg text-lg font-normal transition duration-300 ease-in-out 
                 {{ request()->routeIs('about.index') ? 'text-landing-gold font-medium' : 'hover:text-landing-gold' }}" href="{{ route('about.index') }}">Tentang Kami</a>
                 </li>
                 <li class="">
-                    <a class="desktop:text-2xl laptop:text-lg font-normal transition duration-300 ease-in-out 
+                    <a class="2xl:text-xl xl:text-lg lg:text-lg md:text-lg sm:text-lg text-lg font-normal transition duration-300 ease-in-out 
                 {{ request()->routeIs('project.index') ? 'text-landing-gold font-medium' : 'hover:text-landing-gold' }}" href="{{ route('project.index') }}">Portofolio</a>
                 </li>
                 <li class="group relative ">
-                    <a class="desktop:text-2xl laptop:text-lg font-normal {{request()->routeIs('service.*') ? 'text-landing-gold font-medium' : 'hover:text-landing-gold' }} cursor-pointer" href="#">Layanan</a>
+                    <a class="2xl:text-xl xl:text-lg lg:text-lg md:text-lg sm:text-lg text-lg font-normal {{request()->routeIs('service.*') ? 'text-landing-gold font-medium' : 'hover:text-landing-gold' }} cursor-pointer" href="#">Layanan</a>
                     <ul class="absolute mt-2 w-24 bg-landing-brown-3 shadow-lg rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
                         <li class="py-3 cursor-pointer text-center {{request()->routeIs('service.desain') ? 'text-landing-gold font-medium' : 'hover:text-landing-gold'}}"><a href="{{route('service.desain')}}">Desain</a></li>
                         <li class="py-3 cursor-pointer text-center {{request()->routeIs('service.kontraktor') ? 'text-landing-gold font-medium' : 'hover:text-landing-gold'}}"><a href="{{route('service.kontraktor')}}">Kontraktor</a></li>
@@ -37,11 +38,11 @@
                     </ul>
                 </li>
                 <li class="">
-                    <a class="desktop:text-2xl laptop:text-lg font-normal transition duration-300 ease-in-out 
+                    <a class="2xl:text-xl xl:text-lg lg:text-lg md:text-lg sm:text-lg text-lg font-normal transition duration-300 ease-in-out 
                 {{ request()->routeIs('career.index') ? 'text-landing-gold font-medium' : 'hover:text-landing-gold' }}" href="{{ route('career.index') }}">Karir</a>
                 </li>
                 <li class="">
-                    <a class="desktop:text-2xl laptop:text-lg font-normal transition duration-300 ease-in-out 
+                    <a class="2xl:text-xl lg:text-lg font-normal transition duration-300 ease-in-out 
                 {{ request()->routeIs('contact.index') ? 'text-landing-gold font-medium' : 'hover:text-landing-gold' }}" href="{{ route('contact.index') }}">Kontak</a>
                 </li>
             </ul>
@@ -140,3 +141,20 @@
         </div>
     </div>
 </nav>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const navigation = document.getElementById('navigation');
+        document.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                // Ubah ke warna solid (tanpa transparansi)
+                navigation.classList.add('bg-landing-brown-3');
+                navigation.classList.remove('bg-landing-brown-3/80');
+            } else {
+                // Ubah ke warna transparan
+                navigation.classList.add('bg-landing-brown-3/80');
+                navigation.classList.remove('bg-landing-brown-3');
+            }
+        });
+    });
+</script>

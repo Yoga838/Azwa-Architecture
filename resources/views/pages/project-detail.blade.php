@@ -10,7 +10,7 @@
         }
     </style>
 
-    <div class="desktop:mt-30 laptop:mt-20 md:mt-20 mt-10 desktop:mx-30 laptop:mx-20 md:mx-20 mx-10">
+    <div class="2xl:mt-30 xl:mt-20 lg:mt-20 md:mt-20 mt-10 2xl:mx-30 xl:mx-20 lg:mx-20 md:mx-20 mx-10">
         <div class="py-30">
             <div class="w-full h-full mb-20">
 
@@ -19,12 +19,12 @@
                 <div class="flex md:flex-row flex-col">
                     <div class="md:w-1/3 w-full md:p-5 p-3 flex md:flex-col flex-row md:justify-start justify-between">
                         <div class="mb-3">
-                            <p class="desktop:text-2xl laptop:text-xl md:text-xl text-lg font-bold text-theme2">Tahun :</p>
-                            <p class="desktop:text-lg laptop:text-base md:text-base text-base text-theme2 ">202x</p>
+                            <p class="2xl:text-2xl xl:text-xl lg:text-xl md:text-xl text-lg font-bold text-theme2">Tahun :</p>
+                            <p class="2xl:text-lg xl:text-base lg:text-base md:text-base text-base text-theme2 ">202x</p>
                         </div>
                         <div>
-                            <p class="desktop:text-2xl laptop:text-xl md:text-xl text-lg font-bold text-theme2">Kategori :</p>
-                            <p class="desktop:text-lg laptop:text-base md:text-base text-base text-theme2">(Tidak dikategorikan)</p>
+                            <p class="2xl:text-2xl xl:text-xl lg:text-xl md:text-xl text-lg font-bold text-theme2">Kategori :</p>
+                            <p class="2xl:text-lg xl:text-base lg:text-base md:text-base text-base text-theme2">(Tidak dikategorikan)</p>
                         </div>
                     </div>
 
@@ -33,7 +33,7 @@
                     <div class="h-1 w-auto bg-theme2 sm:block md:hidden"></div>
 
                     <div class="md:w-2/3 w-full md:p-5 p-3">
-                        <h1 class="desktop:text-2xl laptop:text-xl md:text-xl text-xl font-bold mb-5 text-theme2">INDUSTRIAL</h1>
+                        <h1 class="2xl:text-2xl xl:text-xl lg:text-xl md:text-xl text-xl font-bold mb-5 text-theme2">INDUSTRIAL</h1>
                         <div>
                             <div class="mb-4">
                                 <img src="{{ asset('assets/img/Enscape.png') }}" class="w-full h-full" />
@@ -47,20 +47,20 @@
                             <div class="flex md:flex-row flex-col md:space-x-10 space-x-0">
                                 <div class="flex md:flex-col flex-row md:justify-normal justify-between md:mb-0 mb-3">
                                     <div>
-                                        <p class="desktop:text-xl laptop:text-lg md:text-lg text-lg font-bold text-theme2">Area</p>
-                                        <p class="desktop:text-lg laptop:text-base md:text-base text-base text-theme2">XXX sqm</p>
+                                        <p class="2xl:text-xl xl:text-lg lg:text-lg md:text-lg text-lg font-bold text-theme2">Area</p>
+                                        <p class="2xl:text-lg xl:text-base lg:text-base md:text-base text-base text-theme2">XXX sqm</p>
                                     </div>
                                     <div class="md:my-3 my-0">
-                                        <p class="desktop:text-xl laptop:text-lg md:text-lg text-lg font-bold text-theme2">Tipe</p>
-                                        <p class="desktop:text-lg laptop:text-base md:text-base text-base text-theme2">(Tipe)</p>
+                                        <p class="2xl:text-xl xl:text-lg lg:text-lg md:text-lg text-lg font-bold text-theme2">Tipe</p>
+                                        <p class="2xl:text-lg xl:text-base lg:text-base md:text-base text-base text-theme2">(Tipe)</p>
                                     </div>
                                     <div>
-                                        <p class="desktop:text-xl laptop:text-lg md:text-lg text-lg font-bold text-theme2">Kontraktor</p>
-                                        <p class="desktop:text-lg laptop:text-base md:text-base text-base text-theme2">(Kontraktor)</p>
+                                        <p class="2xl:text-xl xl:text-lg lg:text-lg md:text-lg text-lg font-bold text-theme2">Kontraktor</p>
+                                        <p class="2xl:text-lg xl:text-base lg:text-base md:text-base text-base text-theme2">(Kontraktor)</p>
                                     </div>
                                 </div>
                                 <div class="text-justify">
-                                    <p class="desktop:text-lg laptop:text-base md:text-base text-base text-theme2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt illum quasi officia autem temporibus recusandae vel beatae omnis, perferendis odio pariatur doloremque. Ipsa earum illum perspiciatis atque ab sed maiores possimus repudiandae aliquam placeat beatae asperiores sapiente officia, pariatur aliquid aut omnis debitis. Minima, aut, voluptas veritatis similique minus dolorum eveniet impedit hic assumenda consequatur porro voluptatibus fugiat explicabo voluptatem veniam nostrum distinctio! Laudantium blanditiis voluptates accusantium unde eligendi quidem non numquam. Ab porro nisi totam quae odio? Corporis nam laudantium quae obcaecati nemo! Aliquam unde accusantium reprehenderit ducimus suscipit consequuntur voluptate, at saepe ullam porro deleniti, commodi placeat maiores.</p>
+                                    <p class="2xl:text-lg xl:text-base lg:text-base md:text-base text-base text-theme2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt illum quasi officia autem temporibus recusandae vel beatae omnis, perferendis odio pariatur doloremque. Ipsa earum illum perspiciatis atque ab sed maiores possimus repudiandae aliquam placeat beatae asperiores sapiente officia, pariatur aliquid aut omnis debitis. Minima, aut, voluptas veritatis similique minus dolorum eveniet impedit hic assumenda consequatur porro voluptatibus fugiat explicabo voluptatem veniam nostrum distinctio! Laudantium blanditiis voluptates accusantium unde eligendi quidem non numquam. Ab porro nisi totam quae odio? Corporis nam laudantium quae obcaecati nemo! Aliquam unde accusantium reprehenderit ducimus suscipit consequuntur voluptate, at saepe ullam porro deleniti, commodi placeat maiores.</p>
                                 </div>
                             </div>
                         </div>
@@ -69,7 +69,7 @@
             </div>
             <div>
                 <div>
-                    <h1 class="desktop:text-4xl laptop:text-2xl md:text-2xl text-2xl font-bold mb-5 text-theme2">Portofolio Relevan</h1>
+                    <h1 class="2xl:text-3xl xl:text-2xl lg:text-2xl md:text-2xl text-2xl font-bold mb-5 text-theme2">Portofolio Relevan</h1>
                 </div>
                 <div class="flex md:flex-row flex-col md:space-x-5 space-x-0">
                     @foreach ( $images as $image )
@@ -156,12 +156,12 @@
                         spaceBetween: 40,
                     },
                     // Large screens (desktop, 1440px and above)
-                    1440: {
+                    1536: {
                         slidesPerView: 6,
                         spaceBetween: 35,
                     },
                     // Medium screens (desktop, 1366px and above)
-                    1366: {
+                    1280: {
                         slidesPerView: 5,
                         spaceBetween: 30,
                     },

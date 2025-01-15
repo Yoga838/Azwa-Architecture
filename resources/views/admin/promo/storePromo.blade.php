@@ -24,85 +24,168 @@
                         Input Fields
                     </h3>
                 </div>
-                <div class="flex flex-col gap-5.5 p-6.5">
+                <form class="flex flex-col gap-5.5 p-6.5" onsubmit="uploadPromo(event)">
                     <div class="title">
                         <label class="mb-3 block text-sm font-medium text-black dark:text-white">
-                            Title
+                            Judul Promo
                         </label>
-                        <input type="text" placeholder="Title Input" class="w-full rounded-lg border-[1.5px] border-stroke bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary"/>
+                        <input type="text" placeholder="Masukkan judul promo" id="title" name="title" class="w-full rounded-lg border-[1.5px] border-stroke bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary" required/>
                     </div>
                     <div class="price">
                         <label class="mb-3 block text-sm font-medium text-black dark:text-white">
-                            Price
+                            Harga
                         </label>
-                        <input type="text" placeholder="Price Input" class="w-full rounded-lg border-[1.5px] border-stroke bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary"/>
+                        <input type="text" placeholder="Masukkan harga" id="price" name="price" class="w-full rounded-lg border-[1.5px] border-stroke bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary" required/>
                     </div>
                     <div class="actual-price">
                         <label class="mb-3 block text-sm font-medium text-black dark:text-white">
-                            Actual Price
+                            Harga Asli
                         </label>
-                        <input type="text" placeholder="Actual price Input" class="w-full rounded-lg border-[1.5px] border-stroke bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary"/>
+                        <input type="text" placeholder="Masukkan harga asli" id="actual_price" name="actual_price" class="w-full rounded-lg border-[1.5px] border-stroke bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary" required/>
                     </div>
                     <div class="description">
                         <label class="mb-3 block text-sm font-medium text-black dark:text-white">
-                            Description
+                            Deskripsi
                         </label>
-                        <textarea rows="6" placeholder="Default textarea" class="w-full rounded-lg border-[1.5px] border-stroke bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary"></textarea>
-                    </div>
-                    <div class="ondisplay">
-                        <label class="mb-3 block text-sm font-medium text-black dark:text-white">
-                            Status Display
-                        </label>
-                        <div x-data="{ switcherToggle: false }">
-                            <label for="toggle3" class="flex cursor-pointer select-none items-center">
-                                <div class="relative">
-                                    <input type="checkbox" id="toggle3" class="sr-only" @change="switcherToggle = !switcherToggle"/>
-                                    <div class="block h-8 w-14 rounded-full bg-meta-9 dark:bg-[#5A616B]"></div>
-                                    <div :class="switcherToggle && '!right-1 !translate-x-full !bg-primary dark:!bg-white'" class="dot absolute left-1 top-1 flex h-6 w-6 items-center justify-center rounded-full bg-white transition">
-                                        <span :class="switcherToggle && '!block'" class="hidden text-white dark:text-bodydark">
-                                            <svg
-                                                class="fill-current stroke-current"
-                                                width="11"
-                                                height="8"
-                                                viewBox="0 0 11 8"
-                                                fill="none"
-                                                xmlns="http://www.w3.org/2000/svg"
-                                            >
-                                                <path
-                                                d="M10.0915 0.951972L10.0867 0.946075L10.0813 0.940568C9.90076 0.753564 9.61034 0.753146 9.42927 0.939309L4.16201 6.22962L1.58507 3.63469C1.40401 3.44841 1.11351 3.44879 0.932892 3.63584C0.755703 3.81933 0.755703 4.10875 0.932892 4.29224L0.932878 4.29225L0.934851 4.29424L3.58046 6.95832C3.73676 7.11955 3.94983 7.2 4.1473 7.2C4.36196 7.2 4.55963 7.11773 4.71406 6.9584L10.0468 1.60234C10.2436 1.4199 10.2421 1.1339 10.0915 0.951972ZM4.2327 6.30081L4.2317 6.2998C4.23206 6.30015 4.23237 6.30049 4.23269 6.30082L4.2327 6.30081Z"
-                                                fill=""
-                                                stroke=""
-                                                stroke-width="0.4"
-                                                ></path>
-                                            </svg>
-                                        </span>
-                                        <span :class="switcherToggle && 'hidden'">
-                                            <svg
-                                                class="h-4 w-4 stroke-current"
-                                                fill="none"
-                                                viewBox="0 0 24 24"
-                                                xmlns="http://www.w3.org/2000/svg"
-                                            >
-                                                <path
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round"
-                                                stroke-width="2"
-                                                d="M6 18L18 6M6 6l12 12"
-                                                ></path>
-                                            </svg>
-                                        </span>
-                                    </div>
-                                </div>
-                            </label>
-                            <div class="mt-3 text-sm font-medium w-30 py-1 text-center border-[1px] border-gray-600 dark:border-white rounded-full">
-                                <span x-show="switcherToggle" class="text-green-600">ondisplay</span>
-                                <span x-show="!switcherToggle" class="text-red-600">offdisplay</span>
-                            </div>
+                        <div class="flex gap-3">
+                            <input type="text" id="deskripsi" name="description" placeholder="Masukkan deskripsi" class="w-full rounded-lg border-[1.5px] border-stroke bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary"/>
+                            <button class="px-2" id="addDeskripsi" >
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="w-10 h-full" class="text-landing-black-1" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12m11-4.243a1 1 0 1 0-2 0V11H7.757a1 1 0 1 0 0 2H11v3.243a1 1 0 1 0 2 0V13h3.243a1 1 0 1 0 0-2H13z" clip-rule="evenodd"/></svg>
+                            </button>
+                        </div>
+                        {{-- menampilkan deskripsi tagar --}}
+                        <div class="mt-3" id="tagList">
                         </div>
                     </div>
-                </div>
+                    <div class="ondisplay">
+                        <div class="flex items-center gap-5">
+                            <label class="block text-sm font-medium text-black dark:text-white">
+                                Status Display
+                            </label>
+                            <input type="checkbox" class="w-6 h-6" name="ondisplay" id="statusCheckbox" onchange="updateDisplayStatus()"/>
+                            <button 
+                                id="displayButton" 
+                                class="px-4 py-2 text-white bg-red-500 rounded disabled:opacity-50" 
+                                disabled>
+                                offdisplay
+                            </button>
+                        </div>
+                    </div>
+                    <button type="submit" class="w-full p-4 bg-theme3 hover:bg-theme2 transition-all ease-linear dark:bg-white dark:hover:bg-gray-400">
+                        <h1 class="text-white dark:text-[#000] font-bold text-xl">Tambah Promo</h1>
+                    </button>
+                </form>
           </div>
         </div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script>
+        function updateDisplayStatus() {
+            const checkbox = document.getElementById('statusCheckbox');
+            const button = document.getElementById('displayButton');
+
+            if (checkbox.checked) {
+                button.textContent = "ondisplay";
+                button.classList.remove("bg-red-500");
+                button.classList.add("bg-green-500");
+                button.disabled = false;
+            } else {
+                button.textContent = "offdisplay";
+                button.classList.remove("bg-green-500");
+                button.classList.add("bg-red-500");
+                button.disabled = true;
+            }
+        }
+
+        const deskripsiList = [];
+
+        document.getElementById('addDeskripsi').addEventListener('click', function(event) {
+            event.preventDefault();
+            const input = document.getElementById('deskripsi');
+            const tagList = document.getElementById('tagList');
+            const description = input.value.trim();
+
+            if (description) {
+                deskripsiList.push(description);
+
+                const tag = document.createElement('div');
+                tag.className = 'inline-flex items-center px-3 py-1 rounded bg-theme3 text-white text-sm mr-2 mb-2';
+
+                const tagText = document.createElement('span');
+                tagText.textContent = description;
+                tagText.className = 'mr-2';
+
+                const removeButton = document.createElement('button');
+                removeButton.innerHTML = '<svg fill="#ffffff" class="w-4 h-4" viewBox="0 0 24 24" version="1.2" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M12 3c-4.963 0-9 4.038-9 9s4.037 9 9 9 9-4.038 9-9-4.037-9-9-9zm0 16c-3.859 0-7-3.14-7-7s3.141-7 7-7 7 3.14 7 7-3.141 7-7 7zM12.707 12l2.646-2.646c.194-.194.194-.512 0-.707-.195-.194-.513-.194-.707 0l-2.646 2.646-2.646-2.647c-.195-.194-.513-.194-.707 0-.195.195-.195.513 0 .707l2.646 2.647-2.646 2.646c-.195.195-.195.513 0 .707.097.098.225.147.353.147s.256-.049.354-.146l2.646-2.647 2.646 2.646c.098.098.226.147.354.147s.256-.049.354-.146c.194-.194.194-.512 0-.707l-2.647-2.647z"></path></g></svg>';
+                removeButton.className = 'bg-red-500 text-white rounded-full p-1 flex-shrink-0';
+                
+                removeButton.addEventListener('click', function() {
+                    const index = deskripsiList.indexOf(description);
+                    if (index !== -1) {
+                        deskripsiList.splice(index, 1);
+                        tagList.removeChild(tag);
+                        console.log('Updated deskripsiList:', deskripsiList);
+                    }
+                });
+
+                tag.appendChild(tagText);
+                tag.appendChild(removeButton);
+                tagList.appendChild(tag);
+
+                input.value = '';
+                console.log('Updated deskripsiList:', deskripsiList);
+            }
+        });
+
+
+
+        function uploadPromo(event) {
+            event.preventDefault();
+            const title = document.getElementById('title').value;
+            const price = document.getElementById('price').value;
+            const actual_price = document.getElementById('actual_price').value;
+            const ondisplay = document.getElementById('statusCheckbox').checked;
+
+            console.log('Title:', title);
+            console.log('Price:', price);
+            console.log('Actual Price:', actual_price);
+            console.log('Ondisplay:', ondisplay);
+            console.log('Deskripsi:', deskripsiList);
+            
+            const data = {
+                title: title,
+                price: price,
+                actual_price: actual_price,
+                ondisplay: ondisplay,
+                description: deskripsiList
+            }
+
+            axios.post('/api/promo', data, {
+                headers: {
+                    "Content-Type" : "application/json"
+                }
+            })
+            .then((response) => {
+                Swal.fire({
+                    title: response.data.message,
+                    icon: "success",
+                    draggable: true
+                }).then(() => {
+                    window.location.href = '/daftarpromo'
+                });
+            }).catch((err) => {
+                console.log(err);
+                Swal.fire({
+                    title: "Gagal menambahkan promo",
+                    text: "Silakan periksa data Anda dan coba lagi.",
+                    icon: "error",
+                    confirmButtonText: "OK"
+                });
+            });
+        }
+
+    </script>
 
 @endsection
