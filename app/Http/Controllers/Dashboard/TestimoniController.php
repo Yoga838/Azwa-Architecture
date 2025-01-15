@@ -11,7 +11,10 @@ class TestimoniController extends Controller
     public function index(){
         $testimoni = Testimoni::all();
 
-        return view('', compact('testimoni'));
+        return view('admin.testimoni.indexTestimoni', compact('testimoni'));
+    }
+    public function indexStore() {
+        return view('admin.testimoni.storeTestimoni');
     }
     public function store(Request $request){
         

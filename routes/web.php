@@ -10,6 +10,7 @@ use App\Http\Controllers\Pages\ContactController;
 use App\Http\Controllers\Pages\ServiceController;
 use App\Http\Controllers\Pages\ProjectsController;
 use App\Http\Controllers\Dashboard\PromoController;
+use App\Http\Controllers\Dashboard\TestimoniController;
 use App\Http\Controllers\Pages\ProjectDetailController;
 use App\Http\Controllers\Dashboard\PortofolioController;
 use App\Http\Controllers\Pages\ServicePerizinanController;
@@ -28,6 +29,8 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('/daftarpromo', [PromoController::class, 'IndexView'])->name('show.promo');
     Route::get('/storepromo', [PromoController::class, 'StoreView'])->name('show-store.promo');
     Route::get('/editpromo/{id}', [PromoController::class, 'UpdateView']);
+    Route::get('/daftartestimoni', [TestimoniController::class, 'index'])->name('show.testimoni');
+    Route::get('/storetestimoni', [TestimoniController::class, 'indexStore'])->name('show-store.testimoni');
 });
 
 
