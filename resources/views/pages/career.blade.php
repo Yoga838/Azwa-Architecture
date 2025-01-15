@@ -6,11 +6,11 @@
 <div class="container">
     <div class="flex flex-col sm:flex-row bg-#e1dfd4">
       <!-- Image Section -->
-      <div class="flex w-screen h-100 sm:w-5/12 md:h-auto">
+      <div class="flex w-screen h-100 sm:w-5/12 md:h-auto" data-aos="fade-right" data-aos-duration="1000">
         <img src="{{ asset('assets/img/Karir1.png') }}" alt="Interior Design" class="">
       </div>
       <!-- Content Section -->
-      <div class="flex flex-col w-screen sm:w-7/12 my-auto md:ml-5 items-center">
+      <div class="flex flex-col w-screen sm:w-7/12 my-auto md:ml-5 items-center" data-aos="fade-left" data-aos-delay="1000" data-aos-duration="1000">
         <div class="flex flex-wrap md:mb-10 md:mt-20">
           <div class="flex flex-col md:flex-row md:space-x-10 lg:space-x-20 mt-5 items-center">
             <h1 class="text-3xl md:text-6xl font-bold text-theme2">Karir</h1>

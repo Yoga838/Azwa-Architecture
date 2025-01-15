@@ -22,14 +22,14 @@
             <div class="absolute inset-0 bg-theme3 opacity-60"></div>
             <img src="{{asset('assets/img/service/desain/bg1-servicedesain.jpg')}}" alt="" class="object-cover w-screen h-full">
         </div>
-        <div class="pt-30 2xl:pt-50 pb-20">
+        <div data-aos="fade-right" data-aos-duration="1000" class="pt-30 2xl:pt-50 pb-20">
             <h1 class="ml-20 text-5xl font-bold tracking-wider 2xl:text-6xl text-theme1 drop-shadow-2 2xl:ml-30">Arsitektur</h1>
         </div>
     </div>
     {{-- Card Arsitektur --}}
     <div class="flex flex-wrap justify-center gap-4">
         {{-- 1 --}}
-        <div class="relative">
+        <div data-aos="fade-right" data-aos-duration="1000" class="relative">
             <div class="border-0 w-[300px] 2xl:w-[550px] lg:w-[500px] md:w-[300px] sm:w-[300px] h-[500px] 2xl:h-[550px] bg-theme3 rounded-[2rem] pt-5">
                 <div class="text-center">
                     <h1 class="mt-5 text-lg font-extrabold 2xl:text-4xl xl:text-3xl lg:text-3xl md:text-3xl text-landing-gold">BRONZE</h1>
@@ -67,7 +67,7 @@
         </div>
 
         {{-- 2 --}}
-        <div class="relative">
+        <div data-aos="fade-left" data-aos-duration="1000" class="relative">
             <div class="border-0 w-[300px] 2xl:w-[550px] lg:w-[500px] md:w-[300px] sm:w-[300px] h-[500px] 2xl:h-[550px] bg-theme3 rounded-[2rem] pt-5">
                 <div class="text-center">
                     <h1 class="mt-5 text-lg font-extrabold 2xl:text-4xl xl:text-3xl lg:text-3xl md:text-3xl text-landing-gold">GOLD</h1>
@@ -121,14 +121,14 @@
             <div class="absolute inset-0 bg-theme3 opacity-60"></div>
             <img src="{{asset('assets/img/service/desain/bg2-servicedesain.png')}}" alt="" class="object-cover w-screen h-full" style="object-position: 50% 85%;">
         </div>
-        <div class="pt-30 2xl:pt-50 pb-20">
+        <div data-aos="fade-right" data-aos-duration="1000" class="pt-30 2xl:pt-50 pb-20">
             <h1 class="ml-20 text-5xl font-bold tracking-wider 2xl:text-6xl text-theme1 drop-shadow-2 2xl:ml-30">Desain Interior</h1>
         </div>
     </div>
     {{-- Card Desain Interior --}}
     <div class="flex flex-wrap justify-center gap-4">
         {{-- 1 --}}
-        <div class="relative">
+        <div data-aos="fade-right" data-aos-duration="1000" class="relative">
             <div class="border-0 w-[300px] 2xl:w-[500px] lg:w-[500px] md:w-[300px] sm:w-[300px] h-[500px] 2xl:h-[500px] bg-theme3 rounded-[2rem] pt-5">
                 <div class="text-center">
                     <h1 class="mt-5 text-lg font-extrabold 2xl:text-4xl xl:text-3xl lg:text-3xl md:text-3xl text-landing-gold">DELUXE</h1>
@@ -160,7 +160,7 @@
         </div>
 
         {{-- 2 --}}
-        <div class="relative">
+        <div data-aos="fade-left" data-aos-duration="1000" class="relative">
             <div class="border-0 w-[300px] 2xl:w-[500px] lg:w-[500px] md:w-[300px] sm:w-[300px] h-[500px] 2xl:h-[500px] bg-theme3 rounded-[2rem] pt-5">
                 <div class="text-center">
                     <h1 class="mt-5 text-lg font-extrabold 2xl:text-4xl xl:text-3xl lg:text-3xl md:text-3xl text-landing-gold">PREMIUM</h1>
@@ -204,14 +204,14 @@
             <div class="absolute inset-0 bg-theme3 opacity-60"></div>
             <img src="{{asset('assets/img/service/desain/bg3left-servicedesain.png')}}" alt="" class="object-cover w-screen h-full" style="object-position: 50% 85%;">
         </div>
-        <div class="pt-30 2xl:pt-50 pb-20">
+        <div data-aos="fade-right" data-aos-duration="1000" class="pt-30 2xl:pt-50 pb-20">
             <h1 class="ml-20 text-5xl font-bold tracking-wider 2xl:text-6xl text-theme1 drop-shadow-2 2xl:ml-30">Arsitektur Interior</h1>
         </div>
     </div>
     {{-- Card Desain Interior --}}
     <div class="flex flex-wrap justify-center gap-4">
         {{-- 1 --}}
-        <div class="relative">
+        <div data-aos="fade-right" data-aos-duration="1000" class="relative">
             <div class="border-0 w-[300px] 2xl:w-[600px] lg:w-[500px] md:w-[300px] sm:w-[300px] h-[700px] 2xl:h-[800px] bg-theme3 rounded-[2rem] pt-5">
                 <div class="text-center">
                     <h1 class="mt-5 text-lg font-extrabold 2xl:text-4xl xl:text-3xl lg:text-3xl md:text-3xl text-landing-gold">PLATINUM</h1>
@@ -265,7 +265,7 @@
         </div>
 
         {{-- 2 --}}
-        <div class="relative">
+        <div data-aos="fade-left" data-aos-duration="1000" class="relative">
             <div class="border-0 w-[300px] 2xl:w-[600px] lg:w-[500px] md:w-[300px] sm:w-[300px] h-[700px] 2xl:h-[800px] bg-theme3 rounded-[2rem] pt-5">
                 <div class="text-center">
                     <h1 class="mt-5 text-lg font-extrabold 2xl:text-4xl xl:text-3xl lg:text-3xl md:text-3xl text-landing-gold">PLATINUM PLUS</h1>
@@ -339,7 +339,7 @@
     </div>
     @include('components.tabel-paket.tabel-paket')
       
-    <div class="flex justify-center mt-10">
+    <div data-aos="fade-up" data-aos-duration="1000" class="flex justify-center mt-10">
         <a href="https://wa.me/62895371025425">
             <button class="flex items-center justify-center w-64 px-2 py-2 rounded-full 2xl:w-80 bg-theme2 hover:bg-landing-black-1 transition duration-300 ease-in-out transform hover:scale-105 text-landing-black-3">
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white 2xl:w-10 2xl:h-10" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M19.05 4.91A9.82 9.82 0 0 0 12.04 2c-5.46 0-9.91 4.45-9.91 9.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91c0-2.65-1.03-5.14-2.9-7.01m-7.01 15.24c-1.48 0-2.93-.4-4.2-1.15l-.3-.18l-3.12.82l.83-3.04l-.2-.31a8.26 8.26 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24c2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c.02 4.54-3.68 8.23-8.22 8.23m4.52-6.16c-.25-.12-1.47-.72-1.69-.81c-.23-.08-.39-.12-.56.12c-.17.25-.64.81-.78.97c-.14.17-.29.19-.54.06c-.25-.12-1.05-.39-1.99-1.23c-.74-.66-1.23-1.47-1.38-1.72c-.14-.25-.02-.38.11-.51c.11-.11.25-.29.37-.43s.17-.25.25-.41c.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31c-.22.25-.86.85-.86 2.07s.89 2.4 1.01 2.56c.12.17 1.75 2.67 4.23 3.74c.59.26 1.05.41 1.41.52c.59.19 1.13.16 1.56.1c.48-.07 1.47-.6 1.67-1.18c.21-.58.21-1.07.14-1.18s-.22-.16-.47-.28"/></svg>
@@ -364,7 +364,7 @@
     <div class="relative w-screen mt-10 overflow-x-auto overflow-y-hidden bg-center bg-cover rounded" style="background-image:url('{{asset('assets/img/service/desain/bg-alurrencana.png')}}')">
         <div class="absolute w-full h-full bg-black-2 opacity-65" style="min-width: 1024px;"></div>
         {{-- Flowchart Alur --}}
-        <div class="px-10 lg:px-36 py-20 min-w-[1024px] relative z-10">
+        <div data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000" class="px-10 lg:px-36 py-20 min-w-[1024px] relative z-10">
             <div class="flex items-center">
                 <h1 class="text-2xl font-bold text-white lg:text-5xl 2xl:text-6xl me-5">Alur Kerja Perencanaan</h1>
                 <div class="flex-1">

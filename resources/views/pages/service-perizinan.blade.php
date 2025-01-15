@@ -8,7 +8,7 @@
         <div class="absolute inset-0 bg-theme3 opacity-60"></div>
         <img src="{{asset('assets/img/service/perizinan/perizinan5.jpeg')}}" alt="" class="w-screen object-cover h-full">
     </div>
-    <div class="py-32">
+    <div data-aos="fade-left" data-aos-duration="1000" class="py-32">
         <div class="mx-10">
             <p class="2xl:mt-30 xl:mt-20 lg:mt-20 md:mt-20 mt-20 text-start 2xl:text-6xl xl:text-5xl lg:text-4xl md:text-4xl text-2xl font-bold text-theme1 drop-shadow-2">
                 Bersama Kami, <br> Perizinan Bangunan Lebih Mudah dan Aman!
@@ -19,7 +19,7 @@
 
 <h1 class="text-landing-gold 2xl:text-4xl xl:text-4xl lg:text-3xl md:text-2xl text-md font-bold text-center 2xl:mt-20 xl:mt-10 lg:mt-10 md:mt-10 mt-10">KENAPA HARUS KAMI ?</h1>
 {{-- CardTag --}}
-<div class="2xl:mt-10 xl:mt-5 lg:mt-5 md:mt-5 mt-5 flex justify-center items-center 2xl:px-50 xl:px-30 lg:px-30 md:px-30 px-10">
+<div data-aos="fade-up" data-aos-duration="1000" class="2xl:mt-10 xl:mt-5 lg:mt-5 md:mt-5 mt-5 flex justify-center items-center 2xl:px-50 xl:px-30 lg:px-30 md:px-30 px-10">
     <div class="border w-full 2xl:px-8 xl:px-5 lg:px-5 md:px-5 px-5 2xl:py-6 xl:py-4 lg:py-4 md:py-4 py-4 bg-landing-brownLight-1/50 rounded-3xl">
         <div class="flex items-center">
             <div class="border-0 bg-theme3 2xl:p-6 xl:p-5 lg:p-5 md:p-5 p-5 rounded-full lg:mx-5 mx-2">
@@ -33,7 +33,7 @@
     </div>
 </div>
 {{-- CardTag --}}
-<div class="2xl:mt-5 xl:mt-5 lg:mt-5 md:mt-5 mt-5 flex justify-center items-center 2xl:px-50 xl:px-30 lg:px-30 md:px-30 px-10">
+<div data-aos="fade-up" data-aos-duration="1000" class="2xl:mt-5 xl:mt-5 lg:mt-5 md:mt-5 mt-5 flex justify-center items-center 2xl:px-50 xl:px-30 lg:px-30 md:px-30 px-10">
     <div class="border w-full 2xl:px-8 xl:px-5 lg:px-5 md:px-5 px-5 2xl:py-6 xl:py-4 lg:py-4 md:py-4 py-4 bg-landing-brownLight-2/60 rounded-3xl">
         <div class="flex items-center">
             <div class="border-0 bg-theme3 2xl:p-6 xl:p-5 lg:p-5 md:p-5 p-5 rounded-full lg:mx-5 mx-2">
@@ -47,7 +47,7 @@
     </div>
 </div>
 {{-- CardTag --}}
-<div class="2xl:mt-5 xl:mt-5 lg:mt-5 md:mt-5 mt-5 flex justify-center items-center 2xl:px-50 xl:px-30 lg:px-30 md:px-30 px-10">
+<div data-aos="fade-up" data-aos-duration="1000" class="2xl:mt-5 xl:mt-5 lg:mt-5 md:mt-5 mt-5 flex justify-center items-center 2xl:px-50 xl:px-30 lg:px-30 md:px-30 px-10">
     <div class="border w-full 2xl:px-8 xl:px-5 lg:px-5 md:px-5 px-5 2xl:py-6 xl:py-4 lg:py-4 md:py-4 py-4 bg-landing-brownLight-1/50 rounded-3xl">
         <div class="flex items-center">
             <div class="border-0 bg-theme3 2xl:p-6 xl:p-5 lg:p-5 md:p-5 p-5 rounded-full lg:mx-5 mx-2">
@@ -61,7 +61,7 @@
     </div>
 </div>
 {{-- CardTag --}}
-<div class="2xl:mt-5 xl:mt-5 lg:mt-5 md:mt-5 mt-5 flex justify-center items-center 2xl:px-50 xl:px-30 lg:px-30 md:px-30 px-10">
+<div data-aos="fade-up" data-aos-duration="1000" class="2xl:mt-5 xl:mt-5 lg:mt-5 md:mt-5 mt-5 flex justify-center items-center 2xl:px-50 xl:px-30 lg:px-30 md:px-30 px-10">
     <div class="border w-full 2xl:px-8 xl:px-5 lg:px-5 md:px-5 px-5 2xl:py-6 xl:py-4 lg:py-4 md:py-4 py-4 bg-landing-brownLight-2/60 rounded-3xl">
         <div class="flex items-center">
             <div class="border-0 bg-theme3 2xl:p-6 xl:p-5 lg:p-5 md:p-5 p-5 rounded-full lg:mx-5 mx-2">
@@ -75,7 +75,7 @@
     </div>
 </div>
 {{-- CardTag --}}
-<div class="2xl:mt-5 xl:mt-5 lg:mt-5 md:mt-5 mt-5 flex justify-center items-center 2xl:px-50 xl:px-30 lg:px-30 md:px-30 px-10">
+<div data-aos="fade-up" data-aos-duration="1000" class="2xl:mt-5 xl:mt-5 lg:mt-5 md:mt-5 mt-5 flex justify-center items-center 2xl:px-50 xl:px-30 lg:px-30 md:px-30 px-10">
     <div class="border w-full 2xl:px-8 xl:px-5 lg:px-5 md:px-5 px-5 2xl:py-6 xl:py-4 lg:py-4 md:py-4 py-4 bg-landing-brownLight-1/50 rounded-3xl">
         <div class="flex items-center">
             <div class="border-0 bg-theme3 2xl:p-6 xl:p-5 lg:p-5 md:p-5 p-5 rounded-full lg:mx-5 mx-2">
@@ -95,12 +95,12 @@
         <div class="absolute inset-0 bg-theme3 opacity-60"></div>
         <img src="{{asset('assets/img/service/perizinan/perizinan4.jpeg')}}" alt="" class="w-screen object-cover h-full">
     </div>
-    <div class="py-20 mt-30">
+    <div data-aos="fade-right" data-aos-duration="1000" class="py-20 mt-30">
         <h1 class="font-bold text-2xl 2xl:text-6xl xl:text-5xl lg:text-5xl md:text-4xl text-theme1 drop-shadow-2 md:ml-21">PBG (Persetujuan Bangunan Gedung) / <br>SLF ( Sertifikasi Layak Fungsi)</h1>
     </div>
 </div>
 {{-- Card --}}
-<div class="flex justify-center items-center">
+<div data-aos="fade-up" data-aos-duration="1000" class="flex justify-center items-center">
     <div class="relative">
         <div class="border-0 2xl:w-[700px] xl:w-[600px] lg:w-[600px] md:w-[500px] sm:w-[350px] w-[350px] 2xl:h-[300px] xl:h-[250px] lg:h-[250px] md:h-[250px] h-[250px] bg-theme3 rounded-[2rem] pt-5">
             <div class="text-center">
@@ -129,12 +129,12 @@
         <div class="absolute inset-0 bg-theme3 opacity-60"></div>
         <img src="{{asset('assets/img/service/perizinan/perizinan3.jpeg')}}" alt="" class="w-screen object-cover h-full">
     </div>
-    <div class="py-20 mt-30">
+    <div data-aos="fade-right" data-aos-duration="1000" class="py-20 mt-30">
         <h1 class="font-bold text-2xl 2xl:text-6xl xl:text-5xl lg:text-5xl md:text-4xl text-theme1 drop-shadow-2 md:ml-21">PAKET LENGKAP PBG & SLF</h1>
     </div>
 </div>
 {{-- Card --}}
-<div class="flex justify-center items-center">
+<div data-aos="fade-up" data-aos-duration="1000" class="flex justify-center items-center">
     <div class="relative">
         <div class="border-0 2xl:w-[700px] xl:w-[600px] lg:w-[600px] md:w-[500px] sm:w-[350px] w-[350px] 2xl:h-[350px] xl:h-[300px] lg:h-[300px] md:h-[300px] h-[300px] bg-theme3 rounded-[2rem] pt-5">
             <div class="text-center">
