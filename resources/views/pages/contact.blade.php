@@ -6,13 +6,13 @@
     <div class="w-screen h-screen flex bg-cover bg-center" style="background-image:url('{{ asset('assets/img/Kontak1.png') }}')">
         <div class=" flex flex-col justify-center items-center w-screen h-screen bg-black bg-opacity-30">
             <!-- Judul -->
-            <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-white mt-20 md:mt-20 mb-8">Konsultasi dengan Kami</h1>
+            <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-white mt-20 md:mt-20 mb-8" data-aos="fade-up" data-aos-duration="1000">Konsultasi dengan Kami</h1>
         
             <!-- Kontainer utama -->
             <div class="flex flex-col sm:mt-20 w-7/12 md:flex-row">
               
               <!-- Peta -->
-              <div class="relative border-8 border-white pb-[45%] pl-[50%] md:pb-[35%] md:pl-[40%]  md:-ml-10 rounded-lg overflow-hidden">
+              <div data-aos="zoom-in" data-aos-delay="1000" data-aos-duration="1500" class="relative border-8 border-white pb-[45%] pl-[50%] md:pb-[35%] md:pl-[40%]  md:-ml-10 rounded-lg overflow-hidden">
                 <iframe 
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3630.5178726559247!2d113.6793561304058!3d-8.183867692374132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd696a789605e0b%3A0x5ab070d07540f31e!2sJl.%20Kyai%20Mojo%20No.110%2C%20Kaliwates%20Kidul%2C%20Kaliwates%2C%20Kec.%20Kaliwates%2C%20Kabupaten%20Jember%2C%20Jawa%20Timur%2068133!5e1!3m2!1sid!2sid!4v1734878188425!5m2!1sid!2sid"
                     class="absolute top-0 left-0 w-full h-full border-0"
@@ -23,7 +23,7 @@
               </div>
         
               <!-- Informasi kontak -->
-              <div class="flex-1 space-y-4 md:ml-10 mt-10">
+              <div data-aos="fade-left" data-aos-delay="2500" data-aos-duration="1000" class="flex-1 space-y-4 md:ml-10 mt-10">
                 <!-- Alamat pertama -->
                 <div>
                   <div class="flex items-center mb-10">

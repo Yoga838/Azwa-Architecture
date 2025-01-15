@@ -26,16 +26,16 @@
         </div>
         <div class="py-32">
             {{-- <h1 class="font-bold text-[100px] text-landing-black-2">Services Kontraktor</h1> --}}
-            <div class="mx-10">
+            <div data-aos="fade-down" data-aos-duration="1000" class="mx-10">
                 <p class="mt-20 text-2xl font-bold text-center desktop:mt-40 laptop:mt-20 md:mt-20 desktop:text-7xl laptop:text-6xl md:text-4xl text-theme1 drop-shadow-2">
                     Membangun bersama Azwa Contractor,</br>Konstruksi Berkualitas, Solusi Tanpa Batas !
                 </p>
             </div>
         </div>
     </div>
-    <h1 class="mt-10 font-extrabold text-center text-landing-gold desktop:text-5xl laptop:text-4xl md:text-2xl text-md desktop:mt-20 laptop:mt-10 lg:mt-10 md:mt-10">KENAPA HARUS AZWA CONTRACTOR ?</h1>
+    <h1 data-aos="fade-up" data-aos-duration="1000" class="mt-10 font-extrabold text-center text-landing-gold desktop:text-5xl laptop:text-4xl md:text-2xl text-md desktop:mt-20 laptop:mt-10 lg:mt-10 md:mt-10">KENAPA HARUS AZWA CONTRACTOR ?</h1>
     {{-- CardTag Free Design --}}
-    <div class="flex items-center justify-center px-5 mt-5 desktop:mt-10 laptop:mt-5 md:mt-5 desktop:px-80 laptop:px-50 md:px-30">
+    <div data-aos="fade-up" data-aos-duration="1000" class="flex items-center justify-center px-5 mt-5 desktop:mt-10 laptop:mt-5 md:mt-5 desktop:px-80 laptop:px-50 md:px-30">
         <div class="w-full px-5 py-4 border desktop:px-8 laptop:px-5 md:px-5 desktop:py-6 laptop:py-4 md:py-4 bg-landing-brownLight-1 rounded-3xl">
             <div class="flex items-center">
                 <div class="p-5 mx-2 border-0 rounded-full bg-theme3 desktop:p-6 laptop:p-5 md:p-5 lg:mx-5">
@@ -49,7 +49,7 @@
         </div>
     </div>
     {{-- CardTag Transparan --}}
-    <div class="flex items-center justify-center px-5 mt-5 desktop:px-80 laptop:px-50 md:px-30">
+    <div data-aos="fade-up" data-aos-duration="1000" class="flex items-center justify-center px-5 mt-5 desktop:px-80 laptop:px-50 md:px-30">
         <div class="w-full px-5 py-4 border desktop:px-8 laptop:px-5 md:px-5 desktop:py-6 laptop:py-4 md:py-4 bg-landing-brownLight-2 rounded-3xl">
             <div class="flex items-center">
                 <div class="p-5 mx-2 border-0 rounded-full bg-theme3 desktop:p-6 laptop:p-5 md:p-5 lg:mx-5">
@@ -63,7 +63,7 @@
         </div>
     </div>
     {{-- CardTag Rekanan Terpercaya --}}
-    <div class="flex items-center justify-center px-5 mt-5 desktop:px-80 laptop:px-50 md:px-30">
+    <div data-aos="fade-up" data-aos-duration="1000" class="flex items-center justify-center px-5 mt-5 desktop:px-80 laptop:px-50 md:px-30">
         <div class="w-full px-5 py-4 border desktop:px-8 laptop:px-5 md:px-5 desktop:py-6 laptop:py-4 md:py-4 bg-landing-brownLight-1 rounded-3xl">
             <div class="flex items-center">
                 <div class="p-5 mx-2 border-0 rounded-full bg-theme3 desktop:p-6 laptop:p-5 md:p-5 lg:mx-5">
@@ -77,7 +77,7 @@
         </div>
     </div>
     {{-- CardTag Proses Mudah dan Aman --}}
-    <div class="flex items-center justify-center px-5 mt-5 desktop:px-80 laptop:px-50 md:px-30">
+    <div data-aos="fade-up" data-aos-duration="1000" class="flex items-center justify-center px-5 mt-5 desktop:px-80 laptop:px-50 md:px-30">
         <div class="w-full px-5 py-4 border desktop:px-8 laptop:px-5 md:px-5 desktop:py-6 laptop:py-4 md:py-4 bg-landing-brownLight-2 rounded-3xl">
             <div class="flex items-center">
                 <div class="p-5 mx-2 border-0 rounded-full bg-theme3 desktop:p-6 laptop:p-5 md:p-5 lg:mx-5">
@@ -91,7 +91,7 @@
         </div>
     </div>
     {{-- CardTag dOKUMENTASI PROYEK --}}
-    <div class="flex items-center justify-center px-5 mt-5 desktop:px-80 laptop:px-50 md:px-30">
+    <div data-aos="fade-up" data-aos-duration="1000" class="flex items-center justify-center px-5 mt-5 desktop:px-80 laptop:px-50 md:px-30">
         <div class="w-full px-5 py-4 border desktop:px-8 laptop:px-5 md:px-5 desktop:py-6 laptop:py-4 md:py-4 bg-landing-brownLight-1 rounded-3xl">
             <div class="flex items-center">
                 <div class="p-5 mx-2 border-0 rounded-full bg-theme3 desktop:p-6 laptop:p-5 md:p-5 lg:mx-5">
@@ -105,7 +105,7 @@
         </div>
     </div>
     {{-- CardTag BERGARANSI --}}
-    <div class="flex items-center justify-center px-5 mt-5 desktop:px-80 laptop:px-50 md:px-30">
+    <div data-aos="fade-up" data-aos-duration="1000" class="flex items-center justify-center px-5 mt-5 desktop:px-80 laptop:px-50 md:px-30">
         <div class="w-full px-5 py-4 border desktop:px-8 laptop:px-5 md:px-5 desktop:py-6 laptop:py-4 md:py-4 bg-landing-brownLight-2 rounded-3xl">
             <div class="flex items-center">
                 <div class="p-5 mx-2 border-0 rounded-full bg-theme3 desktop:p-6 laptop:p-5 md:p-5 lg:mx-5">
@@ -124,12 +124,12 @@
             <div class="absolute inset-0 bg-theme3 opacity-60"></div>
             <img src="{{asset('assets/img/service/kontraktor/bg2-servicekontraktor.jpg')}}" alt="" class="object-cover w-screen h-full">
         </div>
-        <div class="py-10 mt-30">
+        <div data-aos="fade-right" data-aos-duration="1000" class="py-10 mt-30">
             <h1 class="ml-10 text-5xl font-bold desktop:text-6xl laptop:text-5xl md:text-5xl text-theme1 drop-shadow-2">Konstruksi Arsitektural</h1>
         </div>
     </div>
     {{-- Card Konstruksi Arsitektural --}}
-    <div class="flex items-center justify-center">
+    <div data-aos="fade-up" data-aos-duration="1000" class="flex items-center justify-center">
         <div class="relative">
             <div class="border-0 desktop:w-[1000px] laptop:w-[700px] md:w-[500px] sm:w-[350px] w-[350px] desktop:h-[700px] laptop:h-[550px] md:h-[550px] h-[550px] bg-theme3 rounded-[2rem] pt-5">
                 <div class="text-center">
@@ -191,13 +191,13 @@
             <div class="absolute inset-0 bg-theme3 opacity-60"></div>
             <img src="{{asset('assets/img/service/kontraktor/bg3-servicekontraktor.jpg')}}" alt="" class="object-cover w-screen h-full">
         </div>
-        <div class="py-10 mt-30">
+        <div data-aos="fade-right" data-aos-duration="1000" class="py-10 mt-30">
             <h1 class="ml-10 text-5xl font-bold desktop:text-6xl laptop:text-5xl md:text-5xl text-theme1 drop-shadow-2">Konstruksi Interior</h1>
         </div>
     </div>
 
     {{-- Card Konstruksi Interior --}}
-    <div class="flex items-center justify-center">
+    <div data-aos="fade-up" data-aos-duration="1000" class="flex items-center justify-center">
         <div class="relative">
             <div class="border-0 desktop:w-[1000px] laptop:w-[700px] md:w-[500px] sm:w-[350px] w-[350px] desktop:h-[700px] laptop:h-[550px] md:h-[550px] h-[550px] bg-theme3 rounded-[2rem] pt-5">
                 <div class="text-center">
