@@ -45,18 +45,28 @@ class PaketController extends Controller
     // update paket by id
     public function update(Request $request, $id){
         $paket = Paket::find($id);
-        if(!$paket){
+        if (!$paket) {
             return response()->json(['error' => 'Paket Not Found'], 404);
         }
+
         $validate = $request->validate([
             'category' => 'required|string|max:255',
             'tier' => 'required|string|max:255',
             'price' => 'required|numeric|min:0',
-            'description' => 'required|string',
+            'description' => 'required|array',
+            'description.*' => 'required|string',
         ]);
-        $paket->update($validate);
+
+        // Update properties manually, including encoding the description array
+        $paket->category = $request->category;
+        $paket->tier = $request->tier;
+        $paket->price = $request->price;
+        $paket->description = json_encode($request->description);
+        $paket->save();
+
         return response()->json(['message' => 'Paket Updated Successfully', 'data' => $paket], 200);
     }
+
     // delete paket by id
     public function destroy($id){
         $paket = Paket::find($id);
