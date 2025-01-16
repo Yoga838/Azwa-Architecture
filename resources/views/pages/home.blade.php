@@ -3,6 +3,12 @@
 @section('subtitle', 'Home')
 
 @section("content")
+<style>
+    .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+        background: #5d4e40 !important;
+        margin-bottom: 20px;
+    }
+</style>
 
 <div class="relative flex flex-col items-center justify-center w-full h-screen">
     <!-- Swiper Slider Section -->
@@ -242,7 +248,7 @@
     </div>
 </div>    
 
-<div class="relative w-full px-5 lg:px-36 laptop:px-40 desktop:px-52">
+<div class="relative w-full pb-10 lg:px-36 laptop:px-40 desktop:px-52">
     <div class="relative swiper progress-slide-carousel swiper-container1">
         <div class="swiper-promo swiper-wrapper">
             {{-- Dinamis card promo --}}
