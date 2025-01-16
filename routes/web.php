@@ -26,6 +26,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
     
     Route::get('/daftarportofolio', [PortofolioController::class, 'IndexView'])->name('show.portofolio');
     Route::get('/storeportofolio', [PortofolioController::class, 'StoreView'])->name('show-store.portofolio');
+    Route::get('/editportofolio/{id}', [PortofolioController::class, 'UpdateView']);
     Route::get('/daftarpromo', [PromoController::class, 'IndexView'])->name('show.promo');
     Route::get('/storepromo', [PromoController::class, 'StoreView'])->name('show-store.promo');
     Route::get('/editpromo/{id}', [PromoController::class, 'UpdateView']);

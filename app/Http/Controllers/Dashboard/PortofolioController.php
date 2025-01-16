@@ -40,7 +40,7 @@ class PortofolioController extends Controller
 
         if ($request->hasFile('foto')) {
             foreach ($request->file('foto') as $file) {
-                $path = $file->store('public/portofolio');
+                $path = $file->store('portofolio', 'public');
                 $portofolio->fotos()->create([
                     'path' => $path,
                 ]);
@@ -58,12 +58,12 @@ class PortofolioController extends Controller
         // return response()->json(['data'=>$portofolio],200);
 
         // $images = File::files(public_path('assets/img/porto'));
-        return view('pages.project', compact('images', 'portofolio'));
+        return view('pages.project', compact('portofolio'));
     }
 
     public function edit(Request $request, $id){
+        // dd($request->all());
         $portofolio = Portofolio::findOrFail($id);
-        dd($request->all());
         $validate = $request->validate([
             'name' => 'required|string|max:255',
             'type' => 'required|string|max:100',
@@ -79,14 +79,14 @@ class PortofolioController extends Controller
 
         if ($request->hasFile('foto')) {
             foreach ($request->file('foto') as $file) {
-                $path = $file->store('public/portofolio');
+                $path = $file->store('portofolio', 'public');
                 $portofolio->fotos()->create([
                     'path' => $path,
                 ]);
             }
         }
 
-        return response()->json(['success' => 'Data Portofolio Berhasil Diupdate!'],201);
+        return response()->json(['success' => 'Data Portofolio Berhasil Diupdate!', 'data' => $portofolio],201);
     }
 
     public function delete($id){
@@ -119,6 +119,12 @@ class PortofolioController extends Controller
 
     public function StoreView() {
         return view('admin.portofolio.storePortofolio');
+    }
+
+    public function UpdateView($id) {
+        $portofolio = Portofolio::with('fotos')->findOrFail($id);
+        // dd($portofolio);
+        return view('admin.portofolio.editPortofolio', compact('portofolio'));
     }
 
 }
