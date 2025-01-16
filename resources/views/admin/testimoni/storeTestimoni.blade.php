@@ -24,7 +24,7 @@
                         Input Fields
                     </h3>
                 </div>
-                <form class="flex flex-col gap-5.5 p-6.5" onsubmit="" enctype="multipart/form-data">
+                <form class="flex flex-col gap-5.5 p-6.5" onsubmit="uploadTestimoni(event)" enctype="multipart/form-data">
                     <div class="bg-white shadow-lg rounded-lg p-6 w-full">
                         <div class="mb-4">
                             <label
@@ -58,7 +58,7 @@
                             <!-- File previews will appear here -->
                         </div>
                     </div>
-                    <button type="submit" class="w-full p-4 bg-theme3 hover:bg-theme2 transition-all ease-linear dark:bg-white dark:hover:bg-gray-400">
+                    <button type="submit"  class="w-full p-4 bg-theme3 hover:bg-theme2 transition-all ease-linear dark:bg-white dark:hover:bg-gray-400">
                         <h1 class="text-white dark:text-[#000] font-bold text-xl">Upload Testimoni</h1>
                     </button>
                 </form>
@@ -132,7 +132,18 @@
 
         function uploadTestimoni(event) {
             event.preventDefault();
-            const file = document.getElementById('file-upload').value;
+            const fileInput = document.getElementById('file-upload');
+
+            console.log(fileInput);
+
+            if (!fileInput.files || fileInput.files.length === 0) {
+                console.error('No file selected!');
+                return;
+            }
+
+            const file = fileInput.files[0]; // Ambil file pertama dari input
+
+            console.log('Selected File:', file);
 
             console.log('File:', file);
             
@@ -140,19 +151,21 @@
                 file: file,
             }
 
-            axios.post('/api/', data, {
+            console.log("Response :", data);
+
+            axios.post('/api/testimoni', data, {
                 headers: {
-                    "Content-Type" : "application/json"
+                    "Content-Type" : "multipart/form-data"
                 }
             })
             .then((response) => {
-                // Swal.fire({
-                //     title: response.data.message,
-                //     icon: "success",
-                //     draggable: true
-                // }).then(() => {
-                //     window.location.href = '/daftartestimoni'
-                // });
+                Swal.fire({
+                    title: response.data.message,
+                    icon: "success",
+                    draggable: true
+                }).then(() => {
+                    window.location.href = '/daftartestimoni'
+                });
             }).catch((err) => {
                 // console.log(err);
                 // Swal.fire({

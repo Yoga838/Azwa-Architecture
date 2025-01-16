@@ -34,7 +34,9 @@
                         @foreach ($testimoni as $testi)
                             <tr class="bg-white transition-all duration-500 hover:bg-gray-50">
                                 <td class="p-5 whitespace-nowrap text-sm leading-6 font-medium text-gray-900"></td>
-                                <td class="p-5 whitespace-nowrap text-sm leading-6 font-medium text-gray-900"></td>
+                                <td class="p-5 whitespace-nowrap text-sm leading-6 font-medium text-gray-900">
+                                    <img src="{{ asset('storage/' . $testi->link_image) }}" alt="Testimoni">
+                                </td>                                
                                 <td class=" p-5 ">
                                     <div class="flex items-center gap-1">
                                         <button onclick="" class="p-2 rounded-full  group transition-all duration-500  flex item-center">
