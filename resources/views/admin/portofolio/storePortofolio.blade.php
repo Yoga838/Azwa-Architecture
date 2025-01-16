@@ -24,7 +24,7 @@
                         Input Fields
                     </h3>
                 </div>
-                <form class="flex flex-col gap-5.5 p-6.5" id="portofolioForm" enctype="multipart/form-data">
+                <form class="flex flex-col gap-5.5 p-6.5" id="portofolioForm" enctype="multipart/form-data" onsubmit="uploadPorto(event)">
                     <input type="hidden" id="portofolioId" name="id">
                     <div class="nama">
                         <label class="mb-3 block text-sm font-medium text-black dark:text-white">
@@ -36,20 +36,26 @@
                         <label class="mb-3 block text-sm font-medium text-black dark:text-white">
                             Tipe
                         </label>
-                        <select class="w-full rounded-lg border-[1.5px] border-stroke bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary">
+                        <select id="tipe" class="w-full rounded-lg border-[1.5px] border-stroke bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary">
                             <option value="" disabled selected>Pilih dan sesuaikan tipe...</option>
-                            <option value="type1">Arsitektur</option>
-                            <option value="type2">Interior</option>
+                            <option value="Arsitektur">Arsitektur</option>
+                            <option value="Interior">Interior</option>
                         </select>
+                    </div>
+                    <div class="date">
+                        <label class="mb-3 block text-sm font-medium text-black dark:text-white">
+                            Tanggal
+                        </label>
+                        <input type="date" id="date" name="date" class="w-full rounded-lg border-[1.5px] border-stroke bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary"/>
                     </div>
                     <div class="kategori">
                         <label class="mb-3 block text-sm font-medium text-black dark:text-white">
                             Kategori
                         </label>
-                        <select class="w-full rounded-lg border-[1.5px] border-stroke bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary">
+                        <select id="kategori" class="w-full rounded-lg border-[1.5px] border-stroke bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary">
                             <option value="" disabled selected>Pilih kategori</option>
-                            <option value="type1">Arsitektur</option>
-                            <option value="type2">Interior</option>
+                            <option value="Arsitektur">Arsitektur</option>
+                            <option value="Interior">Interior</option>
                         </select>
                     </div>
                     <div class="luas">
@@ -104,11 +110,16 @@
                             <!-- File previews will appear here -->
                         </div>
                     </div>
+                    <button type="submit" class="w-full p-4 bg-theme3 hover:bg-theme2 transition-all ease-linear dark:bg-white dark:hover:bg-gray-400">
+                        <h1 class="text-white dark:text-[#000] font-bold text-xl">Tambah Portofolio</h1>
+                    </button>
                 </form>
           </div>
         </div>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
     <script>
         const fileInput = document.getElementById("file-upload");
         const dropArea = document.getElementById("drop-area");
@@ -170,6 +181,67 @@
                 }
             });
         }
+
+        function uploadPorto(event){
+            event.preventDefault();
+            const nama = document.getElementById('nama').value;
+            const tipe = document.getElementById('tipe').value;
+            const date = document.getElementById('date').value;
+            const kategori = document.getElementById('kategori').value;
+            const luas = document.getElementById('luas').value;
+            const kontraktor = document.getElementById('kontraktor').value;
+            const deskripsi = document.getElementById('deskripsi').value;
+            const fileInput = document.getElementById("file-upload");
+            
+            console.log('Nama:', nama);
+            console.log('Tipe:', tipe);
+            console.log('Date:', date);
+            console.log('Kategori:', kategori);
+            console.log('Luas:', luas);
+            console.log('Kontraktor:', kontraktor);
+            console.log('Deskripsi:', deskripsi);
+
+            const formData = new FormData();
+            formData.append("name", nama);
+            formData.append("type", tipe);
+            formData.append("date", date);
+            formData.append("category", kategori);
+            formData.append("luas", luas);
+            formData.append("kontraktor", kontraktor);
+            formData.append("deskripsi", deskripsi);
+
+            Array.from(fileInput.files).forEach((file) => {
+                formData.append("foto[]", file); // Foto dalam bentuk array
+            });
+
+            axios.post('/api/upload-porto', formData, {
+                headers: {
+                    "Content-Type" : "multipart/form-data"
+                }
+            })
+            .then((response) => {
+                console.log(response.data)
+                Swal.fire({
+                    title: response.data.success,
+                    icon: "success",
+                    draggable: true
+                }).then(() => {
+                    window.location.href = '/daftarportofolio';
+                });
+            })
+            .catch((err) => {
+                // Menangani kesalahan jika tidak ada data
+                console.log(err)
+                // console.log(err.response ? err.response.data : err.message);
+                Swal.fire({
+                    title: "Gagal menambahkan protofolio",
+                    text: "Silakan periksa data Anda dan coba lagi.",
+                    icon: "error",
+                    confirmButtonText: "OK"
+                });
+            });
+        }
+
     </script>
 
 @endsection
