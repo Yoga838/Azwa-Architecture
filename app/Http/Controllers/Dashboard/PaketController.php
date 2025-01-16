@@ -40,13 +40,13 @@ class PaketController extends Controller
         $paket->description = json_encode($request->description);
         $paket->save();
 
-        return response()->json(['message' => 'Paket Created Successfully', 'data' => $paket], 201);
+        return response()->json(['message' => 'Paket Berhasil Ditambahkan!', 'data' => $paket], 201);
     }
     // update paket by id
     public function update(Request $request, $id){
         $paket = Paket::find($id);
         if (!$paket) {
-            return response()->json(['error' => 'Paket Not Found'], 404);
+            return response()->json(['error' => 'Paket Tidak Ditemukan!'], 404);
         }
 
         $validate = $request->validate([
@@ -64,16 +64,16 @@ class PaketController extends Controller
         $paket->description = json_encode($request->description);
         $paket->save();
 
-        return response()->json(['message' => 'Paket Updated Successfully', 'data' => $paket], 200);
+        return response()->json(['message' => 'Update Paket Berhasil!', 'data' => $paket], 200);
     }
 
     // delete paket by id
     public function destroy($id){
         $paket = Paket::find($id);
         if(!$paket){
-            return response()->json(['error' => 'Paket Not Found'], 404);
+            return response()->json(['error' => 'Paket Tidak Ditemukan!'], 404);
         }
         $paket->delete();
-        return response()->json(['message' => 'Paket Deleted Successfully'], 200);
+        return response()->json(['message' => 'Paket Berhasil Diahpus!'], 200);
     }
 }
