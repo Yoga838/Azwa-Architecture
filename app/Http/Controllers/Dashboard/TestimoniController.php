@@ -29,14 +29,14 @@ class TestimoniController extends Controller
         $testimoni->path = $path;
         $testimoni->save();
 
-        return response()->json(['message' => 'Testimoni Created Successfully'], 201);
+        return response()->json(['message' => 'Testimoni Berhasil Ditambahkan!'], 201);
     }
     // Function untuk delete testimoni berdasarkan ID
     public function destroy($id){
         $testimoni = Testimoni::find($id);
 
         if (!$testimoni) {
-            return response()->json(['message' => 'Testimoni Not Found'], 404);
+            return response()->json(['message' => 'Testimoni Tidak Ditemukan!'], 404);
         }
 
         // Hapus file yang tersimpan di storage
@@ -45,7 +45,7 @@ class TestimoniController extends Controller
         // Hapus record dari database
         $testimoni->delete();
 
-        return response()->json(['message' => 'Testimoni Deleted Successfully'], 200);
+        return response()->json(['message' => 'Testimoni Berhasil Dihapus!'], 200);
     }
 
     // Function untuk update testimoni berdasarkan ID
@@ -53,7 +53,7 @@ class TestimoniController extends Controller
         $testimoni = Testimoni::find($id);
 
         if (!$testimoni) {
-            return response()->json(['message' => 'Testimoni Not Found'], 404);
+            return response()->json(['message' => 'Testimoni Tidak Ditemukan!'], 404);
         }
 
         $request->validate([
@@ -73,7 +73,7 @@ class TestimoniController extends Controller
         // Simpan perubahan
         $testimoni->save();
 
-        return response()->json(['message' => 'Testimoni Updated Successfully'], 200);
+        return response()->json(['message' => 'Testimoni Berhasil Diupdate!'], 200);
     }
 
     // Function untuk mendapatkan data testimoni berdasarkan ID
@@ -81,7 +81,7 @@ class TestimoniController extends Controller
         $testimoni = Testimoni::find($id);
 
         if (!$testimoni) {
-            return response()->json(['message' => 'Testimoni Not Found'], 404);
+            return response()->json(['message' => 'Testimoni Tidak Ditemukan!'], 404);
         }
 
         return response()->json($testimoni, 200);
