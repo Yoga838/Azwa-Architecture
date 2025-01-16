@@ -167,6 +167,7 @@
             .then((response) => {
                 Swal.fire({
                     title: response.data.message,
+                    text: "Data telah masuk ke database!",
                     icon: "success",
                     draggable: true
                 }).then(() => {

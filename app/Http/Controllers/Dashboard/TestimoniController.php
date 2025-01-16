@@ -23,10 +23,10 @@ class TestimoniController extends Controller
             'file'=> 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048'
         ]);
         $file = $request->file('file');
-        $path = $file->store('public/testimoni');
+        $path = $file->store('testimoni', 'public');
         
         $testimoni = new Testimoni();
-        $testimoni->path = $path;
+        $testimoni->link_image = $path;
         $testimoni->save();
 
         return response()->json(['message' => 'Testimoni Berhasil Ditambahkan!'], 201);
@@ -67,7 +67,7 @@ class TestimoniController extends Controller
             // Simpan file baru
             $file = $request->file('file');
             $path = $file->store('public/testimoni');
-            $testimoni->path = $path;
+            $testimoni->link_image = $path;
         }
 
         // Simpan perubahan

@@ -103,6 +103,8 @@
         </div>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <script>
         function updateDisplayStatus() {
             const checkbox = document.getElementById('statusCheckbox');
@@ -199,8 +201,8 @@
                 console.log("Response berhasil:", response);
 
                 Swal.fire({
-                    title: "Promo Berhasil Diperbarui",
-                    text: response.data.message || "Data promo telah berhasil diperbarui.",
+                    title: response.data.message,
+                    text: "Data pada database telah diperbarui!",
                     icon: "success",
                     confirmButtonText: "OK",
                 }).then(() => {
