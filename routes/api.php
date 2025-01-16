@@ -3,6 +3,7 @@
 use App\Http\Controllers\Dashboard\PaketController;
 use App\Http\Controllers\Dashboard\PortofolioController;
 use App\Http\Controllers\Dashboard\PromoController;
+use App\Http\Controllers\Dashboard\TestimoniController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -27,3 +28,8 @@ Route::get('/paket/{id}', [PaketController::class, 'show'])->name('paket.show');
 Route::post('/paket', [PaketController::class, 'store'])->name('paket.store');
 Route::put('/paket/{id}', [PaketController::class, 'update'])->name('paket.update');
 Route::delete('/paket/{id}', [PaketController::class, 'destroy'])->name('paket.destroy');
+//testimoni
+Route::put('/testimoni/{id}', [TestimoniController::class, 'update'])->name('testimoni.update');
+Route::post('testimoni',[TestimoniController::class, 'store'])->name('testimoni.store');
+Route::get('/testimoni/{id}',[TestimoniController::class,'show'])->name('testimoni.show');
+Route::delete('/testimoni',[TestimoniController::class,'destroy'])->name('testimoni.destroy');

@@ -179,7 +179,7 @@
                                 <li>
                                     <a
                                         class="group relative flex items-center gap-3 rounded-md px-4 font-medium text-gray-200 duration-300 ease-in-out hover:text-white"
-                                        href="#"
+                                        href="{{route('show.testimoni')}}"
                                     >
                                         Daftar/List Testimoni
                                     </a>
@@ -187,7 +187,7 @@
                                 <li>
                                     <a
                                         class="group relative flex items-center gap-3 rounded-md px-4 font-medium text-gray-200 duration-300 ease-in-out hover:text-white"
-                                        href="#"
+                                        href="{{route('show-store.testimoni')}}"
                                     >
                                         Upload Testimoni
                                     </a>
