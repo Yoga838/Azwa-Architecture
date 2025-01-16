@@ -56,19 +56,30 @@ class PromoController extends Controller
     // update promo by id
     public function update(Request $request, $id){
         $promo = Promo::find($id);
-        if(!$promo){
+        if (!$promo) {
             return response()->json(['error' => 'Promo Not Found'], 404);
         }
+
         $validate = $request->validate([
             'title' => 'required|string|max:255',
             'price' => 'required|numeric|min:0',
             'actual_price' => 'required|numeric|min:0',
-            'description' => 'required|string',
+            'description' => 'required|array',
+            'description.*' => 'required|string',
             'ondisplay' => 'required|boolean',
         ]);
-        $promo->update($validate);
+
+        // Update properties manually, including encoding the description array
+        $promo->title = $request->title;
+        $promo->price = $request->price;
+        $promo->actual_price = $request->actual_price;
+        $promo->description = json_encode($request->description);
+        $promo->ondisplay = $request->ondisplay;
+        $promo->save();
+
         return response()->json(['message' => 'Promo Updated Successfully', 'data' => $promo], 200);
     }
+
     // delete promo by id
     public function destroy($id){
         $promo = Promo::find($id);
