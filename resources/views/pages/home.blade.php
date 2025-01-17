@@ -333,7 +333,7 @@
 
     <!-- Slider Swiper -->
     <div class="relative z-10 flex items-center justify-center w-full mx-auto min-w-6xl">
-        <div class="swiper centered-slide-carousel-2 swiper-container">
+        {{-- <div class="swiper centered-slide-carousel-2 swiper-container">
             <div class="swiper-wrapper">
                 <!-- Multiple Slides -->
                 <div class="flex items-center justify-center swiper-slide">
@@ -347,7 +347,17 @@
                 </div>
                 <!-- More slides here -->
             </div>
-        </div>        
+        </div>         --}}
+        <div class="swiper centered-slide-carousel-2 swiper-container">
+            <div class="swiper-wrapper">
+                @foreach ($testimoni as $item)
+                <div class="flex items-center justify-center swiper-slide">
+                    <img src="{{ asset('storage/' . $item->link_image) }}" alt="Testimoni" class="object-cover w-auto h-[500px] sm:h-[600px] lg:h-[700px] rounded-2xl">
+                </div>
+                @endforeach
+            </div>
+        </div>
+        
 
         <!-- Gambar BG -->
         <div class="absolute invisible transform -translate-x-1/2 -translate-y-1/2 z-9 top-1/2 left-1/2 md:invisible lg:visible">
@@ -475,6 +485,51 @@
             });
     </script>
     <script>
+        document.addEventListener("DOMContentLoaded", () => {
+        const sliderWrapper = document.querySelector("#dynamic-slider .swiper-wrapper");
+        const apiUrl = "/api/testimoni/home"; // Endpoint API Laravel Anda
+
+        // Ambil data dari API menggunakan Axios
+        axios.get(apiUrl)
+            .then(response => {
+                const data = response.data;
+
+                // Render slide secara dinamis
+                data.forEach(image => {
+                    const slide = document.createElement("div");
+                    slide.classList.add("flex", "items-center", "justify-center", "swiper-slide");
+
+                    slide.innerHTML = `
+                        <img src="${image.url}" alt="${image.alt}" class="object-cover w-auto h-[500px] sm:h-[600px] lg:h-[700px] rounded-2xl">
+                    `;
+                    sliderWrapper.appendChild(slide);
+                });
+
+                // Inisialisasi Swiper setelah slide di-load
+                new Swiper(".swiper-container", {
+                    centeredSlides: true,
+                    slidesPerView: 1,
+                    loop: true,
+                    autoplay: {
+                        delay: 3000,
+                        disableOnInteraction: false,
+                    },
+                    navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                    },
+                    pagination: {
+                        el: ".swiper-pagination",
+                        clickable: true,
+                    },
+                });
+            })
+            .catch(error => {
+                console.error("Error fetching images:", error);
+            });
+    });
+    </script>    
+    <script>
        document.addEventListener('DOMContentLoaded', () => {
             const apiUrl = '/api/promo';
             const swiperWrapper = document.querySelector('.swiper-promo');
@@ -529,6 +584,5 @@
                     swiperWrapper.innerHTML = '<p class="text-red-500">Failed to load promos.</p>';
                 });
         });
-
     </script>
 @endsection

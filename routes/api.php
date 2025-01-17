@@ -32,4 +32,4 @@ Route::delete('/paket/{id}', [PaketController::class, 'destroy'])->name('paket.d
 Route::put('/testimoni/{id}', [TestimoniController::class, 'update'])->name('testimoni.update');
 Route::post('testimoni',[TestimoniController::class, 'store'])->name('testimoni.store');
 Route::get('/testimoni/{id}',[TestimoniController::class,'show'])->name('testimoni.show');
-Route::delete('/testimoni',[TestimoniController::class,'destroy'])->name('testimoni.destroy');
+Route::delete('/testimoni/{id}',[TestimoniController::class,'destroy'])->name('testimoni.destroy');
