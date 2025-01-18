@@ -53,7 +53,7 @@ class PortofolioController extends Controller
 
     public function get(Request $request){
         $portofolio = Portofolio::with('fotos')->get();
-        // return response()->json(['data'=>$portofolio],200);
+        return response()->json(['data'=>$portofolio],200);
 
         // $images = File::files(public_path('assets/img/porto'));
         return view('pages.project', compact('portofolio'));
@@ -69,11 +69,27 @@ class PortofolioController extends Controller
             'category' => 'required|string|max:100',
             'luas' => 'required|numeric|min:0',
             'foto.*' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'hapus_foto' => 'nullable|array',
+            'hapus_foto.*' => 'integer|exists:fotos,id',
             'kontraktor' => 'required|string|max:255',
             'deskripsi' => 'nullable|string',
         ]);
 
+
         $portofolio->update($validate);
+
+        if($request->filled('hapus_foto')) {
+            foreach ($request->hapus_foto as $fotoId) {
+                $foto = $portofolio->fotos()->find($fotoId);
+                if ($foto) {
+                    $path = public_path('storage/' . $foto->path);
+                    if (File::exists($path)) {
+                        unlink($path);
+                    }
+                    $foto->delete();
+                }
+            }
+        }
 
         if ($request->hasFile('foto')) {
             foreach ($request->file('foto') as $file) {
