@@ -36,8 +36,6 @@ class PortofolioController extends Controller
         $portofolio->deskripsi = $validate['deskripsi'];
         $portofolio->save();
 
-        // proses multiple foto
-
         if ($request->hasFile('foto')) {
             foreach ($request->file('foto') as $file) {
                 $path = $file->store('portofolio', 'public');
@@ -55,7 +53,7 @@ class PortofolioController extends Controller
 
     public function get(Request $request){
         $portofolio = Portofolio::with('fotos')->get();
-        // return response()->json(['data'=>$portofolio],200);
+        return response()->json(['data'=>$portofolio],200);
 
         // $images = File::files(public_path('assets/img/porto'));
         return view('pages.project', compact('portofolio'));
@@ -71,11 +69,27 @@ class PortofolioController extends Controller
             'category' => 'required|string|max:100',
             'luas' => 'required|numeric|min:0',
             'foto.*' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'hapus_foto' => 'nullable|array',
+            'hapus_foto.*' => 'integer|exists:fotos,id',
             'kontraktor' => 'required|string|max:255',
             'deskripsi' => 'nullable|string',
         ]);
 
+
         $portofolio->update($validate);
+
+        if($request->filled('hapus_foto')) {
+            foreach ($request->hapus_foto as $fotoId) {
+                $foto = $portofolio->fotos()->find($fotoId);
+                if ($foto) {
+                    $path = public_path('storage/' . $foto->path);
+                    if (File::exists($path)) {
+                        unlink($path);
+                    }
+                    $foto->delete();
+                }
+            }
+        }
 
         if ($request->hasFile('foto')) {
             foreach ($request->file('foto') as $file) {
@@ -91,9 +105,13 @@ class PortofolioController extends Controller
 
     public function delete($id){
         $portofolio = Portofolio::findOrFail($id);
-
+        
         foreach ($portofolio->fotos as $foto) {
-            Storage::delete($foto->path);
+            // delete the file from storage
+            $path = public_path('storage/' . $foto->path);
+            if (File::exists($path)) {
+                unlink($path);
+            }
             $foto->delete();
         }
 
@@ -104,11 +122,12 @@ class PortofolioController extends Controller
     public function getById($id){
         // Ambil portofolio berdasarkan ID dan termasuk relasi fotos
         $portofolio = Portofolio::with('fotos')->findOrFail($id);
-
+        $allportofolio = Portofolio::with('fotos')->get();
+        $relatedPortofolio = Portofolio::where('category', $portofolio->category)
+                                ->where('id', '!=', $id)
+                                ->get();
         // return response()->json(['data' => $portofolio], 200);
-        $allImages = File::files(public_path('assets/img/porto'));
-        $images = array_slice($allImages, 0, 4);
-        return view('pages.project-detail', compact('allImages' ,'images', 'portofolio'));
+        return view('pages.project-detail', compact('portofolio', 'allportofolio', 'relatedPortofolio'));
 
     }
 

@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Dashboard;
 use App\Http\Controllers\Controller;
 use App\Models\Testimoni;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Storage;
 
 class TestimoniController extends Controller
@@ -40,8 +41,10 @@ class TestimoniController extends Controller
         }
 
         // Hapus file yang tersimpan di storage
-        Storage::delete($testimoni->path);
-        
+        $path = public_path('storage/' . $testimoni->link_image);
+        if(File::exists($path)) {
+            unlink($path);
+        }
         // Hapus record dari database
         $testimoni->delete();
 
@@ -62,7 +65,10 @@ class TestimoniController extends Controller
 
         if ($request->hasFile('file')) {
             // Hapus file lama
-            Storage::delete($testimoni->path);
+            $path = public_path('storage/' . $testimoni->link_image);
+            if(File::exists($path)) {
+                unlink($path);
+            }
 
             // Simpan file baru
             $file = $request->file('file');

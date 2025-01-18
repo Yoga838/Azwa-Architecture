@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Pages;
 
+use App\Models\Portofolio;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
@@ -13,10 +14,9 @@ class ProjectsController extends Controller
      */
     public function index()
     {
-        $images = File::files(public_path('assets/img/porto'));
-        return view('pages.project', compact('images'));
+        $portofolio = Portofolio::with('fotos')->get();
+        return view('pages.project', compact('portofolio'));
     }
-
     /**
      * Show the form for creating a new resource.
      */

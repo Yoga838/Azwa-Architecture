@@ -12,7 +12,7 @@ Route::get('/user', function (Request $request) {
 })->middleware('auth:sanctum');
 //porto
 Route::post('/upload-porto',[PortofolioController::class, 'Store'])->name('portofolio.store');
-Route::put('/edit-porto/{id}',[PortofolioController::class, 'edit'])->name('portofolio.edit');
+Route::post('/edit-porto/{id}',[PortofolioController::class, 'edit'])->name('portofolio.edit');
 Route::get('/get-porto',[PortofolioController::class, 'get'])->name('portofolio.get');
 Route::get('/get-portoid/{id}',[PortofolioController::class, 'getById'])->name('portofolio.getbyid');
 Route::delete('/delete-porto/{id}',[PortofolioController::class, 'delete'])->name('portofolio.delete');
@@ -29,7 +29,7 @@ Route::post('/paket', [PaketController::class, 'store'])->name('paket.store');
 Route::put('/paket/{id}', [PaketController::class, 'update'])->name('paket.update');
 Route::delete('/paket/{id}', [PaketController::class, 'destroy'])->name('paket.destroy');
 //testimoni
-Route::put('/testimoni/{id}', [TestimoniController::class, 'update'])->name('testimoni.update');
+Route::post('/testimoni/{id}', [TestimoniController::class, 'update'])->name('testimoni.update');
 Route::post('testimoni',[TestimoniController::class, 'store'])->name('testimoni.store');
 Route::get('/testimoni/{id}',[TestimoniController::class,'show'])->name('testimoni.show');
 Route::delete('/testimoni/{id}',[TestimoniController::class,'destroy'])->name('testimoni.destroy');
