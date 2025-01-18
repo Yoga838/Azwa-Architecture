@@ -36,8 +36,6 @@ class PortofolioController extends Controller
         $portofolio->deskripsi = $validate['deskripsi'];
         $portofolio->save();
 
-        // proses multiple foto
-
         if ($request->hasFile('foto')) {
             foreach ($request->file('foto') as $file) {
                 $path = $file->store('portofolio', 'public');
@@ -124,11 +122,12 @@ class PortofolioController extends Controller
     public function getById($id){
         // Ambil portofolio berdasarkan ID dan termasuk relasi fotos
         $portofolio = Portofolio::with('fotos')->findOrFail($id);
-
+        $allportofolio = Portofolio::with('fotos')->get();
+        $relatedPortofolio = Portofolio::where('category', $portofolio->category)
+                                ->where('id', '!=', $id)
+                                ->get();
         // return response()->json(['data' => $portofolio], 200);
-        $allImages = File::files(public_path('assets/img/porto'));
-        $images = array_slice($allImages, 0, 4);
-        return view('pages.project-detail', compact('allImages' ,'images', 'portofolio'));
+        return view('pages.project-detail', compact('portofolio', 'allportofolio', 'relatedPortofolio'));
 
     }
 
