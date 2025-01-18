@@ -351,18 +351,21 @@
         <div class="swiper centered-slide-carousel-2 swiper-container">
             <div class="swiper-wrapper">
                 @foreach ($testimoni as $item)
-                <div class="flex items-center justify-center swiper-slide">
-                    <img src="{{ asset('storage/' . $item->link_image) }}" alt="Testimoni" class="object-cover w-auto h-[500px] sm:h-[600px] lg:h-[700px] rounded-2xl">
-                </div>
+                    <div class="flex items-center justify-center swiper-slide">
+                        @if (!empty($item->link_image))
+                            <img src="{{ asset('storage/' . $item->link_image) }}" alt="Testimoni" class="object-cover w-auto h-[500px] sm:h-[600px] lg:h-[700px] rounded-2xl">
+                        @endif
+                    </div>
                 @endforeach
             </div>
         </div>
         
-
         <!-- Gambar BG -->
-        <div class="absolute invisible transform -translate-x-1/2 -translate-y-1/2 z-9 top-1/2 left-1/2 md:invisible lg:visible">
-            <img src="{{ asset('assets/img/home/hpTes.png') }}" alt="Frame" class="w-auto h-[725px]">
-        </div>
+        @if ($testimoni->contains(fn($item) => !empty($item->link_image)))
+            <div class="absolute invisible transform -translate-x-1/2 -translate-y-1/2 z-9 top-1/2 left-1/2 md:invisible lg:visible">
+                <img src="{{ asset('assets/img/home/hpTes.png') }}" alt="Frame" class="w-auto h-[725px]">
+            </div>
+        @endif        
     </div>        
 </div>
  
