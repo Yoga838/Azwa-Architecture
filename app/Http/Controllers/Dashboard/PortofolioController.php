@@ -91,9 +91,13 @@ class PortofolioController extends Controller
 
     public function delete($id){
         $portofolio = Portofolio::findOrFail($id);
-
+        
         foreach ($portofolio->fotos as $foto) {
-            Storage::delete($foto->path);
+            // delete the file from storage
+            $path = public_path('storage/' . $foto->path);
+            if (File::exists($path)) {
+                unlink($path);
+            }
             $foto->delete();
         }
 

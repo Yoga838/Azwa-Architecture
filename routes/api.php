@@ -12,7 +12,7 @@ Route::get('/user', function (Request $request) {
 })->middleware('auth:sanctum');
 //porto
 Route::post('/upload-porto',[PortofolioController::class, 'Store'])->name('portofolio.store');
-Route::put('/edit-porto/{id}',[PortofolioController::class, 'edit'])->name('portofolio.edit');
+Route::post('/edit-porto/{id}',[PortofolioController::class, 'edit'])->name('portofolio.edit');
 Route::get('/get-porto',[PortofolioController::class, 'get'])->name('portofolio.get');
 Route::get('/get-portoid/{id}',[PortofolioController::class, 'getById'])->name('portofolio.getbyid');
 Route::delete('/delete-porto/{id}',[PortofolioController::class, 'delete'])->name('portofolio.delete');
