@@ -32,6 +32,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('/editpromo/{id}', [PromoController::class, 'UpdateView']);
     Route::get('/daftartestimoni', [TestimoniController::class, 'index'])->name('show.testimoni');
     Route::get('/storetestimoni', [TestimoniController::class, 'indexStore'])->name('show-store.testimoni');
+    Route::get('/editTestimoni/{id}', [TestimoniController::class, 'UpdateView']);
 });
 
 
@@ -42,7 +43,8 @@ Route::middleware('auth')->group(function () {
 });
 
 Route::get('/', function () {
-    return view('pages.home');
+    $testimoni = \App\Models\Testimoni::all(); // Mengambil semua testimoni
+    return view('pages.home', compact('testimoni'));
 })->name("home.index");
 Route::get('/tentang-kami',[AboutController::class, 'index'])->name('about.index');
 Route::get('/portofolio',[PortofolioController::class, 'get'])->name('project.index');

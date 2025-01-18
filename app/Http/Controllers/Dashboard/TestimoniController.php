@@ -66,7 +66,7 @@ class TestimoniController extends Controller
 
             // Simpan file baru
             $file = $request->file('file');
-            $path = $file->store('public/testimoni');
+            $path = $file->store('testimoni', 'public');
             $testimoni->link_image = $path;
         }
 
@@ -75,6 +75,18 @@ class TestimoniController extends Controller
 
         return response()->json(['message' => 'Testimoni Berhasil Diupdate!'], 200);
     }
+
+    public function UpdateView($id) {
+        $testimoni = Testimoni::find($id);
+        
+        // Debugging untuk memastikan data yang ditemukan
+        // dd($testimoni);
+    
+        if (!$testimoni) {
+            return redirect()->route('admin.testimoni.index')->with('error', 'Testimoni tidak ditemukan');
+        }
+        return view('admin.testimoni.editTestimoni', compact('testimoni'));
+    }    
 
     // Function untuk mendapatkan data testimoni berdasarkan ID
     public function show($id){
