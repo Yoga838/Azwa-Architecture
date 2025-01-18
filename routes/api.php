@@ -29,7 +29,7 @@ Route::post('/paket', [PaketController::class, 'store'])->name('paket.store');
 Route::put('/paket/{id}', [PaketController::class, 'update'])->name('paket.update');
 Route::delete('/paket/{id}', [PaketController::class, 'destroy'])->name('paket.destroy');
 //testimoni
-Route::put('/testimoni/{id}', [TestimoniController::class, 'update'])->name('testimoni.update');
+Route::post('/testimoni/{id}', [TestimoniController::class, 'update'])->name('testimoni.update');
 Route::post('testimoni',[TestimoniController::class, 'store'])->name('testimoni.store');
 Route::get('/testimoni/{id}',[TestimoniController::class,'show'])->name('testimoni.show');
 Route::delete('/testimoni/{id}',[TestimoniController::class,'destroy'])->name('testimoni.destroy');
