@@ -202,6 +202,7 @@
             }
         });
     }
+    
     function editPorto(event, id){
         event.preventDefault();
         const nama = document.getElementById('nama').value.trim();
@@ -223,38 +224,34 @@
             return;
         }
 
-        // Jika ada file yang dipilih
-        if (fileInput.files.length === 0) {
-            Swal.fire({
-                title: "Harap pilih setidaknya satu file!",
-                icon: "warning",
-                confirmButtonText: "OK"
-            });
-            return;  // Menghentikan pengiriman jika tidak ada file yang dipilih
-        }
-        
-        console.log('Nama:', nama);
-        console.log('Tipe:', tipe);
-        console.log('Date:', date);
-        console.log('Kategori:', kategori);
-        console.log('Luas:', luas);
-        console.log('Kontraktor:', kontraktor);
-        console.log('Deskripsi:', deskripsi);
-
         const formData = new FormData();
-        formData.append("name", nama);
-        formData.append("type", tipe);
-        formData.append("date", date);
-        formData.append("category", kategori);
-        formData.append("luas", luas);
-        formData.append("kontraktor", kontraktor);
-        formData.append("deskripsi", deskripsi);
 
-        Array.from(fileInput.files).forEach((file) => {
-            formData.append("foto[]", file); // Foto dalam bentuk array
-        });
+        try {
+            formData.append("id", id);
+            formData.append("name", nama);
+            formData.append("type", tipe);
+            formData.append("date", date);
+            formData.append("category", kategori);
+            formData.append("luas", luas);
+            formData.append("kontraktor", kontraktor);
+            formData.append("deskripsi", deskripsi);
+    
+            console.log(formData);
+            
+            if (fileInput.files.length > 0) {
+                for (let i = 0; i < fileInput.files.length; i++) {
+                    formData.append(`foto[]`, fileInput.files[i]);
+                }
+            }
 
-        console.log('FormData:', formData);
+            // Debugging: Log semua data dalam FormData
+            console.log("FormData Debugging:");
+            for (let pair of formData.entries()) {
+                console.log(`${pair[0]}:`, pair[1]);
+            } 
+        }catch (error) {
+            console.error("Error while appending to FormData:", error);
+        }
 
         axios.put(`/api/edit-porto/${id}`, formData, {
             headers: {
@@ -290,6 +287,7 @@
             });
         });
     }
+
 </script>
 
 @endsection

@@ -16,26 +16,26 @@
         </div>
         <div class="lg:py-30 md:py-20 py-15">
             <div class="columns-1 sm:columns-2 lg:columns-2 gap-4">
-                @forelse ($images as $image)
-                    <a href="{{ route('project-detail.index', ['id' => $loop->index]) }}" data-aos="fade-up" data-aos-delay="{{ $loop->index * 200 }}">
+                @forelse ($portofolio as $porto)
+                    <a href="{{ route('project-detail.index', ['id' => $porto->id]) }}" data-aos="fade-up" data-aos-delay="{{ $loop->index * 200 }}">
                         <div class="relative w-full h-auto mb-4 group rounded-3xl overflow-hidden">
-                            <img src="{{ asset('assets/img/porto/' . $image->getFilename()) }}" alt="{{ $image->getFilename() }}" class="w-full h-full object-cover" />
+                            <img src="{{ asset('storage/' . $porto->fotos->first()->path) }}" alt="" class="w-full h-full object-cover" />
     
                             <div class="p-4 absolute inset-0 bg-white bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                 <span class="text-theme3">
                                     <div class="w-full h-full transform translate-y-5 group-hover:translate-y-0 transition-transform duration-300">
-                                        <p class="lg:text-2xl text-xl">Arsitektur</p>
+                                        <p class="lg:text-2xl text-xl">{{ $porto->category }}</p>
                                         <div class="absolute inset-0 flex justify-center items-center w-full h-full">
                                             <span>
-                                                <p class="mb-2 lg:text-3xl md:text-2xl text-xl font-bold">Mrs. W House</p>
+                                                <p class="mb-2 lg:text-3xl md:text-2xl text-xl font-bold">{{ $porto->name }}</p>
                                                 <div class="">
                                                     <span class="flex items-center space-x-2 mb-2">
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="currentColor" d="M12 11.5A2.5 2.5 0 0 1 9.5 9A2.5 2.5 0 0 1 12 6.5A2.5 2.5 0 0 1 14.5 9a2.5 2.5 0 0 1-2.5 2.5M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7"/></svg>
-                                                        <p class="lg:text-2xl text-xl">Azwa</p>
+                                                        <p class="lg:text-2xl text-xl">{{ $porto->date }}</p>
                                                     </span>
                                                     <span class="flex items-center space-x-2">
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 100 100"><path fill="currentColor" d="M76.647 30.353a2 2 0 0 1-2-2v-3h-3a2 2 0 0 1 0-4h5a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2m-13.659-5h-8.659a2 2 0 0 1 0-4h8.659a2 2 0 0 1 0 4m-17.318 0h-8.659a2 2 0 0 1 0-4h8.659a2 2 0 0 1 0 4m-22.317 5a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h5a2 2 0 0 1 0 4h-3v3a2 2 0 0 1-2 2m0 34.635a2 2 0 0 1-2-2v-8.659a2 2 0 0 1 4 0v8.659a2 2 0 0 1-2 2m0-17.318a2 2 0 0 1-2-2v-8.659a2 2 0 0 1 4 0v8.659a2 2 0 0 1-2 2m5 30.977h-5a2 2 0 0 1-2-2v-5a2 2 0 0 1 4 0v3h3a2 2 0 0 1 0 4m34.635 0h-8.659a2 2 0 0 1 0-4h8.659a2 2 0 0 1 0 4m-17.318 0h-8.659a2 2 0 0 1 0-4h8.659a2 2 0 0 1 0 4m30.977 0h-5a2 2 0 0 1 0-4h3v-3a2 2 0 0 1 4 0v5a2 2 0 0 1-2 2m0-13.659a2 2 0 0 1-2-2v-8.659a2 2 0 0 1 4 0v8.659a2 2 0 0 1-2 2m0-17.318a2 2 0 0 1-2-2v-8.659a2 2 0 0 1 4 0v8.659a2 2 0 0 1-2 2"/><path fill="currentColor" d="M90.216 92.216H9.784a2 2 0 0 1-2-2V9.784a2 2 0 0 1 2-2h80.432a2 2 0 0 1 2 2v80.432a2 2 0 0 1-2 2m-78.432-4h76.432V11.784H11.784z"/></svg>
-                                                        <p class="lg:text-2xl text-xl">Azwa</p>
+                                                        <p class="lg:text-2xl text-xl">{{ $porto->luas }} <span>m</span></p>
                                                     </span>
                                                 </div>
                                             </span>
