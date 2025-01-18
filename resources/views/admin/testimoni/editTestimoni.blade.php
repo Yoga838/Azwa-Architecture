@@ -173,7 +173,7 @@
             formData.append('file', file);  // Append file to form data
 
             // Mengirim PUT request untuk melakukan update
-            axios.put(`/api/testimoni/${id}`, formData, {
+            axios.post(`/api/testimoni/${id}`, formData, {
                 headers: {
                     "Content-Type": "multipart/form-data"
                 }
