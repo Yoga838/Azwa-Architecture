@@ -2,8 +2,8 @@
 
 @section('content')
     
-    <div class="mb-6 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-        <h2 class="text-title-md2 font-bold text-black dark:text-white">
+    <div class="flex flex-col gap-3 mb-6 sm:flex-row sm:items-center sm:justify-between">
+        <h2 class="font-bold text-black text-title-md2 dark:text-white">
             Input Promo
         </h2>
         <nav>
@@ -18,30 +18,30 @@
 
     <div class="grid grid-cols-1 gap-9">
         <div class="flex flex-col gap-9">
-            <div class="rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark">
+            <div class="bg-white border rounded-sm border-stroke shadow-default dark:border-strokedark dark:bg-boxdark">
                 <div class="border-b border-stroke px-6.5 py-4 dark:border-strokedark">
                     <h3 class="font-medium text-black dark:text-white">
                         Input Fields
                     </h3>
                 </div>
                 <form class="flex flex-col gap-5.5 p-6.5" onsubmit="uploadTestimoni(event)" enctype="multipart/form-data">
-                    <div class="bg-white shadow-lg rounded-lg p-6 w-full">
+                    <div class="w-full p-6 bg-white rounded-lg shadow-lg">
                         <div class="mb-4">
                             <label
-                                class="block text-black dark:text-white text-sm font-medium mb-2"
+                                class="block mb-2 text-sm font-medium text-black dark:text-white"
                                 for="file-upload"
                             >
                                 Upload Files
                             </label>
                             <div
-                                class="border-2 border-dashed border-gray-300 p-6 text-center"
+                                class="p-6 text-center border-2 border-gray-300 border-dashed"
                                 id="drop-area"
                             >
                                 <p class="text-gray-500">Drag and drop files here</p>
                                 <p class="text-gray-500">Or</p>
                                 <button
                                     type="button"
-                                    class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 mt-2"
+                                    class="px-4 py-2 mt-2 text-white bg-blue-500 rounded hover:bg-blue-600"
                                 >
                                     Browse
                                 </button>
@@ -49,7 +49,6 @@
                                     id="file-upload"
                                     type="file"
                                     accept=".png, .jpg, .jpeg"
-                                    multiple
                                     class="hidden"
                                 />
                             </div>
@@ -58,7 +57,7 @@
                             <!-- File previews will appear here -->
                         </div>
                     </div>
-                    <button type="submit"  class="w-full p-4 bg-theme3 hover:bg-theme2 transition-all ease-linear dark:bg-white dark:hover:bg-gray-400">
+                    <button type="submit"  class="w-full p-4 transition-all ease-linear bg-theme3 hover:bg-theme2 dark:bg-white dark:hover:bg-gray-400">
                         <h1 class="text-white dark:text-[#000] font-bold text-xl">Upload Testimoni</h1>
                     </button>
                 </form>
@@ -106,7 +105,7 @@
                         preview.className =
                             "flex items-center justify-between border p-2 rounded bg-gray-50";
                         preview.innerHTML = `
-                            <img src="${reader.result}" alt="${file.name}" class="w-12 h-12 object-cover rounded">
+                            <img src="${reader.result}" alt="${file.name}" class="object-cover w-12 h-12 rounded">
                             <div class="flex-1 ml-4">
                                 <p class="text-sm font-medium">${file.name}</p>
                                 <p class="text-xs text-gray-500">${(
