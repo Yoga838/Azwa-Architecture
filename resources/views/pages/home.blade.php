@@ -361,11 +361,10 @@
         </div>
         
         <!-- Gambar BG -->
-        @if ($testimoni->contains(fn($item) => !empty($item->link_image)))
-            <div class="absolute invisible transform -translate-x-1/2 -translate-y-1/2 z-9 top-1/2 left-1/2 md:invisible lg:visible">
-                <img src="{{ asset('assets/img/home/hpTes.png') }}" alt="Frame" class="w-auto h-[725px]">
-            </div>
-        @endif        
+        <div class="absolute transform -translate-x-1/2 -translate-y-1/2 z-9 top-1/2 left-1/2 md:invisible lg:visible 
+            {{ $testimoni->contains(fn($item) => !empty($item->link_image)) ? '' : 'invisible' }}">
+            <img src="{{ asset('assets/img/home/hpTes.png') }}" alt="Frame" class="w-auto h-[725px]">
+        </div>       
     </div>        
 </div>
  
