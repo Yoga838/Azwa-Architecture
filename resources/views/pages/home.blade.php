@@ -11,8 +11,12 @@
 </style>
 
 <div class="relative flex flex-col items-center justify-center w-full h-screen">
+
+    <!-- Overlay Hitam -->
+    <div class="absolute inset-0 z-10 bg-opacity-30 bg-theme2"></div>
+
     <!-- Swiper Slider Section -->
-    <div class="absolute w-full h-full swiper centered-slide-carousel-3">
+    <div class="absolute z-0 w-full h-full swiper centered-slide-carousel-3">
         <div class="swiper-wrapper">
             <!-- Slide 1 -->
             <div class="bg-center bg-cover swiper-slide" style="background-image: url('{{ asset('assets/img/BgHome.png') }}');"></div>
@@ -28,7 +32,18 @@
             <div class="bg-center bg-cover swiper-slide" style="background-image: url('{{ asset('assets/img/home/portofolio3.png') }}');"></div>
         </div>
     </div>
+
+    <!-- Teks Judul -->
+    <div class="absolute z-10 bottom-20 left-15">
+        <h1 class="mb-4 text-4xl font-bold text-[#e1dfd4] lg:text-5xl drop-shadow-[4px_4px_6px_black]">
+            Merangkai Ruang <br>
+        </h1>
+        <h1 class="text-4xl font-bold text-[#e1dfd4] lg:text-5xl drop-shadow-[4px_4px_6px_black]">
+            Mewujudkan Impian
+        </h1>
+    </div>    
 </div>
+
 
 <div class="relative w-full py-10">
     <div class="absolute inset-0 bg-[#7a6a58] opacity-60"></div>
@@ -164,10 +179,10 @@
                 style="background-image: url('{{ asset('assets/img/home/bg-portofolio.jpg') }}');">
     
                 <!-- Overlay -->
-                <div class="absolute inset-0 bg-black/80 rounded-xl sm:rounded-2xl md:rounded-3xl"></div>
+                <div class="absolute inset-0 bg-theme2/80 rounded-xl sm:rounded-2xl md:rounded-3xl"></div>
     
                 <!-- Judul -->
-                <h1 class="absolute text-base font-bold text-white sm:text-lg md:text-xl lg:text-3xl top-4 sm:top-6 md:top-8 left-4 sm:left-6 md:left-8">
+                <h1 class="absolute text-5xl font-bold text-white sm:text-5xl md:text-5xl lg:text-5xl xl:text-5xl 2xl:text-5xl top-4 sm:top-6 md:top-8 left-4 sm:left-6 md:left-8">
                     Portofolio Kami
                 </h1>
 
@@ -233,17 +248,17 @@
         <h1 data-aos="fade-right" data-aos-duration="1000" class="mb-8 text-5xl font-extrabold text-theme3">Layanan Kami</h1>
         <div data-aos="fade-right" data-aos-duration="1000" class="flex justify-center gap-8">
             <div class="relative w-3/4 overflow-hidden lg:w-1/2 rounded-2xl">
-                <img src="{{asset('assets/img/porto/assets-7.jpg')}}" alt="Arsitektur" class="w-full h-[400px]">
+                <img src="{{asset('assets/img/home/layanan2.jpg')}}" alt="Arsitektur" class="w-full h-[450px] lg:h-[450px] object-cover">
                 <div class="absolute inset-0 flex px-5 py-3 transition-opacity duration-300 bg-black-2 bg-opacity-70">
                     <h3 class="text-3xl font-bold text-white">Arsitektur</h3>
                 </div>
             </div>
             <div data-aos="fade-left" data-aos-duration="1000" class="relative w-3/4 overflow-hidden lg:w-1/2 rounded-2xl">
-                <img src="{{asset('assets/img/home/layanan.jpg')}}" alt="Arsitektur" class="w-full h-[400px]">
+                <img src="{{asset('assets/img/home/layanan.jpg')}}" alt="Arsitektur" class="w-full h-[450px] lg:h-[450px] object-cover">
                 <div class="absolute inset-0 flex px-5 py-3 transition-opacity duration-300 bg-black-2 bg-opacity-70">
                     <h3 class="text-3xl font-bold text-white">Interior</h3>
                 </div>
-            </div>
+            </div>            
         </div>
     </div>
 </div>    
@@ -363,7 +378,7 @@
         <!-- Gambar BG -->
         <div class="absolute transform -translate-x-1/2 -translate-y-1/2 z-9 top-1/2 left-1/2 md:invisible lg:visible 
             {{ $testimoni->contains(fn($item) => !empty($item->link_image)) ? '' : 'invisible' }}">
-            <img src="{{ asset('assets/img/home/hpTes.png') }}" alt="Frame" class="w-auto h-[725px]">
+            <img src="{{ asset('assets/img/home/hpTes.png') }}" alt="Frame" class="w-auto h-[720px]">
         </div>       
     </div>        
 </div>
