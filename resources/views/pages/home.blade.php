@@ -209,7 +209,7 @@
                 
                 <div class="swiper-pagination"></div>
                 </div>
-                <div class="relative flex justify-center visible mt-5 z-9 2xl:visible xl:visible lg:invisible md:invisible sm:invisible">
+                <div class="relative flex justify-center invisible mt-5 z-9 2xl:visible xl:visible lg:invisible md:invisible sm:invisible">
                     <div class="border rounded-full bg-landing-brown-1 2xl:px-9 xl:px-8 2xl:py-3">
                         <div class="flex items-center gap-2 text-xs 2xl:text-xl xl:text-base md:text-xs">
                             <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 50 50">
@@ -219,7 +219,7 @@
                         </div>
                     </div>
                 </div>                    
-                <div class="absolute top-[60%] left-[50.5%] transform -translate-x-1/2 -translate-y-1/2 2xl:top-[50%] xl:top-[60%] 2xl:visible xl:visible lg:invisible md:invisible sm:invisible z-0">
+                <div class="absolute top-[60%] left-[50.5%] transform -translate-x-1/2 -translate-y-1/2 2xl:top-[50%] xl:top-[60%] 2xl:visible xl:visible lg:invisible md:invisible sm:invisible invisible z-0">
                     <img src="{{asset('assets/img/home/hp.png')}}" alt="Frame" class="w-[100%] h-auto">
                 </div>
                 </div>
