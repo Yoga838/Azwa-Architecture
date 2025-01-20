@@ -53,7 +53,7 @@ class PortofolioController extends Controller
 
     public function get(Request $request){
         $portofolio = Portofolio::with('fotos')->get();
-        return response()->json(['data'=>$portofolio],200);
+        // return response()->json(['data'=>$portofolio],200);
 
         // $images = File::files(public_path('assets/img/porto'));
         return view('pages.project', compact('portofolio'));
