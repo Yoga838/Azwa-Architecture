@@ -32,7 +32,7 @@
 
 <div class="relative w-full py-10">
     <div class="absolute inset-0 bg-[#7a6a58] opacity-60"></div>
-    <div class="relative z-10 grid items-center justify-around grid-cols-1 gap-8 px-5 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+    <div data-aos="fade-right" data-aos-duration="1000" class="relative z-10 grid items-center justify-around grid-cols-1 gap-8 px-5 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         <!-- ONE-STOP SERVICE -->
         <div class="flex flex-col items-center justify-center">
             <div class="flex items-center justify-center w-24 h-24 my-4 rounded-full opacity-75 bg-theme3">
@@ -109,12 +109,12 @@
 
     <div class="flex flex-col items-center justify-center w-full px-10 xl:mt-30 lg:mt-20 sm:mt-20 lg:flex-row">
         <!-- Gambar -->
-        <div class="flex-shrink-0 w-full lg:w-2/6">
+        <div data-aos="fade-right" data-aos-duration="1000" class="flex-shrink-0 w-full lg:w-2/6">
             <img src="{{ asset('assets/img/home/bg-jasa.png') }}" alt="Deskripsi Gambar" class="object-cover w-full h-auto">
         </div>
     
         <!-- Teks -->
-        <div class="relative w-full p-6 text-black xl:w-3/6 lg:w-4/6">
+        <div data-aos="fade-left" data-aos-duration="1000" class="relative w-full p-6 text-black xl:w-3/6 lg:w-4/6">
             <!-- Background image -->
             <div class="absolute inset-0 bg-top bg-no-repeat bg-cover opacity-20" style="background-image: url('{{ asset('assets/img/HeadLogo_Azwa.png') }}'); background-position: top center; background-size: contain;"></div>
         
@@ -209,7 +209,7 @@
                 
                 <div class="swiper-pagination"></div>
                 </div>
-                <div class="relative flex justify-center visible mt-5 z-9 2xl:visible xl:visible lg:invisible md:invisible sm:invisible">
+                <div class="relative flex justify-center invisible mt-5 z-9 2xl:visible xl:visible lg:invisible md:invisible sm:invisible">
                     <div class="border rounded-full bg-landing-brown-1 2xl:px-9 xl:px-8 2xl:py-3">
                         <div class="flex items-center gap-2 text-xs 2xl:text-xl xl:text-base md:text-xs">
                             <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 50 50">
@@ -219,7 +219,7 @@
                         </div>
                     </div>
                 </div>                    
-                <div class="absolute top-[60%] left-[50.5%] transform -translate-x-1/2 -translate-y-1/2 2xl:top-[50%] xl:top-[60%] 2xl:visible xl:visible lg:invisible md:invisible sm:invisible z-0">
+                <div class="absolute top-[60%] left-[50.5%] transform -translate-x-1/2 -translate-y-1/2 2xl:top-[50%] xl:top-[60%] 2xl:visible xl:visible lg:invisible md:invisible sm:invisible invisible z-0">
                     <img src="{{asset('assets/img/home/hp.png')}}" alt="Frame" class="w-[100%] h-auto">
                 </div>
                 </div>
@@ -230,15 +230,15 @@
 
 <div class="flex justify-center w-full mt-10 lg:h-[700] sm:px-10 md:px-10">
     <div class="relative flex flex-col justify-start w-full sm:my-2 md:my-3">
-        <h1 class="mb-8 text-5xl font-extrabold text-theme3">Layanan Kami</h1>
-        <div class="flex justify-center gap-8">
+        <h1 data-aos="fade-right" data-aos-duration="1000" class="mb-8 text-5xl font-extrabold text-theme3">Layanan Kami</h1>
+        <div data-aos="fade-right" data-aos-duration="1000" class="flex justify-center gap-8">
             <div class="relative w-3/4 overflow-hidden lg:w-1/2 rounded-2xl">
                 <img src="{{asset('assets/img/porto/assets-7.jpg')}}" alt="Arsitektur" class="w-full h-[400px]">
                 <div class="absolute inset-0 flex px-5 py-3 transition-opacity duration-300 bg-black-2 bg-opacity-70">
                     <h3 class="text-3xl font-bold text-white">Arsitektur</h3>
                 </div>
             </div>
-            <div class="relative w-3/4 overflow-hidden lg:w-1/2 rounded-2xl">
+            <div data-aos="fade-left" data-aos-duration="1000" class="relative w-3/4 overflow-hidden lg:w-1/2 rounded-2xl">
                 <img src="{{asset('assets/img/home/layanan.jpg')}}" alt="Arsitektur" class="w-full h-[400px]">
                 <div class="absolute inset-0 flex px-5 py-3 transition-opacity duration-300 bg-black-2 bg-opacity-70">
                     <h3 class="text-3xl font-bold text-white">Interior</h3>
@@ -271,7 +271,7 @@
     <!-- Grid Testimoni -->
     <div class="relative z-10 grid w-full grid-cols-1 gap-6 px-10 py-20 mx-auto mt-10 lg:grid-cols-2 max-w-7xl">
         <!-- Testimoni 1 -->
-        <div class="flex p-5 rounded-lg shadow-lg bg-theme3">
+        <div data-aos="fade-right" data-aos-duration="3000" class="flex p-5 rounded-lg shadow-lg bg-theme3">
             <div class="w-full pr-4 sm:w-1/2">
                 <img src="{{ asset('assets/img/porto/assets-1.png') }}" alt="Avatar 1" class="object-cover w-full h-48 rounded-lg">
             </div>
@@ -286,7 +286,7 @@
         </div>
 
         <!-- Testimoni 2 -->
-        <div class="flex p-5 rounded-lg shadow-lg bg-theme3">
+        <div data-aos="fade-left" data-aos-duration="3000" class="flex p-5 rounded-lg shadow-lg bg-theme3">
             <div class="w-full pr-4 sm:w-1/2">
                 <img src="{{ asset('assets/img/porto/assets-2.png') }}" alt="Avatar 2" class="object-cover w-full h-48 rounded-lg">
             </div>
@@ -301,7 +301,7 @@
         </div>
 
         <!-- Testimoni 3 -->
-        <div class="flex p-5 rounded-lg shadow-lg bg-theme3">
+        <div data-aos="fade-right" data-aos-duration="3000" class="flex p-5 rounded-lg shadow-lg bg-theme3">
             <div class="w-full pr-4 sm:w-1/2">
                 <img src="{{ asset('assets/img/porto/assets-3.png') }}" alt="Avatar 3" class="object-cover w-full h-48 rounded-lg">
             </div>
@@ -316,7 +316,7 @@
         </div>
 
         <!-- Testimoni 4 -->
-        <div class="flex p-5 rounded-lg shadow-lg bg-theme3">
+        <div data-aos="fade-left" data-aos-duration="3000" class="flex p-5 rounded-lg shadow-lg bg-theme3">
             <div class="w-full pr-4 sm:w-1/2">
                 <img src="{{ asset('assets/img/porto/assets-4.png') }}" alt="Avatar 4" class="object-cover w-full h-48 rounded-lg">
             </div>
@@ -351,18 +351,20 @@
         <div class="swiper centered-slide-carousel-2 swiper-container">
             <div class="swiper-wrapper">
                 @foreach ($testimoni as $item)
-                <div class="flex items-center justify-center swiper-slide">
-                    <img src="{{ asset('storage/' . $item->link_image) }}" alt="Testimoni" class="object-cover w-auto h-[500px] sm:h-[600px] lg:h-[700px] rounded-2xl">
-                </div>
+                    <div class="flex items-center justify-center swiper-slide">
+                        @if (!empty($item->link_image))
+                            <img src="{{ asset('storage/' . $item->link_image) }}" alt="Testimoni" class="object-cover w-auto h-[500px] sm:h-[600px] lg:h-[700px] rounded-2xl">
+                        @endif
+                    </div>
                 @endforeach
             </div>
         </div>
         
-
         <!-- Gambar BG -->
-        <div class="absolute invisible transform -translate-x-1/2 -translate-y-1/2 z-9 top-1/2 left-1/2 md:invisible lg:visible">
+        <div class="absolute transform -translate-x-1/2 -translate-y-1/2 z-9 top-1/2 left-1/2 md:invisible lg:visible 
+            {{ $testimoni->contains(fn($item) => !empty($item->link_image)) ? '' : 'invisible' }}">
             <img src="{{ asset('assets/img/home/hpTes.png') }}" alt="Frame" class="w-auto h-[725px]">
-        </div>
+        </div>       
     </div>        
 </div>
  
