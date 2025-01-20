@@ -41,13 +41,15 @@
                                 <img src="{{ asset('storage/' . $portofolio->fotos->first()->path) }}" class="w-full h-full object-cover" />
                             </div>
                             <div class="columns-4 md:mb-8 mb-3">
-                                {{-- @foreach ($portofolio->fotos->skip(1) as $porto)
-                                    <img src="{{ asset('storage/' . $porto->path) }}" class="w-full h-full object-cover" />
-                                @endforeach --}}
+                                @foreach ($portofolio->fotos->skip(1)->take(4) as $porto)
+                                    <div class="w-[195px] h-[100px]">
+                                        <img src="{{ asset('storage/' . $porto->path) }}" class="w-full h-full object-cover" />
+                                    </div>
+                                @endforeach
+                                {{-- <img src="{{ asset('assets/img/Enscape.png') }}" class="w-full h-full" />
                                 <img src="{{ asset('assets/img/Enscape.png') }}" class="w-full h-full" />
                                 <img src="{{ asset('assets/img/Enscape.png') }}" class="w-full h-full" />
-                                <img src="{{ asset('assets/img/Enscape.png') }}" class="w-full h-full" />
-                                <img src="{{ asset('assets/img/Enscape.png') }}" class="w-full h-full" />
+                                <img src="{{ asset('assets/img/Enscape.png') }}" class="w-full h-full" /> --}}
                             </div>
                             <div class="flex md:flex-row flex-col md:space-x-10 space-x-0">
                                 <div class="flex md:flex-col flex-row md:justify-normal justify-between md:mb-0 mb-3">

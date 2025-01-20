@@ -46,7 +46,7 @@ class PortofolioController extends Controller
         }
 
         // dd($request->file('foto'));
-
+        // dd($request->all(), $request->file('foto'));
         // redirect
         return response()->json(['success' => 'Data Portofolio Berhasil Disimpan!', 'data' => $portofolio],201);
     }
@@ -61,6 +61,7 @@ class PortofolioController extends Controller
 
     public function edit(Request $request, $id){
         // dd($request->all());
+        // dd($request->hapus_foto);
         $portofolio = Portofolio::findOrFail($id);
         $validate = $request->validate([
             'name' => 'required|string|max:255',

@@ -27,7 +27,7 @@
                 </li>
                 <li class="">
                     <a class="2xl:text-xl xl:text-lg lg:text-lg md:text-lg sm:text-lg text-lg font-normal transition duration-300 ease-in-out 
-                {{ request()->routeIs('project.index') ? 'text-landing-gold font-medium' : 'hover:text-landing-gold' }}" href="{{ route('project.index') }}">Portofolio</a>
+                {{ request()->routeIs('project.index') || request()->routeIs('project-detail.index') ? 'text-landing-gold font-medium' : 'hover:text-landing-gold' }}" href="{{ route('project.index') }}">Portofolio</a>
                 </li>
                 <li class="group relative ">
                     <a class="2xl:text-xl xl:text-lg lg:text-lg md:text-lg sm:text-lg text-lg font-normal {{request()->routeIs('service.*') ? 'text-landing-gold font-medium' : 'hover:text-landing-gold' }} cursor-pointer" href="#">Layanan</a>

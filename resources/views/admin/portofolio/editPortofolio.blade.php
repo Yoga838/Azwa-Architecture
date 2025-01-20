@@ -26,6 +26,7 @@
             </div>
             <form class="flex flex-col gap-5.5 p-6.5" id="portofolioForm" enctype="multipart/form-data" onsubmit="editPorto(event, {{$portofolio->id}})">
                 <input type="hidden" id="portofolioId" name="id">
+                <input type="hidden" id="deletedFiles" name="hapus_foto[]">
                 <div class="nama">
                     <label class="mb-3 block text-sm font-medium text-black dark:text-white">
                         Nama
@@ -99,7 +100,7 @@
                             </button>
                             <input
                                 id="file-upload"
-                                name="foto[]"
+                                name="foto"
                                 type="file"
                                 accept=".png, .jpg, .jpeg"
                                 multiple
@@ -110,7 +111,7 @@
                     <div id="file-preview" class="space-y-4">
                         <!-- File previews will appear here -->
                         @foreach ($portofolio->fotos as $foto)
-                            <div class="flex items-center justify-between border p-2 rounded bg-gray-50">
+                            <div class="flex items-center justify-between border p-2 rounded bg-gray-50" data-foto-id="{{ $foto->id }}">
                                 <img
                                     src="{{ asset('storage/' . $foto->path) }}"
                                     alt="Portofolio Image"
@@ -123,7 +124,7 @@
                                 <button
                                     type="button"
                                     class="text-red-500 hover:text-red-700"
-                                    onclick="this.parentElement.remove()"
+                                    onclick="removeFile(this)"
                                 >
                                     ✕
                                 </button>
@@ -202,6 +203,25 @@
             }
         });
     }
+
+    function removeFile(button) {
+        // Ambil elemen yang mewakili foto
+        const fotoElement = button.closest('[data-foto-id]');
+        
+        // Ambil ID foto
+        const fotoId = fotoElement.getAttribute('data-foto-id');
+        
+        // Tambahkan ID foto ke input 'hapus_foto[]'
+        const deletedFilesInput = document.getElementById('deletedFiles');
+        if (deletedFilesInput.value) {
+            deletedFilesInput.value += `,${fotoId}`;
+        } else {
+            deletedFilesInput.value = fotoId;
+        }
+        console.log(deletedFilesInput.value);
+        // Hapus foto dari preview
+        fotoElement.remove();
+    }
     
     function editPorto(event, id){
         event.preventDefault();
@@ -225,35 +245,24 @@
         }
 
         const formData = new FormData();
+        formData.append("id", id);
+        formData.append("name", nama);
+        formData.append("type", tipe);
+        formData.append("date", date);
+        formData.append("category", kategori);
+        formData.append("luas", luas);
+        formData.append("kontraktor", kontraktor);
+        formData.append("deskripsi", deskripsi);
 
-        try {
-            formData.append("id", id);
-            formData.append("name", nama);
-            formData.append("type", tipe);
-            formData.append("date", date);
-            formData.append("category", kategori);
-            formData.append("luas", luas);
-            formData.append("kontraktor", kontraktor);
-            formData.append("deskripsi", deskripsi);
-    
-            console.log(formData);
-            
-            if (fileInput.files.length > 0) {
-                for (let i = 0; i < fileInput.files.length; i++) {
-                    formData.append(`foto[]`, fileInput.files[i]);
-                }
-            }
+        Array.from(fileInput.files).forEach((file) => {
+            formData.append("foto[]", file); // Foto dalam bentuk array
+        });
 
-            // Debugging: Log semua data dalam FormData
-            console.log("FormData Debugging:");
-            for (let pair of formData.entries()) {
-                console.log(`${pair[0]}:`, pair[1]);
-            } 
-        }catch (error) {
-            console.error("Error while appending to FormData:", error);
+        for (let [key, value] of formData.entries()) {
+            console.log(`${key}:`, value);
         }
 
-        axios.put(`/api/edit-porto/${id}`, formData, {
+        axios.post(`/api/edit-porto/${id}`, formData, {
             headers: {
                 "Content-Type" : "multipart/form-data"
             }
@@ -271,13 +280,6 @@
         .catch((err) => {
             // Menangani kesalahan jika tidak ada data
             console.log(err)
-            if (err.response) {
-                console.log(err.response.data);  // Response error dari API
-                console.log(err.response.status);  // Status code error
-                console.log(err.response.headers);  // Header response error
-            } else {
-                console.error("Error:", err.message);
-            }
             // console.log(err.response ? err.response.data : err.message);
             Swal.fire({
                 title: "Gagal mengedit protofolio",
