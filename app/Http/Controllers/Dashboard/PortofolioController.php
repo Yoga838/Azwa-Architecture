@@ -46,14 +46,14 @@ class PortofolioController extends Controller
         }
 
         // dd($request->file('foto'));
-
+        // dd($request->all(), $request->file('foto'));
         // redirect
         return response()->json(['success' => 'Data Portofolio Berhasil Disimpan!', 'data' => $portofolio],201);
     }
 
     public function get(Request $request){
         $portofolio = Portofolio::with('fotos')->get();
-        return response()->json(['data'=>$portofolio],200);
+        // return response()->json(['data'=>$portofolio],200);
 
         // $images = File::files(public_path('assets/img/porto'));
         return view('pages.project', compact('portofolio'));
@@ -61,6 +61,7 @@ class PortofolioController extends Controller
 
     public function edit(Request $request, $id){
         // dd($request->all());
+        // dd($request->hapus_foto);
         $portofolio = Portofolio::findOrFail($id);
         $validate = $request->validate([
             'name' => 'required|string|max:255',

@@ -17,7 +17,6 @@ class Portofolio extends Model
         'date',
         'category',
         'luas',
-        'foto',
         'kontraktor',
         'deskripsi',
     ];

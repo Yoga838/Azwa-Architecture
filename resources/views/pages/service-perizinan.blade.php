@@ -17,7 +17,7 @@
     </div>
 </div>
 
-<h1 class="text-landing-gold 2xl:text-4xl xl:text-4xl lg:text-3xl md:text-2xl text-md font-bold text-center 2xl:mt-20 xl:mt-10 lg:mt-10 md:mt-10 mt-10">KENAPA HARUS KAMI ?</h1>
+<h1 class="text-theme2 2xl:text-4xl xl:text-4xl lg:text-3xl md:text-2xl text-md font-bold text-center 2xl:mt-20 xl:mt-10 lg:mt-10 md:mt-10 mt-10">KENAPA HARUS KAMI ?</h1>
 {{-- CardTag --}}
 <div data-aos="fade-up" data-aos-duration="1000" class="2xl:mt-10 xl:mt-5 lg:mt-5 md:mt-5 mt-5 flex justify-center items-center 2xl:px-50 xl:px-30 lg:px-30 md:px-30 px-10">
     <div class="border w-full 2xl:px-8 xl:px-5 lg:px-5 md:px-5 px-5 2xl:py-6 xl:py-4 lg:py-4 md:py-4 py-4 bg-landing-brownLight-1/50 rounded-3xl">
@@ -40,7 +40,7 @@
                 <svg viewBox="0 0 20 20" class="2xl:w-14 xl:w-12 lg:w-12 md:w-12 w-12 h-full" xmlns="http://www.w3.org/2000/svg" fill="none"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill="#c29844" fill-rule="evenodd" d="M3 10a7 7 0 019.307-6.611 1 1 0 00.658-1.889 9 9 0 105.98 7.501 1 1 0 00-1.988.22A7 7 0 113 10zm14.75-5.338a1 1 0 00-1.5-1.324l-6.435 7.28-3.183-2.593a1 1 0 00-1.264 1.55l3.929 3.2a1 1 0 001.38-.113l7.072-8z"></path> </g></svg>
             </div>
             <div class="">
-                <h1 class="font-bold 2xl:text-2xl xl:text-xl lg:text-lg md:text-md text-xs">SSK LENGKAP</h1>
+                <h1 class="font-bold 2xl:text-2xl xl:text-xl lg:text-lg md:text-md text-xs">SKK LENGKAP</h1>
                 <p class="font-normal 2xl:text-2xl xl:text-xl lg:text-lg md:text-md text-xs lg:pr-50 md:pr-10 pr-2 md:tracking-wider tracking-tight">Kami menyediakan layanan dengan langkah SKK (Surat Keterangan Kelayakan) lengkap.</p>
             </div>
         </div>
@@ -117,9 +117,11 @@
                 </ul>
             </div>
         </div>
-        <div class="absolute bottom-0 border-0 px-5 py-5 w-full rounded-full bg-theme2">
-            <h1 class="text-white font-bold text-center text-xs 2xl:text-xl xl:text-base lg:text-base md:text-xs">PILIH PAKET</h1>
-        </div>
+        <a href="https://wa.me/62895371025425">
+            <button class="absolute bottom-0 w-full px-5 py-5 border-0 rounded-full bg-theme2">
+                <h1 class="text-xs font-bold text-center text-white 2xl:text-xl xl:text-base lg:text-base md:text-xs">PILIH PAKET</h1>
+            </button>
+        </a>
     </div>
 </div>
 
@@ -154,9 +156,11 @@
                 </ul>
             </div>
         </div>
-        <div class="absolute bottom-0 border-0 px-5 py-5 w-full rounded-full bg-theme2">
-            <h1 class="text-white font-bold text-center text-xs 2xl:text-xl xl:text-base lg:text-base md:text-xs">PILIH PAKET</h1>
-        </div>
+        <a href="https://wa.me/62895371025425">
+            <button class="absolute bottom-0 w-full px-5 py-5 border-0 rounded-full bg-theme2">
+                <h1 class="text-xs font-bold text-center text-white 2xl:text-xl xl:text-base lg:text-base md:text-xs">PILIH PAKET</h1>
+            </button>
+        </a>
     </div>
 </div>
 

@@ -33,7 +33,7 @@
             </div>
         </div>
     </div>
-    <h1 class="text-landing-gold 2xl:text-4xl xl:text-4xl lg:text-3xl md:text-2xl text-md font-bold drop-shadow-2 text-center 2xl:mt-20 xl:mt-10 lg:mt-10 md:mt-10 mt-10">KENAPA HARUS AZWA CONTRACTOR ?</h1>
+    <h1 class="text-theme2 2xl:text-4xl xl:text-4xl lg:text-3xl md:text-2xl text-md font-bold text-center 2xl:mt-20 xl:mt-10 lg:mt-10 md:mt-10 mt-10">KENAPA HARUS AZWA CONTRACTOR ?</h1>
     {{-- CardTag Free Design --}}
     <div data-aos="fade-up" data-aos-duration="1000" class="2xl:mt-10 xl:mt-5 lg:mt-5 md:mt-5 mt-5 flex justify-center items-center 2xl:px-50 xl:px-30 lg:px-30 md:px-30 px-10">
         <div class="w-full border 2xl:px-8 xl:px-5 lg:px-5 md:px-5 px-5 2xl:py-6 xl:py-4 lg:py-4 md:py-4 py-4 bg-landing-brownLight-1/50 rounded-3xl">
@@ -179,9 +179,11 @@
                     </div>
                 </div>
             </div>
-            <div class="absolute bottom-0 border-0 px-5 py-5 w-full rounded-full bg-theme2">
-                <h1 class="text-white font-bold text-center text-xs 2xl:text-xl xl:text-base lg:text-base md:text-xs">PILIH PAKET</h1>
-            </div>
+            <a href="https://wa.me/62895371025425">
+                <button class="absolute bottom-0 w-full px-5 py-5 border-0 rounded-full bg-theme2">
+                    <h1 class="text-xs font-bold text-center text-white 2xl:text-xl xl:text-base lg:text-base md:text-xs">PILIH PAKET</h1>
+                </button>
+            </a>
         </div>
     </div>
 
@@ -244,9 +246,11 @@
                     </div>
                 </div>
             </div>
-            <div class="absolute bottom-0 border-0 px-5 py-5 w-full rounded-full bg-theme2">
-                <h1 class="text-white font-bold text-center text-xs 2xl:text-xl xl:text-base lg:text-base md:text-xs">PILIH PAKET</h1>
-            </div>
+            <a href="https://wa.me/62895371025425">
+                <button class="absolute bottom-0 w-full px-5 py-5 border-0 rounded-full bg-theme2">
+                    <h1 class="text-xs font-bold text-center text-white 2xl:text-xl xl:text-base lg:text-base md:text-xs">PILIH PAKET</h1>
+                </button>
+            </a>
         </div>
     </div>
 
