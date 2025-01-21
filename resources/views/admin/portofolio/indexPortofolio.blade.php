@@ -50,7 +50,9 @@
                                     {{ \Illuminate\Support\Str::words($item->deskripsi, 5, '...') }}
                                 </td>
                                 <td class="p-5 whitespace-nowrap text-sm leading-6 font-medium text-gray-900">
-                                    <img src="{{ asset('storage/' . $item->fotos->first()->path) }}" alt="" class="w-full h-full object-cover" />
+                                    <div class="w-[125px]">
+                                        <img src="{{ asset('storage/' . $item->fotos->first()->path) }}" alt="" class="w-full h-full object-cover" />
+                                    </div>
                                 </td>
                                 <td class=" p-5 ">
                                     <div class="flex items-center gap-1">

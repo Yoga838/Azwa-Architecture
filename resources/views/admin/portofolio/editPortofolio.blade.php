@@ -111,7 +111,7 @@
                     <div id="file-preview" class="space-y-4">
                         <!-- File previews will appear here -->
                         @foreach ($portofolio->fotos as $foto)
-                            <div class="flex items-center justify-between border p-2 rounded bg-gray-50" data-foto-id="{{ $foto->id }}">
+                            <div class="flex items-center justify-between border p-2 rounded bg-gray-50">
                                 <img
                                     src="{{ asset('storage/' . $foto->path) }}"
                                     alt="Portofolio Image"
@@ -124,7 +124,7 @@
                                 <button
                                     type="button"
                                     class="text-red-500 hover:text-red-700"
-                                    onclick="removeFile(this)"
+                                    onclick="removeFile(this, {{$foto->id}})"
                                 >
                                     ✕
                                 </button>
@@ -204,22 +204,11 @@
         });
     }
 
-    function removeFile(button) {
-        // Ambil elemen yang mewakili foto
-        const fotoElement = button.closest('[data-foto-id]');
-        
-        // Ambil ID foto
-        const fotoId = fotoElement.getAttribute('data-foto-id');
-        
-        // Tambahkan ID foto ke input 'hapus_foto[]'
-        const deletedFilesInput = document.getElementById('deletedFiles');
-        if (deletedFilesInput.value) {
-            deletedFilesInput.value += `,${fotoId}`;
-        } else {
-            deletedFilesInput.value = fotoId;
-        }
-        console.log(deletedFilesInput.value);
-        // Hapus foto dari preview
+    var hapus_foto = []
+
+    function removeFile(button, fotoId) {
+        const fotoElement = button.parentElement;
+        hapus_foto.push(fotoId);
         fotoElement.remove();
     }
     
@@ -257,10 +246,9 @@
         Array.from(fileInput.files).forEach((file) => {
             formData.append("foto[]", file); // Foto dalam bentuk array
         });
-
-        for (let [key, value] of formData.entries()) {
-            console.log(`${key}:`, value);
-        }
+        Array.from(hapus_foto).forEach((file) => {
+            formData.append("hapus_foto[]", file); // Foto dalam bentuk array
+        });
 
         axios.post(`/api/edit-porto/${id}`, formData, {
             headers: {
@@ -268,7 +256,6 @@
             }
         })
         .then((response) => {
-            console.log(response.data)
             Swal.fire({
                 title: response.data.success,
                 icon: "success",
@@ -278,9 +265,6 @@
             });
         })
         .catch((err) => {
-            // Menangani kesalahan jika tidak ada data
-            console.log(err)
-            // console.log(err.response ? err.response.data : err.message);
             Swal.fire({
                 title: "Gagal mengedit protofolio",
                 text: "Silakan periksa data Anda dan coba lagi.",
