@@ -34,7 +34,7 @@
     </div>
 
     <!-- Teks Judul -->
-    <div class="absolute z-10 bottom-20 left-15">
+    <div class="absolute z-10 bottom-20 lg:left-15 sm:left-5">
         <h1 class="mb-4 text-4xl font-bold text-[#e1dfd4] lg:text-5xl drop-shadow-[4px_4px_6px_black]">
             Merangkai Ruang <br>
         </h1>
@@ -182,7 +182,7 @@
                 <div class="absolute inset-0 bg-theme2/80 rounded-xl sm:rounded-2xl md:rounded-3xl"></div>
     
                 <!-- Judul -->
-                <h1 class="absolute text-5xl font-bold text-white sm:text-5xl md:text-5xl lg:text-5xl xl:text-5xl 2xl:text-5xl top-4 sm:top-6 md:top-8 left-4 sm:left-6 md:left-8">
+                <h1 class="absolute text-5xl font-bold text-white sm:text-3xl md:text-3xl lg:text-5xl xl:text-5xl 2xl:text-5xl top-4 sm:top-6 md:top-8 left-4 sm:left-6 md:left-8">
                     Portofolio Kami
                 </h1>
 
@@ -263,7 +263,7 @@
     </div>
 </div>    
 
-<div class="relative w-full py-10 lg:px-36 laptop:px-40 desktop:px-52">
+<div class="relative w-full py-10 sm:px-10 lg:px-36">
     <div class="relative swiper progress-slide-carousel swiper-container1">
         <div class="swiper-promo swiper-wrapper">
             {{-- Dinamis card promo --}}
@@ -376,7 +376,7 @@
         </div>
         
         <!-- Gambar BG -->
-        <div class="absolute transform -translate-x-1/2 -translate-y-1/2 z-9 top-1/2 left-1/2 md:invisible lg:visible 
+        <div class="absolute transform -translate-x-1/2 -translate-y-1/2 z-9 top-1/2 left-1/2 sm:invisible md:invisible lg:invisible xl:visible
             {{ $testimoni->contains(fn($item) => !empty($item->link_image)) ? '' : 'invisible' }}">
             <img src="{{ asset('assets/img/home/hpTes.png') }}" alt="Frame" class="w-auto h-[720px]">
         </div>       
@@ -556,9 +556,9 @@
 
                     if (promos.length === 0 ) {
                         swiperWrapper.innerHTML = `
-                            <div class="flex justify-center items-center w-full">
-                                <div class="border bg-theme3 px-6 py-3 rounded-full">
-                                    <h1 class="sm:text-lg md:text-xl lg:text-2xl 2xl:text-3xl font-bold text-landing-body text-center">Oops.. masih belum ada promo nih!<br>Stay tune teruss yaa...</h1>
+                            <div class="flex items-center justify-center w-full">
+                                <div class="px-6 py-3 border rounded-full bg-theme3">
+                                    <h1 class="font-bold text-center sm:text-lg md:text-xl lg:text-2xl 2xl:text-3xl text-landing-body">Oops.. masih belum ada promo nih!<br>Stay tune teruss yaa...</h1>
                                 </div>
                             </div>
                         `;
@@ -601,7 +601,7 @@
                                         <ul class="mt-4">
                                             ${descriptionHTML}
                                         </ul>
-                                        <div class="absolute end-10 bottom-15 mt-5">
+                                        <div class="absolute mt-5 end-10 bottom-15">
                                             <button class="px-4 py-1 text-xl font-extrabold tracking-wider transition duration-300 border-4 rounded-full text-landing-black-1 border-opacity-40 bg-landing-brown-2 bg-opacity-40 border-black-2">
                                                 Dapatkan Promo!
                                             </button>
