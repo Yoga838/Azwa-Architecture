@@ -263,7 +263,7 @@
     </div>
 </div>    
 
-<div class="relative w-full pb-10 lg:px-36 laptop:px-40 desktop:px-52">
+<div class="relative w-full py-10 lg:px-36 laptop:px-40 desktop:px-52">
     <div class="relative swiper progress-slide-carousel swiper-container1">
         <div class="swiper-promo swiper-wrapper">
             {{-- Dinamis card promo --}}
@@ -552,26 +552,56 @@
             const swiperWrapper = document.querySelector('.swiper-promo');
             axios.get(apiUrl)
                 .then(response => {
-                    const promos = response.data;
+                    const promos = response.data.filter(promo => promo.ondisplay === 1 || promo.ondisplay === true);
+
+                    if (promos.length === 0 ) {
+                        swiperWrapper.innerHTML = `
+                            <div class="flex justify-center items-center w-full">
+                                <div class="border bg-theme3 px-6 py-3 rounded-full">
+                                    <h1 class="sm:text-lg md:text-xl lg:text-2xl 2xl:text-3xl font-bold text-landing-body text-center">Oops.. masih belum ada promo nih!<br>Stay tune teruss yaa...</h1>
+                                </div>
+                            </div>
+                        `;
+                        return; // Berhenti jika tidak ada promo
+                    }
+
+                    // Jika ada data promo
                     swiperWrapper.innerHTML = '';
                     const promoCards = promos.map(promo => {
                         const descriptionList = JSON.parse(promo.description);
+
+                        // Bagi deskripsi menjadi dua kolom
+                        const firstColumn = descriptionList.slice(0, 9);
+                        const secondColumn = descriptionList.slice(9);
+
+                        // Buat HTML untuk deskripsi dalam dua kolom
+                        const descriptionHTML = `
+                            <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2 gap-4 mt-5 overflow-y-auto md:overflow-y-hidden lg:overflow-y-hidden xl:overflow-y-hidden 2xl:overflow-y-hidden max-h-[215px] md:max-h-none lg:max-h-none xl:max-h-none 2xl:max-h-none">
+                                <div class="">
+                                    ${firstColumn.map(item => `<div class="text-base font-bold tracking-wider lg:text-lg 2xl:text-xl text-landing-black-1">${item}</div>`).join('')}
+                                </div>
+                                <div class="">
+                                    ${secondColumn.map(item => `<div class="text-base font-bold tracking-wider lg:text-lg 2xl:text-xl text-landing-black-1">${item}</div>`).join('')}
+                                </div>
+                            </div>
+                        `;
+
                         return `
-                        <div class="my-15 swiper-slide">
-                            <div class="border-6 border-black rounded-[44px] h-[500px] desktop:h-[600px] overflow-hidden relative">
+                        <div class="swiper-slide">
+                            <div class="border-6 border-black rounded-[44px] h-[550px] 2xl:h-[600px] overflow-hidden relative">
                                 <img src="{{asset('assets/img/service/desain/bg-cardpromo.png')}}" alt="" class="absolute w-full h-full object-cover z-[-2]">
                                 <div class="absolute inset-0 bg-white opacity-65 backdrop-brightness-50 z-[-1]"></div>
                                 <div class="flex z-[9]">
-                                    <div class="p-8 desktop:p-12">
-                                        <h1 class="text-lg font-extrabold tracking-wide uppercase lg:text-3xl laptop:text-4xl desktop:text-5xl text-landing-brown-2">${promo.title}</h1>
-                                        <div class="my-2 text-lg font-extrabold tracking-wider laptop:text-3xl desktop:text-4xl">
-                                            <span class="line-through decoration-2 laptop:decoration-4 decoration-landing-brown-2">Rp. ${parseFloat(promo.actual_price).toLocaleString('id-ID')}</span>
+                                    <div class="p-8 2xl:p-12">
+                                        <h1 class="text-lg font-extrabold tracking-wide uppercase lg:text-3xl xl:text-4xl 2xl:text-5xl text-landing-brown-2">${promo.title}</h1>
+                                        <div class="my-2 text-lg font-extrabold tracking-wider xl:text-3xl 2xl:text-4xl">
+                                            <span class="line-through decoration-2 xl:decoration-4 decoration-landing-brown-2">Rp. ${parseFloat(promo.actual_price).toLocaleString('id-ID')}/m2</span>
                                         </div>
-                                        <h1 class="text-3xl font-bold lg:text-4xl laptop:text-5xl desktop:text-6xl text-landing-brown-2">Rp. ${parseFloat(promo.price).toLocaleString('id-ID')}</h1>
-                                        <ul class="my-2 mt-4">
-                                            ${descriptionList.map(item => `<li class="text-base font-bold tracking-wider lg:text-lg desktop:text-xl text-landing-black-1">${item}</li>`).join('')}
+                                        <h1 class="text-3xl font-bold lg:text-4xl xl:text-5xl 2xl:text-6xl text-landing-brown-2">Rp. ${parseFloat(promo.price).toLocaleString('id-ID')}/m2</h1>
+                                        <ul class="mt-4">
+                                            ${descriptionHTML}
                                         </ul>
-                                        <div class="flex mt-10">
+                                        <div class="absolute end-10 bottom-15 mt-5">
                                             <button class="px-4 py-1 text-xl font-extrabold tracking-wider transition duration-300 border-4 rounded-full text-landing-black-1 border-opacity-40 bg-landing-brown-2 bg-opacity-40 border-black-2">
                                                 Dapatkan Promo!
                                             </button>

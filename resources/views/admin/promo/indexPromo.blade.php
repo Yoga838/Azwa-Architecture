@@ -82,8 +82,16 @@
             try {
             const response = await axios.get('/api/promo');
             const data = response.data;
+            
+            if (data.length === 0) {
+                tableBody.innerHTML = `
+                    <tr>
+                        <td colspan="6" class="text-center text-gray-500">Tidak ada promo yang tersedia.</td>
+                    </tr>
+                    `;
+                    return;
+                }
             tableBody.innerHTML = "";
-
             data.forEach((promo) => {
                 const row = `
                 <tr class="bg-white transition-all duration-500 hover:bg-gray-50">
