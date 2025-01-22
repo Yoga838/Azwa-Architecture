@@ -47,7 +47,7 @@
 
 <div class="relative w-full py-10">
     <div class="absolute inset-0 bg-[#7a6a58] opacity-60"></div>
-    <div data-aos="fade-right" data-aos-duration="1000" class="relative z-10 grid items-center justify-around grid-cols-1 gap-8 px-5 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+    <div data-aos="fade-up" data-aos-duration="2000" class="relative z-10 grid items-center justify-around grid-cols-1 gap-8 px-5 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         <!-- ONE-STOP SERVICE -->
         <div class="flex flex-col items-center justify-center">
             <div class="flex items-center justify-center w-24 h-24 my-4 rounded-full opacity-75 bg-theme3">
