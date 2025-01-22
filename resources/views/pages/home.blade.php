@@ -163,7 +163,7 @@
                     <strong>aman, kokoh, dan sesuai kondisi keuangan Anda.</strong>
                 </p>
                 <div class="mt-6 text-center">
-                    <a href="#link-ke-halaman-lain" class="inline-block px-20 py-2 mx-2 mt-10 text-xl text-white rounded-3xl bg-theme2">
+                    <a href="https://wa.me/62895371025425" class="inline-block px-20 py-2 mx-2 mt-10 text-xl text-white rounded-3xl bg-theme2">
                         Lebih Lanjut
                     </a>
                 </div>
@@ -225,14 +225,16 @@
                 <div class="swiper-pagination"></div>
                 </div>
                 <div class="relative flex justify-center invisible mt-5 z-9 2xl:visible xl:visible lg:invisible md:invisible sm:invisible">
-                    <div class="border rounded-full bg-landing-brown-1 2xl:px-9 xl:px-8 2xl:py-3">
-                        <div class="flex items-center gap-2 text-xs 2xl:text-xl xl:text-base md:text-xs">
-                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 50 50">
-                                <path d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z"></path>
-                            </svg>
-                            <h1>Follow us!</h1>
+                    <a href="https://www.instagram.com/azwadesignstudio?igsh=MTVmM3B6cXlzaDhybg==">
+                        <div class="border rounded-full bg-landing-brown-1 2xl:px-9 xl:px-8 2xl:py-3">
+                            <div class="flex items-center gap-2 text-xs 2xl:text-xl xl:text-base md:text-xs">
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 50 50">
+                                    <path d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z"></path>
+                                </svg>
+                                <h1>Follow us!</h1>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>                    
                 <div class="absolute top-[60%] left-[50.5%] transform -translate-x-1/2 -translate-y-1/2 2xl:top-[50%] xl:top-[60%] 2xl:visible xl:visible lg:invisible md:invisible sm:invisible invisible z-0">
                     <img src="{{asset('assets/img/home/hp.png')}}" alt="Frame" class="w-[100%] h-auto">
@@ -243,7 +245,7 @@
     </div>
 
 
-<div class="flex justify-center w-full mt-10 lg:h-[700] sm:px-10 md:px-10">
+<div class="flex justify-center w-full mt-10 lg:h-[700] sm:px-10 md:px-10 lg:px-10 xl:px-10 2xl:px-10">
     <div class="relative flex flex-col justify-start w-full sm:my-2 md:my-3">
         <h1 data-aos="fade-right" data-aos-duration="1000" class="mb-8 text-5xl font-extrabold text-theme3">Layanan Kami</h1>
         <div data-aos="fade-right" data-aos-duration="1000" class="flex justify-center gap-8">
@@ -378,7 +380,7 @@
         <!-- Gambar BG -->
         <div class="absolute transform -translate-x-1/2 -translate-y-1/2 z-9 top-1/2 left-1/2 sm:invisible md:invisible lg:invisible xl:visible
             {{ $testimoni->contains(fn($item) => !empty($item->link_image)) ? '' : 'invisible' }}">
-            <img src="{{ asset('assets/img/home/hpTes.png') }}" alt="Frame" class="w-auto h-[720px]">
+            <img src="{{ asset('assets/img/home/hpTes.png') }}" alt="Frame" class="w-auto h-[710px]">
         </div>       
     </div>        
 </div>
@@ -602,7 +604,7 @@
                                             ${descriptionHTML}
                                         </ul>
                                         <div class="absolute mt-5 end-10 bottom-15">
-                                            <button class="px-4 py-1 text-xl font-extrabold tracking-wider transition duration-300 border-4 rounded-full text-landing-black-1 border-opacity-40 bg-landing-brown-2 bg-opacity-40 border-black-2">
+                                            <button class="px-4 py-1 text-xl font-extrabold tracking-wider transition-transform duration-150 transform border-0 border-4 rounded-full text-landing-black-1 border-opacity-40 bg-landing-brown-2 bg-opacity-60 border-black-2 bg-theme2 hover:scale-105 hover:shadow-lg hover:-translate-y-1 hover:bg-landing-body hover:border-4 hover:border-theme2 hover:text-theme3">
                                                 Dapatkan Promo!
                                             </button>
                                         </div>

@@ -22,7 +22,7 @@
             <div class="absolute inset-0 bg-theme3 opacity-60"></div>
             <img src="{{asset('assets/img/service/desain/bg1-servicedesain.jpg')}}" alt="" class="object-cover w-screen h-full">
         </div>
-        <div data-aos="fade-right" data-aos-duration="1000" class="pt-30 2xl:pt-50 pb-20">
+        <div data-aos="fade-right" data-aos-duration="1000" class="pb-20 pt-30 2xl:pt-50">
             <h1 class="ml-20 text-5xl font-bold tracking-wider 2xl:text-6xl text-theme1 drop-shadow-2 2xl:ml-30">Arsitektur</h1>
         </div>
     </div>
@@ -62,7 +62,7 @@
                 </div>
             </div>
             <a href="https://wa.me/62895371025425">
-                <button class="absolute bottom-0 w-full px-5 py-5 border-0 rounded-full bg-theme2 duration-150 transition-transform transform hover:scale-105 hover:shadow-lg hover:-translate-y-1 hover:bg-landing-body hover:border-4 hover:border-theme2 text-white hover:text-theme3">
+                <button class="absolute bottom-0 w-full px-5 py-5 text-white transition-transform duration-150 transform border-0 rounded-full bg-theme2 hover:scale-105 hover:shadow-lg hover:-translate-y-1 hover:bg-landing-body hover:border-4 hover:border-theme2 hover:text-theme3">
                     <h1 class="text-xs font-bold text-center 2xl:text-xl xl:text-base lg:text-base md:text-xs">PILIH PAKET</h1>
                 </button>                
             </a>
@@ -111,7 +111,7 @@
                 </div>
             </div>
             <a href="https://wa.me/62895371025425">
-                <button class="absolute bottom-0 w-full px-5 py-5 border-0 rounded-full bg-theme2 duration-150 transition-transform transform hover:scale-105 hover:shadow-lg hover:-translate-y-1 hover:bg-landing-body hover:border-4 hover:border-theme2 text-white hover:text-theme3">
+                <button class="absolute bottom-0 w-full px-5 py-5 text-white transition-transform duration-150 transform border-0 rounded-full bg-theme2 hover:scale-105 hover:shadow-lg hover:-translate-y-1 hover:bg-landing-body hover:border-4 hover:border-theme2 hover:text-theme3">
                     <h1 class="text-xs font-bold text-center 2xl:text-xl xl:text-base lg:text-base md:text-xs">PILIH PAKET</h1>
                 </button>   
             </a>
@@ -125,7 +125,7 @@
             <div class="absolute inset-0 bg-theme3 opacity-60"></div>
             <img src="{{asset('assets/img/service/desain/bg2-servicedesain.png')}}" alt="" class="object-cover w-screen h-full" style="object-position: 50% 85%;">
         </div>
-        <div data-aos="fade-right" data-aos-duration="1000" class="pt-30 2xl:pt-50 pb-20">
+        <div data-aos="fade-right" data-aos-duration="1000" class="pb-20 pt-30 2xl:pt-50">
             <h1 class="ml-20 text-5xl font-bold tracking-wider 2xl:text-6xl text-theme1 drop-shadow-2 2xl:ml-30">Desain Interior</h1>
         </div>
     </div>
@@ -159,7 +159,7 @@
                 </div>
             </div>
             <a href="https://wa.me/62895371025425">
-                <button class="absolute bottom-0 w-full px-5 py-5 border-0 rounded-full bg-theme2 duration-150 transition-transform transform hover:scale-105 hover:shadow-lg hover:-translate-y-1 hover:bg-landing-body hover:border-4 hover:border-theme2 text-white hover:text-theme3">
+                <button class="absolute bottom-0 w-full px-5 py-5 text-white transition-transform duration-150 transform border-0 rounded-full bg-theme2 hover:scale-105 hover:shadow-lg hover:-translate-y-1 hover:bg-landing-body hover:border-4 hover:border-theme2 hover:text-theme3">
                     <h1 class="text-xs font-bold text-center 2xl:text-xl xl:text-base lg:text-base md:text-xs">PILIH PAKET</h1>
                 </button>   
             </a>
@@ -199,7 +199,7 @@
                 </div>
             </div>
             <a href="https://wa.me/62895371025425">
-                <button class="absolute bottom-0 w-full px-5 py-5 border-0 rounded-full bg-theme2 duration-150 transition-transform transform hover:scale-105 hover:shadow-lg hover:-translate-y-1 hover:bg-landing-body hover:border-4 hover:border-theme2 text-white hover:text-theme3">
+                <button class="absolute bottom-0 w-full px-5 py-5 text-white transition-transform duration-150 transform border-0 rounded-full bg-theme2 hover:scale-105 hover:shadow-lg hover:-translate-y-1 hover:bg-landing-body hover:border-4 hover:border-theme2 hover:text-theme3">
                     <h1 class="text-xs font-bold text-center 2xl:text-xl xl:text-base lg:text-base md:text-xs">PILIH PAKET</h1>
                 </button>   
             </a>
@@ -212,7 +212,7 @@
             <div class="absolute inset-0 bg-theme3 opacity-60"></div>
             <img src="{{asset('assets/img/service/desain/bg3left-servicedesain.png')}}" alt="" class="object-cover w-screen h-full" style="object-position: 50% 85%;">
         </div>
-        <div data-aos="fade-right" data-aos-duration="1000" class="pt-30 2xl:pt-50 pb-20">
+        <div data-aos="fade-right" data-aos-duration="1000" class="pb-20 pt-30 2xl:pt-50">
             <h1 class="ml-20 text-5xl font-bold tracking-wider 2xl:text-6xl text-theme1 drop-shadow-2 2xl:ml-30">Arsitektur Interior</h1>
         </div>
     </div>
@@ -268,7 +268,7 @@
                 </div>
             </div>
             <a href="https://wa.me/62895371025425">
-                <button class="absolute bottom-0 w-full px-5 py-5 border-0 rounded-full bg-theme2 duration-150 transition-transform transform hover:scale-105 hover:shadow-lg hover:-translate-y-1 hover:bg-landing-body hover:border-4 hover:border-theme2 text-white hover:text-theme3">
+                <button class="absolute bottom-0 w-full px-5 py-5 text-white transition-transform duration-150 transform border-0 rounded-full bg-theme2 hover:scale-105 hover:shadow-lg hover:-translate-y-1 hover:bg-landing-body hover:border-4 hover:border-theme2 hover:text-theme3">
                     <h1 class="text-xs font-bold text-center 2xl:text-xl xl:text-base lg:text-base md:text-xs">PILIH PAKET</h1>
                 </button>   
             </a>
@@ -339,7 +339,7 @@
                 </div>
             </div>
             <a href="https://wa.me/62895371025425">
-                <button class="absolute bottom-0 w-full px-5 py-5 border-0 rounded-full bg-theme2 duration-150 transition-transform transform hover:scale-105 hover:shadow-lg hover:-translate-y-1 hover:bg-landing-body hover:border-4 hover:border-theme2 text-white hover:text-theme3">
+                <button class="absolute bottom-0 w-full px-5 py-5 text-white transition-transform duration-150 transform border-0 rounded-full bg-theme2 hover:scale-105 hover:shadow-lg hover:-translate-y-1 hover:bg-landing-body hover:border-4 hover:border-theme2 hover:text-theme3">
                     <h1 class="text-xs font-bold text-center 2xl:text-xl xl:text-base lg:text-base md:text-xs">PILIH PAKET</h1>
                 </button>   
             </a>
@@ -352,7 +352,7 @@
       
     {{-- <div class="flex justify-center mt-10">
         <a href="https://wa.me/62895371025425">
-            <button class="flex items-center justify-center w-64 px-2 py-2 rounded-full 2xl:w-80 bg-theme2 hover:bg-landing-black-1 transition duration-300 ease-in-out transform hover:scale-105 text-landing-black-3">
+            <button class="flex items-center justify-center w-64 px-2 py-2 transition duration-300 ease-in-out transform rounded-full 2xl:w-80 bg-theme2 hover:bg-landing-black-1 hover:scale-105 text-landing-black-3">
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white 2xl:w-10 2xl:h-10" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M19.05 4.91A9.82 9.82 0 0 0 12.04 2c-5.46 0-9.91 4.45-9.91 9.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91c0-2.65-1.03-5.14-2.9-7.01m-7.01 15.24c-1.48 0-2.93-.4-4.2-1.15l-.3-.18l-3.12.82l.83-3.04l-.2-.31a8.26 8.26 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24c2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c.02 4.54-3.68 8.23-8.22 8.23m4.52-6.16c-.25-.12-1.47-.72-1.69-.81c-.23-.08-.39-.12-.56.12c-.17.25-.64.81-.78.97c-.14.17-.29.19-.54.06c-.25-.12-1.05-.39-1.99-1.23c-.74-.66-1.23-1.47-1.38-1.72c-.14-.25-.02-.38.11-.51c.11-.11.25-.29.37-.43s.17-.25.25-.41c.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31c-.22.25-.86.85-.86 2.07s.89 2.4 1.01 2.56c.12.17 1.75 2.67 4.23 3.74c.59.26 1.05.41 1.41.52c.59.19 1.13.16 1.56.1c.48-.07 1.47-.6 1.67-1.18c.21-.58.21-1.07.14-1.18s-.22-.16-.47-.28"/></svg>
                 <p class="font-medium ms-[5px] text-white tracking-wider text-normal 2xl:text-xl">Konsultasi Sekarang!</p>
             </button>
@@ -362,7 +362,7 @@
     {{-- <div class="h-[1px] w-[88%] bg-theme2 mt-10 mb-15"></div> --}}
 
     {{-- Promo Card Slider --}} 
-    <div class="relative w-full mt-30 px-5 lg:px-36 xl:px-40 2xl:px-52">
+    <div class="relative w-full px-5 mt-30 lg:px-36 xl:px-40 2xl:px-52">
         <div class="relative swiper progress-slide-carousel swiper-container">
             <div class="swiper-wrapper">
                 {{-- Dinamis card promo --}}
@@ -547,9 +547,9 @@
                     // Jika data promo kosong
                     if (promos.length === 0 ) {
                         swiperWrapper.innerHTML = `
-                            <div class="flex justify-center items-center w-full">
-                                <div class="border bg-theme3 px-6 py-3 rounded-full">
-                                    <h1 class="sm:text-lg md:text-xl lg:text-2xl 2xl:text-3xl font-bold text-landing-body text-center">Oops.. masih belum ada promo nih!<br>Stay tune teruss yaa...</h1>
+                            <div class="flex items-center justify-center w-full">
+                                <div class="px-6 py-3 border rounded-full bg-theme3">
+                                    <h1 class="font-bold text-center sm:text-lg md:text-xl lg:text-2xl 2xl:text-3xl text-landing-body">Oops.. masih belum ada promo nih!<br>Stay tune teruss yaa...</h1>
                                 </div>
                             </div>
                         `;
@@ -592,8 +592,8 @@
                                         <ul class="mt-4">
                                             ${descriptionHTML}
                                         </ul>
-                                        <div class="absolute end-10 bottom-15 mt-5">
-                                            <button class="px-4 py-1 text-xl font-extrabold tracking-wider transition duration-300 border-4 rounded-full text-landing-black-1 border-opacity-40 bg-landing-brown-2 bg-opacity-40 border-black-2">
+                                        <div class="absolute mt-5 end-10 bottom-15">
+                                            <button class="px-4 py-1 text-xl font-extrabold tracking-wider transition-transform duration-150 transform border-0 border-4 rounded-full text-landing-black-1 border-opacity-40 bg-landing-brown-2 bg-opacity-60 border-black-2 bg-theme2 hover:scale-105 hover:shadow-lg hover:-translate-y-1 hover:bg-landing-body hover:border-4 hover:border-theme2 hover:text-theme3">
                                                 Dapatkan Promo!
                                             </button>
                                         </div>
