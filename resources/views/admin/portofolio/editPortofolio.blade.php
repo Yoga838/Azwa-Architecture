@@ -90,14 +90,15 @@
                             class="border-2 border-dashed border-gray-300 p-6 text-center"
                             id="drop-area"
                         >
-                            <p class="text-gray-500">Drag and drop files here</p>
-                            <p class="text-gray-500">Or</p>
+                            <p class="text-gray-500">Seret dan jatuhkan file di sini</p>
+                            <p class="text-gray-500">atau</p>
                             <button
                                 type="button"
                                 class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 mt-2"
                             >
-                                Browse
+                                Jelajahi
                             </button>
+                            <p class="text-red-400 mt-2">"File yang diunggah harus berformat PNG, JPG, atau JPEG dengan ukuran maksimal 2 MB."</p>
                             <input
                                 id="file-upload"
                                 name="foto"
