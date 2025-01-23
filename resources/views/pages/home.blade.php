@@ -35,10 +35,10 @@
 
     <!-- Teks Judul -->
     <div class="absolute z-10 bottom-20 lg:left-15 sm:left-5">
-        <h1 class="mb-4 text-4xl font-bold text-[#e1dfd4] lg:text-5xl drop-shadow-[4px_4px_6px_black]">
+        <h1 class="text-center md:text-start lg:text-start xl:text-start 2xl:text-start mb-4 text-4xl font-bold text-[#e1dfd4] lg:text-5xl drop-shadow-[4px_4px_6px_black]">
             Merangkai Ruang <br>
         </h1>
-        <h1 class="text-4xl font-bold text-[#e1dfd4] lg:text-5xl drop-shadow-[4px_4px_6px_black]">
+        <h1 class="text-center md:text-start lg:text-start xl:text-start 2xl:text-start text-4xl font-bold text-[#e1dfd4] lg:text-5xl drop-shadow-[4px_4px_6px_black]">
             Mewujudkan Impian
         </h1>
     </div>    
@@ -59,13 +59,13 @@
                 </p>
                 <p><strong>SERVICE</strong></p>
             </h1>
-            <p class="text-center font-bold text-[#251d16] text-[16px] lg:text-[25px] max-w-[400px]">
+            <p class="text-center font-bold text-[#251d16] text-[16px] lg:text-[22px] 2xl:text-[25px] max-w-[400px]">
                 Layanan <span class="text-white">lengkap</span> dari desain,
             </p>            
-            <p class="text-center font-bold text-[#251d16] text-[16px] lg:text-[25px] max-w-[400px]">
+            <p class="text-center font-bold text-[#251d16] text-[16px] lg:text-[22px] 2xl:text-[25px] max-w-[400px]">
                 pembangunan, perizinan
             </p>
-            <p class="text-center font-bold text-[#251d16] text-[16px] lg:text-[25px] max-w-[400px]">
+            <p class="text-center font-bold text-[#251d16] text-[16px] lg:text-[22px] 2xl:text-[25px] max-w-[400px]">
                 dalam <span class="text-white">satu tempat</span>.
             </p>
         </div>
@@ -83,13 +83,13 @@
                     <strong>KONSULTASI</strong>
                 </p>
             </h1>
-            <p class="text-center font-bold text-[#251d16] text-[16px] lg:text-[25px] max-w-[400px]">
+            <p class="text-center font-bold text-[#251d16] text-[16px] lg:text-[22px] 2xl:text-[25px] max-w-[400px]">
                 Dapatkan sesi konsultasi <span class="text-white">gratis</span>
             </p>
-            <p class="text-center font-bold text-[#251d16] text-[16px] lg:text-[25px] max-w-[400px]">
+            <p class="text-center font-bold text-[#251d16] text-[16px] lg:text-[22px] 2xl:text-[25px] max-w-[400px]">
                 untuk solusi desain yang sesuai
             </p>
-            <p class="text-center font-bold text-[#251d16] text-[16px] lg:text-[25px] max-w-[400px]">
+            <p class="text-center font-bold text-[#251d16] text-[16px] lg:text-[22px] 2xl:text-[25px] max-w-[400px]">
                 dengan kebutuhan Anda.
             </p>
         </div>
@@ -109,161 +109,161 @@
                     <strong>BERKUALITAS</strong>
                 </p>
             </h1>
-            <p class="text-center font-bold text-[#251d16] text-[16px] lg:text-[25px] max-w-[400px]">
+            <p class="text-center font-bold text-[#251d16] text-[16px] lg:text-[22px] 2xl:text-[25px] max-w-[400px]">
                 Desain <span class="text-white">inovatif</span>, struktur <span class="text-white">kokoh</span>
             </p>
-            <p class="text-center font-bold text-[#251d16] text-[16px] lg:text-[25px] max-w-[400px]">
+            <p class="text-center font-bold text-[#251d16] text-[16px] lg:text-[22px] 2xl:text-[25px] max-w-[400px]">
                 terjamin, dan rencana
             </p>
-            <p class="text-center font-bold text-[#251d16] text-[16px] lg:text-[25px] max-w-[400px]">
+            <p class="text-center font-bold text-[#251d16] text-[16px] lg:text-[22px] 2xl:text-[25px] max-w-[400px]">
                 anggaran yang <span class="text-white">akurat</span>.
             </p>
         </div>
     </div>    
 </div>
 
-    <div class="flex flex-col items-center justify-center w-full px-10 xl:mt-30 lg:mt-20 sm:mt-20 lg:flex-row">
-        <!-- Gambar -->
-        <div data-aos="fade-right" data-aos-duration="1000" class="flex-shrink-0 w-full lg:w-2/6">
-            <img src="{{ asset('assets/img/home/bg-jasa.png') }}" alt="Deskripsi Gambar" class="object-cover w-full h-auto">
-        </div>
-    
-        <!-- Teks -->
-        <div data-aos="fade-left" data-aos-duration="1000" class="relative w-full p-6 text-black xl:w-3/6 lg:w-4/6">
-            <!-- Background image -->
-            <div class="absolute inset-0 bg-top bg-no-repeat bg-cover opacity-20" style="background-image: url('{{ asset('assets/img/HeadLogo_Azwa.png') }}'); background-position: top center; background-size: contain;"></div>
-        
-            <!-- Konten teks -->
-            <div class="relative p-6">
-                <p class="mb-4 text-6xl text-center lg:text-4xl">
-                    Cari Jasa
-                </p>
-                <p class="mb-4 text-6xl font-extrabold text-center xl:text-4xl lg:text-3xl">
-                    <strong>Desain Arsitektur dan Interior</strong>
-                </p>
-                <p class="mb-4 text-6xl text-center xl:text-4xl lg:text-4xl">
-                    Bermutu?
-                </p>
-                <h1 class="mt-10 mb-4 text-4xl text-center xl:text-4xl lg:text-3xl">
-                    <strong>Azwa Design Studio</strong>
-                </h1>
-                <p class="mb-4 text-2xl text-center">
-                    Siap mewujudkan keinginan Anda!
-                </p>
-                <p class="mt-10 text-xl text-center 2xl:text-2xl lg:text-xl">
-                    <strong>Kami memperhitungkan kekuatan struktur</strong>
-                </p>
-                <p class="text-xl text-center 2xl:text-2xl lg:text-xl">
-                    <strong>serta anggaran</strong> dengan optimal, sehingga menghasilkan
-                </p>
-                <p class="text-xl text-center 2xl:text-2xl lg:text-xl">
-                    bangunan yang <strong>estetik</strong> namun tetap
-                </p>
-                <p class="text-xl text-center 2xl:text-2xl lg:text-xl">
-                    <strong>aman, kokoh, dan sesuai kondisi keuangan Anda.</strong>
-                </p>
-                <div class="mt-6 text-center">
-                    <a href="https://wa.me/62895371025425" class="inline-block px-20 py-2 mx-2 mt-10 text-xl text-white rounded-3xl bg-theme2">
-                        Lebih Lanjut
-                    </a>
-                </div>
-            </div>
-        </div>
-                         
+<div class="flex flex-col items-center justify-center w-full px-10 xl:mt-30 lg:mt-20 sm:mt-20 mt-20 lg:flex-row">
+    <!-- Gambar -->
+    <div data-aos="fade-right" data-aos-duration="1000" class="flex-shrink-0 w-full lg:w-2/6">
+        <img src="{{ asset('assets/img/home/bg-jasa.png') }}" alt="Deskripsi Gambar" class="object-cover w-full h-auto">
     </div>
 
-    <div class="flex items-center justify-center w-full h-auto px-2 my-15 lg:h-screen sm:px-4 md:px-6">
-        <div class="relative flex items-center justify-center w-full my-2 mx-15 sm:my-4 md:my-6">
-            <div 
-                class="w-full max-w-[calc(100%-7.5rem)] h-[350px] sm:h-[500px] md:h-[600px] lg:h-[700px] bg-center bg-cover rounded-xl sm:rounded-2xl md:rounded-3xl relative overflow-hidden"
-                style="background-image: url('{{ asset('assets/img/home/bg-portofolio.jpg') }}');">
+    <!-- Teks -->
+    <div data-aos="fade-left" data-aos-duration="1000" class="relative w-full p-6 text-black xl:w-3/6 lg:w-4/6">
+        <!-- Background image -->
+        <div class="absolute inset-0 bg-top bg-no-repeat bg-cover opacity-20" style="background-image: url('{{ asset('assets/img/HeadLogo_Azwa.png') }}'); background-position: top center; background-size: contain;"></div>
     
-                <!-- Overlay -->
-                <div class="absolute inset-0 bg-theme2/80 rounded-xl sm:rounded-2xl md:rounded-3xl"></div>
-    
-                <!-- Judul -->
-                <h1 class="absolute text-5xl font-bold text-white sm:text-3xl md:text-3xl lg:text-5xl xl:text-5xl 2xl:text-5xl top-4 sm:top-6 md:top-8 left-4 sm:left-6 md:left-8">
-                    Portofolio Kami
-                </h1>
-
-                <div class="relative w-full 2xl:mt-40 xl:mt-20 lg:mt-30 md:mt-20 sm:mt-15">
-                <div class="relative swiper centered-slide-carousel-1 swiper-container">
-                <div class="flex justify-center invisible mb-2 2xl:visible xl:visible md:invisible sm:invisible">
-                    <div class="flex items-center gap-3 2xl:mt-1 xl:mt-20 me-3">
-                        <div class="p-5 border rounded-full bg-black-2 2xl:p-5 xl:p-3 md:p-5"></div>
-                        <h1 class="text-xs font-semibold text-landing-brown-3 2xl:text-xl xl:text-base md:text-xs">azwadesignstudio</h1>
-                    </div>
-                </div>
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="flex items-center justify-center h-64 overflow-hidden rounded-2xl 2xl:h-75 xl:h-64 lg:h-94 md:h-94">
-                            <img src="{{asset('assets/img/home/portofolio1.png')}}" alt="Slide 1" class="object-cover w-1/2 h-full xl:w-4/5 2xl:w-2/3 lg:w-2/3 md:w-2/3 sm:w-1/2 rounded-2xl">
-                        </div>                        
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="flex items-center justify-center h-64 overflow-hidden rounded-2xl 2xl:h-75 xl:h-64 lg:h-94 md:h-94">
-                            <img src="{{asset('assets/img/BgHome.png')}}" alt="Slide 2" class="object-cover w-1/2 h-full xl:w-4/5 2xl:w-2/3 lg:w-2/3 md:w-2/3 sm:w-1/2 rounded-2xl">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="flex items-center justify-center h-64 overflow-hidden rounded-2xl 2xl:h-75 xl:h-64 lg:h-94 md:h-94">
-                            <img src="{{asset('assets/img/home/portofolio2.png')}}" alt="Slide 3" class="object-cover w-1/2 h-full xl:w-4/5 2xl:w-2/3 lg:w-2/3 md:w-2/3 sm:w-1/2 rounded-2xl">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="flex items-center justify-center h-64 overflow-hidden rounded-2xl 2xl:h-75 xl:h-64 lg:h-94 md:h-94">
-                            <img src="{{asset('assets/img/home/portofolio3.png')}}" alt="Slide 4" class="object-cover w-1/2 h-full xl:w-4/5 2xl:w-2/3 lg:w-2/3 md:w-2/3 sm:w-1/2 rounded-2xl">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="flex items-center justify-center h-64 overflow-hidden rounded-2xl 2xl:h-75 xl:h-64 lg:h-94 md:h-94">
-                            <img src="{{asset('assets/img/home/portofolio4.png')}}" alt="Slide 5" class="object-cover w-1/2 h-full xl:w-4/5 2xl:w-2/3 lg:w-2/3 md:w-2/3 sm:w-1/2 rounded-2xl">
-                        </div>
-                    </div>
-                </div>                
-                
-                <div class="swiper-pagination"></div>
-                </div>
-                <div class="relative flex justify-center invisible mt-5 z-9 2xl:visible xl:visible lg:invisible md:invisible sm:invisible">
-                    <a href="https://www.instagram.com/azwadesignstudio?igsh=MTVmM3B6cXlzaDhybg==" target="_blank" rel="noopener noreferrer" class="px-8 py-2 transition duration-300 ease-in-out transform border rounded-full bg-landing-brown-1 hover:bg-landing-brown-3 hover:scale-105 2xl:px-9 xl:px-8 2xl:py-3 xl:py-2">
-                        <div class="flex items-center gap-2 text-xs 2xl:text-xl xl:text-base lg:text-base md:text-xs">
-                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 50 50">
-                                <path d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z"></path>
-                            </svg>
-                            <h1>Follow us!</h1>
-                        </div>
-                    </a>                    
-                </div>                    
-                <div class="absolute top-[60%] left-[50.5%] transform -translate-x-1/2 -translate-y-1/2 2xl:top-[50%] xl:top-[60%] 2xl:visible xl:visible lg:invisible md:invisible sm:invisible invisible z-0">
-                    <img src="{{asset('assets/img/home/hp.png')}}" alt="Frame" class="w-[100%] h-auto">
-                </div>
-                </div>
+        <!-- Konten teks -->
+        <div class="relative">
+            <p class="mb-4 text-5xl text-center lg:text-4xl">
+                Cari Jasa
+            </p>
+            <p class="mb-4 text-5xl font-extrabold text-center xl:text-4xl lg:text-3xl">
+                <strong>Desain Arsitektur dan Interior</strong>
+            </p>
+            <p class="mb-4 text-5xl text-center xl:text-4xl lg:text-4xl">
+                Bermutu?
+            </p>
+            <h1 class="mt-10 mb-4 text-4xl text-center xl:text-4xl lg:text-3xl">
+                <strong>Azwa Design Studio</strong>
+            </h1>
+            <p class="mb-4 text-2xl text-center">
+                Siap mewujudkan keinginan Anda!
+            </p>
+            <p class="mt-10 text-xl text-center 2xl:text-2xl lg:text-xl">
+                <strong>Kami memperhitungkan kekuatan struktur</strong>
+            </p>
+            <p class="text-xl text-center 2xl:text-2xl lg:text-xl">
+                <strong>serta anggaran</strong> dengan optimal, sehingga menghasilkan
+            </p>
+            <p class="text-xl text-center 2xl:text-2xl lg:text-xl">
+                bangunan yang <strong>estetik</strong> namun tetap
+            </p>
+            <p class="text-xl text-center 2xl:text-2xl lg:text-xl">
+                <strong>aman, kokoh, dan sesuai kondisi keuangan Anda.</strong>
+            </p>
+            <div class="mt-6 text-center">
+                <a href="https://wa.me/62895371025425" class="inline-block px-20 py-2 mx-2 mt-10 text-xl text-white rounded-3xl bg-theme2">
+                    Lebih Lanjut
+                </a>
             </div>
         </div>
     </div>
+                        
+</div>
+
+<div class="flex items-center justify-center w-full h-auto px-2 my-15 lg:h-screen sm:px-4 md:px-6">
+    <div class="relative flex items-center justify-center w-full my-2 mx-15 sm:my-4 md:my-6">
+        <div 
+            class="w-full max-w-[calc(100%-7.5rem)] h-[350px] sm:h-[500px] md:h-[600px] lg:h-[700px] bg-center bg-cover rounded-xl sm:rounded-2xl md:rounded-3xl relative overflow-hidden"
+            style="background-image: url('{{ asset('assets/img/home/bg-portofolio.jpg') }}');">
+
+            <!-- Overlay -->
+            <div class="absolute inset-0 bg-theme2/80 rounded-xl sm:rounded-2xl md:rounded-3xl"></div>
+
+            <!-- Judul -->
+            <h1 class="absolute text-lg font-bold text-white md:text-3xl lg:text-5xl xl:text-5xl 2xl:text-5xl top-4 sm:top-6 md:top-8 left-4 sm:left-6 md:left-8">
+                Portofolio Kami
+            </h1>
+
+            <div class="relative w-full 2xl:mt-40 xl:mt-20 lg:mt-30 md:mt-20 sm:mt-15">
+            <div class="relative swiper centered-slide-carousel-1 swiper-container">
+            <div class="flex justify-center invisible mb-2 2xl:visible xl:visible md:invisible sm:invisible">
+                <div class="flex items-center gap-3 2xl:mt-1 xl:mt-20 me-3">
+                    <div class="p-5 border rounded-full bg-black-2 2xl:p-5 xl:p-3 md:p-5"></div>
+                    <h1 class="text-xs font-semibold text-landing-brown-3 2xl:text-xl xl:text-base md:text-xs">azwadesignstudio</h1>
+                </div>
+            </div>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="flex items-center justify-center h-64 overflow-hidden rounded-2xl 2xl:h-75 xl:h-64 lg:h-94 md:h-94">
+                        <img src="{{asset('assets/img/home/portofolio1.png')}}" alt="Slide 1" class="object-cover w-1/2 h-full xl:w-4/5 2xl:w-2/3 lg:w-2/3 md:w-2/3 sm:w-1/2 rounded-2xl">
+                    </div>                        
+                </div>
+                <div class="swiper-slide">
+                    <div class="flex items-center justify-center h-64 overflow-hidden rounded-2xl 2xl:h-75 xl:h-64 lg:h-94 md:h-94">
+                        <img src="{{asset('assets/img/BgHome.png')}}" alt="Slide 2" class="object-cover w-1/2 h-full xl:w-4/5 2xl:w-2/3 lg:w-2/3 md:w-2/3 sm:w-1/2 rounded-2xl">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="flex items-center justify-center h-64 overflow-hidden rounded-2xl 2xl:h-75 xl:h-64 lg:h-94 md:h-94">
+                        <img src="{{asset('assets/img/home/portofolio2.png')}}" alt="Slide 3" class="object-cover w-1/2 h-full xl:w-4/5 2xl:w-2/3 lg:w-2/3 md:w-2/3 sm:w-1/2 rounded-2xl">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="flex items-center justify-center h-64 overflow-hidden rounded-2xl 2xl:h-75 xl:h-64 lg:h-94 md:h-94">
+                        <img src="{{asset('assets/img/home/portofolio3.png')}}" alt="Slide 4" class="object-cover w-1/2 h-full xl:w-4/5 2xl:w-2/3 lg:w-2/3 md:w-2/3 sm:w-1/2 rounded-2xl">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="flex items-center justify-center h-64 overflow-hidden rounded-2xl 2xl:h-75 xl:h-64 lg:h-94 md:h-94">
+                        <img src="{{asset('assets/img/home/portofolio4.png')}}" alt="Slide 5" class="object-cover w-1/2 h-full xl:w-4/5 2xl:w-2/3 lg:w-2/3 md:w-2/3 sm:w-1/2 rounded-2xl">
+                    </div>
+                </div>
+            </div>                
+            
+            <div class="swiper-pagination"></div>
+            </div>
+            <div class="relative flex justify-center invisible mt-5 z-9 2xl:visible xl:visible lg:invisible md:invisible sm:invisible">
+                <a href="https://www.instagram.com/azwadesignstudio?igsh=MTVmM3B6cXlzaDhybg==" target="_blank" rel="noopener noreferrer" class="px-8 py-2 transition duration-300 ease-in-out transform border rounded-full bg-landing-brown-1 hover:bg-landing-brown-3 hover:scale-105 2xl:px-9 xl:px-8 2xl:py-3 xl:py-2">
+                    <div class="flex items-center gap-2 text-xs 2xl:text-xl xl:text-base lg:text-base md:text-xs">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 50 50">
+                            <path d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z"></path>
+                        </svg>
+                        <h1>Follow us!</h1>
+                    </div>
+                </a>                    
+            </div>                    
+            <div class="absolute top-[60%] left-[50.5%] transform -translate-x-1/2 -translate-y-1/2 2xl:top-[50%] xl:top-[60%] 2xl:visible xl:visible lg:invisible md:invisible sm:invisible invisible z-0">
+                <img src="{{asset('assets/img/home/hp.png')}}" alt="Frame" class="w-[100%] h-auto">
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 
-<div class="flex justify-center w-full mt-10 lg:h-[700] sm:px-10 md:px-10 lg:px-10 xl:px-10 2xl:px-10">
-    <div class="relative flex flex-col justify-start w-full sm:my-2 md:my-3">
+<div class="flex justify-center w-full mt-10 lg:h-auto px-10">
+    <div class="w-full sm:my-2 md:my-3">
         <h1 data-aos="fade-right" data-aos-duration="1000" class="mb-8 text-5xl font-extrabold text-theme3">Layanan Kami</h1>
-        <div data-aos="fade-right" data-aos-duration="1000" class="flex justify-center gap-8">
-            <div class="relative w-3/4 overflow-hidden lg:w-1/2 rounded-2xl">
-                <img src="{{asset('assets/img/home/layanan2.jpg')}}" alt="Arsitektur" class="w-full h-[450px] lg:h-[450px] object-cover">
-                <div class="absolute inset-0 flex px-5 py-3 transition-opacity duration-300 bg-black-2 bg-opacity-70">
+        <div data-aos="fade-right" data-aos-duration="1000" class="flex flex-col lg:flex-row xl:flex-row 2xl:flex-row justify-center gap-8">
+            <div class="relative w-full lg:w-1/2 xl:w-1/2 2xl:w-1/2 overflow-hidden rounded-2xl">
+                <img src="{{asset('assets/img/home/layanan2.jpg')}}" alt="Arsitektur" class="w-full h-[450px] object-cover">
+                <div class="absolute inset-0 flex items-center justify-center px-5 py-3 transition-opacity duration-300 bg-black-2 bg-opacity-70">
                     <h3 class="text-3xl font-bold text-white">Arsitektur</h3>
                 </div>
             </div>
-            <div data-aos="fade-left" data-aos-duration="1000" class="relative w-3/4 overflow-hidden lg:w-1/2 rounded-2xl">
-                <img src="{{asset('assets/img/home/layanan.jpg')}}" alt="Arsitektur" class="w-full h-[450px] lg:h-[450px] object-cover">
-                <div class="absolute inset-0 flex px-5 py-3 transition-opacity duration-300 bg-black-2 bg-opacity-70">
+            <div data-aos="fade-left" data-aos-duration="1000" class="relative w-full lg:w-1/2 xl:w-1/2 2xl:w-1/2 overflow-hidden rounded-2xl">
+                <img src="{{asset('assets/img/home/layanan.jpg')}}" alt="Interior" class="w-full h-[450px] object-cover">
+                <div class="absolute inset-0 flex items-center justify-center px-5 py-3 transition-opacity duration-300 bg-black-2 bg-opacity-70">
                     <h3 class="text-3xl font-bold text-white">Interior</h3>
                 </div>
-            </div>            
+            </div>
         </div>
     </div>
-</div>    
-
-<div class="relative w-full py-10 sm:px-10 lg:px-36">
+</div>
+       
+<div class="relative w-full py-10 px-5 lg:px-36 xl:px-40 2xl:px-52">
     <div class="relative swiper progress-slide-carousel swiper-container1">
         <div class="swiper-promo swiper-wrapper">
             {{-- Dinamis card promo --}}
@@ -347,7 +347,7 @@
     </div>
 
     <!-- Slider Swiper -->
-    <div class="relative z-10 flex items-center justify-center w-full mx-auto min-w-6xl">
+    <div class="relative z-10 flex items-center justify-center w-full mx-auto min-w-6xl pb-10 md:pb-0">
         {{-- <div class="swiper centered-slide-carousel-2 swiper-container">
             <div class="swiper-wrapper">
                 <!-- Multiple Slides -->
@@ -368,7 +368,7 @@
                 @foreach ($testimoni as $item)
                     <div class="flex items-center justify-center swiper-slide">
                         @if (!empty($item->link_image))
-                            <img src="{{ asset('storage/' . $item->link_image) }}" alt="Testimoni" class="object-cover w-auto h-[500px] sm:h-[600px] lg:h-[700px] rounded-2xl">
+                            <img src="{{ asset('storage/' . $item->link_image) }}" alt="Testimoni" class="object-cover w-auto h-[500px] sm:h-[600px] lg:h-[700px] rounded-[30px]">
                         @endif
                     </div>
                 @endforeach
@@ -376,130 +376,130 @@
         </div>
         
         <!-- Gambar BG -->
-        <div class="absolute transform -translate-x-1/2 -translate-y-1/2 z-9 top-1/2 left-1/2 sm:invisible md:invisible lg:invisible xl:visible
+        <div class="absolute transform -translate-x-1/2 -translate-y-1/2 z-9 top-1/2 left-1/2 invisible sm:invisible md:invisible lg:invisible xl:visible
             {{ $testimoni->contains(fn($item) => !empty($item->link_image)) ? '' : 'invisible' }}">
             <img src="{{ asset('assets/img/home/hpTes.png') }}" alt="Frame" class="w-auto h-[710px]">
         </div>       
     </div>        
 </div>
  
-        <script src="{{asset('resources/script.js')}}"></script>    
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-        <script>
-            var swiper2 = new Swiper(".centered-slide-carousel-2", {
-                centeredSlides: true,
-                paginationClickable: true,
-                loop: true,
-                spaceBetween: 20,
-                slideToClickedSlide: true,
-                autoplay: {
-                    delay: 3500,
-                    disableOnInteraction: false,
-                },
-                breakpoints: {
-                    1920: {
-                        slidesPerView: 1,
-                        spaceBetween: 1,
-                    },
-                    1028: {
-                        slidesPerView: 1,
-                        spaceBetween: 1,
-                    },
-                    990: {
-                        slidesPerView: 1,
-                        spaceBetween: 1,
-                    },
-                    768: {
-                        slidesPerView: 1,
-                        spaceBetween: 1,
-                    },
-                    640: {
-                        slidesPerView: 1,
-                        spaceBetween: 1,
-                    }
-                },
-            });
-
-            var swiper3 = new Swiper(".centered-slide-carousel-3", {
-                centeredSlides: true,
-                paginationClickable: true,
-                loop: true,
-                spaceBetween: 20,
-                slideToClickedSlide: true,
-                autoplay: {
-                    delay: 3000,
-                    disableOnInteraction: false,
-                },
-                breakpoints: {
-                    1920: {
-                        slidesPerView: 1,
-                        spaceBetween: 1,
-                    },
-                    1028: {
-                        slidesPerView: 1,
-                        spaceBetween: 1,
-                    },
-                    990: {
-                        slidesPerView: 1,
-                        spaceBetween: 1,
-                    },
-                    768: {
-                        slidesPerView: 1,
-                        spaceBetween: 1,
-                    },
-                    640: {
-                        slidesPerView: 1,
-                        spaceBetween: 1,
-                    }
-                },
-            });
-
-            var swiper1 = new Swiper(".centered-slide-carousel-1", {
-                centeredSlides: true,
-                paginationClickable: true,
-                loop: true,
-                spaceBetween: 60,
-                slideToClickedSlide: true,
-                pagination: {
-                    el: ".centered-slide-carousel .swiper-pagination",
-                    clickable: true,
-                },
-                breakpoints: {
-                    1920: {
-                        slidesPerView: 5,
-                        spaceBetween: 40,
-                    },
-                    1028: {
-                        slidesPerView: 5,
-                        spaceBetween: 40,
-                    },
-                    990: {
-                        slidesPerView: 1,
-                        spaceBetween: 40,
-                    },
-                    768: {
-                        slidesPerView: 1,
-                        spaceBetween: 40,
-                    },
-                    640: {
-                        slidesPerView: 1,
-                        spaceBetween: 40,
-                    }
-                },
-            });
-
-            var swiper4 = new Swiper(".progress-slide-carousel", {
+    <script src="{{asset('resources/script.js')}}"></script>    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper2 = new Swiper(".centered-slide-carousel-2", {
+            centeredSlides: true,
+            paginationClickable: true,
             loop: true,
-            fraction: true,
+            spaceBetween: 20,
+            slideToClickedSlide: true,
             autoplay: {
-                delay: 5000,
+                delay: 3500,
                 disableOnInteraction: false,
             },
-            pagination: {
-                el: ".progress-slide-carousel .swiper-pagination1",
-                type: "progressbar",
+            breakpoints: {
+                1920: {
+                    slidesPerView: 1,
+                    spaceBetween: 1,
+                },
+                1028: {
+                    slidesPerView: 1,
+                    spaceBetween: 1,
+                },
+                990: {
+                    slidesPerView: 1,
+                    spaceBetween: 1,
+                },
+                768: {
+                    slidesPerView: 1,
+                    spaceBetween: 1,
+                },
+                640: {
+                    slidesPerView: 1,
+                    spaceBetween: 1,
+                }
             },
-            });
+        });
+
+        var swiper3 = new Swiper(".centered-slide-carousel-3", {
+            centeredSlides: true,
+            paginationClickable: true,
+            loop: true,
+            spaceBetween: 20,
+            slideToClickedSlide: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            breakpoints: {
+                1920: {
+                    slidesPerView: 1,
+                    spaceBetween: 1,
+                },
+                1028: {
+                    slidesPerView: 1,
+                    spaceBetween: 1,
+                },
+                990: {
+                    slidesPerView: 1,
+                    spaceBetween: 1,
+                },
+                768: {
+                    slidesPerView: 1,
+                    spaceBetween: 1,
+                },
+                640: {
+                    slidesPerView: 1,
+                    spaceBetween: 1,
+                }
+            },
+        });
+
+        var swiper1 = new Swiper(".centered-slide-carousel-1", {
+            centeredSlides: true,
+            paginationClickable: true,
+            loop: true,
+            spaceBetween: 60,
+            slideToClickedSlide: true,
+            pagination: {
+                el: ".centered-slide-carousel .swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                1920: {
+                    slidesPerView: 5,
+                    spaceBetween: 40,
+                },
+                1028: {
+                    slidesPerView: 5,
+                    spaceBetween: 40,
+                },
+                990: {
+                    slidesPerView: 1,
+                    spaceBetween: 40,
+                },
+                768: {
+                    slidesPerView: 1,
+                    spaceBetween: 40,
+                },
+                640: {
+                    slidesPerView: 1,
+                    spaceBetween: 40,
+                }
+            },
+        });
+
+        var swiper4 = new Swiper(".progress-slide-carousel", {
+        loop: true,
+        fraction: true,
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: ".progress-slide-carousel .swiper-pagination1",
+            type: "progressbar",
+        },
+        });
     </script>
     <script>
         document.addEventListener("DOMContentLoaded", () => {
@@ -544,7 +544,7 @@
             .catch(error => {
                 console.error("Error fetching images:", error);
             });
-    });
+        });
     </script>    
     <script>
        document.addEventListener('DOMContentLoaded', () => {
@@ -590,7 +590,7 @@
                         <div class="swiper-slide">
                             <div class="border-6 border-black rounded-[44px] h-[550px] 2xl:h-[600px] overflow-hidden relative">
                                 <img src="{{asset('assets/img/service/desain/bg-cardpromo.png')}}" alt="" class="absolute w-full h-full object-cover z-[-2]">
-                                <div class="absolute inset-0 bg-white opacity-65 backdrop-brightness-50 z-[-1]"></div>
+                                <div class="absolute inset-0 bg-white opacity-65 backdrop-brightness-50 z-[-1] rounded-[44px]"></div>
                                 <div class="flex z-[9]">
                                     <div class="p-8 2xl:p-12">
                                         <h1 class="text-lg font-extrabold tracking-wide uppercase lg:text-3xl xl:text-4xl 2xl:text-5xl text-landing-brown-2">${promo.title}</h1>
