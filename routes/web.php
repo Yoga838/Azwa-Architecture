@@ -1,5 +1,8 @@
 <?php
 
+use App\Models\Promo;
+use App\Models\Testimoni;
+use App\Models\Portofolio;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProfileController;
@@ -21,7 +24,10 @@ Route::post('/logout', [AuthenticatedSessionController::class, 'destroy'])->name
 
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('/dashboard', function () {
-        return view('admin.home.index');
+        $portofolio = Portofolio::count();
+        $promos = Promo::count();
+        $testimoni = Testimoni::count();
+        return view('admin.home.index', compact('portofolio', 'promos', 'testimoni'));
     })->name('dashboard');
     
     Route::get('/daftarportofolio', [PortofolioController::class, 'IndexView'])->name('show.portofolio');
