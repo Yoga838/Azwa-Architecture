@@ -11,7 +11,7 @@ use Illuminate\Support\Facades\Storage;
 class TestimoniController extends Controller
 {
     public function index(){
-        $testimoni = Testimoni::all();
+        $testimoni = Testimoni::paginate(10);
 
         return view('admin.testimoni.indexTestimoni', compact('testimoni'));
     }

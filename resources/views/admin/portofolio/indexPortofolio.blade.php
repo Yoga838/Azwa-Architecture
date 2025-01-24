@@ -78,9 +78,12 @@
                     @else
                         <tr>
                             <td colspan="9" class="text-center text-gray-500">Tidak ada portofolio yang ditemukan.</td>
-                        </tr>
+                        </tr>   
                     @endif
-                  </tbody>
+                </tbody>
+                <div class="my-5">
+                  {{ $portofolio->links('pagination::tailwind') }}
+                </div>
               </table>
           </div>
       </div>
