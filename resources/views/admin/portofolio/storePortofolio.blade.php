@@ -91,7 +91,7 @@
                     </div>
                 
                     <!-- Upload File -->
-                    <div class="w-full p-6 rounded-lg shadow-lg bg-theme1">
+                    <div class="w-full p-6 bg-white rounded-lg shadow-lg dark:bg-theme1">
                         <div class="mb-4">
                             <label class="block mb-2 text-sm font-medium text-black dark:text-theme3" for="file-upload">
                                 Upload File

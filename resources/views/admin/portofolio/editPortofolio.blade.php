@@ -2,8 +2,8 @@
 
 @section('content')
 
-<div class="mb-6 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-    <h2 class="text-title-md2 font-bold text-black dark:text-white">
+<div class="flex flex-col gap-3 mb-6 sm:flex-row sm:items-center sm:justify-between">
+    <h2 class="font-bold text-black text-title-md2 dark:text-white">
         Edit Portofolio
     </h2>
     <nav>
@@ -18,7 +18,7 @@
 
 <div class="grid grid-cols-1 gap-9">
     <div class="flex flex-col gap-9">
-        <div class="rounded-sm border border-stroke bg-white shadow-default dark:border-theme2 dark:bg-theme3">
+        <div class="bg-white border rounded-sm border-stroke shadow-default dark:border-theme2 dark:bg-theme3">
             <div class="border-b border-stroke px-6.5 py-4 dark:border-theme2">
                 <h3 class="font-medium text-black dark:text-white">
                     Input Fields
@@ -28,77 +28,77 @@
                 <input type="hidden" id="portofolioId" name="id">
                 <input type="hidden" id="deletedFiles" name="hapus_foto[]">
                 <div class="nama">
-                    <label class="mb-3 block text-sm font-medium text-black dark:text-white">
+                    <label class="block mb-3 text-sm font-medium text-black dark:text-white">
                         Nama
                     </label>
-                    <input type="text" placeholder="Masukkan nama" id="nama" name="name" value="{{$portofolio->name}}" class="w-full rounded-lg border-[1.5px] border-stroke bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary"/>
+                    <input type="text" placeholder="Masukkan nama" id="nama" name="name" value="{{$portofolio->name}}" class="w-full rounded-lg border-[1.5px] border-stroke bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-theme1 dark:focus:border-primary"/>
                 </div>
                 <div class="tipe">
-                    <label class="mb-3 block text-sm font-medium text-black dark:text-white">
+                    <label class="block mb-3 text-sm font-medium text-black dark:text-white">
                         Tipe
                     </label>
-                    <select id="tipe" name="type" class="w-full rounded-lg border-[1.5px] border-stroke bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary">
+                    <select id="tipe" name="type" class="w-full rounded-lg border-[1.5px] border-stroke bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-theme1 dark:focus:border-primary">
                         <option value="">Pilih dan sesuaikan tipe...</option>
                         <option value="Arsitektur" {{ $portofolio->type == 'Arsitektur' ? 'selected' : '' }}>Arsitektur</option>
                         <option value="Interior" {{ $portofolio->type == 'Interior' ? 'selected' : '' }}>Interior</option>
                     </select>
                 </div>
                 <div class="date">
-                    <label class="mb-3 block text-sm font-medium text-black dark:text-white">
+                    <label class="block mb-3 text-sm font-medium text-black dark:text-white">
                         Tanggal
                     </label>
-                    <input type="date" id="date" name="date" value="{{$portofolio->date}}" class="w-full rounded-lg border-[1.5px] border-stroke bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary"/>
+                    <input type="date" id="date" name="date" value="{{$portofolio->date}}" class="w-full rounded-lg border-[1.5px] border-stroke bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-theme1 dark:focus:border-primary"/>
                 </div>
                 <div class="kategori">
-                    <label class="mb-3 block text-sm font-medium text-black dark:text-white">
+                    <label class="block mb-3 text-sm font-medium text-black dark:text-white">
                         Kategori
                     </label>
-                    <select id="kategori" name="category" class="w-full rounded-lg border-[1.5px] border-stroke bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary">
+                    <select id="kategori" name="category" class="w-full rounded-lg border-[1.5px] border-stroke bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-theme1 dark:focus:border-primary">
                         <option value="">Pilih kategori</option>
                         <option value="Arsitektur" {{ $portofolio->category == 'Arsitektur' ? 'selected' : '' }}>Arsitektur</option>
                         <option value="Interior" {{ $portofolio->category == 'Interior' ? 'selected' : '' }}>Interior</option>
                     </select>
                 </div>
                 <div class="luas">
-                    <label class="mb-3 block text-sm font-medium text-black dark:text-white">
+                    <label class="block mb-3 text-sm font-medium text-black dark:text-white">
                         Luas
                     </label>
-                    <input type="number" placeholder="Masukkan luas" id="luas" name="luas" value="{{$portofolio->luas}}" class="w-full rounded-lg border-[1.5px] border-stroke bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary"/>
+                    <input type="number" placeholder="Masukkan luas" id="luas" name="luas" value="{{$portofolio->luas}}" class="w-full rounded-lg border-[1.5px] border-stroke bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-theme1 dark:focus:border-primary"/>
                 </div>
                 <div class="kontraktor">
-                    <label class="mb-3 block text-sm font-medium text-black dark:text-white">
+                    <label class="block mb-3 text-sm font-medium text-black dark:text-white">
                         Kontraktor
                     </label>
-                    <input type="text" placeholder="Masukkan kontraktor" id="kontraktor" name="kontraktor" value="{{$portofolio->kontraktor}}" class="w-full rounded-lg border-[1.5px] border-stroke bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary"/>
+                    <input type="text" placeholder="Masukkan kontraktor" id="kontraktor" name="kontraktor" value="{{$portofolio->kontraktor}}" class="w-full rounded-lg border-[1.5px] border-stroke bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-theme1 dark:focus:border-primary"/>
                 </div>
                 <div class="deskripsi">
-                    <label class="mb-3 block text-sm font-medium text-black dark:text-white">
+                    <label class="block mb-3 text-sm font-medium text-black dark:text-white">
                         Deskripsi
                     </label>
-                    <textarea rows="6" placeholder="Masukkan deskripsi portofolio" id="deskripsi" name="deskripsi" class="w-full rounded-lg border-[1.5px] border-stroke bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary">{{$portofolio->deskripsi}}</textarea>
+                    <textarea rows="6" placeholder="Masukkan deskripsi portofolio" id="deskripsi" name="deskripsi" class="w-full rounded-lg border-[1.5px] border-stroke bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-theme1 dark:focus:border-primary">{{$portofolio->deskripsi}}</textarea>
                 </div>
                 {{-- File Upload --}}
-                <div class="bg-white shadow-lg rounded-lg p-6 w-full">
+                <div class="w-full p-6 bg-white rounded-lg shadow-lg dark:bg-theme1">
                     <div class="mb-4">
                         <label
-                            class="block text-black dark:text-white text-sm font-medium mb-2"
+                            class="block mb-2 text-sm font-medium text-black"
                             for="file-upload"
                         >
                             Upload Files
                         </label>
                         <div
-                            class="border-2 border-dashed border-gray-300 p-6 text-center"
+                            class="p-6 text-center border-2 border-gray-300 border-dashed"
                             id="drop-area"
                         >
                             <p class="text-gray-500">Seret dan jatuhkan file di sini</p>
                             <p class="text-gray-500">atau</p>
                             <button
                                 type="button"
-                                class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 mt-2"
+                                class="px-4 py-2 mt-2 text-white bg-blue-500 rounded hover:bg-blue-600"
                             >
                                 Jelajahi
                             </button>
-                            <p class="text-red-400 mt-2">"File yang diunggah harus berformat PNG, JPG, atau JPEG dengan ukuran maksimal 2 MB."</p>
+                            <p class="mt-2 text-red-400">"File yang diunggah harus berformat PNG, JPG, atau JPEG dengan ukuran maksimal 2 MB."</p>
                             <input
                                 id="file-upload"
                                 name="foto"
@@ -112,11 +112,11 @@
                     <div id="file-preview" class="space-y-4">
                         <!-- File previews will appear here -->
                         @foreach ($portofolio->fotos as $foto)
-                            <div class="flex items-center justify-between border p-2 rounded bg-gray-50">
+                            <div class="flex items-center justify-between p-2 border rounded bg-gray-50">
                                 <img
                                     src="{{ asset('storage/' . $foto->path) }}"
                                     alt="Portofolio Image"
-                                    class="w-12 h-12 object-cover rounded"
+                                    class="object-cover w-12 h-12 rounded"
                                 />
                                 <div class="flex-1 ml-4">
                                     <p class="text-sm font-medium">{{ basename($foto->path) }}</p>
@@ -133,7 +133,7 @@
                         @endforeach
                     </div>
                 </div>
-                <button type="submit" class="w-full p-4 bg-theme3 hover:bg-theme2 transition-all ease-linear dark:bg-white dark:hover:bg-gray-400">
+                <button type="submit" class="w-full p-4 transition-all ease-linear bg-theme3 hover:bg-theme2 dark:bg-theme1 dark:hover:bg-gray-400">
                     <h1 class="text-white dark:text-[#000] font-bold text-xl">Edit Portofolio</h1>
                 </button>
             </form>
@@ -181,7 +181,7 @@
                     preview.className =
                         "flex items-center justify-between border p-2 rounded bg-gray-50";
                     preview.innerHTML = `
-                        <img src="${reader.result}" alt="${file.name}" class="w-12 h-12 object-cover rounded">
+                        <img src="${reader.result}" alt="${file.name}" class="object-cover w-12 h-12 rounded">
                         <div class="flex-1 ml-4">
                             <p class="text-sm font-medium">${file.name}</p>
                             <p class="text-xs text-gray-500">${(
