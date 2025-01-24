@@ -58,7 +58,10 @@
                             <td colspan="3" class="text-center text-gray-500">Tidak ada testimoni yang ditemukan.</td>
                         </tr>
                     @endif
-                  </tbody>
+                </tbody>
+                <div class="my-5">
+                  {{ $testimoni->links('pagination::tailwind') }}
+                </div>
               </table>
           </div>
       </div>

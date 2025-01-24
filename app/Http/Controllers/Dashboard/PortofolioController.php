@@ -133,7 +133,7 @@ class PortofolioController extends Controller
     }
 
     public function IndexView (Request $request) {
-        $portofolio = Portofolio::with('fotos')->get();
+        $portofolio = Portofolio::with('fotos')->paginate(5);
         return view('admin.portofolio.indexPortofolio', compact('portofolio'));
     }
 
