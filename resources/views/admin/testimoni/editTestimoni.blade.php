@@ -18,8 +18,8 @@
 
     <div class="grid grid-cols-1 gap-9">
         <div class="flex flex-col gap-9">
-            <div class="bg-white border rounded-sm border-stroke shadow-default dark:border-strokedark dark:bg-boxdark">
-                <div class="border-b border-stroke px-6.5 py-4 dark:border-strokedark">
+            <div class="bg-white border rounded-sm border-stroke shadow-default dark:border-theme2 dark:bg-theme3">
+                <div class="border-b border-stroke px-6.5 py-4 dark:border-theme2">
                     <h3 class="font-medium text-black dark:text-white">
                         Input Fields
                     </h3>

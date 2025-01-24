@@ -116,13 +116,13 @@
             >
               <span class="hidden text-right lg:block">
                 <span class="block text-sm font-medium text-landing-black-1  dark:text-white"
-                  >Thomas Anree</span
+                  >{{auth()->user()->name}}</span
                 >
-                <span class="block text-xs font-medium">UX Designer</span>
+                <span class="block text-xs font-medium">{{auth()->user()->email}}</span>
               </span>
     
               <span>
-                <img class="h-12 w-12 rounded-full" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="User avatar" />
+                <img class="h-12 w-12 rounded-full" src="{{asset('assets/img/profiling.jpeg')}}" alt="User profile admin" />
               </span>
     
               <svg
@@ -153,7 +153,7 @@
               >
                 <li>
                   <a
-                    href="profile.html"
+                    href="{{route('profile.edit')}}"
                     class="flex items-center gap-3 text-sm font-medium duration-300 ease-in-out hover:text-landing-brown-1 dark:hover:text-landing-body lg:text-base"
                   >
                     <svg
