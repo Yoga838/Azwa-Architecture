@@ -4,14 +4,14 @@
     
     <div class="flex flex-col gap-3 mb-6 sm:flex-row sm:items-center sm:justify-between">
         <h2 class="font-bold text-black text-title-md2 dark:text-white">
-            Input Promo
+            Input Testimoni
         </h2>
         <nav>
             <ol class="flex items-center gap-2">
                 <li>
-                    <a class="font-medium" href="index.html">Promo /</a>
+                    <a class="font-medium" href="index.html">Testimoni /</a>
                 </li>
-                <li class="font-medium text-primary">Buat Promo</li>
+                <li class="font-medium text-primary">Buat Testimoni</li>
             </ol>
         </nav>
     </div>
