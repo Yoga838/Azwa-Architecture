@@ -52,7 +52,7 @@
                                     <div>
                                         <p class="2xl:text-xl xl:text-lg lg:text-lg md:text-lg text-lg font-bold text-theme2">Area</p>
                                         <p class="2xl:text-lg xl:text-base lg:text-base md:text-base text-base text-theme2">
-                                            {{ $portofolio->luas }} sqm
+                                            {{ $portofolio->luas }} m²
                                         </p>
                                     </div>
                                     <div class="md:my-3 my-0">

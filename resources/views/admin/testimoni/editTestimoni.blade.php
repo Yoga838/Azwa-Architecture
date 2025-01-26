@@ -4,14 +4,14 @@
     
     <div class="flex flex-col gap-3 mb-6 sm:flex-row sm:items-center sm:justify-between">
         <h2 class="font-bold text-black text-title-md2 dark:text-white">
-            Update Promo
+            Update Testimoni
         </h2>
         <nav>
             <ol class="flex items-center gap-2">
                 <li>
-                    <a class="font-medium" href="index.html">Promo /</a>
+                    <a class="font-medium" href="index.html">Testimoni /</a>
                 </li>
-                <li class="font-medium text-primary">Buat Promo</li>
+                <li class="font-medium text-primary">Update Testimoni</li>
             </ol>
         </nav>
     </div>
@@ -25,27 +25,27 @@
                     </h3>
                 </div>
                 <form class="flex flex-col gap-5.5 p-6.5" onsubmit="updateTestimoni(event, {{$testimoni->id}})">
-                    <div class="w-full p-6 bg-white rounded-lg shadow-lg">
+                    <div class="w-full p-6 bg-white rounded-lg shadow-lg dark:bg-theme1">
                         <div class="mb-4">
                             <label
-                                class="block mb-2 text-sm font-medium text-black dark:text-white"
+                                class="block mb-2 text-sm font-medium text-black"
                                 for="file-upload"
                             >
                                 Upload Files
                             </label>
                             <div
-                                class="p-6 text-center border-2 border-gray-300 border-dashed"
+                                class="p-6 text-center border-2 border-gray-300 border-dashed dark:border-gray-500"
                                 id="drop-area"
                             >
-                                <p class="text-gray-500">Seret dan jatuhkan file di sini</p>
-                                <p class="text-gray-500">atau</p>
+                                <p class="text-gray-500 dark:text-gray-700">Seret dan jatuhkan file di sini</p>
+                                <p class="text-gray-500 dark:text-gray-700">atau</p>
                                 <button
                                     type="button"
                                     class="px-4 py-2 mt-2 text-white bg-blue-500 rounded hover:bg-blue-600"
                                 >
                                     Jelajahi
                                 </button>
-                                <p class="text-red-400 mt-2">"File yang diunggah harus berformat PNG, JPG, atau JPEG dengan ukuran maksimal 2 MB."</p>
+                                <p class="mt-2 text-red-400">"File yang diunggah harus berformat PNG, JPG, atau JPEG dengan ukuran maksimal 2 MB."</p>
                                 <input
                                     id="file-upload"
                                     type="file"
@@ -59,7 +59,7 @@
                         </div>
                         
                     </div>
-                    <button type="submit"  class="w-full p-4 transition-all ease-linear bg-theme3 hover:bg-theme2 dark:bg-white dark:hover:bg-gray-400">
+                    <button type="submit"  class="w-full p-4 transition-all ease-linear bg-theme3 hover:bg-theme2 dark:bg-theme1 dark:hover:bg-gray-400">
                         <h1 class="text-white dark:text-[#000] font-bold text-xl">Upload Testimoni</h1>
                     </button>
                 </form>
