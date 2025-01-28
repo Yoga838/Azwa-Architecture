@@ -593,9 +593,11 @@
                                             ${descriptionHTML}
                                         </ul>
                                         <div class="absolute mt-5 end-10 bottom-15">
-                                            <button class="px-4 py-1 text-xl font-extrabold tracking-wider transition-transform duration-150 transform border-0 border-4 rounded-full text-landing-black-1 border-opacity-40 bg-landing-brown-2 bg-opacity-60 border-black-2 bg-theme2 hover:scale-105 hover:shadow-lg hover:-translate-y-1 hover:bg-landing-body hover:border-4 hover:border-theme2 hover:text-theme3">
-                                                Dapatkan Promo!
-                                            </button>
+                                            <a href="https://wa.me/62895371025425">
+                                                <button class="px-4 py-1 text-xl font-extrabold tracking-wider transition-transform duration-150 transform border-0 border-4 rounded-full text-landing-black-1 border-opacity-40 bg-landing-brown-2 bg-opacity-60 border-black-2 bg-theme2 hover:scale-105 hover:shadow-lg hover:-translate-y-1 hover:bg-landing-body hover:border-4 hover:border-theme2 hover:text-theme3">
+                                                    Dapatkan Promo!
+                                                </button>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>

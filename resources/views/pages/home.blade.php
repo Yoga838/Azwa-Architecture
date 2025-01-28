@@ -122,7 +122,7 @@
     </div>    
 </div>
 
-<div class="flex flex-col items-center justify-center w-full px-10 xl:mt-30 lg:mt-20 sm:mt-20 mt-20 lg:flex-row">
+<div class="flex flex-col items-center justify-center w-full px-10 mt-20 xl:mt-30 lg:mt-20 sm:mt-20 lg:flex-row">
     <!-- Gambar -->
     <div data-aos="fade-right" data-aos-duration="1000" class="flex-shrink-0 w-full lg:w-2/6">
         <img src="{{ asset('assets/img/home/bg-jasa.png') }}" alt="Deskripsi Gambar" class="object-cover w-full h-auto">
@@ -242,18 +242,17 @@
     </div>
 </div>
 
-
-<div class="flex justify-center w-full mt-10 lg:h-auto px-10">
+<div class="flex justify-center w-full px-10 mt-10 lg:h-auto">
     <div class="w-full sm:my-2 md:my-3">
         <h1 data-aos="fade-right" data-aos-duration="1000" class="mb-8 text-5xl font-extrabold text-theme3">Layanan Kami</h1>
-        <div data-aos="fade-right" data-aos-duration="1000" class="flex flex-col lg:flex-row xl:flex-row 2xl:flex-row justify-center gap-8">
-            <div class="relative w-full lg:w-1/2 xl:w-1/2 2xl:w-1/2 overflow-hidden rounded-2xl">
+        <div data-aos="fade-right" data-aos-duration="1000" class="flex flex-col justify-center gap-8 lg:flex-row xl:flex-row 2xl:flex-row">
+            <div class="relative w-full overflow-hidden lg:w-1/2 xl:w-1/2 2xl:w-1/2 rounded-2xl">
                 <img src="{{asset('assets/img/home/layanan2.jpg')}}" alt="Arsitektur" class="w-full h-[450px] object-cover">
                 <div class="absolute inset-0 flex items-center justify-center px-5 py-3 transition-opacity duration-300 bg-black-2 bg-opacity-70">
                     <h3 class="text-3xl font-bold text-white">Arsitektur</h3>
                 </div>
             </div>
-            <div data-aos="fade-left" data-aos-duration="1000" class="relative w-full lg:w-1/2 xl:w-1/2 2xl:w-1/2 overflow-hidden rounded-2xl">
+            <div data-aos="fade-left" data-aos-duration="1000" class="relative w-full overflow-hidden lg:w-1/2 xl:w-1/2 2xl:w-1/2 rounded-2xl">
                 <img src="{{asset('assets/img/home/layanan.jpg')}}" alt="Interior" class="w-full h-[450px] object-cover">
                 <div class="absolute inset-0 flex items-center justify-center px-5 py-3 transition-opacity duration-300 bg-black-2 bg-opacity-70">
                     <h3 class="text-3xl font-bold text-white">Interior</h3>
@@ -263,7 +262,7 @@
     </div>
 </div>
        
-<div class="relative w-full py-10 px-5 lg:px-36 xl:px-40 2xl:px-52">
+<div class="relative w-full px-5 py-10 lg:px-36 xl:px-40 2xl:px-52">
     <div class="relative swiper progress-slide-carousel swiper-container1">
         <div class="swiper-promo swiper-wrapper">
             {{-- Dinamis card promo --}}
@@ -347,7 +346,7 @@
     </div>
 
     <!-- Slider Swiper -->
-    <div class="relative z-10 flex items-center justify-center w-full mx-auto min-w-6xl pb-10 md:pb-0">
+    <div class="relative z-10 flex items-center justify-center w-full pb-10 mx-auto min-w-6xl md:pb-0">
         {{-- <div class="swiper centered-slide-carousel-2 swiper-container">
             <div class="swiper-wrapper">
                 <!-- Multiple Slides -->
@@ -606,9 +605,11 @@
                                             ${descriptionHTML}
                                         </ul>
                                         <div class="absolute mt-5 end-10 bottom-15">
-                                            <button class="px-4 py-1 text-xl font-extrabold tracking-wider transition-transform duration-150 transform border-0 border-4 rounded-full text-landing-black-1 border-opacity-40 bg-landing-brown-2 bg-opacity-60 border-black-2 bg-theme2 hover:scale-105 hover:shadow-lg hover:-translate-y-1 hover:bg-landing-body hover:border-4 hover:border-theme2 hover:text-theme3">
-                                                Dapatkan Promo!
-                                            </button>
+                                            <a href="https://wa.me/62895371025425">
+                                                <button class="px-4 py-1 text-xl font-extrabold tracking-wider transition-transform duration-150 transform border-0 border-4 rounded-full text-landing-black-1 border-opacity-40 bg-landing-brown-2 bg-opacity-60 border-black-2 bg-theme2 hover:scale-105 hover:shadow-lg hover:-translate-y-1 hover:bg-landing-body hover:border-4 hover:border-theme2 hover:text-theme3">
+                                                    Dapatkan Promo!
+                                                </button>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
