@@ -460,6 +460,10 @@
             loop: true,
             spaceBetween: 60,
             slideToClickedSlide: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
             pagination: {
                 el: ".centered-slide-carousel .swiper-pagination",
                 clickable: true,
