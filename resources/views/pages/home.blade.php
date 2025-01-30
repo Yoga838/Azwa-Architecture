@@ -190,8 +190,12 @@
             <div class="relative swiper centered-slide-carousel-1 swiper-container">
             <div class="flex justify-center invisible mb-2 2xl:visible xl:visible md:invisible sm:invisible">
                 <div class="flex items-center gap-3 2xl:mt-1 xl:mt-20 me-3">
-                    <div class="p-5 border rounded-full bg-black-2 2xl:p-5 xl:p-3 md:p-5"></div>
-                    <h1 class="text-xs font-semibold text-landing-brown-3 2xl:text-sm xl:text-base md:text-xs" style="font-family: Garet, sans-serif;">azwadesignstudio</h1>
+                    <div class="flex relative p-5 border rounded-full bg-black-2 2xl:p-5 xl:p-4 lg:p-5 md:p-5">
+                        <div class="w-[20px] h-[20px] flex justify-center">
+                            <img src="{{asset('assets/img/HeadLogo_Azwa.png')}}" alt="" class="w-[15px] h-[20px]">
+                        </div>
+                    </div>
+                    <h1 class="text-xs font-semibold text-landing-brown-3 2xl:text-sm xl:text-sm md:text-xs" style="font-family: Garet, sans-serif;">azwadesignstudio</h1>
                 </div>
             </div>
             <div class="swiper-wrapper">

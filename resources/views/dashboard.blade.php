@@ -6,7 +6,7 @@
 
         <title>Dashboard Azwa Design</title>
 
-        <link rel="icon" type="image/png" href="{{ asset('assets/img/HeadLogo_Azwa.png') }}" sizes="32x32">
+        <link rel="icon" type="image/png" href="{{ asset('assets/img/favicon.png') }}">
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">

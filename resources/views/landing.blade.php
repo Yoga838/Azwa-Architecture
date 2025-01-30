@@ -5,9 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>Azwa Design Studio - @yield('subtitle') </title>
+        <title>Azwa Design Studio</title>
         <!-- Favicon -->
-        <link rel="icon" type="image/png" href="{{asset('assets/img/icon.png')}}">
+        <link rel="icon" type="image/png" href="{{asset('assets/img/favicon.png')}}">
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
