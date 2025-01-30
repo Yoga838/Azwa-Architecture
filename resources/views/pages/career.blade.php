@@ -13,11 +13,11 @@
       <div class="flex flex-col w-screen sm:w-7/12 my-auto md:ml-5 items-center" data-aos="fade-left" data-aos-delay="1000" data-aos-duration="1000">
         <div class="flex flex-wrap md:mb-10 md:mt-20">
           <div class="flex flex-col md:flex-row md:space-x-10 lg:space-x-20 mt-5 items-center">
-            <h1 class="text-3xl md:text-6xl font-bold text-theme2">Karir</h1>
+            <h1 class="text-3xl md:text-6xl font-bold text-theme2" style="font-family: League Spartan, sans-serif;">Karir</h1>
             <div class="h-1 w-full md:w-55 lg:w-90 bg-theme2 rounded-lg"></div>
           </div>
         </div>
-        <div class="px-5 pb-10">
+        <div class="px-5 pb-10" style="font-family: Poppins, sans-serif;">
           <p class="md:text-xl lg:text-2xl text-theme3 font-medium pt-7 mb-4 ">
             Jelajahi peluang karir yang menarik di <span class="font-extrabold">Azwa Design Studio! </span> <br>
             Fulltime / Internship posisi Architect, Interior Designer, Drafter <br> dapat bergabung tim kami.

@@ -17,6 +17,7 @@ export default {
             fontFamily: {
                 sans: ["Figtree", ...defaultTheme.fontFamily.sans],
                 satoshi: ["Satoshi", "sans-serif"],
+                spartan: ["'League Spartan'", "sans-serif"],
             },
         },
         screens: {

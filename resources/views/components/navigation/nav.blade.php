@@ -15,7 +15,7 @@
                 <Image src="{{ asset('assets/img/LogoAzwa.png') }}" alt="Brand" class="2xl:w-[110px] xl:w-[100px] lg:w-[100px] md:w-[100px] sm:w-[100px] w-[100px] h-auto" />
             </div>
         </div>
-        <div class="hidden lg:block">
+        <div class="hidden lg:block" style="font-family: Garet, sans-serif;">
             <ul class="flex space-x-12 text-white">
                 <li class="">
                     <a class="2xl:text-xl xl:text-lg lg:text-lg md:text-lg sm:text-lg text-lg font-normal transition duration-300 ease-in-out 

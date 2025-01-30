@@ -9,7 +9,7 @@
         <img src="{{asset('assets/img/service/perizinan/perizinan5.jpeg')}}" alt="" class="object-cover w-screen h-full">
     </div>
     <div data-aos="fade-left" data-aos-duration="1000" class="py-32">
-        <div class="mx-10">
+        <div class="mx-10" style="font-family: League Spartan, sans-serif;">
             <p class="mt-20 text-2xl font-bold 2xl:mt-30 xl:mt-20 lg:mt-20 md:mt-20 text-start 2xl:text-6xl xl:text-5xl lg:text-4xl md:text-4xl text-theme1 drop-shadow-2">
                 Bersama Kami, <br> Perizinan Bangunan Lebih Mudah dan Aman!
             </p>
@@ -17,9 +17,9 @@
     </div>
 </div>
 
-<h1 class="mt-10 font-bold text-center text-theme2 2xl:text-4xl xl:text-4xl lg:text-3xl md:text-2xl text-md 2xl:mt-20 xl:mt-10 lg:mt-10 md:mt-10">KENAPA HARUS KAMI ?</h1>
+<h1 class="mt-10 font-bold text-center text-theme2 2xl:text-4xl xl:text-4xl lg:text-3xl md:text-2xl text-md 2xl:mt-20 xl:mt-10 lg:mt-10 md:mt-10" style="font-family: Poppins, sans-serif;">KENAPA HARUS KAMI ?</h1>
 {{-- CardTag --}}
-<div data-aos="fade-up" data-aos-duration="1000" class="flex items-center justify-center px-10 mt-5 2xl:mt-10 xl:mt-5 lg:mt-5 md:mt-5 2xl:px-50 xl:px-30 lg:px-30 md:px-30">
+<div data-aos="fade-up" data-aos-duration="1000" class="flex items-center justify-center px-10 mt-5 2xl:mt-10 xl:mt-5 lg:mt-5 md:mt-5 2xl:px-50 xl:px-30 lg:px-30 md:px-30" style="font-family: Poppins, sans-serif;">
     <div class="w-full px-5 py-4 border 2xl:px-8 xl:px-5 lg:px-5 md:px-5 2xl:py-6 xl:py-4 lg:py-4 md:py-4 bg-landing-brownLight-1/50 rounded-3xl">
         <div class="flex items-center">
             <div class="p-5 mx-2 border-0 rounded-full bg-theme3 2xl:p-6 xl:p-5 lg:p-5 md:p-5 lg:mx-5">
@@ -33,7 +33,7 @@
     </div>
 </div>
 {{-- CardTag --}}
-<div data-aos="fade-up" data-aos-duration="1000" class="flex items-center justify-center px-10 mt-5 2xl:mt-5 xl:mt-5 lg:mt-5 md:mt-5 2xl:px-50 xl:px-30 lg:px-30 md:px-30">
+<div data-aos="fade-up" data-aos-duration="1000" class="flex items-center justify-center px-10 mt-5 2xl:mt-5 xl:mt-5 lg:mt-5 md:mt-5 2xl:px-50 xl:px-30 lg:px-30 md:px-30" style="font-family: Poppins, sans-serif;">
     <div class="w-full px-5 py-4 border 2xl:px-8 xl:px-5 lg:px-5 md:px-5 2xl:py-6 xl:py-4 lg:py-4 md:py-4 bg-landing-brownLight-2/60 rounded-3xl">
         <div class="flex items-center">
             <div class="p-5 mx-2 border-0 rounded-full bg-theme3 2xl:p-6 xl:p-5 lg:p-5 md:p-5 lg:mx-5">
@@ -47,7 +47,7 @@
     </div>
 </div>
 {{-- CardTag --}}
-<div data-aos="fade-up" data-aos-duration="1000" class="flex items-center justify-center px-10 mt-5 2xl:mt-5 xl:mt-5 lg:mt-5 md:mt-5 2xl:px-50 xl:px-30 lg:px-30 md:px-30">
+<div data-aos="fade-up" data-aos-duration="1000" class="flex items-center justify-center px-10 mt-5 2xl:mt-5 xl:mt-5 lg:mt-5 md:mt-5 2xl:px-50 xl:px-30 lg:px-30 md:px-30" style="font-family: Poppins, sans-serif;">
     <div class="w-full px-5 py-4 border 2xl:px-8 xl:px-5 lg:px-5 md:px-5 2xl:py-6 xl:py-4 lg:py-4 md:py-4 bg-landing-brownLight-1/50 rounded-3xl">
         <div class="flex items-center">
             <div class="p-5 mx-2 border-0 rounded-full bg-theme3 2xl:p-6 xl:p-5 lg:p-5 md:p-5 lg:mx-5">
@@ -61,7 +61,7 @@
     </div>
 </div>
 {{-- CardTag --}}
-<div data-aos="fade-up" data-aos-duration="1000" class="flex items-center justify-center px-10 mt-5 2xl:mt-5 xl:mt-5 lg:mt-5 md:mt-5 2xl:px-50 xl:px-30 lg:px-30 md:px-30">
+<div data-aos="fade-up" data-aos-duration="1000" class="flex items-center justify-center px-10 mt-5 2xl:mt-5 xl:mt-5 lg:mt-5 md:mt-5 2xl:px-50 xl:px-30 lg:px-30 md:px-30" style="font-family: Poppins, sans-serif;">
     <div class="w-full px-5 py-4 border 2xl:px-8 xl:px-5 lg:px-5 md:px-5 2xl:py-6 xl:py-4 lg:py-4 md:py-4 bg-landing-brownLight-2/60 rounded-3xl">
         <div class="flex items-center">
             <div class="p-5 mx-2 border-0 rounded-full bg-theme3 2xl:p-6 xl:p-5 lg:p-5 md:p-5 lg:mx-5">
@@ -75,7 +75,7 @@
     </div>
 </div>
 {{-- CardTag --}}
-<div data-aos="fade-up" data-aos-duration="1000" class="flex items-center justify-center px-10 mt-5 2xl:mt-5 xl:mt-5 lg:mt-5 md:mt-5 2xl:px-50 xl:px-30 lg:px-30 md:px-30">
+<div data-aos="fade-up" data-aos-duration="1000" class="flex items-center justify-center px-10 mt-5 2xl:mt-5 xl:mt-5 lg:mt-5 md:mt-5 2xl:px-50 xl:px-30 lg:px-30 md:px-30" style="font-family: Poppins, sans-serif;">
     <div class="w-full px-5 py-4 border 2xl:px-8 xl:px-5 lg:px-5 md:px-5 2xl:py-6 xl:py-4 lg:py-4 md:py-4 bg-landing-brownLight-1/50 rounded-3xl">
         <div class="flex items-center">
             <div class="p-5 mx-2 border-0 rounded-full bg-theme3 2xl:p-6 xl:p-5 lg:p-5 md:p-5 lg:mx-5">
@@ -96,11 +96,11 @@
         <img src="{{asset('assets/img/service/perizinan/perizinan4.jpeg')}}" alt="" class="object-cover w-screen h-full">
     </div>
     <div data-aos="fade-right" data-aos-duration="1000" class="py-20 mt-30">
-        <h1 class="text-2xl font-bold 2xl:text-6xl xl:text-5xl lg:text-5xl md:text-4xl text-theme1 drop-shadow-2 md:ml-21">PBG (Persetujuan Bangunan Gedung) / <br>SLF ( Sertifikasi Layak Fungsi)</h1>
+        <h1 class="text-2xl font-bold 2xl:text-6xl xl:text-5xl lg:text-5xl md:text-4xl text-theme1 drop-shadow-2 md:ml-21" style="font-family: League Spartan, sans-serif;">PBG (Persetujuan Bangunan Gedung) / <br>SLF ( Sertifikasi Layak Fungsi)</h1>
     </div>
 </div>
 {{-- Card --}}
-<div data-aos="fade-up" data-aos-duration="1000" class="flex items-center justify-center">
+<div data-aos="fade-up" data-aos-duration="1000" class="flex items-center justify-center" style="font-family: Poppins, sans-serif;">
     <div class="relative">
         <div class="border-0 2xl:w-[700px] xl:w-[600px] lg:w-[600px] md:w-[500px] sm:w-[350px] w-[350px] 2xl:h-[300px] xl:h-[250px] lg:h-[250px] md:h-[250px] h-[250px] bg-theme3 rounded-[2rem] pt-5">
             <div class="text-center">
@@ -132,11 +132,11 @@
         <img src="{{asset('assets/img/service/perizinan/perizinan3.jpeg')}}" alt="" class="object-cover w-screen h-full">
     </div>
     <div data-aos="fade-right" data-aos-duration="1000" class="py-20 mt-30">
-        <h1 class="text-2xl font-bold 2xl:text-6xl xl:text-5xl lg:text-5xl md:text-4xl text-theme1 drop-shadow-2 md:ml-21">PAKET LENGKAP PBG & SLF</h1>
+        <h1 class="text-2xl font-bold 2xl:text-6xl xl:text-5xl lg:text-5xl md:text-4xl text-theme1 drop-shadow-2 md:ml-21" style="font-family: League Spartan, sans-serif;">PAKET LENGKAP PBG & SLF</h1>
     </div>
 </div>
 {{-- Card --}}
-<div data-aos="fade-up" data-aos-duration="1000" class="flex items-center justify-center">
+<div data-aos="fade-up" data-aos-duration="1000" class="flex items-center justify-center" style="font-family: Poppins, sans-serif;">
     <div class="relative">
         <div class="border-0 2xl:w-[700px] xl:w-[600px] lg:w-[600px] md:w-[500px] sm:w-[350px] w-[350px] 2xl:h-[350px] xl:h-[300px] lg:h-[300px] md:h-[300px] h-[300px] bg-theme3 rounded-[2rem] pt-5">
             <div class="text-center">
@@ -169,7 +169,7 @@
     <a href="https://wa.me/62895371025425">
         <button class="flex items-center px-3 py-1 transition duration-300 ease-in-out transform rounded-full bg-theme2 hover:bg-landing-black-1 hover:scale-105 w-fill 2xl:px-6 xl:px-3 lg:px-3 md:px-3 2xl:py-2 xl:py-1 lg:py-1 md:py-1">
             <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 md:w-8 md:h-8" viewBox="0 0 24 24"><path fill="#e1dfd4" d="M19.05 4.91A9.82 9.82 0 0 0 12.04 2c-5.46 0-9.91 4.45-9.91 9.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91c0-2.65-1.03-5.14-2.9-7.01m-7.01 15.24c-1.48 0-2.93-.4-4.2-1.15l-.3-.18l-3.12.82l.83-3.04l-.2-.31a8.26 8.26 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24c2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c.02 4.54-3.68 8.23-8.22 8.23m4.52-6.16c-.25-.12-1.47-.72-1.69-.81c-.23-.08-.39-.12-.56.12c-.17.25-.64.81-.78.97c-.14.17-.29.19-.54.06c-.25-.12-1.05-.39-1.99-1.23c-.74-.66-1.23-1.47-1.38-1.72c-.14-.25-.02-.38.11-.51c.11-.11.25-.29.37-.43s.17-.25.25-.41c.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31c-.22.25-.86.85-.86 2.07s.89 2.4 1.01 2.56c.12.17 1.75 2.67 4.23 3.74c.59.26 1.05.41 1.41.52c.59.19 1.13.16 1.56.1c.48-.07 1.47-.6 1.67-1.18c.21-.58.21-1.07.14-1.18s-.22-.16-.47-.28"/></svg>
-            <p class="pb-1 pl-3 text-sm font-medium 2xl:text-2xl xl:text-xl md:text-xl text-theme1">
+            <p class="pb-1 pl-3 text-sm font-medium 2xl:text-2xl xl:text-xl md:text-xl text-theme1" style="font-family: Poppins, sans-serif;">
                 Konsultasi Sekarang
             </p>
         </button>

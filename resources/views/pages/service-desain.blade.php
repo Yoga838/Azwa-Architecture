@@ -23,11 +23,11 @@
             <img src="{{asset('assets/img/service/desain/bg1-servicedesain.jpg')}}" alt="" class="object-cover w-screen h-full">
         </div>
         <div data-aos="fade-right" data-aos-duration="1000" class="pb-20 pt-30 2xl:pt-50">
-            <h1 class="ml-20 text-5xl font-bold tracking-wider 2xl:text-6xl text-theme1 drop-shadow-2 2xl:ml-30">Arsitektur</h1>
+            <h1 class="ml-20 text-5xl font-bold tracking-wider 2xl:text-6xl text-theme1 drop-shadow-2 2xl:ml-30" style="font-family: League Spartan, sans-serif;">Arsitektur</h1>
         </div>
     </div>
     {{-- Card Arsitektur --}}
-    <div class="flex flex-wrap justify-center gap-9">
+    <div class="flex flex-wrap justify-center gap-9" style="font-family: Poppins, sans-serif;">
         {{-- 1 --}}
         <div data-aos="fade-up" data-aos-duration="1000" class="relative">
             <div class="border-0 w-[300px] 2xl:w-[550px] lg:w-[500px] md:w-[300px] sm:w-[300px] h-[500px] 2xl:h-[550px] bg-theme3 rounded-[2rem] pt-5">
@@ -126,11 +126,11 @@
             <img src="{{asset('assets/img/service/desain/bg2-servicedesain.png')}}" alt="" class="object-cover w-screen h-full" style="object-position: 50% 85%;">
         </div>
         <div data-aos="fade-right" data-aos-duration="1000" class="pb-20 pt-30 2xl:pt-50">
-            <h1 class="ml-20 text-5xl font-bold tracking-wider 2xl:text-6xl text-theme1 drop-shadow-2 2xl:ml-30">Desain Interior</h1>
+            <h1 class="ml-20 text-5xl font-bold tracking-wider 2xl:text-6xl text-theme1 drop-shadow-2 2xl:ml-30" style="font-family: League Spartan, sans-serif;">Desain Interior</h1>
         </div>
     </div>
     {{-- Card Desain Interior --}}
-    <div class="flex flex-wrap justify-center gap-9">
+    <div class="flex flex-wrap justify-center gap-9" style="font-family: Poppins, sans-serif;">
         {{-- 1 --}}
         <div data-aos="fade-up" data-aos-duration="1000" class="relative">
             <div class="border-0 w-[300px] 2xl:w-[400px] lg:w-[400px] md:w-[300px] sm:w-[300px] h-[500px] 2xl:h-[550px] bg-theme3 rounded-[2rem] pt-5">
@@ -213,11 +213,11 @@
             <img src="{{asset('assets/img/service/desain/bg3left-servicedesain.png')}}" alt="" class="object-cover w-screen h-full" style="object-position: 50% 85%;">
         </div>
         <div data-aos="fade-right" data-aos-duration="1000" class="pb-20 pt-30 2xl:pt-50">
-            <h1 class="ml-20 text-5xl font-bold tracking-wider 2xl:text-6xl text-theme1 drop-shadow-2 2xl:ml-30">Arsitektur Interior</h1>
+            <h1 class="ml-20 text-5xl font-bold tracking-wider 2xl:text-6xl text-theme1 drop-shadow-2 2xl:ml-30" style="font-family: League Spartan, sans-serif;">Arsitektur Interior</h1>
         </div>
     </div>
     {{-- Card Desain Interior --}}
-    <div class="flex flex-wrap justify-center gap-9">
+    <div class="flex flex-wrap justify-center gap-9" style="font-family: Poppins, sans-serif;">
         {{-- 1 --}}
         <div data-aos="fade-up" data-aos-duration="1000" class="relative">
             <div class="border-0 w-[300px] 2xl:w-[600px] lg:w-[500px] md:w-[300px] sm:w-[300px] h-[700px] 2xl:h-[800px] bg-theme3 rounded-[2rem] pt-5">
@@ -377,13 +377,13 @@
         {{-- Flowchart Alur --}}
         <div data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000" class="px-10 lg:px-36 py-20 min-w-[1024px] relative z-10">
             <div class="flex items-center">
-                <h1 class="text-2xl font-bold text-white lg:text-5xl 2xl:text-6xl me-5">Alur Kerja Perencanaan</h1>
+                <h1 class="text-2xl font-bold text-white lg:text-5xl 2xl:text-6xl me-5" style="font-family: League Spartan, sans-serif;">Alur Kerja Perencanaan</h1>
                 <div class="flex-1">
                     <span class="block h-[2px] 2xl:h-[4px] bg-white"></span>
                 </div>
             </div>
             {{-- Flow Top Step Perencanaan --}}
-            <div class="grid grid-cols-5 mt-20">
+            <div class="grid grid-cols-5 mt-20" style="font-family: Poppins, sans-serif;">
                 <div class="text-center">
                     <div class="flex items-center justify-center w-20 h-20 mx-auto bg-white rounded-full">
                         {{-- icon --}}
@@ -459,7 +459,7 @@
                 </div>
             </div>
             {{-- Flow Bottom Step Perencanaan --}}
-            <div class="grid grid-cols-5 mt-30">
+            <div class="grid grid-cols-5 mt-30" style="font-family: Poppins, sans-serif;">
                 <div class="text-center"></div>
                 <div class="text-center">
                     {{-- nomor --}}
@@ -584,17 +584,17 @@
                                 <div class="absolute inset-0 bg-white opacity-65 backdrop-brightness-50 z-[-1]"></div>
                                 <div class="flex z-[9]">
                                     <div class="p-8 2xl:p-12">
-                                        <h1 class="text-lg font-extrabold tracking-wide uppercase lg:text-3xl xl:text-4xl 2xl:text-5xl text-landing-brown-2">${promo.title}</h1>
+                                        <h1 class="text-lg font-extrabold tracking-wide uppercase lg:text-3xl xl:text-4xl 2xl:text-5xl text-landing-brown-2" style="font-family: League Spartan, sans-serif;">${promo.title}</h1>
                                         <div class="my-2 text-lg font-extrabold tracking-wider xl:text-3xl 2xl:text-4xl">
-                                            <span class="line-through decoration-2 xl:decoration-4 decoration-landing-brown-2">Rp. ${parseFloat(promo.actual_price).toLocaleString('id-ID')}/m2</span>
+                                            <span class="line-through decoration-2 xl:decoration-4 decoration-landing-brown-2" style="font-family: League Spartan, sans-serif;">Rp. ${parseFloat(promo.actual_price).toLocaleString('id-ID')}/m2</span>
                                         </div>
-                                        <h1 class="text-3xl font-bold lg:text-4xl xl:text-5xl 2xl:text-6xl text-landing-brown-2">Rp. ${parseFloat(promo.price).toLocaleString('id-ID')}/m2</h1>
-                                        <ul class="mt-4">
+                                        <h1 class="text-3xl font-bold lg:text-4xl xl:text-5xl 2xl:text-6xl text-landing-brown-2" style="font-family: League Spartan, sans-serif;">Rp. ${parseFloat(promo.price).toLocaleString('id-ID')}/m2</h1>
+                                        <ul class="mt-4" style="font-family: Poppins, sans-serif;">
                                             ${descriptionHTML}
                                         </ul>
                                         <div class="absolute mt-5 end-10 bottom-15">
                                             <a href="https://wa.me/62895371025425">
-                                                <button class="px-4 py-1 text-xl font-extrabold tracking-wider transition-transform duration-150 transform border-0 border-4 rounded-full text-landing-black-1 border-opacity-40 bg-landing-brown-2 bg-opacity-60 border-black-2 bg-theme2 hover:scale-105 hover:shadow-lg hover:-translate-y-1 hover:bg-landing-body hover:border-4 hover:border-theme2 hover:text-theme3">
+                                                <button class="px-4 py-1 text-xl font-extrabold tracking-wider transition-transform duration-150 transform border-0 border-4 rounded-full text-landing-black-1 border-opacity-40 bg-landing-brown-2 bg-opacity-60 border-black-2 bg-theme2 hover:scale-105 hover:shadow-lg hover:-translate-y-1 hover:bg-landing-body hover:border-4 hover:border-theme2 hover:text-theme3" style="font-family: Poppins, sans-serif;">
                                                     Dapatkan Promo!
                                                 </button>
                                             </a>

@@ -35,10 +35,10 @@
 
     <!-- Teks Judul -->
     <div class="absolute z-10 bottom-20 lg:left-15 sm:left-5">
-        <h1 class="text-center md:text-start lg:text-start xl:text-start 2xl:text-start mb-4 text-4xl font-bold text-[#e1dfd4] lg:text-5xl drop-shadow-[4px_4px_6px_black]">
+        <h1 class="text-center md:text-start lg:text-start xl:text-start 2xl:text-start mb-4 text-4xl font-bold text-[#e1dfd4] lg:text-5xl drop-shadow-[4px_4px_6px_black]" style="font-family: League Spartan, sans-serif;">
             Merangkai Ruang <br>
         </h1>
-        <h1 class="text-center md:text-start lg:text-start xl:text-start 2xl:text-start text-4xl font-bold text-[#e1dfd4] lg:text-5xl drop-shadow-[4px_4px_6px_black]">
+        <h1 class="text-center md:text-start lg:text-start xl:text-start 2xl:text-start text-4xl font-bold text-[#e1dfd4] lg:text-5xl drop-shadow-[4px_4px_6px_black]" style="font-family: League Spartan, sans-serif;">
             Mewujudkan Impian
         </h1>
     </div>    
@@ -53,19 +53,19 @@
             <div class="flex items-center justify-center w-24 h-24 my-4 rounded-full opacity-75 bg-theme3">
                 <img src="{{ asset('assets/img/home/icon1.png') }}" alt="Home Icon" width="50" height="50">
             </div>
-            <h1 class="mb-4 text-center font-extrabold text-[#251d16] text-[20px] lg:text-[35px]">
+            <h1 class="mb-4 text-center font-extrabold text-[#251d16] text-[20px] lg:text-[35px]"style="font-family: League Spartan, sans-serif;">
                 <p>
                     <strong>ONE-STOP</strong>
                 </p>
                 <p><strong>SERVICE</strong></p>
             </h1>
-            <p class="text-center font-bold text-[#251d16] text-[16px] lg:text-[22px] 2xl:text-[25px] max-w-[400px]">
+            <p class="text-center font-bold text-[#251d16] text-[16px] lg:text-[22px] 2xl:text-[25px] max-w-[400px]" style="font-family: Poppins, sans-serif;">
                 Layanan <span class="text-white">lengkap</span> dari desain,
             </p>            
-            <p class="text-center font-bold text-[#251d16] text-[16px] lg:text-[22px] 2xl:text-[25px] max-w-[400px]">
+            <p class="text-center font-bold text-[#251d16] text-[16px] lg:text-[22px] 2xl:text-[25px] max-w-[400px]" style="font-family: Poppins, sans-serif;">
                 pembangunan, perizinan
             </p>
-            <p class="text-center font-bold text-[#251d16] text-[16px] lg:text-[22px] 2xl:text-[25px] max-w-[400px]">
+            <p class="text-center font-bold text-[#251d16] text-[16px] lg:text-[22px] 2xl:text-[25px] max-w-[400px]" style="font-family: Poppins, sans-serif;">
                 dalam <span class="text-white">satu tempat</span>.
             </p>
         </div>
@@ -75,7 +75,7 @@
             <div class="flex items-center justify-center w-24 h-24 my-4 rounded-full opacity-75 bg-theme3">
                 <img src="{{ asset('assets/img/home/icon2.png') }}" alt="Home Icon" width="50" height="50">
             </div>
-            <h1 class="mb-4 text-center font-extrabold text-[#251d16] text-[20px] lg:text-[35px]">
+            <h1 class="mb-4 text-center font-extrabold text-[#251d16] text-[20px] lg:text-[35px]" style="font-family: League Spartan, sans-serif;">
                 <p>
                     <strong>GRATIS</strong>
                 </p>
@@ -83,13 +83,13 @@
                     <strong>KONSULTASI</strong>
                 </p>
             </h1>
-            <p class="text-center font-bold text-[#251d16] text-[16px] lg:text-[22px] 2xl:text-[25px] max-w-[400px]">
+            <p class="text-center font-bold text-[#251d16] text-[16px] lg:text-[20px] 2xl:text-[22px] max-w-[400px]" style="font-family: Poppins, sans-serif;">
                 Dapatkan sesi konsultasi <span class="text-white">gratis</span>
             </p>
-            <p class="text-center font-bold text-[#251d16] text-[16px] lg:text-[22px] 2xl:text-[25px] max-w-[400px]">
+            <p class="text-center font-bold text-[#251d16] text-[16px] lg:text-[20px] 2xl:text-[22px] max-w-[400px]" style="font-family: Poppins, sans-serif;">
                 untuk solusi desain yang sesuai
             </p>
-            <p class="text-center font-bold text-[#251d16] text-[16px] lg:text-[22px] 2xl:text-[25px] max-w-[400px]">
+            <p class="text-center font-bold text-[#251d16] text-[16px] lg:text-[20px] 2xl:text-[22px] max-w-[400px]" style="font-family: Poppins, sans-serif;">
                 dengan kebutuhan Anda.
             </p>
         </div>
@@ -101,7 +101,7 @@
                     <path fill="white" d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0M571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93"/>
                 </svg>
             </div>
-            <h1 class="mb-4 text-center font-extrabold text-[#251d16] text-[20px] lg:text-[35px]">
+            <h1 class="mb-4 text-center font-extrabold text-[#251d16] text-[20px] lg:text-[35px]" style="font-family: League Spartan, sans-serif;">
                 <p>
                     <strong>HASIL</strong>
                 </p>
@@ -109,13 +109,13 @@
                     <strong>BERKUALITAS</strong>
                 </p>
             </h1>
-            <p class="text-center font-bold text-[#251d16] text-[16px] lg:text-[22px] 2xl:text-[25px] max-w-[400px]">
+            <p class="text-center font-bold text-[#251d16] text-[16px] lg:text-[22px] 2xl:text-[25px] max-w-[400px]" style="font-family: Poppins, sans-serif;">
                 Desain <span class="text-white">inovatif</span>, struktur <span class="text-white">kokoh</span>
             </p>
-            <p class="text-center font-bold text-[#251d16] text-[16px] lg:text-[22px] 2xl:text-[25px] max-w-[400px]">
+            <p class="text-center font-bold text-[#251d16] text-[16px] lg:text-[22px] 2xl:text-[25px] max-w-[400px]" style="font-family: Poppins, sans-serif;">
                 terjamin, dan rencana
             </p>
-            <p class="text-center font-bold text-[#251d16] text-[16px] lg:text-[22px] 2xl:text-[25px] max-w-[400px]">
+            <p class="text-center font-bold text-[#251d16] text-[16px] lg:text-[22px] 2xl:text-[25px] max-w-[400px]" style="font-family: Poppins, sans-serif;">
                 anggaran yang <span class="text-white">akurat</span>.
             </p>
         </div>
@@ -129,7 +129,7 @@
     </div>
 
     <!-- Teks -->
-    <div data-aos="fade-left" data-aos-duration="1000" class="relative w-full p-6 text-black xl:w-3/6 lg:w-4/6">
+    <div data-aos="fade-left" data-aos-duration="1000" class="relative w-full p-6 text-black xl:w-3/6 lg:w-4/6" style="font-family: Poppins, sans-serif;">
         <!-- Background image -->
         <div class="absolute inset-0 bg-top bg-no-repeat bg-cover opacity-20" style="background-image: url('{{ asset('assets/img/HeadLogo_Azwa.png') }}'); background-position: top center; background-size: contain;"></div>
     
@@ -182,7 +182,7 @@
             <div class="absolute inset-0 bg-theme2/80 rounded-xl sm:rounded-2xl md:rounded-3xl"></div>
 
             <!-- Judul -->
-            <h1 class="absolute text-lg font-bold text-white md:text-3xl lg:text-5xl xl:text-5xl 2xl:text-5xl top-4 sm:top-6 md:top-8 left-4 sm:left-6 md:left-8">
+            <h1 class="absolute text-lg font-bold text-white md:text-3xl lg:text-5xl xl:text-5xl 2xl:text-5xl top-4 sm:top-6 md:top-8 left-4 sm:left-6 md:left-8" style="font-family: League Spartan, sans-serif;">
                 Portofolio Kami
             </h1>
 
@@ -191,7 +191,7 @@
             <div class="flex justify-center invisible mb-2 2xl:visible xl:visible md:invisible sm:invisible">
                 <div class="flex items-center gap-3 2xl:mt-1 xl:mt-20 me-3">
                     <div class="p-5 border rounded-full bg-black-2 2xl:p-5 xl:p-3 md:p-5"></div>
-                    <h1 class="text-xs font-semibold text-landing-brown-3 2xl:text-xl xl:text-base md:text-xs">azwadesignstudio</h1>
+                    <h1 class="text-xs font-semibold text-landing-brown-3 2xl:text-sm xl:text-base md:text-xs" style="font-family: Garet, sans-serif;">azwadesignstudio</h1>
                 </div>
             </div>
             <div class="swiper-wrapper">
@@ -230,7 +230,7 @@
                         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 50 50">
                             <path d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z"></path>
                         </svg>
-                        <h1>Follow us!</h1>
+                        <h1 style="font-family: Garet, sans-serif;">Follow us!</h1>
                     </div>
                 </a>                    
             </div>                    
@@ -244,17 +244,17 @@
 
 <div class="flex justify-center w-full px-10 mt-10 lg:h-auto">
     <div class="w-full sm:my-2 md:my-3">
-        <h1 data-aos="fade-right" data-aos-duration="1000" class="mb-8 text-5xl font-extrabold text-theme3">Layanan Kami</h1>
+        <h1 data-aos="fade-right" data-aos-duration="1000" class="mb-8 text-5xl font-extrabold text-theme3" style="font-family: League Spartan, sans-serif;">Layanan Kami</h1>
         <div data-aos="fade-right" data-aos-duration="1000" class="flex flex-col justify-center gap-8 lg:flex-row xl:flex-row 2xl:flex-row">
             <div class="relative w-full overflow-hidden lg:w-1/2 xl:w-1/2 2xl:w-1/2 rounded-2xl">
                 <img src="{{asset('assets/img/home/layanan2.jpg')}}" alt="Arsitektur" class="w-full h-[450px] object-cover">
-                <div class="absolute inset-0 flex items-center justify-center px-5 py-3 transition-opacity duration-300 bg-black-2 bg-opacity-70">
+                <div class="absolute inset-0 flex items-start justify-start px-5 py-3 transition-opacity duration-300 bg-black-2 bg-opacity-70" style="font-family: Poppins, sans-serif;">
                     <h3 class="text-3xl font-bold text-white">Arsitektur</h3>
                 </div>
             </div>
             <div data-aos="fade-left" data-aos-duration="1000" class="relative w-full overflow-hidden lg:w-1/2 xl:w-1/2 2xl:w-1/2 rounded-2xl">
                 <img src="{{asset('assets/img/home/layanan.jpg')}}" alt="Interior" class="w-full h-[450px] object-cover">
-                <div class="absolute inset-0 flex items-center justify-center px-5 py-3 transition-opacity duration-300 bg-black-2 bg-opacity-70">
+                <div class="absolute inset-0 flex items-start justify-start px-5 py-3 transition-opacity duration-300 bg-black-2 bg-opacity-70" style="font-family: Poppins, sans-serif;">
                     <h3 class="text-3xl font-bold text-white">Interior</h3>
                 </div>
             </div>
@@ -279,11 +279,11 @@
 
     <!-- Judul di Pojok Kiri Atas -->
     <div class="absolute z-10 px-5 top-5 left-5">
-        <p class="text-4xl font-extrabold text-theme3 lg:text-5xl md:text-3xl sm:text-2xl">Pendapat Mereka</p>
+        <p class="text-4xl font-extrabold text-theme3 lg:text-5xl md:text-3xl sm:text-2xl" style="font-family: League Spartan, sans-serif;">Pendapat Mereka</p>
     </div>
 
     <!-- Grid Testimoni -->
-    <div class="relative z-10 grid w-full grid-cols-1 gap-6 px-10 py-20 mx-auto mt-10 lg:grid-cols-2 max-w-7xl">
+    <div class="relative z-10 grid w-full grid-cols-1 gap-6 px-10 py-20 mx-auto mt-10 lg:grid-cols-2 max-w-7xl" style="font-family: Poppins, sans-serif;">
         <!-- Testimoni 1 -->
         <div data-aos="fade-right" data-aos-duration="3000" class="flex p-5 rounded-lg shadow-lg bg-theme3">
             <div class="w-full pr-4 sm:w-1/2">
@@ -300,7 +300,7 @@
         </div>
 
         <!-- Testimoni 2 -->
-        <div data-aos="fade-left" data-aos-duration="3000" class="flex p-5 rounded-lg shadow-lg bg-theme3">
+        <div data-aos="fade-left" data-aos-duration="3000" class="flex p-5 rounded-lg shadow-lg bg-theme3" style="font-family: Poppins, sans-serif;">
             <div class="w-full pr-4 sm:w-1/2">
                 <img src="{{ asset('assets/img/porto/assets-2.png') }}" alt="Avatar 2" class="object-cover w-full h-48 rounded-lg">
             </div>
@@ -315,7 +315,7 @@
         </div>
 
         <!-- Testimoni 3 -->
-        <div data-aos="fade-right" data-aos-duration="3000" class="flex p-5 rounded-lg shadow-lg bg-theme3">
+        <div data-aos="fade-right" data-aos-duration="3000" class="flex p-5 rounded-lg shadow-lg bg-theme3" style="font-family: Poppins, sans-serif;">
             <div class="w-full pr-4 sm:w-1/2">
                 <img src="{{ asset('assets/img/porto/assets-3.png') }}" alt="Avatar 3" class="object-cover w-full h-48 rounded-lg">
             </div>
@@ -375,10 +375,11 @@
         </div>
         
         <!-- Gambar BG -->
-        <div class="absolute transform -translate-x-1/2 -translate-y-1/2 z-9 top-1/2 left-1/2 invisible sm:invisible md:invisible lg:invisible xl:visible
-            {{ $testimoni->contains(fn($item) => !empty($item->link_image)) ? '' : 'invisible' }}">
+        <!-- Gambar BG -->
+        <div class="absolute transform -translate-x-1/2 -translate-y-1/2 z-9 top-1/2 left-1/2 
+        {{ $testimoni->contains(fn($item) => !empty($item->link_image)) ? '' : 'hidden' }}">
             <img src="{{ asset('assets/img/home/hpTes.png') }}" alt="Frame" class="w-auto h-[710px]">
-        </div>       
+        </div>
     </div>        
 </div>
  
@@ -596,17 +597,17 @@
                                 <div class="absolute inset-0 bg-white opacity-65 backdrop-brightness-50 z-[-1] rounded-[44px]"></div>
                                 <div class="flex z-[9]">
                                     <div class="p-8 2xl:p-12">
-                                        <h1 class="text-lg font-extrabold tracking-wide uppercase lg:text-3xl xl:text-4xl 2xl:text-5xl text-landing-brown-2">${promo.title}</h1>
+                                        <h1 class="text-lg font-extrabold tracking-wide uppercase lg:text-3xl xl:text-4xl 2xl:text-5xl text-landing-brown-2" style="font-family: League Spartan, sans-serif;">${promo.title}</h1>
                                         <div class="my-2 text-lg font-extrabold tracking-wider xl:text-3xl 2xl:text-4xl">
-                                            <span class="line-through decoration-2 xl:decoration-4 decoration-landing-brown-2">Rp. ${parseFloat(promo.actual_price).toLocaleString('id-ID')}/m2</span>
+                                            <span class="line-through decoration-2 xl:decoration-4 decoration-landing-brown-2" style="font-family: League Spartan, sans-serif;">Rp. ${parseFloat(promo.actual_price).toLocaleString('id-ID')}/m2</span>
                                         </div>
-                                        <h1 class="text-3xl font-bold lg:text-4xl xl:text-5xl 2xl:text-6xl text-landing-brown-2">Rp. ${parseFloat(promo.price).toLocaleString('id-ID')}/m2</h1>
-                                        <ul class="mt-4">
+                                        <h1 class="text-3xl font-bold lg:text-4xl xl:text-5xl 2xl:text-6xl text-landing-brown-2" style="font-family: League Spartan, sans-serif;">Rp. ${parseFloat(promo.price).toLocaleString('id-ID')}/m2</h1>
+                                        <ul class="mt-4" style="font-family: Poppins, sans-serif;">
                                             ${descriptionHTML}
                                         </ul>
                                         <div class="absolute mt-5 end-10 bottom-15">
                                             <a href="https://wa.me/62895371025425">
-                                                <button class="px-4 py-1 text-xl font-extrabold tracking-wider transition-transform duration-150 transform border-0 border-4 rounded-full text-landing-black-1 border-opacity-40 bg-landing-brown-2 bg-opacity-60 border-black-2 bg-theme2 hover:scale-105 hover:shadow-lg hover:-translate-y-1 hover:bg-landing-body hover:border-4 hover:border-theme2 hover:text-theme3">
+                                                <button class="px-4 py-1 text-xl font-extrabold tracking-wider transition-transform duration-150 transform border-0 border-4 rounded-full text-landing-black-1 border-opacity-40 bg-landing-brown-2 bg-opacity-60 border-black-2 bg-theme2 hover:scale-105 hover:shadow-lg hover:-translate-y-1 hover:bg-landing-body hover:border-4 hover:border-theme2 hover:text-theme3" style="font-family: Poppins, sans-serif;">
                                                     Dapatkan Promo!
                                                 </button>
                                             </a>

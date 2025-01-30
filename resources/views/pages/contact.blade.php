@@ -6,7 +6,7 @@
     <div class="w-screen h-screen flex bg-cover bg-center" style="background-image:url('{{ asset('assets/img/Kontak1.png') }}')">
         <div class=" flex flex-col justify-center items-center w-screen h-screen bg-black bg-opacity-30">
             <!-- Judul -->
-            <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-white mt-20 md:mt-20 mb-8" data-aos="fade-up" data-aos-duration="1000">Konsultasi dengan Kami</h1>
+            <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-white mt-20 md:mt-20 mb-8" data-aos="fade-up" data-aos-duration="1000" style="font-family: League Spartan, sans-serif;">Konsultasi dengan Kami</h1>
         
             <!-- Kontainer utama -->
             <div class="flex flex-col sm:mt-20 w-7/12 md:flex-row">
@@ -23,7 +23,7 @@
               </div>
         
               <!-- Informasi kontak -->
-              <div data-aos="fade-left" data-aos-delay="2500" data-aos-duration="1000" class="flex-1 space-y-4 md:ml-10 mt-10">
+              <div data-aos="fade-left" data-aos-delay="2500" data-aos-duration="1000" class="flex-1 space-y-4 md:ml-10 mt-10" style="font-family: Poppins, sans-serif;">
                 <!-- Alamat pertama -->
                 <div>
                   <div class="flex items-center mb-10">

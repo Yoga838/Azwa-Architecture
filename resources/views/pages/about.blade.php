@@ -3,7 +3,7 @@
 @section('subtitle', 'Tentang Kami')
 
 @section("content")
-    <div class="w-full h-screen flex justify-center items-center relative">
+    <div class="w-full h-screen flex justify-center items-center relative" style="font-family: Poppins, sans-serif;">
         <div class="absolute z-[-1] overflow-hidden">
             <img src="{{asset('assets/img/about-us/bg-aboutUs.png')}}" alt="" class="w-screen object-cover h-screen brightness-50">
         </div>
@@ -19,7 +19,7 @@
             </div>
         </div>
     </div>
-    <div class="py-16 desktop:py-24">
+    <div class="py-16 desktop:py-24" style="font-family: League Spartan, sans-serif;">
         <div class="flex flex-wrap" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
             <div class="w-full md:w-1/3 text-center">
                 <div class="flex justify-center items-center">
@@ -63,26 +63,26 @@
     <div class="py-20">
         <div class="px-8 md:px-32 desktop:px-44">
             <div class="flex gap-10 md:gap-20">
-                <h1 class="text-5xl desktop:text-7xl font-bold text-theme2">Visi</h1>
+                <h1 class="text-5xl desktop:text-7xl font-bold text-theme2" style="font-family: League Spartan, sans-serif;">Visi</h1>
                 <div class="w-full flex items-center">
                     <div class="h-1 desktop:h-[6px] w-full bg-theme2 rounded-lg"></div>
                 </div>
             </div>
         </div>
-        <div class="title-visi text-center py-8 px-10 lg:px-[180px]">
+        <div class="title-visi text-center py-8 px-10 lg:px-[180px]" style="font-family: Poppins, sans-serif;">
             <p class="font-medium text-theme2 text-xl desktop:text-3xl tracking-wider">Terdepan dalam menghadirkan desain arsitektur yang elegan, fungsional, dan ramah bagi semua<br>kalangan, memberikan pengalaman estetika dan kenyamanan yang melampaui ekspektasi.</p>
         </div>
     </div>
     {{-- Misi --}}
     <div class="px-8 md:px-32 desktop:px-44">
         <div class="flex gap-10 md:gap-20">
-            <h1 class="text-5xl desktop:text-7xl font-bold text-theme2">Misi</h1>
+            <h1 class="text-5xl desktop:text-7xl font-bold text-theme2" style="font-family: League Spartan, sans-serif;">Misi</h1>
             <div class="w-full flex items-center">
                 <div class="h-1 desktop:h-[6px] w-full bg-theme2 rounded-lg"></div>
             </div>
         </div>
     </div>
-    <div class="title-visi py-10 desktop:py-20 px-15 lg:px-54 desktop:px-80 mb-10">
+    <div class="title-visi py-10 desktop:py-20 px-15 lg:px-54 desktop:px-80 mb-10" style="font-family: Poppins, sans-serif;">
         <ul class="space-y-6">
             <li class="list-disc text-theme2"><p class="font-medium tracking-wider text-theme2 text-xl desktop:text-3xl text-justify lg:text-start">Menciptakan karya arsitektur yang menggabungkan estetika elegan dengan fungsi optimal,<br>memastikan setiap desain memiliki nilai estetika yang tinggi sekaligus memenuhi kebutuhan<br>penghuni.
             </p></li>

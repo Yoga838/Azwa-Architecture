@@ -24,7 +24,7 @@
             <div class="absolute inset-0 bg-theme3 opacity-60"></div>
             <img src="{{asset('assets/img/service/kontraktor/bg1-servicekontraktor.jpg')}}" alt="" class="object-cover w-screen h-full">
         </div>
-        <div class="py-32">
+        <div class="py-32" style="font-family: League Spartan, sans-serif;">
             {{-- <h1 class="font-bold text-[100px] text-landing-black-2">Services Kontraktor</h1> --}}
             <div data-aos="fade-up" data-aos-duration="1000" class="mx-10">
                 <p class="mt-20 text-2xl font-bold text-center 2xl:mt-30 xl:mt-20 lg:mt-20 md:mt-20 2xl:text-6xl xl:text-5xl lg:text-4xl md:text-4xl text-theme1 drop-shadow-2">
@@ -33,9 +33,9 @@
             </div>
         </div>
     </div>
-    <h1 class="mt-10 font-bold text-center text-theme2 2xl:text-4xl xl:text-4xl lg:text-3xl md:text-2xl text-md 2xl:mt-20 xl:mt-10 lg:mt-10 md:mt-10">KENAPA HARUS AZWA CONTRACTOR ?</h1>
+    <h1 class="mt-10 font-bold text-center text-theme2 2xl:text-4xl xl:text-4xl lg:text-3xl md:text-2xl text-md 2xl:mt-20 xl:mt-10 lg:mt-10 md:mt-10" style="font-family: Poppins, sans-serif;">KENAPA HARUS AZWA CONTRACTOR ?</h1>
     {{-- CardTag Free Design --}}
-    <div data-aos="fade-up" data-aos-duration="1000" class="flex items-center justify-center px-10 mt-5 2xl:mt-10 xl:mt-5 lg:mt-5 md:mt-5 2xl:px-50 xl:px-30 lg:px-30 md:px-30">
+    <div data-aos="fade-up" data-aos-duration="1000" class="flex items-center justify-center px-10 mt-5 2xl:mt-10 xl:mt-5 lg:mt-5 md:mt-5 2xl:px-50 xl:px-30 lg:px-30 md:px-30" style="font-family: Poppins, sans-serif;">
         <div class="w-full px-5 py-4 border 2xl:px-8 xl:px-5 lg:px-5 md:px-5 2xl:py-6 xl:py-4 lg:py-4 md:py-4 bg-landing-brownLight-1/50 rounded-3xl">
             <div class="flex items-center">
                 <div class="p-5 mx-2 border-0 rounded-full bg-theme3 2xl:p-6 xl:p-5 lg:p-5 md:p-5 lg:mx-5">
@@ -49,7 +49,7 @@
         </div>
     </div>
     {{-- CardTag Transparan --}}
-    <div data-aos="fade-up" data-aos-duration="1000" class="flex items-center justify-center px-10 mt-5 2xl:mt-5 xl:mt-5 lg:mt-5 md:mt-5 2xl:px-50 xl:px-30 lg:px-30 md:px-30">
+    <div data-aos="fade-up" data-aos-duration="1000" class="flex items-center justify-center px-10 mt-5 2xl:mt-5 xl:mt-5 lg:mt-5 md:mt-5 2xl:px-50 xl:px-30 lg:px-30 md:px-30" style="font-family: Poppins, sans-serif;">
         <div class="w-full px-5 py-4 border 2xl:px-8 xl:px-5 lg:px-5 md:px-5 2xl:py-6 xl:py-4 lg:py-4 md:py-4 bg-landing-brownLight-2/60 rounded-3xl">
             <div class="flex items-center">
                 <div class="p-5 mx-2 border-0 rounded-full bg-theme3 2xl:p-6 xl:p-5 lg:p-5 md:p-5 lg:mx-5">
@@ -63,7 +63,7 @@
         </div>
     </div>
     {{-- CardTag Rekanan Terpercaya --}}
-    <div data-aos="fade-up" data-aos-duration="1000" class="flex items-center justify-center px-10 mt-5 2xl:mt-5 xl:mt-5 lg:mt-5 md:mt-5 2xl:px-50 xl:px-30 lg:px-30 md:px-30">
+    <div data-aos="fade-up" data-aos-duration="1000" class="flex items-center justify-center px-10 mt-5 2xl:mt-5 xl:mt-5 lg:mt-5 md:mt-5 2xl:px-50 xl:px-30 lg:px-30 md:px-30" style="font-family: Poppins, sans-serif;">
         <div class="w-full px-5 py-4 border 2xl:px-8 xl:px-5 lg:px-5 md:px-5 2xl:py-6 xl:py-4 lg:py-4 md:py-4 bg-landing-brownLight-1/50 rounded-3xl">
             <div class="flex items-center">
                 <div class="p-5 mx-2 border-0 rounded-full bg-theme3 2xl:p-6 xl:p-5 lg:p-5 md:p-5 lg:mx-5">
@@ -77,7 +77,7 @@
         </div>
     </div>
     {{-- CardTag Proses Mudah dan Aman --}}
-    <div data-aos="fade-up" data-aos-duration="1000" class="flex items-center justify-center px-10 mt-5 2xl:mt-5 xl:mt-5 lg:mt-5 md:mt-5 2xl:px-50 xl:px-30 lg:px-30 md:px-30">
+    <div data-aos="fade-up" data-aos-duration="1000" class="flex items-center justify-center px-10 mt-5 2xl:mt-5 xl:mt-5 lg:mt-5 md:mt-5 2xl:px-50 xl:px-30 lg:px-30 md:px-30" style="font-family: Poppins, sans-serif;">
         <div class="w-full px-5 py-4 border 2xl:px-8 xl:px-5 lg:px-5 md:px-5 2xl:py-6 xl:py-4 lg:py-4 md:py-4 bg-landing-brownLight-2/60 rounded-3xl">
             <div class="flex items-center">
                 <div class="p-5 mx-2 border-0 rounded-full bg-theme3 2xl:p-6 xl:p-5 lg:p-5 md:p-5 lg:mx-5">
@@ -91,7 +91,7 @@
         </div>
     </div>
     {{-- CardTag dOKUMENTASI PROYEK --}}
-    <div data-aos="fade-up" data-aos-duration="1000" class="flex items-center justify-center px-10 mt-5 2xl:mt-5 xl:mt-5 lg:mt-5 md:mt-5 2xl:px-50 xl:px-30 lg:px-30 md:px-30">
+    <div data-aos="fade-up" data-aos-duration="1000" class="flex items-center justify-center px-10 mt-5 2xl:mt-5 xl:mt-5 lg:mt-5 md:mt-5 2xl:px-50 xl:px-30 lg:px-30 md:px-30" style="font-family: Poppins, sans-serif;">
         <div class="w-full px-5 py-4 border 2xl:px-8 xl:px-5 lg:px-5 md:px-5 2xl:py-6 xl:py-4 lg:py-4 md:py-4 bg-landing-brownLight-1/50 rounded-3xl">
             <div class="flex items-center">
                 <div class="p-5 mx-2 border-0 rounded-full bg-theme3 2xl:p-6 xl:p-5 lg:p-5 md:p-5 lg:mx-5">
@@ -105,7 +105,7 @@
         </div>
     </div>
     {{-- CardTag BERGARANSI --}}
-    <div data-aos="fade-up" data-aos-duration="1000" class="flex items-center justify-center px-10 mt-5 2xl:mt-5 xl:mt-5 lg:mt-5 md:mt-5 2xl:px-50 xl:px-30 lg:px-30 md:px-30">
+    <div data-aos="fade-up" data-aos-duration="1000" class="flex items-center justify-center px-10 mt-5 2xl:mt-5 xl:mt-5 lg:mt-5 md:mt-5 2xl:px-50 xl:px-30 lg:px-30 md:px-30" style="font-family: Poppins, sans-serif;">
         <div class="w-full px-5 py-4 border 2xl:px-8 xl:px-5 lg:px-5 md:px-5 2xl:py-6 xl:py-4 lg:py-4 md:py-4 bg-landing-brownLight-2/60 rounded-3xl">
             <div class="flex items-center">
                 <div class="p-5 mx-2 border-0 rounded-full bg-theme3 2xl:p-6 xl:p-5 lg:p-5 md:p-5 lg:mx-5">
@@ -123,12 +123,12 @@
             <div class="absolute inset-0 bg-theme3 opacity-60"></div>
             <img src="{{asset('assets/img/service/kontraktor/bg2-servicekontraktor.jpg')}}" alt="" class="object-cover w-screen h-full">
         </div>
-        <div data-aos="fade-right" data-aos-duration="1000" class="py-10 mt-30">
+        <div data-aos="fade-right" data-aos-duration="1000" class="py-10 mt-30" style="font-family: League Spartan, sans-serif;">
             <h1 class="ml-10 text-5xl font-bold 2xl:text-6xl xl:text-5xl lg:text-5xl md:text-5xl text-theme1 drop-shadow-2">Konstruksi Arsitektural</h1>
         </div>
     </div>
     {{-- Card Konstruksi Arsitektural --}}
-    <div data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000" class="flex items-center justify-center">
+    <div data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000" class="flex items-center justify-center" style="font-family: Poppins, sans-serif;">
         <div class="relative">
             <div class="border-0 2xl:w-[850px] xl:w-[600px] lg:w-[600px] md:w-[500px] sm:w-[350px] w-[350px] 2xl:h-[600px] xl:h-[550px] lg:h-[550px] md:h-[550px] h-[550px] bg-theme3 rounded-[2rem] pt-5">
                 <div class="text-center">
@@ -192,13 +192,13 @@
             <div class="absolute inset-0 bg-theme3 opacity-60"></div>
             <img src="{{asset('assets/img/service/kontraktor/bg3-servicekontraktor.jpg')}}" alt="" class="object-cover w-screen h-full">
         </div>
-        <div data-aos="fade-right" data-aos-duration="1000" class="py-10 mt-30">
+        <div data-aos="fade-right" data-aos-duration="1000" class="py-10 mt-30" style="font-family: League Spartan, sans-serif;">
             <h1 class="ml-10 text-5xl font-bold 2xl:text-6xl xl:text-5xl lg:text-5xl md:text-5xl text-theme1 drop-shadow-2">Konstruksi Interior</h1>
         </div>
     </div>
 
     {{-- Card Konstruksi Interior --}}
-    <div data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000" class="flex items-center justify-center">
+    <div data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000" class="flex items-center justify-center" style="font-family: Poppins, sans-serif;">
         <div class="relative">
             <div class="border-0 2xl:w-[850px] xl:w-[600px] lg:w-[600px] md:w-[500px] sm:w-[350px] w-[350px] 2xl:h-[600px] xl:h-[550px] lg:h-[550px] md:h-[550px] h-[550px] bg-theme3 rounded-[2rem] pt-5">
                 <div class="text-center">
@@ -258,9 +258,9 @@
     <div class="relative w-full my-5 2xl:my-60 xl:my-40 lg:my-40 md:my-20 sm:my-10">
     <div class="relative swiper centered-slide-carousel swiper-container ">
     <div class="flex justify-center invisible mb-10 2xl:visible xl:visible lg:invisible md:invisible sm:invisible">
-        <div class="flex items-center gap-3 mr-10">
+        <div class="flex items-center gap-2 mr-3">
             <div class="p-5 border rounded-full bg-black-2 2xl:p-7 xl:p-5 lg:p-5 md:p-5"></div>
-            <h1 class="text-xs font-semibold text-landing-brown-3 2xl:text-xl xl:text-base lg:text-base md:text-xs">azwadesignstudio</h1>
+            <h1 class="text-xs font-semibold text-landing-brown-3 2xl:text-lg xl:text-base lg:text-base md:text-xs" style="font-family: Garet, sans-serif;">azwadesignstudio</h1>
         </div>
     </div>
     <div class="swiper-wrapper">
@@ -297,7 +297,7 @@
     </div>
     <div class="swiper-pagination"></div>
     </div>
-    <div class="relative flex justify-center invisible mt-2 z-9 2xl:visible xl:visible lg:invisible md:invisible sm:invisible">
+    <div class="relative flex justify-center invisible mt-2 z-9 2xl:visible xl:visible lg:invisible md:invisible sm:invisible" style="font-family: Garet, sans-serif;">
             <a href="https://www.instagram.com/azwadesignstudio?igsh=MTVmM3B6cXlzaDhybg==" class="px-8 py-2 transition duration-300 ease-in-out transform border rounded-full bg-landing-brown-1 hover:bg-landing-brown-3 hover:scale-105 2xl:px-9 xl:px-8 2xl:py-3 xl:py-2">
                 <div class="flex items-center gap-2 text-xs 2xl:text-xl xl:text-base lg:text-base md:text-xs">
                     <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 50 50">
