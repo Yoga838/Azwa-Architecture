@@ -380,7 +380,7 @@
         
         <!-- Gambar BG -->
         <!-- Gambar BG -->
-        <div class="absolute transform -translate-x-1/2 -translate-y-1/2 z-9 top-1/2 left-1/2 
+        <div class="absolute transform -translate-x-1/2 -translate-y-1/2 z-9 top-1/2 left-1/2 2xl:visible xl:visible lg:invisible md:invisible sm:invisible invisible
         {{ $testimoni->contains(fn($item) => !empty($item->link_image)) ? '' : 'hidden' }}">
             <img src="{{ asset('assets/img/home/hpTes.png') }}" alt="Frame" class="w-auto h-[710px]">
         </div>
