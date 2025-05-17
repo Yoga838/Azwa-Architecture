@@ -49,7 +49,7 @@ Route::middleware('auth')->group(function () {
 
 Route::get('/', function () {
     $testimoni = \App\Models\Testimoni::all(); // Mengambil semua testimoni
-    $promo = \App\Models\Promo::all(); // Mengambil semua testimoni
+    $promo = \App\Models\Promo::where('ondisplay', "1")->get(); // Mengambil semua testimoni
     return view('pages.home', compact('testimoni', 'promo'));
 })->name("home.index");
 Route::get('/tentang-kami',[AboutController::class, 'index'])->name('about.index');
