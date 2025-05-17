@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers\Pages;
 
-use App\Http\Controllers\Controller;
+use App\Models\Promo;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
 class ServiceController extends Controller
 {
@@ -12,7 +13,8 @@ class ServiceController extends Controller
      */
     public function index()
     {
-        return view('pages.service-desain');
+        $promo = Promo::all();
+        return view('pages.service-desain', compact('promo'));
     }
 
     /**
