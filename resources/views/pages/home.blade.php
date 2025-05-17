@@ -268,8 +268,8 @@
        
 <div class="relative w-full px-5 py-10 lg:px-36 xl:px-40 2xl:px-52">
     <div class="relative swiper progress-slide-carousel swiper-container1">
-        @foreach ($promo as $item)
         <div class="swiper-promo swiper-wrapper">
+        @foreach ($promo as $item)
            <div class="swiper-slide">
                 <div class="border-6 border-black rounded-[44px] h-[550px] 2xl:h-[600px] overflow-hidden relative">
                     <img src="{{asset('assets/img/service/desain/bg-cardpromo.png')}}" alt="" class="absolute w-full h-full object-cover z-[-2]">
@@ -303,8 +303,8 @@
                     </div>
                 </div>
             </div>
-        </div>
         @endforeach
+        </div>
         <div class="swiper-pagination1 !bottom-2 !top-auto !w-80 right-0 mx-auto bg-gray-100"></div>
     </div>
 </div>
