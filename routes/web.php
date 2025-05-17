@@ -41,7 +41,6 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('/editTestimoni/{id}', [TestimoniController::class, 'UpdateView']);
 });
 
-
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
@@ -50,7 +49,8 @@ Route::middleware('auth')->group(function () {
 
 Route::get('/', function () {
     $testimoni = \App\Models\Testimoni::all(); // Mengambil semua testimoni
-    return view('pages.home', compact('testimoni'));
+    $promo = \App\Models\Promo::all(); // Mengambil semua testimoni
+    return view('pages.home', compact('testimoni', 'promo'));
 })->name("home.index");
 Route::get('/tentang-kami',[AboutController::class, 'index'])->name('about.index');
 Route::get('/portofolio',[PortofolioController::class, 'get'])->name('project.index');

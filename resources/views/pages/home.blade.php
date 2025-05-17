@@ -190,7 +190,7 @@
             <div class="relative swiper centered-slide-carousel-1 swiper-container">
             <div class="flex justify-center invisible mb-2 2xl:visible xl:visible md:invisible sm:invisible">
                 <div class="flex items-center gap-3 2xl:mt-1 xl:mt-20 me-3">
-                    <div class="flex relative p-5 border rounded-full bg-black-2 2xl:p-5 xl:p-4 lg:p-5 md:p-5">
+                    <div class="relative flex p-5 border rounded-full bg-black-2 2xl:p-5 xl:p-4 lg:p-5 md:p-5">
                         <div class="w-[20px] h-[20px] flex justify-center">
                             <img src="{{asset('assets/img/HeadLogo_Azwa.png')}}" alt="" class="w-[15px] h-[20px]">
                         </div>
@@ -269,7 +269,41 @@
 <div class="relative w-full px-5 py-10 lg:px-36 xl:px-40 2xl:px-52">
     <div class="relative swiper progress-slide-carousel swiper-container1">
         <div class="swiper-promo swiper-wrapper">
-            {{-- Dinamis card promo --}}
+           <div class="swiper-slide">
+                <div class="border-6 border-black rounded-[44px] h-[550px] 2xl:h-[600px] overflow-hidden relative">
+                    <img src="{{asset('assets/img/service/desain/bg-cardpromo.png')}}" alt="" class="absolute w-full h-full object-cover z-[-2]">
+                    <div class="absolute inset-0 bg-white opacity-65 backdrop-brightness-50 z-[-1] rounded-[44px]"></div>
+                    <div class="flex z-[9]">
+                        @foreach ($promo as $item)
+                            <div class="p-8 2xl:p-12">
+                                <h1 class="text-lg font-extrabold tracking-wide uppercase lg:text-3xl xl:text-4xl 2xl:text-5xl text-landing-brown-2" style="font-family: League Spartan, sans-serif;">
+                                    {{ $item->title }}
+                                </h1>
+                                <div class="my-2 text-lg font-extrabold tracking-wider xl:text-3xl 2xl:text-4xl">
+                                    <span class="line-through decoration-2 xl:decoration-4 decoration-landing-brown-2" style="font-family: League Spartan, sans-serif;">
+                                        Rp. {{ number_format($item->actual_price, 0, ',', '.') }}/m²
+                                    </span>
+                                </div>
+                                <h1 class="text-3xl font-bold lg:text-4xl xl:text-5xl 2xl:text-6xl text-landing-brown-2" style="font-family: League Spartan, sans-serif;">
+                                    Rp. {{ number_format($item->price, 0, ',', '.') }}/m²
+                                </h1>
+                                <div class="mt-4 space-y-1" style="font-family: Poppins, sans-serif;">
+                                    @foreach (json_decode($item->description) as $point)
+                                        <p>{{ $point }}</p>
+                                    @endforeach
+                                </div>
+                                <div class="absolute mt-5 end-10 bottom-15">
+                                    <a href="https://wa.me/62895371025425">
+                                        <button class="px-4 py-1 text-xl font-extrabold tracking-wider transition-transform duration-150 transform border-4 rounded-full text-landing-black-1 border-opacity-40 bg-opacity-60 border-black-2 bg-theme2 hover:scale-105 hover:shadow-lg hover:-translate-y-1 hover:bg-landing-body hover:border-4 hover:border-theme2 hover:text-theme3" style="font-family: Poppins, sans-serif;">
+                                            Dapatkan Promo!
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        @endforeach
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="swiper-pagination1 !bottom-2 !top-auto !w-80 right-0 mx-auto bg-gray-100"></div>
     </div>
@@ -554,7 +588,7 @@
             });
         });
     </script>    
-    <script>
+    {{-- <script>
        document.addEventListener('DOMContentLoaded', () => {
             const apiUrl = '/api/promo';
             const swiperWrapper = document.querySelector('.swiper-promo');
@@ -641,5 +675,5 @@
                     swiperWrapper.innerHTML = '<p class="text-red-500">Failed to load promos.</p>';
                 });
         });
-    </script>
+    </script> --}}
 @endsection
