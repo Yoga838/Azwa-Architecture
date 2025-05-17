@@ -101,8 +101,9 @@
                         <td class="p-5 text-sm font-medium leading-6 text-gray-900 whitespace-nowrap">${promo.actual_price}</td>
                         <td class="p-5 text-sm font-medium leading-6 text-gray-900 whitespace-nowrap">${promo.description.split(' ').slice(0, 2).join(' ')}...</td>
                         <td class="p-5 text-sm font-medium leading-6 text-gray-900 whitespace-nowrap">
-                            <button class="w-full px-3 py-2 text-xs text-white font-medium rounded-full ${promo.ondisplay ? 'bg-green-500' : 'bg-red-500'}">
-                                ${promo.ondisplay ? 'Ditampilkan' : 'Tidak Ditampilkan'}
+                            <button 
+                                class="w-full px-3 py-2 text-xs text-white font-medium rounded-full ${promo.ondisplay === 1 ? 'bg-green-500' : 'bg-red-500'}">
+                                ${promo.ondisplay === 1 ? 'Ditampilkan' : 'Tidak Ditampilkan'}
                             </button>
                         </td>
                         <td class="p-5 ">
