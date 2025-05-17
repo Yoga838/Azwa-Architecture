@@ -152,64 +152,48 @@
         function uploadPromo(event) {
             event.preventDefault();
 
-            // Ambil nilai dari form
             const title = document.getElementById('title').value.trim();
             const price = document.getElementById('price').value.trim();
             const actual_price = document.getElementById('actual_price').value.trim();
-            const description = document.getElementById('deskripsi').value.trim();
 
-            // Ambil elemen untuk pesan error
             const titleError = document.getElementById('titleError');
             const priceError = document.getElementById('priceError');
             const actualPriceError = document.getElementById('actualPriceError');
             const descriptionError = document.getElementById('descriptionError');
 
-            // Reset pesan error (hidden)
             titleError.classList.add('hidden');
             priceError.classList.add('hidden');
             actualPriceError.classList.add('hidden');
             descriptionError.classList.add('hidden');
 
-            // Validasi input
             let isValid = true;
 
-            // Validasi title
             if (!title) {
                 titleError.textContent = "Judul promo wajib diisi.";
                 titleError.classList.remove('hidden');
                 isValid = false;
             }
 
-            // Validasi price
             if (!price || isNaN(price)) {
                 priceError.textContent = "Harga wajib diisi dan harus berupa angka.";
                 priceError.classList.remove('hidden');
                 isValid = false;
             }
 
-            // Validasi actual_price
             if (!actual_price || isNaN(actual_price)) {
                 actualPriceError.textContent = "Harga asli wajib diisi dan harus berupa angka.";
                 actualPriceError.classList.remove('hidden');
                 isValid = false;
             }
 
-            // Validasi description (opsional jika diperlukan)
-            if (!description) {
-                descriptionError.textContent = "Deskripsi tidak boleh kosong.";
+            if (deskripsiList.length === 0) {
+                descriptionError.textContent = "Setidaknya satu deskripsi harus ditambahkan.";
                 descriptionError.classList.remove('hidden');
                 isValid = false;
             }
 
-            // Jika ada validasi yang gagal, hentikan proses
-            if (!isValid) {
-                return;
-            }
+            if (!isValid) return;
 
-            // Data deskripsi list
-            const deskripsiList = description.split(',').map(item => item.trim());
-
-            // Data untuk dikirim ke server
             const data = {
                 title: title,
                 price: price,
@@ -218,7 +202,6 @@
                 description: deskripsiList
             };
 
-            // Kirim data menggunakan Axios
             axios.post('/api/promo', data, {
                 headers: {
                     "Content-Type": "application/json"
@@ -244,6 +227,7 @@
                 });
             });
         }
+
     </script>
 
 @endsection
