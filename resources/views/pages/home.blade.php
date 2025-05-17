@@ -304,7 +304,7 @@
                                     </h1>
 
                                     {{-- Deskripsi Dua Kolom, kolom kiri isi sampai 10 item dulu --}}
-                                    <div class="pr-2 mt-4 overflow-y-auto max-h-20 md:max-h-72" style="font-family: Poppins, sans-serif;">
+                                    <div class="pr-2 mt-4 overflow-y-auto max-h-50 md:max-h-72" style="font-family: Poppins, sans-serif;">
                                         <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
                                             <div class="space-y-1">
                                                 @foreach ($firstColumn as $point)
