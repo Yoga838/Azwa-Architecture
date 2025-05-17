@@ -365,61 +365,71 @@
     <div class="relative w-full px-5 py-10 lg:px-36 xl:px-40 2xl:px-52">
         <div class="relative swiper progress-slide-carousel swiper-container1">
             <div class="swiper-promo swiper-wrapper">
-                @foreach ($promo as $item)
-                    @php
-                        $descriptionList = json_decode($item->description);
-                        $firstColumn = array_slice($descriptionList, 0, 10); // Kolom kiri selalu maksimal 10
-                        $secondColumn = array_slice($descriptionList, 10);   // Sisanya ke kolom kanan
-                    @endphp
+                @if ($promo->count() === "0")
+                    <div class="flex items-center justify-center w-full">
+                        <div class="px-6 py-3 border rounded-full bg-theme3">
+                            <h1 class="font-bold text-center sm:text-lg md:text-xl lg:text-2xl 2xl:text-3xl text-landing-body">
+                                Oops.. masih belum ada promo nih!<br>Stay tune teruss yaa...
+                            </h1>
+                        </div>
+                    </div>
+                @else
+                    @foreach ($promo as $item)
+                        @php
+                            $descriptionList = json_decode($item->description);
+                            $firstColumn = array_slice($descriptionList, 0, 9); // Kolom kiri selalu maksimal 10
+                            $secondColumn = array_slice($descriptionList, 9);   // Sisanya ke kolom kanan
+                        @endphp
 
-                    <div class="swiper-slide">
-                        <div class="border-6 border-black rounded-[44px] h-[550px] 2xl:h-[600px] overflow-hidden relative">
-                            <img src="{{ asset('assets/img/service/desain/bg-cardpromo.png') }}" alt="" class="absolute w-full h-full object-cover z-[-2]">
-                            <div class="absolute inset-0 bg-white opacity-65 backdrop-brightness-50 z-[-1] rounded-[44px]"></div>
-                            <div class="flex z-[9]">
-                                <div class="p-8 2xl:p-12">
-                                    <h1 class="text-lg font-extrabold tracking-wide uppercase lg:text-3xl xl:text-4xl 2xl:text-5xl text-landing-brown-2" style="font-family: League Spartan, sans-serif;">
-                                        {{ $item->title }}
-                                    </h1>
-                                    <div class="my-2 text-lg font-extrabold tracking-wider xl:text-3xl 2xl:text-4xl">
-                                        <span class="line-through decoration-2 xl:decoration-4 decoration-landing-brown-2" style="font-family: League Spartan, sans-serif;">
-                                            Rp. {{ number_format($item->actual_price, 0, ',', '.') }}/m²
-                                        </span>
-                                    </div>
-                                    <h1 class="text-3xl font-bold lg:text-4xl xl:text-5xl 2xl:text-6xl text-landing-brown-2" style="font-family: League Spartan, sans-serif;">
-                                        Rp. {{ number_format($item->price, 0, ',', '.') }}/m²
-                                    </h1>
+                        <div class="swiper-slide">
+                            <div class="border-6 border-black rounded-[44px] h-[550px] 2xl:h-[600px] overflow-hidden relative">
+                                <img src="{{ asset('assets/img/service/desain/bg-cardpromo.png') }}" alt="" class="absolute w-full h-full object-cover z-[-2]">
+                                <div class="absolute inset-0 bg-white opacity-65 backdrop-brightness-50 z-[-1] rounded-[44px]"></div>
+                                <div class="flex z-[9]">
+                                    <div class="p-8 2xl:p-12">
+                                        <h1 class="text-lg font-extrabold tracking-wide uppercase lg:text-3xl xl:text-4xl 2xl:text-5xl text-landing-brown-2" style="font-family: League Spartan, sans-serif;">
+                                            {{ $item->title }}
+                                        </h1>
+                                        <div class="my-2 text-lg font-extrabold tracking-wider xl:text-3xl 2xl:text-4xl">
+                                            <span class="line-through decoration-2 xl:decoration-4 decoration-landing-brown-2" style="font-family: League Spartan, sans-serif;">
+                                                Rp. {{ number_format($item->actual_price, 0, ',', '.') }}/m²
+                                            </span>
+                                        </div>
+                                        <h1 class="text-3xl font-bold lg:text-4xl xl:text-5xl 2xl:text-6xl text-landing-brown-2" style="font-family: League Spartan, sans-serif;">
+                                            Rp. {{ number_format($item->price, 0, ',', '.') }}/m²
+                                        </h1>
 
-                                    {{-- Deskripsi Dua Kolom, kolom kiri isi sampai 10 item dulu --}}
-                                    <div class="pr-2 mt-4 overflow-y-auto max-h-30 md:max-h-72" style="font-family: Poppins, sans-serif;">
-                                        <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
-                                            <div class="space-y-1">
-                                                @foreach ($firstColumn as $point)
-                                                    <p class="text-base font-bold tracking-wider lg:text-lg 2xl:text-xl text-landing-black-1">{{ $point }}</p>
-                                                @endforeach
-                                            </div>
-                                            @if (count($secondColumn) > 0)
+                                        {{-- Deskripsi Dua Kolom, kolom kiri isi sampai 10 item dulu --}}
+                                        <div class="pr-2 mt-4 overflow-y-auto max-h-20 md:max-h-72" style="font-family: Poppins, sans-serif;">
+                                            <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
                                                 <div class="space-y-1">
-                                                    @foreach ($secondColumn as $point)
+                                                    @foreach ($firstColumn as $point)
                                                         <p class="text-base font-bold tracking-wider lg:text-lg 2xl:text-xl text-landing-black-1">{{ $point }}</p>
                                                     @endforeach
                                                 </div>
-                                            @endif
+                                                @if (count($secondColumn) > 0)
+                                                    <div class="space-y-1">
+                                                        @foreach ($secondColumn as $point)
+                                                            <p class="text-base font-bold tracking-wider lg:text-lg 2xl:text-xl text-landing-black-1">{{ $point }}</p>
+                                                        @endforeach
+                                                    </div>
+                                                @endif
+                                            </div>
                                         </div>
-                                    </div>
 
-                                    <div class="absolute mt-5 end-10 bottom-15">
-                                        <a href="https://wa.me/62895371025425">
-                                            <button class="px-4 py-1 text-xl font-extrabold tracking-wider transition-transform duration-150 transform border-4 rounded-full text-landing-black-1 border-opacity-40 bg-opacity-60 border-black-2 bg-theme2 hover:scale-105 hover:shadow-lg hover:-translate-y-1 hover:bg-landing-body hover:border-4 hover:border-theme2 hover:text-theme3" style="font-family: Poppins, sans-serif;">
-                                                Dapatkan Promo!
-                                            </button>
-                                        </a>
+                                        <div class="absolute mt-5 end-10 bottom-15">
+                                            <a href="https://wa.me/62895371025425">
+                                                <button class="px-4 py-1 text-xl font-extrabold tracking-wider transition-transform duration-150 transform border-4 rounded-full text-landing-black-1 border-opacity-40 bg-opacity-60 border-black-2 bg-theme2 hover:scale-105 hover:shadow-lg hover:-translate-y-1 hover:bg-landing-body hover:border-4 hover:border-theme2 hover:text-theme3" style="font-family: Poppins, sans-serif;">
+                                                    Dapatkan Promo!
+                                                </button>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                @endforeach
+                    @endforeach
+                @endif
             </div>
 
             {{-- Swiper Pagination --}}
